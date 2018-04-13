@@ -1,0 +1,160 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\citation{franca1992stabilized,hughes1989new}
+\citation{hughes1986new,barth2004taxonomy}
+\citation{brooks1982streamline,franca1992stabilizedii,tezduyar1992incompressible}
+\citation{hughes1998variational,hughes2007variational}
+\citation{ainsworth2011posteriori}
+\citation{hughes1998variational}
+\citation{hauke2006multiscale,hauke2008variational}
+\citation{masud2011variational}
+\citation{masud2013framework}
+\citation{larson2007adaptive}
+\citation{fidkowski2011review}
+\citation{becker2001optimal,bangerth2013adaptive}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5.}OUTPUT-BASED ERROR ESTIMATION AND MESH ADAPTATION FOR VARIATIONAL MULTISCALE METHODS}{80}{chapter.5}}
+\newlabel{chap:vms}{{5}{80}{OUTPUT-BASED ERROR ESTIMATION AND MESH ADAPTATION FOR VARIATIONAL MULTISCALE METHODS}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction and Motivation}{80}{section.5.1}}
+\citation{hauke2009variational}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Review of VMS Methods}{82}{section.5.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Model Problem}{82}{subsection.5.2.1}}
+\newlabel{eq:primal_pde}{{5.1}{82}{Model Problem}{equation.5.2.1}{}}
+\citation{hughes1998variational}
+\citation{hughes2007variational}
+\newlabel{eq:primal_weak}{{5.2}{83}{Model Problem}{equation.5.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}VMS Formulation}{83}{subsection.5.2.2}}
+\newlabel{eq:primal_weak_decomp}{{5.3}{83}{VMS Formulation}{equation.5.2.3}{}}
+\newlabel{eq:primal_subproblem_1}{{5.4}{83}{VMS Formulation}{equation.5.2.4}{}}
+\newlabel{eq:primal_subproblem_2}{{5.5}{83}{VMS Formulation}{equation.5.2.5}{}}
+\citation{hughes2007variational}
+\newlabel{eq:primal_optimality}{{5.6}{84}{VMS Formulation}{equation.5.2.6}{}}
+\newlabel{eq:primal_fine_operator}{{5.7}{84}{VMS Formulation}{equation.5.2.7}{}}
+\newlabel{eq:primal_fine_function}{{5.8}{84}{VMS Formulation}{equation.5.2.8}{}}
+\newlabel{eq:adjoint}{{5.9}{84}{VMS Formulation}{equation.5.2.9}{}}
+\citation{hughes2007variational}
+\newlabel{eq:primal_vms}{{5.10}{85}{VMS Formulation}{equation.5.2.10}{}}
+\newlabel{eq:primal_vms_2}{{5.11}{85}{VMS Formulation}{equation.5.2.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Subgrid Model}{85}{subsection.5.2.3}}
+\newlabel{eq:primal_elem_greens}{{5.12}{85}{Subgrid Model}{equation.5.2.12}{}}
+\citation{oberai1998multiscale}
+\newlabel{eq:primal_tau}{{5.13}{86}{Subgrid Model}{equation.5.2.13}{}}
+\newlabel{eq:primal_subgrid}{{5.14}{86}{Subgrid Model}{equation.5.2.14}{}}
+\newlabel{eq:primal_subgrid_2}{{5.15}{86}{Subgrid Model}{equation.5.2.15}{}}
+\newlabel{eq:primal_fine_approx}{{5.16}{86}{Subgrid Model}{equation.5.2.16}{}}
+\citation{bangerth2013adaptive,becker2001optimal,eriksson1995introduction,fidkowski2011review}
+\newlabel{eq:primal_subgrid_decomp}{{5.19}{87}{Subgrid Model}{equation.5.2.19}{}}
+\newlabel{eq:primal_fem}{{5.20}{87}{}{equation.5.2.20}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}The Dual Problem}{87}{section.5.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Abstract Problem}{87}{subsection.5.3.1}}
+\newlabel{eq:functional}{{5.21}{87}{Abstract Problem}{equation.5.3.21}{}}
+\newlabel{eq:dual_weak}{{5.22}{87}{Abstract Problem}{equation.5.3.22}{}}
+\citation{cyr2014approaches}
+\citation{cyr2014approaches}
+\newlabel{eq:dual_pde}{{5.23}{88}{Abstract Problem}{equation.5.3.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}VMS Formulation}{88}{subsection.5.3.2}}
+\newlabel{eq:dual_fine_operator}{{5.24}{88}{VMS Formulation}{equation.5.3.24}{}}
+\newlabel{eq:dual_fine_function}{{5.25}{89}{VMS Formulation}{equation.5.3.25}{}}
+\newlabel{eq:dual_vms}{{5.26}{89}{VMS Formulation}{equation.5.3.26}{}}
+\newlabel{eq:dual_vms_2}{{5.27}{89}{VMS Formulation}{equation.5.3.27}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Subgrid Model}{89}{subsection.5.3.3}}
+\newlabel{eq:dual_elem_greens}{{5.28}{89}{Subgrid Model}{equation.5.3.28}{}}
+\newlabel{eq:dual_tau}{{5.29}{89}{Subgrid Model}{equation.5.3.29}{}}
+\newlabel{eq:dual_subgrid}{{5.30}{90}{Subgrid Model}{equation.5.3.30}{}}
+\newlabel{eq:dual_subgrid_2}{{5.31}{90}{Subgrid Model}{equation.5.3.31}{}}
+\newlabel{eq:dual_fine_approx}{{5.32}{90}{Subgrid Model}{equation.5.3.32}{}}
+\newlabel{eq:dual_subgrid_decomp}{{5.33}{90}{Subgrid Model}{equation.5.3.33}{}}
+\newlabel{eq:dual_fem}{{5.34}{90}{}{equation.5.3.34}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Error Estimation}{90}{section.5.4}}
+\newlabel{sec:Error}{{5.4}{90}{Error Estimation}{section.5.4}{}}
+\citation{hauke2009variational}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Continuous VMS Error Representations}{91}{subsection.5.4.1}}
+\newlabel{eq:error_cont_1}{{5.36}{91}{}{equation.5.4.36}{}}
+\newlabel{eq:error_cont_2}{{5.4.1}{92}{Continuous VMS Error Representations}{equation.5.4.36}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Subgrid Model Error Representations}{92}{subsection.5.4.2}}
+\newlabel{eq:representation_1}{{5.37}{92}{}{equation.5.4.37}{}}
+\newlabel{eq:representation_2}{{5.38}{93}{}{equation.5.4.38}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.3}Subgrid Model Error Estimates}{94}{subsection.5.4.3}}
+\newlabel{eq:estimate_1}{{5.39}{94}{Subgrid Model Error Estimates}{equation.5.4.39}{}}
+\newlabel{eq:estimate_2}{{5.40}{94}{Subgrid Model Error Estimates}{equation.5.4.40}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.4}Error Localization}{95}{subsection.5.4.4}}
+\citation{alauzet2006parallel}
+\citation{li20053d}
+\citation{ibanez2016pumi}
+\citation{boussetta2006adaptive}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Mesh Adaptation}{96}{section.5.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Size Field Specification}{96}{subsection.5.5.1}}
+\newlabel{eq:size}{{5.47}{96}{Size Field Specification}{equation.5.5.47}{}}
+\citation{hughes1998variational}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Results}{97}{section.5.6}}
+\newlabel{sec:Results}{{5.6}{97}{Results}{section.5.6}{}}
+\newlabel{eq:adv_diff}{{5.49}{97}{Results}{equation.5.6.49}{}}
+\newlabel{eq:adv_diff_adjoint}{{5.50}{97}{Results}{equation.5.6.50}{}}
+\newlabel{eq:adv_diff_bilinear}{{5.51}{97}{Results}{equation.5.6.51}{}}
+\newlabel{eq:adv_diff_tau}{{5.52}{97}{Results}{equation.5.6.52}{}}
+\citation{hughes1998variational}
+\newlabel{eq:effectivity}{{5.53}{98}{Results}{equation.5.6.53}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.1}One Dimensional Example}{98}{subsection.5.6.1}}
+\newlabel{eq:ex1_exact}{{5.54}{98}{One Dimensional Example}{equation.5.6.54}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Effectivity indices for a 1D advection-diffusion example with a global QoI.\relax }}{99}{table.5.1}}
+\newlabel{table:1D}{{5.1}{99}{Effectivity indices for a 1D advection-diffusion example with a global QoI.\relax }{table.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.2}A Manufactured Solution}{99}{subsection.5.6.2}}
+\newlabel{eq:ex2_exact}{{5.55}{99}{A Manufactured Solution}{equation.5.6.55}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Effectivity indices for a 2D advection-diffusion example with a global QoI.\relax }}{99}{table.5.2}}
+\newlabel{table:2D_mf_1}{{5.2}{99}{Effectivity indices for a 2D advection-diffusion example with a global QoI.\relax }{table.5.2}{}}
+\citation{zienkiewicz1992superconvergenti}
+\citation{zienkiewicz1992superconvergentii}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.3}Advection in an L-Shaped Domain}{100}{subsection.5.6.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces The primal solution $u^h$ (left) and the dual solutions $z^h$ corresponding to $J_1(u)$ (center) and $J_2(u)$ (right).\relax }}{100}{figure.caption.57}}
+\newlabel{fig:lshape_solutions}{{5.1}{100}{The primal solution $u^h$ (left) and the dual solutions $z^h$ corresponding to $J_1(u)$ (center) and $J_2(u)$ (right).\relax }{figure.caption.57}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Initial meshes for the outputs $J_1(u)$ (left) and $J_2(u)$ (right).\relax }}{101}{figure.caption.58}}
+\newlabel{fig:global_meshes}{{5.2}{101}{Initial meshes for the outputs $J_1(u)$ (left) and $J_2(u)$ (right).\relax }{figure.caption.58}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Final adapted meshes for the output $J_1(u)$ using the SPR (left), VMS1 (center), and VMS2 (right) adaptive schemes.\relax }}{102}{figure.caption.59}}
+\newlabel{fig:J1_meshes}{{5.3}{102}{Final adapted meshes for the output $J_1(u)$ using the SPR (left), VMS1 (center), and VMS2 (right) adaptive schemes.\relax }{figure.caption.59}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Convergence history for various adaptive schemes for the output $J_1(u)$.\relax }}{102}{figure.caption.60}}
+\newlabel{fig:J1_convergence}{{5.4}{102}{Convergence history for various adaptive schemes for the output $J_1(u)$.\relax }{figure.caption.60}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Final adapted meshes for the output $J_2(u)$ using the SPR (left), VMS1 (center), and VMS2 (right) adaptive schemes.\relax }}{103}{figure.caption.61}}
+\newlabel{fig:J2_meshes}{{5.5}{103}{Final adapted meshes for the output $J_2(u)$ using the SPR (left), VMS1 (center), and VMS2 (right) adaptive schemes.\relax }{figure.caption.61}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Convergence history for various adaptive schemes for the output $J_2(u)$.\relax }}{103}{figure.caption.62}}
+\newlabel{fig:J2_convergence}{{5.6}{103}{Convergence history for various adaptive schemes for the output $J_2(u)$.\relax }{figure.caption.62}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}Conclusions}{104}{section.5.7}}
+\@setckpt{vms}{
+\setcounter{page}{105}
+\setcounter{equation}{56}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{5}
+\setcounter{section}{7}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{6}
+\setcounter{table}{2}
+\setcounter{firstchapter}{1}
+\setcounter{ContinuedFloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{float@type}{16}
+\setcounter{parentequation}{0}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{99}
+\setcounter{ALG@line}{16}
+\setcounter{ALG@rem}{16}
+\setcounter{ALG@nested}{0}
+\setcounter{ALG@Lnr}{2}
+\setcounter{ALG@blocknr}{10}
+\setcounter{ALG@storecount}{0}
+\setcounter{ALG@tmpcounter}{0}
+\setcounter{algorithm}{4}
+\setcounter{lstnumber}{8}
+\setcounter{prop}{5}
+\setcounter{rmk}{2}
+\setcounter{section@level}{1}
+\setcounter{lstlisting}{0}
+}

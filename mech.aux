@@ -1,0 +1,164 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\citation{legant2010measurement,paszek2005tensional,discher2005tissue}
+\citation{venditti2000adjoint,becker2001optimal,giles2002adjoint,peraire1998bounds,prudhomme1999goal,braack2003posteriori,bangerth2013adaptive}
+\citation{rannacher1997feed,stein2007error,gonzalez2014mesh}
+\citation{ghorashi2014goal}
+\citation{rannacher1998posteriori,rannacher1999posteriori}
+\citation{ghorashi2017goal}
+\citation{rabizadeh2015adaptive}
+\citation{larsson2002strategies}
+\citation{whiteley2014error}
+\citation{whiteley2014error}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3.}ADJOINT-BASED ERROR ESTIMATION AND MESH ADAPTATION FOR STABILIZED FINITE DEFORMATION ELASTICITY}{39}{chapter.3}}
+\newlabel{chap:mech}{{3}{39}{ADJOINT-BASED ERROR ESTIMATION AND MESH ADAPTATION FOR STABILIZED FINITE DEFORMATION ELASTICITY}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Introduction}{39}{section.3.1}}
+\citation{richter2015variational,wick2016goal}
+\citation{fidkowski2011review}
+\citation{richter2015variational}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Model Problem}{41}{section.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Strong Form}{41}{subsection.3.2.1}}
+\newlabel{eq:mech_linear_momentum}{{3.1}{41}{Strong Form}{equation.3.2.1}{}}
+\newlabel{eq:mech_neohookean_model}{{3.2}{42}{Strong Form}{equation.3.2.2}{}}
+\newlabel{eq:mech_div_first_pk}{{3.3}{42}{Strong Form}{equation.3.2.3}{}}
+\newlabel{eq:mech_strong_form}{{3.4}{42}{Strong Form}{equation.3.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Weak Form}{42}{subsection.3.2.2}}
+\newlabel{eq:mech_disp_space_continuous}{{3.5}{42}{Weak Form}{equation.3.2.5}{}}
+\newlabel{eq:mech_weight_space_continuous}{{3.6}{43}{Weak Form}{equation.3.2.6}{}}
+\newlabel{eq:mech_pressure_space_continuous}{{3.7}{43}{Weak Form}{equation.3.2.7}{}}
+\newlabel{eq:mech_weak_form}{{3.8}{43}{Weak Form}{equation.3.2.8}{}}
+\newlabel{eq:mech_galerkin_resid}{{3.9}{43}{Weak Form}{equation.3.2.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Stabilized Finite Element Formulation}{43}{subsection.3.2.3}}
+\newlabel{eq:mech_disp_space}{{3.10}{43}{Stabilized Finite Element Formulation}{equation.3.2.10}{}}
+\newlabel{eq:mech_weight_space}{{3.11}{43}{Stabilized Finite Element Formulation}{equation.3.2.11}{}}
+\newlabel{eq:mech_press_space}{{3.12}{43}{Stabilized Finite Element Formulation}{equation.3.2.12}{}}
+\citation{klaas1999stabilized,maniatty2002higher,ramesh2005stabilized}
+\newlabel{eq:mech_perturbed}{{3.13}{44}{Stabilized Finite Element Formulation}{equation.3.2.13}{}}
+\newlabel{eq:mech_integrand_expand}{{3.14}{44}{Stabilized Finite Element Formulation}{equation.3.2.14}{}}
+\newlabel{eq:mech_stabilized_fem}{{3.15}{44}{Stabilized Finite Element Formulation}{equation.3.2.15}{}}
+\citation{chen2014automatic}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Linearization and Solution Strategy}{45}{subsection.3.2.4}}
+\newlabel{eq:mech_coarse_resid}{{3.17}{45}{Linearization and Solution Strategy}{equation.3.2.17}{}}
+\newlabel{eq:mech_jacobian}{{3.18}{45}{Linearization and Solution Strategy}{equation.3.2.18}{}}
+\newlabel{eq:mech_newtons}{{3.19}{45}{Linearization and Solution Strategy}{equation.3.2.19}{}}
+\citation{venditti2000adjoint,venditti2002adjoint,venditti2003adjoint,fidkowski2011review}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Adjoint-Based Error Estimation}{46}{section.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Two-Level Error Estimation}{46}{subsection.3.3.1}}
+\newlabel{eq:mech_fine_resid}{{3.20}{46}{Two-Level Error Estimation}{equation.3.3.20}{}}
+\newlabel{eq:mech_residual_taylor}{{3.21}{46}{Two-Level Error Estimation}{equation.3.3.21}{}}
+\citation{granzow2017output}
+\citation{nemec2007adjoint,lu2005posteriori,fidkowski2006output,becker2001optimal}
+\citation{fidkowski2011review}
+\citation{barth2002aposteriori,hartmann2002adaptive}
+\newlabel{eq:mech_functional_taylor}{{3.22}{47}{Two-Level Error Estimation}{equation.3.3.22}{}}
+\newlabel{eq:mech_disc_error_approx}{{3.23}{47}{Two-Level Error Estimation}{equation.3.3.23}{}}
+\newlabel{eq:mech_adjoint_weighted_residual}{{3.24}{47}{Two-Level Error Estimation}{equation.3.3.24}{}}
+\newlabel{eq:mech_adjoint_problem}{{3.25}{47}{Two-Level Error Estimation}{equation.3.3.25}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Choice of Fine Space}{47}{subsection.3.3.2}}
+\citation{maniatty2002higher}
+\citation{taylor1973numerical}
+\citation{fidkowski2011review}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Modified Functional Error Estimate}{48}{subsection.3.3.3}}
+\newlabel{eq:mech_effectivity}{{3.27}{48}{Modified Functional Error Estimate}{equation.3.3.27}{}}
+\citation{fidkowski2011review}
+\citation{richter2015variational}
+\citation{granzow2018automated}
+\citation{wick2016goal}
+\citation{cyr2014approaches}
+\newlabel{eq:mech_error_estimate}{{3.28}{49}{Modified Functional Error Estimate}{equation.3.3.28}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Error Localization}{49}{subsection.3.3.4}}
+\newlabel{eq:mech_continuous_adjoint}{{3.29}{49}{Error Localization}{equation.3.3.29}{}}
+\citation{becker2001optimal}
+\citation{becker2001optimal}
+\citation{richter2015variational}
+\newlabel{eq:mech_error_representation}{{3.30}{50}{Error Localization}{equation.3.3.30}{}}
+\newlabel{eq:mech_error_approx}{{3.31}{50}{Error Localization}{equation.3.3.31}{}}
+\newlabel{eq:mech_error_localization}{{3.32}{50}{Error Localization}{equation.3.3.32}{}}
+\citation{ibanez2016pumi}
+\citation{li20053d,alauzet2006parallel}
+\citation{boussetta2006adaptive}
+\newlabel{eq:mech_approximated_bound}{{3.33}{51}{Error Localization}{equation.3.3.33}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Mesh Adaptation}{51}{section.3.4}}
+\newlabel{eq:mech_global_size_quantity}{{3.34}{51}{Mesh Adaptation}{equation.3.4.34}{}}
+\newlabel{eq:mech_size_field}{{3.35}{51}{Mesh Adaptation}{equation.3.4.35}{}}
+\citation{ostien2016tet}
+\newlabel{eq:mech_size_clamping}{{3.36}{52}{Mesh Adaptation}{equation.3.4.36}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Results}{52}{section.3.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Cook's Membrane}{52}{subsection.3.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Cook's membrane problem definition.\relax }}{53}{figure.caption.32}}
+\newlabel{fig:cooks_geom}{{3.1}{53}{Cook's membrane problem definition.\relax }{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces The pressure component $p$ of the primal solution scaled by its maximal value (left), the pressure component $z_p$ of the adjoint solution for the point-wise QoI $J_1(\boldsymbol  {U})$, and the pressure component $z_p$ of the adjoint solution for the integrated displacement QoI $J_2(\boldsymbol  {U})$.\relax }}{53}{figure.caption.33}}
+\newlabel{fig:mech_cooks_pressures}{{3.2}{53}{The pressure component $p$ of the primal solution scaled by its maximal value (left), the pressure component $z_p$ of the adjoint solution for the point-wise QoI $J_1(\bs {U})$, and the pressure component $z_p$ of the adjoint solution for the integrated displacement QoI $J_2(\bs {U})$.\relax }{figure.caption.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Initial mesh (left) and adapted mesh (right) at the fifth adaptive iteration for the Cook's membrane problem with the point-wise QoI $J_1(\boldsymbol  {U})$.\relax }}{54}{figure.caption.34}}
+\newlabel{fig:mech_cooks_pw_meshes}{{3.3}{54}{Initial mesh (left) and adapted mesh (right) at the fifth adaptive iteration for the Cook's membrane problem with the point-wise QoI $J_1(\bs {U})$.\relax }{figure.caption.34}{}}
+\citation{babuvska1994pollution}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Initial mesh (left) and adapted mesh (right) at the fifth adaptive iteration for the Cook's membrane problem with the integrated displacement QoI $J_2(\boldsymbol  {U})$.\relax }}{55}{figure.caption.35}}
+\newlabel{fig:mech_cooks_avg_u_meshes}{{3.4}{55}{Initial mesh (left) and adapted mesh (right) at the fifth adaptive iteration for the Cook's membrane problem with the integrated displacement QoI $J_2(\bs {U})$.\relax }{figure.caption.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Effectivities for the point-wise QoI $J_1(\boldsymbol  {U})$ for the Cook's membrane problem.\relax }}{56}{figure.caption.36}}
+\newlabel{fig:mech_cooks_effectivity_1}{{3.5}{56}{Effectivities for the point-wise QoI $J_1(\bs {U})$ for the Cook's membrane problem.\relax }{figure.caption.36}{}}
+\citation{dong2017recovery}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Effectivities for the integrated displacement QoI $J_2(\boldsymbol  {U})$ for the Cook's membrane problem.\relax }}{57}{figure.caption.37}}
+\newlabel{fig:mech_cooks_effectivity_2}{{3.6}{57}{Effectivities for the integrated displacement QoI $J_2(\bs {U})$ for the Cook's membrane problem.\relax }{figure.caption.37}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}A Cell Embedded in a Matrix}{57}{subsection.3.5.2}}
+\citation{legant2010measurement,paszek2005tensional,discher2005tissue}
+\citation{dong2017recovery}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Errors for the point-wise QoI $J_1(\boldsymbol  {U})$ for the Cook's membrane problem.\relax }}{58}{figure.caption.38}}
+\newlabel{fig:mech_cooks_error_1}{{3.7}{58}{Errors for the point-wise QoI $J_1(\bs {U})$ for the Cook's membrane problem.\relax }{figure.caption.38}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Errors for the integrated displacement QoI $J_2(\boldsymbol  {U})$ for the Cook's membrane problem.\relax }}{59}{figure.caption.39}}
+\newlabel{fig:mech_cooks_error_2}{{3.8}{59}{Errors for the integrated displacement QoI $J_2(\bs {U})$ for the Cook's membrane problem.\relax }{figure.caption.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces The computational geometry for the microglial cell problem. The inner-most surface represents the geometry of the microgial cell, the outer-most bounding box represents the extracellular matrix in which the cell is embedded, and the inner bounding box represents the domain over which the local integrated displacement QoI $J(\boldsymbol  {U})$ is defined.\relax }}{60}{figure.caption.40}}
+\newlabel{fig:mech_glial_geom}{{3.9}{60}{The computational geometry for the microglial cell problem. The inner-most surface represents the geometry of the microgial cell, the outer-most bounding box represents the extracellular matrix in which the cell is embedded, and the inner bounding box represents the domain over which the local integrated displacement QoI $J(\bs {U})$ is defined.\relax }{figure.caption.40}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces The applied tractions for the microglial cell problem.\relax }}{60}{figure.caption.41}}
+\newlabel{fig:mech_glial_traction}{{3.10}{60}{The applied tractions for the microglial cell problem.\relax }{figure.caption.41}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces The initial (light grey) and deformed (blue) geometry of the microglial cell before and after tractions are applied.\relax }}{61}{figure.caption.42}}
+\newlabel{fig:mech_glial_deformed}{{3.11}{61}{The initial (light grey) and deformed (blue) geometry of the microglial cell before and after tractions are applied.\relax }{figure.caption.42}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Initial mesh for the microglial cell problem (left) and final adapted mesh after $10$ adaptive iterations (right).\relax }}{61}{figure.caption.43}}
+\newlabel{fig:mech_glial_meshes}{{3.12}{61}{Initial mesh for the microglial cell problem (left) and final adapted mesh after $10$ adaptive iterations (right).\relax }{figure.caption.43}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Effectivity indices for the local integrated displacement QoI $J(\boldsymbol  {U})$ for the microglial cell problem.\relax }}{62}{figure.caption.44}}
+\newlabel{fig:mech_glial_effectivity}{{3.13}{62}{Effectivity indices for the local integrated displacement QoI $J(\bs {U})$ for the microglial cell problem.\relax }{figure.caption.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Errors for the local integrated displacement QoI $J(\boldsymbol  {U})$ for the microglial cell problem.\relax }}{63}{figure.caption.45}}
+\newlabel{fig:mech_glial_error}{{3.14}{63}{Errors for the local integrated displacement QoI $J(\bs {U})$ for the microglial cell problem.\relax }{figure.caption.45}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Conclusions}{63}{section.3.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces Error convergence using uniform mesh refinement and adjoint-based adaptivity for the local integrated displacement QoI $J(\boldsymbol  {U})$ for the microglial cell problem.\relax }}{64}{figure.caption.46}}
+\newlabel{fig:mech_glial_convergence}{{3.15}{64}{Error convergence using uniform mesh refinement and adjoint-based adaptivity for the local integrated displacement QoI $J(\bs {U})$ for the microglial cell problem.\relax }{figure.caption.46}{}}
+\@setckpt{mech}{
+\setcounter{page}{65}
+\setcounter{equation}{36}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{3}
+\setcounter{section}{6}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{15}
+\setcounter{table}{0}
+\setcounter{firstchapter}{1}
+\setcounter{ContinuedFloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{float@type}{16}
+\setcounter{parentequation}{0}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{61}
+\setcounter{ALG@line}{15}
+\setcounter{ALG@rem}{15}
+\setcounter{ALG@nested}{0}
+\setcounter{ALG@Lnr}{2}
+\setcounter{ALG@blocknr}{10}
+\setcounter{ALG@storecount}{0}
+\setcounter{ALG@tmpcounter}{0}
+\setcounter{algorithm}{1}
+\setcounter{lstnumber}{8}
+\setcounter{prop}{0}
+\setcounter{rmk}{0}
+\setcounter{section@level}{1}
+\setcounter{lstlisting}{0}
+}

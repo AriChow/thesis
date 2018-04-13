@@ -1,39 +1,7 @@
 \specialhead{ABSTRACT}
 
-In a finite element simulation, not all of the computed
-data is of equal importance. Rather, the goal of an engineering
-practitioner is often to accurately assess only a small
-number of critical outputs, such as the displacement
-at a point or the von-Mises stress over a domain. When
-these outputs can be expressed as functionals,
-a strategy known as \emph{adjoint-based error estimation}
-can be employed to accurately assess output errors.
-Using this error information, mesh adaptation can then
-be utilized to reduce and control output errors.
-The use of adjoint-based error estimation and mesh adaptation
-is much more prevalent in computational fluid dynamics
-applications when compared to computational solid mechanics.
-This can in part be explained by the high level of expertise
-required to derive and implement adjoint-based error estimation
-routines in computational solid mechanics.
+Image classification is an important problem. It is an approach of pattern recognition in computer vision. The goal of the approach is to differentiate between different classes of images based on the quantification of contextual information in the images. Image classification is performed using data analytic pipelines. These pipelines are organized as interdependent and individual components. These components include image acquisition, image preprocessing, feature extraction, feature preprocessing, dimensionality reduction, learning algorithms. More steps may be added or removed from the pipeline. The quality of the image classification pipeline is measured by the error in classification of new image instances. This error is an accumulation of the errors introduced from different parts of the pipeline starting from the acquisition of the image from the sample to the algorithm used for performing the  classification. This error is propagated down the pipeline which finally accumulated in the form of the aforementioned classification error. In this thesis, we attempt to reduce, quantify and understand the error in image classification pipelines.   
 
-In this thesis, we present an approach to automate
-the process of adjoint-based error estimation and mesh
-adaptation to lower the barrier of entry for solid
-mechanics practitioners. This approach has been developed
-to be applicable to both Galerkin and stabilized finite
-element methods, but we mainly emphasize stabilized finite
-elements. In particular, we demonstrate the
-effectiveness of this approach for two and three
-dimensional problems in incompressible elasticity and
-elastoplasticity. Further, we demonstrate the ability
-of this approach to execute effectively on parallel
-machines.
+In the first part, we try to reduce the error in a holistic manner. The problem selected for demonstrating this is that of automatic microstructure recognition. The dataset for this problem is from the domain of material science. It consists of images of microstructures in the micrometer scale. We perform two classification tasks. The first task is of differentiating between dendritic and non-dendritic microstructures. The second task is for differentiating between longitudinal and transverse cross sections of microstructures. The objective for both the classification tasks is to find the best set of algorithms and hyper-parameters for minimizing the classification error. The approach used was an exhaustive search of the configuration space of algorithms and corresponding hyperparameters for three stages of the pipeline - feature extraction, dimensionality reduction and learning algorithms. This exhaustive grid search is able to perform classification of the two tasks with a sufficiently high degree of accuracy.
 
-The variational multiscale (VMS) method is a particular
-methodology that allows one to develop a stabilized
-finite element method. As a further research endeavor,
-we develop and investigate a novel approach for
-adjoint-based error estimation and mesh adaptation
-for VMS methods. In particular, we develop an approach
-for adjoint enrichment based on VMS techniques.
+

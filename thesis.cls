@@ -474,12 +474,11 @@
          Submitted in Partial Fullfillment of the Requirements\\
          for the Degree of\\ [10pt]
          \emph{\uppercase\expandafter{\@degree}} \\ [40pt]
-         Approved by:\\
-         Dr. Mark S. Shephard, Chair\\
-         Dr. Assad A. Oberai, Co-Chair\\
-         Dr. Antoinette M. Maniatty\\
-         Dr. Jason E. Hicken\\
-         Dr. Jeffrey W. Banks\\
+         Examining committee:\\
+         Dr. Bulent Yener, Chair\\
+         Dr. Malik Magdon-Ismail\\
+         Dr. Charles V. Stewart\\
+         Dr. Alberto Santamaria-Pang\\
          \vskip 100pt
          \includegraphics[width=0.25\linewidth]{img/rpi_seal}
          \vskip 20pt

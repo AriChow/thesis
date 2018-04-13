@@ -1,0 +1,117 @@
+\contentsline {chapter}{LIST OF TABLES}{vii}{chapter*.3}
+\contentsline {chapter}{LIST OF FIGURES}{viii}{chapter*.5}
+\contentsline {chapter}{ACKNOWLEDGMENT}{xi}{section*.6}
+\contentsline {chapter}{ABSTRACT}{xii}{section*.8}
+\contentsline {chapter}{\numberline {1.}INTRODUCTION AND BACKGROUND}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Outline}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Contributions}{1}{section.1.2}
+\contentsline {chapter}{\numberline {2.}AN AUTOMATED APPROACH FOR PARALLEL ADJOINT-BASED ERROR ESTIMATION AND MESH ADAPTATION FOR STEADY-STATE PROBLEMS}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{2}{section.2.1}
+\contentsline {section}{\numberline {2.2}A Review of Adjoint-Based Error Representations}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Galerkin Finite Element Methods}{5}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Stabilized Finite Element Methods}{5}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Software Components}{6}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}The Primal Problem}{7}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}The Adjoint Problem}{7}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Error Estimation and Localization}{8}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Mesh Adaptation}{9}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}In-Memory Integration of Components}{9}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Template-Based Generic Programming}{9}{section.2.4}
+\contentsline {section}{\numberline {2.5}The Primal Problem}{13}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Galerkin Finite Element Methods}{13}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Stabilized Finite Element Methods}{13}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Automated Solution Based on Residual Implementation}{14}{subsection.2.5.3}
+\contentsline {section}{\numberline {2.6}The Adjoint Problem}{15}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}A Richer Space via Uniform Refinement}{15}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Discrete Adjoint Approximation}{16}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Automated Solution Based on Residual Formulation}{17}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.7}Error Estimation}{18}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Two-Level Error Estimates}{18}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Modified Functional Error Estimate}{19}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Error Localization for Galerkin Methods}{19}{subsection.2.7.3}
+\contentsline {subsection}{\numberline {2.7.4}Error Localization for Stabilized Methods}{20}{subsection.2.7.4}
+\contentsline {subsection}{\numberline {2.7.5}Automated Error Localization Based on Residual Implementation}{20}{subsection.2.7.5}
+\contentsline {section}{\numberline {2.8}Mesh Adaptation}{22}{section.2.8}
+\contentsline {section}{\numberline {2.9}Quantities of Interest}{23}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Point-Wise Solution Component}{23}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Integrated Solution Over a Sub-Domain}{23}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.3}Integrated von-Mises Stress Over a Sub-Domain}{24}{subsection.2.9.3}
+\contentsline {section}{\numberline {2.10}Results}{25}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Poisson's Equation}{25}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}A Cell Embedded in a Matrix}{27}{subsection.2.10.2}
+\contentsline {subsection}{\numberline {2.10.3}Elastoplasticity in an Array of Solder Joints}{33}{subsection.2.10.3}
+\contentsline {section}{\numberline {2.11}Conclusions}{38}{section.2.11}
+\contentsline {chapter}{\numberline {3.}ADJOINT-BASED ERROR ESTIMATION AND MESH ADAPTATION FOR STABILIZED FINITE DEFORMATION ELASTICITY}{39}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{39}{section.3.1}
+\contentsline {section}{\numberline {3.2}Model Problem}{41}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Strong Form}{41}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Weak Form}{42}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Stabilized Finite Element Formulation}{43}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Linearization and Solution Strategy}{45}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Adjoint-Based Error Estimation}{46}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Two-Level Error Estimation}{46}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Choice of Fine Space}{47}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Modified Functional Error Estimate}{48}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Error Localization}{49}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Mesh Adaptation}{51}{section.3.4}
+\contentsline {section}{\numberline {3.5}Results}{52}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Cook's Membrane}{52}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}A Cell Embedded in a Matrix}{57}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Conclusions}{63}{section.3.6}
+\contentsline {chapter}{\numberline {4.}A NON-UNIFORM REFINEMENT APPROACH FOR SOLVING ADJOINT PROBLEMS IN FUNCTIONAL ERROR ESTIMATION AND MESH ADAPTATION}{65}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{65}{section.4.1}
+\contentsline {section}{\numberline {4.2}Error Estimation with Two Levels}{66}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Error Estimates}{66}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}A Simple A-Priori Analysis}{67}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Choices for the Fine Space}{68}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Uniform Refinement}{68}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Long Edge Refinement}{69}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Single Edge Refinement}{70}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Mesh Adaptation}{71}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Error Localization}{71}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Mesh Size Field}{72}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Results}{73}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Effectivity Indices for Poisson's Equation}{73}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Mesh Adaptation for Poisson's Equation}{76}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Conclusions and Outlook}{77}{section.4.6}
+\contentsline {chapter}{\numberline {5.}OUTPUT-BASED ERROR ESTIMATION AND MESH ADAPTATION FOR VARIATIONAL MULTISCALE METHODS}{80}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction and Motivation}{80}{section.5.1}
+\contentsline {section}{\numberline {5.2}Review of VMS Methods}{82}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Model Problem}{82}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}VMS Formulation}{83}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Subgrid Model}{85}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}The Dual Problem}{87}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Abstract Problem}{87}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}VMS Formulation}{88}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Subgrid Model}{89}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Error Estimation}{90}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Continuous VMS Error Representations}{91}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Subgrid Model Error Representations}{92}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Subgrid Model Error Estimates}{94}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Error Localization}{95}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Mesh Adaptation}{96}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Size Field Specification}{96}{subsection.5.5.1}
+\contentsline {section}{\numberline {5.6}Results}{97}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}One Dimensional Example}{98}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}A Manufactured Solution}{99}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Advection in an L-Shaped Domain}{100}{subsection.5.6.3}
+\contentsline {section}{\numberline {5.7}Conclusions}{104}{section.5.7}
+\contentsline {chapter}{\numberline {6.}CONCLUSIONS AND FUTURE WORK}{105}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusions}{105}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{105}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Higher Order Finite Element Methods}{105}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Extending Capabilities to Quasi-Steady/Transient Problems}{106}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Extending VMS Techniques for Solid Mechanics}{106}{subsection.6.2.3}
+\contentsline {chapter}{REFERENCES}{107}{section*.63}
+\parindent 0pt\vskip 12pt APPENDICES
+\contentsline {chapter}{\numberline {A.}FORWARD AUTOMATIC DIFFERENTIATION}{115}{appendix.A}
+\contentsline {section}{\numberline {A.1}Introduction}{115}{section.A.1}
+\contentsline {section}{\numberline {A.2}Forward AD with Operator Overloading}{115}{section.A.2}
+\contentsline {section}{\numberline {A.3}A Simple Example}{117}{section.A.3}
+\contentsline {chapter}{\numberline {B.}PROPOSITIONS FOR THE ADVECTION-DIFFUSION OPERATOR}{119}{appendix.B}
+\contentsline {section}{\numberline {B.1}Non-Homogeneous Boundary Conditions}{119}{section.B.1}
+\contentsline {section}{\numberline {B.2}Derivation of the Advection-Diffusion Adjoint Operator}{120}{section.B.2}
+\contentsline {section}{\numberline {B.3}Propositions Applied to the Advection-Diffusion Operator}{122}{section.B.3}
+\contentsline {subsection}{\numberline {B.3.1}Proposition 2}{124}{subsection.B.3.1}
+\contentsline {subsection}{\numberline {B.3.2}Proposition 4}{124}{subsection.B.3.2}
+\contentsline {subsection}{\numberline {B.3.3}Proposition 5}{126}{subsection.B.3.3}
