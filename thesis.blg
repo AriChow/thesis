@@ -7,7 +7,6 @@ A level-1 auxiliary file: acknowledge.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: automated.aux
-A level-1 auxiliary file: mech.aux
 A level-1 auxiliary file: refine.aux
 A level-1 auxiliary file: vms.aux
 A level-1 auxiliary file: conclusions.aux
@@ -26,49 +25,47 @@ Warning--empty year in smith2015parma
 Warning--empty journal in granzow2017adjoint
 Warning--empty year in granzow2017adjoint
 Warning--empty year in li2017simulation
-Warning--empty journal in granzow2018automated
-Warning--empty year in granzow2018automated
 
 Done.
-You've used 94 entries,
+You've used 68 entries,
             4355 wiz_defined-function locations,
-            1374 strings with 26069 characters,
-and the built_in function-call counts, 78086 in all, are:
-= -- 6655
-> -- 1807
-< -- 814
-+ -- 1015
-- -- 285
-* -- 3891
-:= -- 11642
-add.period$ -- 192
-call.type$ -- 94
-change.case$ -- 92
-chr.to.int$ -- 1821
-cite$ -- 100
-duplicate$ -- 5537
-empty$ -- 5551
-format.name$ -- 367
-if$ -- 17919
+            1238 strings with 21023 characters,
+and the built_in function-call counts, 56790 in all, are:
+= -- 4815
+> -- 1306
+< -- 596
++ -- 736
+- -- 206
+* -- 2835
+:= -- 8427
+add.period$ -- 140
+call.type$ -- 68
+change.case$ -- 65
+chr.to.int$ -- 1338
+cite$ -- 72
+duplicate$ -- 4015
+empty$ -- 4069
+format.name$ -- 263
+if$ -- 13043
 int.to.chr$ -- 0
-int.to.str$ -- 94
-missing$ -- 892
-newline$ -- 305
-num.names$ -- 94
-pop$ -- 1539
+int.to.str$ -- 68
+missing$ -- 645
+newline$ -- 227
+num.names$ -- 68
+pop$ -- 1126
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 6198
+skip$ -- 4503
 stack$ -- 0
-substring$ -- 4347
-swap$ -- 5057
-text.length$ -- 207
+substring$ -- 3193
+swap$ -- 3673
+text.length$ -- 150
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 94
-warning$ -- 6
-while$ -- 387
-width$ -- 96
-write$ -- 980
-(There were 6 warnings)
+type$ -- 68
+warning$ -- 4
+while$ -- 281
+width$ -- 70
+write$ -- 712
+(There were 4 warnings)

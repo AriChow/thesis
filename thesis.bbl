@@ -240,161 +240,6 @@ L.~F. Richardson, ``The approximate arithmetical solution by finite differences
   the stresses in a masonry dam,'' \emph{Philosophical Trans. of the Royal
   Society of London}, vol. 210, pp. 307--357, Jan. 1911.
 
-\bibitem{legant2010measurement}
-W.~R. Legant, J.~S. Miller, B.~L. Blakely, D.~M. Cohen, G.~M. Genin, and C.~S.
-  Chen, ``Measurement of mechanical tractions exerted by cells in
-  three-dimensional matrices,'' \emph{Nature Methods}, vol.~7, pp. 969--971,
-  Dec. 2010.
-
-\bibitem{paszek2005tensional}
-M.~J. Paszek, N.~Zahir, K.~R. Johnson, J.~N. Lakins, G.~I. Rozenberg, A.~Gefen
-  \emph{et~al.}, ``Tensional homeostasis and the malignant phenotype,''
-  \emph{Cancer Cell}, vol.~8, no.~3, pp. 241--254, Sep. 2005.
-
-\bibitem{discher2005tissue}
-D.~E. Discher, P.~Janmey, and Y.-l. Wang, ``Tissue cells feel and respond to
-  the stiffness of their substrate,'' \emph{Science}, vol. 310, no. 5751, pp.
-  1139--1143, Nov. 2005.
-
-\bibitem{giles2002adjoint}
-M.~B. Giles and E.~S{\"u}li, ``Adjoint methods for {PDE}s: {A} posteriori error
-  analysis and postprocessing by duality,'' \emph{Acta Numerica}, vol.~11, pp.
-  145--236, Jan. 2002.
-
-\bibitem{peraire1998bounds}
-J.~Peraire and A.~Patera, ``Bounds for linear-functional outputs of coercive
-  partial differential equations: {L}ocal indicators and adaptive refinement,''
-  \emph{Studies in Appl. Mechanics}, vol.~47, pp. 199--216, Jan. 1998.
-
-\bibitem{prudhomme1999goal}
-S.~Prudhomme and J.~T. Oden, ``On goal-oriented error estimation for elliptic
-  problems: {A}pplication to the control of pointwise errors,'' \emph{Comput.
-  Methods in Appl. Mechanics and Eng.}, vol. 176, no. 1-4, pp. 313--331, Jul.
-  1999.
-
-\bibitem{braack2003posteriori}
-M.~Braack and A.~Ern, ``A posteriori control of modeling errors and
-  discretization errors,'' \emph{Multiscale Modeling \& Simulation}, vol.~1,
-  no.~2, pp. 221--238, Jul. 2003.
-
-\bibitem{bangerth2013adaptive}
-W.~Bangerth and R.~Rannacher, \emph{Adaptive Finite Element Methods for
-  Differential Equations}.\hskip 1em plus 0.5em minus 0.4em\relax Basel,
-  Switzerland: Birkh{\"a}user Basel, 2013.
-
-\bibitem{rannacher1997feed}
-R.~Rannacher and F.-T. Suttmeier, ``A feed-back approach to error control in
-  finite element methods: {A}pplication to linear elasticity,'' \emph{Comput.
-  Mechanics}, vol.~19, no.~5, pp. 434--446, Apr. 1997.
-
-\bibitem{stein2007error}
-E.~Stein, M.~R{\"u}ter, and S.~Ohnimus, ``Error-controlled adaptive
-  goal-oriented modeling and finite element approximations in elasticity,''
-  \emph{Comput. Methods in Appl. Mechanics and Eng.}, vol. 196, no.~37, pp.
-  3598--3613, Aug. 2007.
-
-\bibitem{gonzalez2014mesh}
-O.~A. Gonz{\'a}lez-Estrada, E.~Nadal, J.~R{\'o}denas, P.~Kerfriden, S.~P.-A.
-  Bordas, and F.~Fuenmayor, ``Mesh adaptivity driven by goal-oriented locally
-  equilibrated superconvergent patch recovery,'' \emph{Comput. Mechanics},
-  vol.~53, no.~5, pp. 957--976, May. 2014.
-
-\bibitem{ghorashi2014goal}
-S.~S. Ghorashi, J.~Amani, A.~Bagherzadeh, and T.~Rabczuk, ``Goal-oriented error
-  estimation and mesh adaptivity in three-dimensional elasticity problems,''
-  presented at the WCCM XI-ECCM V-ECFD VI, Barcelona, Spain, 2014.
-
-\bibitem{rannacher1998posteriori}
-R.~Rannacher and F.-T. Suttmeier, ``A posteriori error control in finite
-  element methods via duality techniques: Application to perfect plasticity,''
-  \emph{Comput. Mechanics}, vol.~21, no.~2, pp. 123--133, Mar. 1998.
-
-\bibitem{rannacher1999posteriori}
-------, ``A posteriori error estimation and mesh adaptation for finite element
-  models in elasto-plasticity,'' \emph{Comput. Methods in Appl. Mechanics and
-  Eng.}, vol. 176, no. 1-4, pp. 333--361, Jul. 1999.
-
-\bibitem{ghorashi2017goal}
-S.~S. Ghorashi and T.~Rabczuk, ``Goal-oriented error estimation and mesh
-  adaptivity in {3D} elastoplasticity problems,'' \emph{Int. J. of Fracture},
-  vol. 203, pp. 3--19, Jan. 2017.
-
-\bibitem{rabizadeh2015adaptive}
-E.~Rabizadeh, A.~S. Bagherzadeh, and T.~Rabczuk, ``Adaptive thermo-mechanical
-  finite element formulation based on goal-oriented error estimation,''
-  \emph{Comput. Materials Science}, vol. 102, pp. 27--44, May. 2015.
-
-\bibitem{larsson2002strategies}
-F.~Larsson, P.~Hansbo, and K.~Runesson, ``Strategies for computing
-  goal-oriented a posteriori error measures in non-linear elasticity,''
-  \emph{Int. J. for Numerical Methods in Eng.}, vol.~55, no.~8, pp. 879--894,
-  Aug. 2002.
-
-\bibitem{whiteley2014error}
-J.~Whiteley and S.~Tavener, ``Error estimation and adaptivity for
-  incompressible hyperelasticity,'' \emph{Int. J. for Numerical Methods. in
-  Eng.}, vol.~99, no.~5, pp. 313--332, Apr. 2014.
-
-\bibitem{wick2016goal}
-T.~Wick, ``Goal functional evaluations for phase-field fracture using
-  {PU}-based {DWR} mesh adaptivity,'' \emph{Comput. Mechanics}, vol.~57, no.~6,
-  pp. 1017--1035, Mar. 2016.
-
-\bibitem{klaas1999stabilized}
-O.~Klaas, A.~Maniatty, and M.~S. Shephard, ``A stabilized mixed finite element
-  method for finite elasticity: {F}ormulation for linear displacement and
-  pressure interpolation,'' \emph{Comput. Methods in Appl. Mechanics and Eng.},
-  vol. 180, no.~1, pp. 65--79, Nov. 1999.
-
-\bibitem{maniatty2002higher}
-A.~M. Maniatty, Y.~Liu, O.~Klaas, and M.~S. Shephard, ``Higher order stabilized
-  finite element method for hyperelastic finite deformation,'' \emph{Comput.
-  Methods in Appl. Mechanics and Eng.}, vol. 191, no.~13, pp. 1491--1503, Jan.
-  2002.
-
-\bibitem{chen2014automatic}
-Q.~Chen, J.~T. Ostien, and G.~Hansen, ``Automatic differentiation for
-  numerically exact computation of tangent operators in small-and
-  large-deformation computational inelasticity,'' presented at the TMS 2014:
-  143rd Annual Meeting \& Exhibition, San Diego, CA, USA, 2014.
-
-\bibitem{lu2005posteriori}
-J.~Lu, ``An a posteriori error control framework for adaptive precision
-  optimization using discontinuous {G}alerkin finite element method,'' Ph.D.
-  dissertation, Dept. of Aeronautics and Astronautics, Massachussetts Inst. of
-  Technology, 2005.
-
-\bibitem{fidkowski2006output}
-K.~J. Fidkowski and D.~L. Darmofal, ``Output-based adaptive meshing using
-  triangular cut cells,'' Aerospace Comput. Design Lab., Massachusetts Inst. of
-  Technology, Cambridge, MA, USA, Tech. Rep. 06-02, Oct. 2006.
-
-\bibitem{barth2002aposteriori}
-T.~J. Barth and M.~G. Larson, ``A posteriori error estimates for higher order
-  godunov finite volume methods on unstructured meshes,'' NASA Ames Research
-  Center, Moffet Field, CA, USA, Tech. Rep. NAS-02-001, Feb. 2002.
-
-\bibitem{hartmann2002adaptive}
-R.~Hartmann and P.~Houston, ``Adaptive discontinuous {G}alerkin finite element
-  methods for the compressible {E}uler equations,'' \emph{J. of Comput.
-  Physics}, vol. 183, no.~2, pp. 508--532, Dec. 2002.
-
-\bibitem{granzow2018automated}
-B.~N. Granzow, A.~A. Oberai, and M.~S. Shephard, ``An automated approach for
-  parallel adjoint-based error estimation and mesh adaptation,'' submitted for
-  publication.
-
-\bibitem{ostien2016tet}
-J.~Ostien, J.~Foulk, A.~Mota, and M.~Veilleux, ``A 10-node composite
-  tetrahedral finite element for solid mechanics,'' \emph{Int. J. for Numerical
-  Methods in Eng.}, vol. 107, no.~13, pp. 1145--1170, Feb. 2016.
-
-\bibitem{babuvska1994pollution}
-I.~Babu\v{s}ka, T.~Strouboulis, A.~Mathur, and C.~Upadhyay, ``Pollution-error
-  in the h-version of the finite-element method and the local quality of
-  a-posteriori error estimators,'' \emph{Finite Elements in Anal. and Design},
-  vol.~17, no.~4, pp. 273--321, Jan. 1994.
-
 \bibitem{giles2003adjoint}
 M.~B. Giles and N.~A. Pierce, ``Chapter 2 - {A}djoint error correction for
   integral outputs,'' in \emph{Error Estimation and Adaptive Discretization
@@ -405,6 +250,12 @@ M.~B. Giles and N.~A. Pierce, ``Chapter 2 - {A}djoint error correction for
 N.~A. Pierce and M.~B. Giles, ``Adjoint and defect error bounding and
   correction for functional estimates,'' \emph{J. of Comput. Physics}, vol.
   200, no.~2, pp. 769--794, Nov. 2004.
+
+\bibitem{prudhomme1999goal}
+S.~Prudhomme and J.~T. Oden, ``On goal-oriented error estimation for elliptic
+  problems: {A}pplication to the control of pointwise errors,'' \emph{Comput.
+  Methods in Appl. Mechanics and Eng.}, vol. 176, no. 1-4, pp. 313--331, Jul.
+  1999.
 
 \bibitem{prudhomme2003practical}
 S.~Prudhomme, J.~T. Oden, T.~Westermann, J.~Bass, and M.~E. Botkin, ``Practical
@@ -417,6 +268,11 @@ J.~M. Connors, J.~W. Banks, J.~A. Hittinger, and C.~S. Woodward, ``A method to
   calculate numerical errors using adjoint error estimation for linear
   advection,'' \emph{SIAM J. on Numerical Anal.}, vol.~51, no.~2, pp. 894--926,
   Mar. 2013.
+
+\bibitem{wick2016goal}
+T.~Wick, ``Goal functional evaluations for phase-field fracture using
+  {PU}-based {DWR} mesh adaptivity,'' \emph{Comput. Mechanics}, vol.~57, no.~6,
+  pp. 1017--1035, Mar. 2016.
 
 \bibitem{franca1992stabilized}
 L.~P. Franca, S.~L. Frey, and T.~J. Hughes, ``Stabilized finite element
@@ -505,6 +361,11 @@ M.~G. Larson and A.~M{\aa}lqvist, ``Adaptive variational multiscale methods
   based on a posteriori error estimation: energy norm estimates for elliptic
   problems,'' \emph{Comput. Methods in Appl. Mechanics and Eng.}, vol. 196,
   no.~21, pp. 2313--2324, Apr. 2007.
+
+\bibitem{bangerth2013adaptive}
+W.~Bangerth and R.~Rannacher, \emph{Adaptive Finite Element Methods for
+  Differential Equations}.\hskip 1em plus 0.5em minus 0.4em\relax Basel,
+  Switzerland: Birkh{\"a}user Basel, 2013.
 
 \bibitem{hauke2009variational}
 G.~Hauke and D.~Fuster, ``Variational multiscale a posteriori error estimation
