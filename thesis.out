@@ -6,91 +6,68 @@
 \BOOKMARK [0][-]{chapter.1}{INTRODUCTION AND BACKGROUND}{}% 6
 \BOOKMARK [1][-]{section.1.1}{Outline}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.2}{Contributions}{chapter.1}% 8
-\BOOKMARK [0][-]{chapter.2}{A MACHINE LEARNING APPROACH TO QUANTIFYING NOISE IN MEDICAL IMAGES}{}% 9
+\BOOKMARK [0][-]{chapter.2}{IMAGE DRIVEN MACHINE LEARNING METHODS FOR MICROSTRUCTURE RECOGNITION}{}% 9
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{A Review of Adjoint-Based Error Representations}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.1}{Galerkin Finite Element Methods}{section.2.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.2}{Stabilized Finite Element Methods}{section.2.2}% 13
-\BOOKMARK [1][-]{section.2.3}{Software Components}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.3.1}{The Primal Problem}{section.2.3}% 15
-\BOOKMARK [2][-]{subsection.2.3.2}{The Adjoint Problem}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.3}{Error Estimation and Localization}{section.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.3.4}{Mesh Adaptation}{section.2.3}% 18
-\BOOKMARK [2][-]{subsection.2.3.5}{In-Memory Integration of Components}{section.2.3}% 19
-\BOOKMARK [1][-]{section.2.4}{Template-Based Generic Programming}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.5}{The Primal Problem}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.5.1}{Galerkin Finite Element Methods}{section.2.5}% 22
-\BOOKMARK [2][-]{subsection.2.5.2}{Stabilized Finite Element Methods}{section.2.5}% 23
-\BOOKMARK [2][-]{subsection.2.5.3}{Automated Solution Based on Residual Implementation}{section.2.5}% 24
-\BOOKMARK [1][-]{section.2.6}{The Adjoint Problem}{chapter.2}% 25
-\BOOKMARK [2][-]{subsection.2.6.1}{A Richer Space via Uniform Refinement}{section.2.6}% 26
-\BOOKMARK [2][-]{subsection.2.6.2}{Discrete Adjoint Approximation}{section.2.6}% 27
-\BOOKMARK [2][-]{subsection.2.6.3}{Automated Solution Based on Residual Formulation}{section.2.6}% 28
-\BOOKMARK [1][-]{section.2.7}{Error Estimation}{chapter.2}% 29
-\BOOKMARK [2][-]{subsection.2.7.1}{Two-Level Error Estimates}{section.2.7}% 30
-\BOOKMARK [2][-]{subsection.2.7.2}{Modified Functional Error Estimate}{section.2.7}% 31
-\BOOKMARK [2][-]{subsection.2.7.3}{Error Localization for Galerkin Methods}{section.2.7}% 32
-\BOOKMARK [2][-]{subsection.2.7.4}{Error Localization for Stabilized Methods}{section.2.7}% 33
-\BOOKMARK [2][-]{subsection.2.7.5}{Automated Error Localization Based on Residual Implementation}{section.2.7}% 34
-\BOOKMARK [1][-]{section.2.8}{Mesh Adaptation}{chapter.2}% 35
-\BOOKMARK [1][-]{section.2.9}{Quantities of Interest}{chapter.2}% 36
-\BOOKMARK [2][-]{subsection.2.9.1}{Point-Wise Solution Component}{section.2.9}% 37
-\BOOKMARK [2][-]{subsection.2.9.2}{Integrated Solution Over a Sub-Domain}{section.2.9}% 38
-\BOOKMARK [2][-]{subsection.2.9.3}{Integrated von-Mises Stress Over a Sub-Domain}{section.2.9}% 39
-\BOOKMARK [1][-]{section.2.10}{Results}{chapter.2}% 40
-\BOOKMARK [2][-]{subsection.2.10.1}{Poisson's Equation}{section.2.10}% 41
-\BOOKMARK [2][-]{subsection.2.10.2}{A Cell Embedded in a Matrix}{section.2.10}% 42
-\BOOKMARK [2][-]{subsection.2.10.3}{Elastoplasticity in an Array of Solder Joints}{section.2.10}% 43
-\BOOKMARK [1][-]{section.2.11}{Conclusions}{chapter.2}% 44
-\BOOKMARK [0][-]{chapter.3}{A NON-UNIFORM REFINEMENT APPROACH FOR SOLVING ADJOINT PROBLEMS IN FUNCTIONAL ERROR ESTIMATION AND MESH ADAPTATION}{}% 45
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 46
-\BOOKMARK [1][-]{section.3.2}{Error Estimation with Two Levels}{chapter.3}% 47
-\BOOKMARK [2][-]{subsection.3.2.1}{Error Estimates}{section.3.2}% 48
-\BOOKMARK [2][-]{subsection.3.2.2}{A Simple A-Priori Analysis}{section.3.2}% 49
-\BOOKMARK [1][-]{section.3.3}{Choices for the Fine Space}{chapter.3}% 50
-\BOOKMARK [2][-]{subsection.3.3.1}{Uniform Refinement}{section.3.3}% 51
-\BOOKMARK [2][-]{subsection.3.3.2}{Long Edge Refinement}{section.3.3}% 52
-\BOOKMARK [2][-]{subsection.3.3.3}{Single Edge Refinement}{section.3.3}% 53
-\BOOKMARK [1][-]{section.3.4}{Mesh Adaptation}{chapter.3}% 54
-\BOOKMARK [2][-]{subsection.3.4.1}{Error Localization}{section.3.4}% 55
-\BOOKMARK [2][-]{subsection.3.4.2}{Mesh Size Field}{section.3.4}% 56
-\BOOKMARK [1][-]{section.3.5}{Results}{chapter.3}% 57
-\BOOKMARK [2][-]{subsection.3.5.1}{Effectivity Indices for Poisson's Equation}{section.3.5}% 58
-\BOOKMARK [2][-]{subsection.3.5.2}{Mesh Adaptation for Poisson's Equation}{section.3.5}% 59
-\BOOKMARK [1][-]{section.3.6}{Conclusions and Outlook}{chapter.3}% 60
-\BOOKMARK [0][-]{chapter.4}{OUTPUT-BASED ERROR ESTIMATION AND MESH ADAPTATION FOR VARIATIONAL MULTISCALE METHODS}{}% 61
-\BOOKMARK [1][-]{section.4.1}{Introduction and Motivation}{chapter.4}% 62
-\BOOKMARK [1][-]{section.4.2}{Review of VMS Methods}{chapter.4}% 63
-\BOOKMARK [2][-]{subsection.4.2.1}{Model Problem}{section.4.2}% 64
-\BOOKMARK [2][-]{subsection.4.2.2}{VMS Formulation}{section.4.2}% 65
-\BOOKMARK [2][-]{subsection.4.2.3}{Subgrid Model}{section.4.2}% 66
-\BOOKMARK [1][-]{section.4.3}{The Dual Problem}{chapter.4}% 67
-\BOOKMARK [2][-]{subsection.4.3.1}{Abstract Problem}{section.4.3}% 68
-\BOOKMARK [2][-]{subsection.4.3.2}{VMS Formulation}{section.4.3}% 69
-\BOOKMARK [2][-]{subsection.4.3.3}{Subgrid Model}{section.4.3}% 70
-\BOOKMARK [1][-]{section.4.4}{Error Estimation}{chapter.4}% 71
-\BOOKMARK [2][-]{subsection.4.4.1}{Continuous VMS Error Representations}{section.4.4}% 72
-\BOOKMARK [2][-]{subsection.4.4.2}{Subgrid Model Error Representations}{section.4.4}% 73
-\BOOKMARK [2][-]{subsection.4.4.3}{Subgrid Model Error Estimates}{section.4.4}% 74
-\BOOKMARK [2][-]{subsection.4.4.4}{Error Localization}{section.4.4}% 75
-\BOOKMARK [1][-]{section.4.5}{Mesh Adaptation}{chapter.4}% 76
-\BOOKMARK [2][-]{subsection.4.5.1}{Size Field Specification}{section.4.5}% 77
-\BOOKMARK [1][-]{section.4.6}{Results}{chapter.4}% 78
-\BOOKMARK [2][-]{subsection.4.6.1}{One Dimensional Example}{section.4.6}% 79
-\BOOKMARK [2][-]{subsection.4.6.2}{A Manufactured Solution}{section.4.6}% 80
-\BOOKMARK [2][-]{subsection.4.6.3}{Advection in an L-Shaped Domain}{section.4.6}% 81
-\BOOKMARK [1][-]{section.4.7}{Conclusions}{chapter.4}% 82
-\BOOKMARK [0][-]{chapter.5}{CONCLUSIONS AND FUTURE WORK}{}% 83
-\BOOKMARK [1][-]{section.5.1}{Conclusions}{chapter.5}% 84
-\BOOKMARK [0][-]{section*.48}{REFERENCES}{}% 85
-\BOOKMARK [0][-]{appendix.A}{FORWARD AUTOMATIC DIFFERENTIATION}{}% 86
-\BOOKMARK [1][-]{section.A.1}{Introduction}{appendix.A}% 87
-\BOOKMARK [1][-]{section.A.2}{Forward AD with Operator Overloading}{appendix.A}% 88
-\BOOKMARK [1][-]{section.A.3}{A Simple Example}{appendix.A}% 89
-\BOOKMARK [0][-]{appendix.B}{PROPOSITIONS FOR THE ADVECTION-DIFFUSION OPERATOR}{}% 90
-\BOOKMARK [1][-]{section.B.1}{Non-Homogeneous Boundary Conditions}{appendix.B}% 91
-\BOOKMARK [1][-]{section.B.2}{Derivation of the Advection-Diffusion Adjoint Operator}{appendix.B}% 92
-\BOOKMARK [1][-]{section.B.3}{Propositions Applied to the Advection-Diffusion Operator}{appendix.B}% 93
-\BOOKMARK [2][-]{subsection.B.3.1}{Proposition 2}{section.B.3}% 94
-\BOOKMARK [2][-]{subsection.B.3.2}{Proposition 4}{section.B.3}% 95
-\BOOKMARK [2][-]{subsection.B.3.3}{Proposition 5}{section.B.3}% 96
+\BOOKMARK [1][-]{section.2.2}{Alloy Fabrication and Sample Preparation}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.3}{Image Data Sets}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.4}{Approach}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.5}{Computer Vision and Machine Learning Methods}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.5.1}{Feature extraction}{section.2.5}% 15
+\BOOKMARK [2][-]{subsection.2.5.2}{Dimensionality reduction}{section.2.5}% 16
+\BOOKMARK [2][-]{subsection.2.5.3}{Classification}{section.2.5}% 17
+\BOOKMARK [2][-]{subsection.2.5.4}{Related Work in Materials Science}{section.2.5}% 18
+\BOOKMARK [1][-]{section.2.6}{Selection of Model Parameters}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.7}{Software and Hardware Specifications}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.8}{Results and Discussion}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.8.1}{Task 1 - Dendritic versus non-dendritic microstructures}{section.2.8}% 22
+\BOOKMARK [2][-]{subsection.2.8.2}{Task 2 - Longitudinal versus transverse cross-sectional views of dendrites}{section.2.8}% 23
+\BOOKMARK [1][-]{section.2.9}{Limitations}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.10}{Conclusions}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.11}{Future Work}{chapter.2}% 26
+\BOOKMARK [0][-]{chapter.3}{BLOOD VESSEL CHARACTERIZATION USING VIRTUAL 3D MODELS AND CONVOLUTIONAL NEURAL NETWORKS IN FLUORESCENCE MICROSCOPY}{}% 27
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.2}{Data}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.2.1}{Natural data}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.2}{Virtual data}{section.3.2}% 31
+\BOOKMARK [1][-]{section.3.3}{Methods}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.4}{Experiments and results}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.5}{Conclusions}{chapter.3}% 34
+\BOOKMARK [0][-]{chapter.4}{A MACHINE LEARNING APPROACH TO QUANTIFYING NOISE IN MEDICAL IMAGES}{}% 35
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.2}{Data}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.2.1}{Preliminary noise reduction}{section.4.2}% 38
+\BOOKMARK [2][-]{subsection.4.2.2}{Combination of the three markers}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.3}{Feature extraction}{section.4.2}% 40
+\BOOKMARK [2][-]{subsection.4.2.4}{Data preprocessing}{section.4.2}% 41
+\BOOKMARK [1][-]{section.4.3}{Methods and experiments}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.3.1}{Random undersampling}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.2}{Classification and analysis}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.3}{Quality of image score}{section.4.3}% 45
+\BOOKMARK [2][-]{subsection.4.3.4}{Defining the ugly class}{section.4.3}% 46
+\BOOKMARK [1][-]{section.4.4}{Conclusions}{chapter.4}% 47
+\BOOKMARK [0][-]{chapter.5}{RANDOM SEARCH BASED QUANTIFICATION OF CONTRIBUTION AND PROPAGATION OF ERROR IN IMAGE CLASSIFICATION PIPELINES}{}% 48
+\BOOKMARK [1][-]{section.5.1}{Introduction and Motivation}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.2}{Foundations}{chapter.5}% 50
+\BOOKMARK [2][-]{subsection.5.2.1}{Algorithm selection and hyper-parameter optimization}{section.5.2}% 51
+\BOOKMARK [3][-]{subsubsection.5.2.1.1}{Hyper-parameter optimization \(HPO\)}{subsection.5.2.1}% 52
+\BOOKMARK [3][-]{subsubsection.5.2.1.2}{Combined algorithm selection and hyper-parameter optimization \(CASH\)}{subsection.5.2.1}% 53
+\BOOKMARK [2][-]{subsection.5.2.2}{Optimization methods}{section.5.2}% 54
+\BOOKMARK [3][-]{subsubsection.5.2.2.1}{Grid search}{subsection.5.2.2}% 55
+\BOOKMARK [3][-]{subsubsection.5.2.2.2}{Random search}{subsection.5.2.2}% 56
+\BOOKMARK [3][-]{subsubsection.5.2.2.3}{Bayesian optimization}{subsection.5.2.2}% 57
+\BOOKMARK [1][-]{section.5.3}{Proposed methods}{chapter.5}% 58
+\BOOKMARK [2][-]{subsection.5.3.1}{Error quantification}{section.5.3}% 59
+\BOOKMARK [3][-]{subsubsection.5.3.1.1}{Quantification of error from computational steps}{subsection.5.3.1}% 60
+\BOOKMARK [3][-]{subsubsection.5.3.1.2}{Quantification of error from algorithms}{subsection.5.3.1}% 61
+\BOOKMARK [2][-]{subsection.5.3.2}{Error propagation}{section.5.3}% 62
+\BOOKMARK [1][-]{section.5.4}{Experiments and results}{chapter.5}% 63
+\BOOKMARK [2][-]{subsection.5.4.1}{Optimization frameworks}{section.5.4}% 64
+\BOOKMARK [2][-]{subsection.5.4.2}{Datasets}{section.5.4}% 65
+\BOOKMARK [2][-]{subsection.5.4.3}{Error quantification experiments}{section.5.4}% 66
+\BOOKMARK [3][-]{subsubsection.5.4.3.1}{Error contribution from computational steps}{subsection.5.4.3}% 67
+\BOOKMARK [3][-]{subsubsection.5.4.3.2}{Error contribution from algorithms}{subsection.5.4.3}% 68
+\BOOKMARK [2][-]{subsection.5.4.4}{Error propagation experiments}{section.5.4}% 69
+\BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 70
+\BOOKMARK [0][-]{chapter.6}{CONCLUSIONS AND FUTURE WORK}{}% 71
+\BOOKMARK [1][-]{section.6.1}{Conclusions}{chapter.6}% 72
+\BOOKMARK [0][-]{section*.39}{REFERENCES}{}% 73

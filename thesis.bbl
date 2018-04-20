@@ -21,376 +21,355 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{rognes2013automated}
-M.~E. Rognes and A.~Logg, ``Automated goal-oriented error control {I}:
-  {S}tationary variational problems,'' \emph{SIAM J. on Scientific Comput.},
-  vol.~35, no.~3, pp. C173--C193, May. 2013.
+\bibitem{Rodgers2006}
+J.~R. Rodgers and D.~Cebon, ``Materials informatics,'' \emph{MRS Bulletin},
+  vol.~31, pp. 975--980, 12 2006, [Online]. Available:
+  \url{http://journals.cambridge.org/article_S0883769400011702}
 
-\bibitem{logg2012automated}
-A.~Logg, K.-A. Mardal, and G.~Wells, \emph{Automated Solution of Differential
-  Equations by the Finite Element Method: The FEniCS Book}.\hskip 1em plus
-  0.5em minus 0.4em\relax Heidelberg, Germany: Springer, 2012.
+\bibitem{Broderick2008}
+S.~Broderick, C.~Suh, J.~Nowers, B.~Vogel, S.~Mallapragada, B.~Narasimhan
+  \emph{et~al.}, ``Informatics for combinatorial materials science,''
+  \emph{JOM}, vol.~60, no.~3, pp. 56--59, 2008, [Online]. Available:
+  \url{http://dx.doi.org/10.1007/s11837-008-0035-x}
 
-\bibitem{richter2015variational}
-T.~Richter and T.~Wick, ``Variational localizations of the dual weighted
-  residual estimator,'' \emph{J. of Comput. and Appl. Math.}, vol. 279, pp.
-  192--208, May. 2015.
+\bibitem{Kalidindi2011}
+S.~R. Kalidindi, S.~R. Niezgoda, and A.~A. Salem, ``Microstructure informatics
+  using higher-order statistics and efficient data-mining protocols,''
+  \emph{JOM}, vol.~63, no.~4, pp. 34--41, 2011, [Online]. Available:
+  \url{http://dx.doi.org/10.1007/s11837-011-0057-7}
 
-\bibitem{goal_github}
-B.~N. Granzow. \emph{{Goal GitHub Repository}}. (2017) [Online]. Available:
-  \url{https://github.com/bgranzow/goal}, Accessed on: Dec. 1, 2017.
+\bibitem{SergeiV.Kalinin2015}
+B.~G.~S. Sergei V.~Kalinin and R.~K. Archibald, ``Big-deep-smart data in
+  imaging for guiding materials design,'' \emph{Nature Materials}, vol.~14, pp.
+  973--980, September 2015.
 
-\bibitem{pawlowski2012automating1}
-R.~P. Pawlowski, E.~T. Phipps, and A.~G. Salinger, ``Automating embedded
-  analysis capabilities and managing software complexity in multiphysics
-  simulation, {P}art {I}: Template-based generic programming,''
-  \emph{Scientific Programming}, vol.~20, no.~2, pp. 197--219, Apr. 2012.
+\bibitem{DeCost2015}
+B.~L. DeCost and E.~A. Holm, ``A computer vision approach for automated
+  analysis and classification of microstructural image data,''
+  \emph{Computational Materials Science}, vol. 110, pp. 126 -- 133, 2015,
+  [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0927025615005066}
 
-\bibitem{pawlowski2012automating2}
-R.~P. Pawlowski, E.~T. Phipps, A.~G. Salinger, S.~J. Owen, C.~M. Siefert, and
-  M.~L. Staten, ``Automating embedded analysis capabilities and managing
-  software complexity in multiphysics simulation, {P}art {II}: Application to
-  partial differential equations,'' \emph{Scientific Programming}, vol.~20,
-  no.~3, pp. 327--345, Jul. 2012.
+\bibitem{Schaefer2005}
+R.~J. Schaefer and D.~J. Lewis, ``Directional solidification in a agcusn
+  eutectic alloy,'' \emph{Metallurgical and Materials Transactions A: Physical
+  Metallurgy and Materials Science}, vol. 36A, pp. 2775--2783, October 2005.
 
-\bibitem{becker2001optimal}
-R.~Becker and R.~Rannacher, ``An optimal control approach to a posteriori error
-  estimation in finite element methods,'' \emph{Acta Numerica}, vol.~10, pp.
-  1--102, May. 2001.
+\bibitem{Mao2014}
+J.~Mao and D.~J. Lewis, \emph{Nucleation promotion of Sn-Ag-Cu lead-free solder
+  alloys via micro alloying.}, 2014, [Online]. Available:
+  \url{http://libproxy.rpi.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=cat02306a&AN=rlc.3566213&site=eds-live&scope=site}
 
-\bibitem{cyr2014approaches}
-E.~C. Cyr, J.~Shadid, and T.~Wildey, ``Approaches for adjoint-based a
-  posteriori analysis of stabilized finite element methods,'' \emph{SIAM J. on
-  Scientific Comput.}, vol.~36, no.~2, pp. A766--A791, Apr. 2014.
+\bibitem{Barber2003}
+T.~C. Z.H.~Barber, J.A.~Leake, ``The doitpoms project - a web-based initiative
+  for teaching and learning materials science,'' \emph{J. Mater. Educ.},
+  vol.~29, no. 1-2, pp. 7--16, 2003.
 
-\bibitem{fidkowski2011review}
-K.~J. Fidkowski and D.~L. Darmofal, ``Review of output-based error estimation
-  and mesh adaptation in computational fluid dynamics,'' \emph{AIAA J.},
-  vol.~49, no.~4, pp. 673--694, Apr. 2011.
+\bibitem{Keogh2010}
+E.~Keogh and A.~Mueen, ``Encyclopedia of machine learning.''\hskip 1em plus
+  0.5em minus 0.4em\relax Boston, MA: Springer US, 2010, ch. Curse of
+  Dimensionality, pp. 257--258, [Online]. Available:
+  \url{http://dx.doi.org/10.1007/978-0-387-30164-8_192}
 
-\bibitem{ibanez2016pumi}
-D.~A. Ibanez, E.~S. Seol, C.~W. Smith, and M.~S. Shephard, ``{PUMI}: {P}arallel
-  unstructured mesh infrastructure,'' \emph{ACM Trans. on Math. Software},
-  vol.~42, no.~3, pp. 17--45, Jun. 2016.
+\bibitem{Haralick1973}
+R.~M. Haralick, K.~Shanmugam, and I.~H. Dinstein, ``Textural features for image
+  classification,'' \emph{Systems, Man and Cybernetics, IEEE Transactions on},
+  no.~6, pp. 610--621, 1973.
 
-\bibitem{heroux2005overview}
-M.~A. Heroux, R.~A. Bartlett, V.~E. Howle, R.~J. Hoekstra, J.~J. Hu, T.~G.
-  Kolda \emph{et~al.}, ``An overview of the {T}rilinos project,'' \emph{ACM
-  Trans. on Math. Software}, vol.~31, no.~3, pp. 397--423, Sep. 2005.
+\bibitem{Dalal2005}
+N.~Dalal and B.~Triggs, ``Histograms of oriented gradients for human
+  detection,'' in \emph{Computer Vision and Pattern Recognition, 2005. CVPR
+  2005. IEEE Computer Society Conference on}, 2005, vol.~1, pp. 886--893.
 
-\bibitem{heroux2012new}
-M.~A. Heroux and J.~M. Willenbring, ``A new overview of the {T}rilinos
-  project,'' \emph{Scientific Programming}, vol.~20, no.~2, pp. 83--88, Mar.
+\bibitem{Ojala2002}
+T.~Ojala, M.~Pietik{\"a}inen, and T.~M{\"a}enp{\"a}{\"a}, ``Multiresolution
+  gray-scale and rotation invariant texture classification with local binary
+  patterns,'' \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, vol.~24, no.~7, pp. 971--987, 2002.
+
+\bibitem{Hu1962}
+M.-K. Hu, ``Visual pattern recognition by moment invariants,'' \emph{IRE
+  Transactions on Information Theory}, vol.~8, no.~2, pp. 179--187, 1962.
+
+\bibitem{Otsu1975}
+N.~Otsu, ``A threshold selection method from gray-level histograms,''
+  \emph{Automatica}, vol.~11, no. 285-296, pp. 23--27, 1975.
+
+\bibitem{Khotanzad1990}
+A.~Khotanzad and Y.~H. Hong, ``Invariant image recognition by zernike
+  moments,'' \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, vol.~12, no.~5, pp. 489--497, 1990.
+
+\bibitem{Lievers2004}
+W.~Lievers and A.~Pilkey, ``An evaluation of global thresholding techniques for
+  the automatic image segmentation of automotive aluminum sheet alloys,''
+  \emph{Materials Science and Engineering: A}, vol. 381, no. 1?2, pp. 134 --
+  142, 2004, [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0921509304003703}
+
+\bibitem{Yang2007}
+J.~Yang, Y.-G. Jiang, A.~G. Hauptmann, and C.-W. Ngo, ``Evaluating
+  bag-of-visual-words representations in scene classification,'' in
+  \emph{Proceedings of the international workshop on multimedia information
+  retrieval}, 2007, pp. 197--206.
+
+\bibitem{Bay2006}
+H.~Bay, T.~Tuytelaars, and L.~Van~Gool, ``Surf: Speeded up robust features,''
+  in \emph{Computer vision--ECCV 2006}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Springer, 2006, pp. 404--417.
+
+\bibitem{Jia2014}
+Y.~Jia, E.~Shelhamer, J.~Donahue, S.~Karayev, J.~Long, R.~Girshick
+  \emph{et~al.}, ``Caffe: Convolutional architecture for fast feature
+  embedding,'' \emph{arXiv preprint arXiv:1408.5093}, 2014.
+
+\bibitem{Krizhevsky2012}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
+  deep convolutional neural networks,'' in \emph{Advances in Neural Information
+  Processing Systems 25}, F.~Pereira, C.~J.~C. Burges, L.~Bottou, and K.~Q.
+  Weinberger, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Curran Associates,
+  Inc., 2012, pp. 1097--1105, [Online]. Available:
+  \url{http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf}
+
+\bibitem{Klinger2012}
+K.~Klinger, Ed., \emph{Machine Learning: Concepts, Methodologies, Tools and
+  Applications}.\hskip 1em plus 0.5em minus 0.4em\relax IGI Global, 2012,
+  vol.~1.
+
+\bibitem{curse}
+P.~Indyk and R.~Motwani, ``Approximate nearest neighbors: towards removing the
+  curse of dimensionality,'' in \emph{Proceedings of the thirtieth annual ACM
+  symposium on Theory of computing}, 1998, pp. 604--613.
+
+\bibitem{pca}
+G.~H. Dunteman, \emph{Principal Components Analysis}.\hskip 1em plus 0.5em
+  minus 0.4em\relax Sage Publications, Inc., 1989, vol.~69.
+
+\bibitem{anova}
+R.~G. Lomax and D.~L. Hahs-Vaughn, \emph{Statistical concepts: A second
+  course}.\hskip 1em plus 0.5em minus 0.4em\relax Routledge, 2013.
+
+\bibitem{chi}
+H.~Liu and R.~Setiono, ``Chi2: Feature selection and discretization of numeric
+  attributes,'' in \emph{In Proceedings of the Seventh International Conference
+  on Tools with Artificial Intelligence}, 1995, pp. 388--391.
+
+\bibitem{fisher}
+R.~Kohavi and G.~H. John, ``Wrappers for feature subset selection,''
+  \emph{Artificial intelligence}, vol.~97, no.~1, pp. 273--324, 1997.
+
+\bibitem{gini}
+M.~A. Hall, ``Correlation-based feature selection for machine learning,'' Ph.D.
+  dissertation, The University of Waikato, 1999.
+
+\bibitem{svm}
+M.~A. Hearst, S.~T. Dumais, E.~Osman, J.~Platt, and B.~Scholkopf, ``Support
+  vector machines,'' \emph{Intelligent Systems and their Applications, IEEE},
+  vol.~13, no.~4, pp. 18--28, 1998.
+
+\bibitem{rf}
+L.~Breiman, ``Random forests,'' \emph{Machine learning}, vol.~45, no.~1, pp.
+  5--32, 2001.
+
+\bibitem{nn}
+T.~Denoeux, ``A k-nearest neighbor classification rule based on dempster-shafer
+  theory,'' \emph{IEEE Transactions on Systems, Man and Cybernetics}, vol.~25,
+  no.~5, pp. 804--813, 1995.
+
+\bibitem{voting}
+R.~E. Schapire, Y.~Freund, P.~Bartlett, and W.~S. Lee, ``Boosting the margin: A
+  new explanation for the effectiveness of voting methods,'' \emph{Annals of
+  statistics}, pp. 1651--1686, 1998.
+
+\bibitem{nb}
+I.~Rish, ``An empirical study of the naive bayes classifier,'' in \emph{IJCAI
+  2001 workshop on empirical methods in artificial intelligence}, 2001, vol.~3,
+  no.~22, pp. 41--46.
+
+\bibitem{Kotsiantis2007}
+S.~B. Kotsiantis, I.~Zaharakis, and P.~Pintelas, ``Supervised machine learning:
+  A review of classification techniques,'' 2007.
+
+\bibitem{Pattan2010}
+P.~C. Pattan, V.~D. Mytri, and P.~S. Hiremath, ``Classification of cast iron
+  based on graphite grain morphology using neural network approach,'' pp.
+  75\,462S--75\,462S--6, 2010, [Online]. Available:
+  \url{http://dx.doi.org/10.1117/12.853286}
+
+\bibitem{Prakash2011}
+P.~Prakash, V.~Mytri, and P.~Hiremath, ``Comparative analysis of spectral and
+  spatial features for classification of graphite grains in cast iron,''
+  \emph{Sci. Technol}, vol.~29, pp. 31--40, 2011.
+
+\bibitem{Kumara}
+A.~Kumara, V.~Sundararaghavan, M.~DeGraefb, and L.~Nguyenb, ``A markov random
+  field approach for microstructure synthesis,'' \emph{Modelling Simul. Mater.
+  Sci. Eng.}, vol.~24, no. 035015, pp. 1--13, 2016.
+
+\bibitem{MacSleyne2008}
+J.~MacSleyne, J.~Simmons, and M.~D. Graef, ``On the use of 2-d moment
+  invariants for the automated classification of particle shapes,'' \emph{Acta
+  Materialia}, vol.~56, no.~3, pp. 427 -- 437, 2008, [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S1359645407006702}
+
+\bibitem{Sluytman2012}
+J.~V. Sluytman and T.~Pollock, ``Optimal precipitate shapes in nickel-base ????
+  alloys,'' \emph{Acta Materialia}, vol.~60, no.~4, pp. 1771 -- 1783, 2012,
+  [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S1359645411008706}
+
+\bibitem{Impoco2015}
+G.~Impoco and L.~Tuminello, ``Incremental learning to segment micrographs,''
+  \emph{Computer Vision and Image Understanding}, vol. 140, pp. 144 -- 152,
+  2015, [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S1077314215000533}
+
+\bibitem{Bostanabad2016}
+R.~Bostanabad, A.~T. Bui, W.~Xie, D.~W. Apley, and W.~Chen, ``Stochastic
+  microstructure characterization and reconstruction via supervised learning,''
+  \emph{Acta Materialia}, vol. 103, pp. 89 -- 102, 2016, [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S1359645415007259}
+
+\bibitem{Taffese2015}
+W.~Z. Taffese, E.~Sistonen, and J.~Puttonen, ``Caprm: Carbonation prediction
+  model for reinforced concrete using machine learning methods,''
+  \emph{Construction and Building Materials}, vol. 100, pp. 70 -- 82, 2015,
+  [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0950061815304165}
+
+\bibitem{Guo2016}
+Y.~Guo, Y.~Liu, A.~Oerlemans, S.~Lao, S.~Wu, and M.~S. Lew, ``Deep learning for
+  visual understanding: A review,'' \emph{Neurocomputing}, vol. 187, pp. 27 --
+  48, 2016, [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0925231215017634}
+
+\bibitem{yang2007evaluating}
+J.~Yang, Y.-G. Jiang, A.~G. Hauptmann, and C.-W. Ngo, ``Evaluating
+  bag-of-visual-words representations in scene classification,'' in
+  \emph{Proceedings of the international workshop on Workshop on multimedia
+  information retrieval}, 2007, pp. 197--206.
+
+\bibitem{heimann2009statistical}
+T.~Heimann and H.-P. Meinzer, ``Statistical shape models for 3d medical image
+  segmentation: a review,'' \emph{Medical image analysis}, vol.~13, no.~4, pp.
+  543--563, 2009.
+
+\bibitem{krizhevsky2012imagenet}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
+  deep convolutional neural networks,'' in \emph{Advances in neural information
+  processing systems}, 2012, pp. 1097--1105.
+
+\bibitem{deng2009imagenet}
+J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei, ``Imagenet: A
+  large-scale hierarchical image database,'' in \emph{Computer Vision and
+  Pattern Recognition, 2009. CVPR 2009. IEEE Conference on}, 2009, pp.
+  248--255.
+
+\bibitem{gerdes2013highly}
+M.~J. Gerdes, C.~J. Sevinsky, A.~Sood, S.~Adak, M.~O. Bello, A.~Bordwell
+  \emph{et~al.}, ``Highly multiplexed single-cell analysis of formalin-fixed,
+  paraffin-embedded cancer tissue,'' \emph{Proceedings of the National Academy
+  of Sciences}, vol. 110, no.~29, pp. 11\,982--11\,987, 2013.
+
+\bibitem{huang1979fast}
+T.~Huang, G.~Yang, and G.~Tang, ``A fast two-dimensional median filtering
+  algorithm,'' \emph{IEEE Transactions on Acoustics, Speech, and Signal
+  Processing}, vol.~27, no.~1, pp. 13--18, 1979.
+
+\bibitem{haralick1979statistical}
+R.~M. Haralick, ``Statistical and structural approaches to texture,''
+  \emph{Proceedings of the IEEE}, vol.~67, no.~5, pp. 786--804, 1979.
+
+\bibitem{haralick1973textural}
+R.~M. Haralick, K.~Shanmugam \emph{et~al.}, ``Textural features for image
+  classification,'' \emph{IEEE Transactions on systems, man, and cybernetics},
+  no.~6, pp. 610--621, 1973.
+
+\bibitem{platt1999probabilistic}
+J.~Platt \emph{et~al.}, ``Probabilistic outputs for support vector machines and
+  comparisons to regularized likelihood methods,'' \emph{Advances in large
+  margin classifiers}, vol.~10, no.~3, pp. 61--74, 1999.
+
+\bibitem{harrison1995validity}
+L.~D. Harrison, ``The validity of self-reported data on drug use,''
+  \emph{Journal of Drug Issues}, vol.~25, no.~1, pp. 91--111, 1995.
+
+\bibitem{pedregosa2011scikit}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel
+  \emph{et~al.}, ``Scikit-learn: Machine learning in python,'' \emph{Journal of
+  machine learning research}, vol.~12, no. Oct, pp. 2825--2830, 2011.
+
+\bibitem{mierswa2006yale}
+I.~Mierswa, M.~Wurst, R.~Klinkenberg, M.~Scholz, and T.~Euler, ``Yale: Rapid
+  prototyping for complex data mining tasks,'' in \emph{Proceedings of the 12th
+  ACM SIGKDD international conference on Knowledge discovery and data mining},
+  2006, pp. 935--940.
+
+\bibitem{spark2016apache}
+A.~Spark, ``Apache spark: Lightning-fast cluster computing,'' \emph{URL
+  http://spark. apache. org}, 2016.
+
+\bibitem{bergstra2012random}
+J.~Bergstra and Y.~Bengio, ``Random search for hyper-parameter optimization,''
+  \emph{Journal of Machine Learning Research}, vol.~13, no. Feb, pp. 281--305,
   2012.
 
-\bibitem{phipps2012efficient}
-E.~Phipps and R.~Pawlowski, ``Efficient expression templates for operator
-  overloading-based automatic differentiation,'' in \emph{Recent Advances in
-  Algorithmic Differentiation}.\hskip 1em plus 0.5em minus 0.4em\relax Berlin,
-  Germany: Springer, 2012, pp. 309--319.
+\bibitem{snoek2012practical}
+J.~Snoek, H.~Larochelle, and R.~P. Adams, ``Practical bayesian optimization of
+  machine learning algorithms,'' in \emph{Advances in neural information
+  processing systems}, 2012, pp. 2951--2959.
 
-\bibitem{bavier2012amesos2}
-E.~Bavier, M.~Hoemmen, S.~Rajamanickam, and H.~Thornquist, ``Amesos2 and
-  {B}elos: {D}irect and iterative solvers for large sparse linear systems,''
-  \emph{Scientific Programming}, vol.~20, no.~3, pp. 241--255, Jan. 2012.
+\bibitem{ribeiro2016model}
+M.~T. Ribeiro, S.~Singh, and C.~Guestrin, ``Model-agnostic interpretability of
+  machine learning,'' \emph{arXiv preprint arXiv:1606.05386}, 2016.
 
-\bibitem{MueLu}
-A.~Prokopenko, J.~J. Hu, T.~A. Wiesner, C.~M. Siefert, and R.~S. Tuminaro,
-  ``Mue{L}u user’s guide 1.0,'' Sandia Nat. Lab., Albuquerque, NM, USA, Tech.
-  Rep. SAND2014-18874, Oct. 2014.
+\bibitem{doshi2017towards}
+F.~Doshi-Velez and B.~Kim, ``Towards a rigorous science of interpretable
+  machine learning,'' 2017.
 
-\bibitem{ibanez2017modifiable}
-D.~Ibanez and M.~S. Shephard, ``Modifiable array data structures for mesh
-  topology,'' \emph{SIAM J. on Scientific Comput.}, vol.~39, no.~2, pp.
-  C144--C161, Apr. 2017.
+\bibitem{hutter2011sequential}
+F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Sequential model-based
+  optimization for general algorithm configuration,'' in \emph{International
+  Conference on Learning and Intelligent Optimization}, 2011, pp. 507--523.
 
-\bibitem{li20053d}
-X.~Li, M.~S. Shephard, and M.~W. Beall, ``{3D} anisotropic mesh adaptation by
-  mesh modification,'' \emph{Comput. Methods in Appl. Mechanics and Eng.}, vol.
-  194, no.~48, pp. 4915--4950, Nov. 2005.
+\bibitem{bergstra2011algorithms}
+J.~S. Bergstra, R.~Bardenet, Y.~Bengio, and B.~K{\'e}gl, ``Algorithms for
+  hyper-parameter optimization,'' in \emph{Advances in neural information
+  processing systems}, 2011, pp. 2546--2554.
 
-\bibitem{alauzet2006parallel}
-F.~Alauzet, X.~Li, E.~S. Seol, and M.~S. Shephard, ``Parallel anisotropic {3D}
-  mesh adaptation by mesh modification,'' \emph{Eng. with Comp.}, vol.~21,
-  no.~3, pp. 247--258, Jan. 2006.
+\bibitem{movckus1975bayesian}
+J.~Mo{\v{c}}kus, ``On bayesian methods for seeking the extremum,'' in
+  \emph{Optimization Techniques IFIP Technical Conference}, 1975, pp. 400--404.
 
-\bibitem{smith2015parma}
-C.~W. Smith, M.~Rasquin, D.~Ibanez, K.~E. Jansen, and M.~S. Shephard,
-  ``Improving unstructured mesh partitions for multiple criteria using mesh
-  adjacencies,'' \emph{SIAM J. Scientific Comput.}, to be published.
+\bibitem{bilgin2007cell}
+C.~Bilgin, C.~Demir, C.~Nagi, and B.~Yener, ``Cell-graph mining for breast
+  tissue modeling and classification,'' in \emph{Engineering in Medicine and
+  Biology Society, 2007. EMBS 2007. 29th Annual International Conference of the
+  IEEE}, 2007, pp. 5311--5314.
 
-\bibitem{diamond2017dynamic}
-G.~Diamond, C.~W. Smith, and M.~S. Shephard, ``Dynamic load balancing of
-  massively parallel unstructured meshes,'' in \emph{Proc. of the 8th Workshop
-  on Latest Advances in Scalable Algorithms for Large-Scale Systems, Denver,
-  CO, USA}, Denver, CO, USA, Nov. 2017.
+\bibitem{gunduz2004cell}
+C.~Gunduz, B.~Yener, and S.~H. Gultekin, ``The cell graphs of cancer,''
+  \emph{Bioinformatics}, vol.~20, no. suppl\_1, pp. i145--i151, 2004.
 
-\bibitem{smith2016memory}
-C.~W. Smith, B.~Granzow, D.~Ibanez, O.~Sahni, K.~E. Jansen, and M.~S. Shephard,
-  ``In-memory integration of existing software components for parallel adaptive
-  unstructured mesh workflows,'' in \emph{Proc. of the XSEDE16 Conf. on
-  Diversity, Big Data, and Science at Scale, Miami, FL, USA}, Miami, FL, USA,
-  Jul. 2016.
+\bibitem{chowdhury2016image}
+A.~Chowdhury, E.~Kautz, B.~Yener, and D.~Lewis, ``Image driven machine learning
+  methods for microstructure recognition,'' \emph{Computational Materials
+  Science}, vol. 123, pp. 176--187, 2016.
 
-\bibitem{griewank2008evaluating}
-A.~Griewank and A.~Walther, \emph{Evaluating Derivatives: Principles and
-  Techniques of Algorithmic Differentiation}, 2nd~ed.\hskip 1em plus 0.5em
-  minus 0.4em\relax Philadelphia, PA, USA: Soc. for Ind. \& Appl. Math., 2008.
+\bibitem{shin2016deep}
+H.-C. Shin, H.~R. Roth, M.~Gao, L.~Lu, Z.~Xu, I.~Nogues \emph{et~al.}, ``Deep
+  convolutional neural networks for computer-aided detection: Cnn
+  architectures, dataset characteristics and transfer learning,'' \emph{IEEE
+  transactions on medical imaging}, vol.~35, no.~5, pp. 1285--1298, 2016.
 
-\bibitem{salinger2013albany}
-A.~G. Salinger, R.~A. Bartett, Q.~Chen, X.~Gao, G.~Hansen, I.~Kalashnikova
-  \emph{et~al.}, ``Albany: A component-based partial differential equation code
-  built on trilinos.'' Sandia Nat. Lab., Albuquerque, NM, USA, Tech. Rep.
-  SAND2013-8430J, Nov. 2013.
+\bibitem{simonyan2014very}
+K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
+  large-scale image recognition,'' \emph{arXiv preprint arXiv:1409.1556}, 2014.
 
-\bibitem{tezaur2015albany}
-I.~K. Tezaur, M.~Perego, A.~G. Salinger, R.~S. Tuminaro, and S.~F. Price,
-  ``Albany/{FELIX}: {A} parallel, scalable and robust, finite element,
-  first-order {S}tokes approximation ice sheet solver built for advanced
-  analysis,'' \emph{Geoscientific Model Development}, vol.~8, no.~4, pp.
-  1197--1220, Apr. 2015.
-
-\bibitem{ramesh2005stabilized}
-B.~Ramesh and A.~M. Maniatty, ``Stabilized finite element formulation for
-  elastic--plastic finite deformations,'' \emph{Comput. Methods in Appl.
-  Mechanics and Eng.}, vol. 194, no.~6, pp. 775--800, Feb. 2005.
-
-\bibitem{nemec2007adjoint}
-M.~Nemec and M.~J. Aftosmis, ``Adjoint error estimation and adaptive refinement
-  for embedded-boundary {C}artesian meshes,'' presented at the 18th AIAA
-  Computational Fluid Dynamics Conf., Miami, FL, USA, 2007.
-
-\bibitem{granzow2017output}
-B.~N. Granzow, M.~S. Shephard, and A.~A. Oberai, ``Output-based error
-  estimation and mesh adaptation for variational multiscale methods,''
-  \emph{Comput. Methods in Appl. Mechanics and Eng.}, vol. 322, pp. 441--459,
-  Aug. 2017.
-
-\bibitem{fidkowski2011output}
-K.~J. Fidkowski, ``Output error estimation strategies for discontinuous
-  galerkin discretizations of unsteady convection-dominated flows,'' \emph{Int.
-  J. for Numerical Methods in Eng.}, vol.~88, no.~12, pp. 1297--1322, May.
-  2011.
-
-\bibitem{burstedde2009parallel}
-C.~Burstedde, O.~Ghattas, G.~Stadler, T.~Tu, and L.~C. Wilcox, ``Parallel
-  scalable adjoint-based adaptive solution of variable-viscosity stokes flow
-  problems,'' \emph{Comput. Methods in Appl. Mechanics and Eng.}, vol. 198,
-  no.~21, pp. 1691--1700, May. 2009.
-
-\bibitem{taylor1973numerical}
-C.~Taylor and P.~Hood, ``A numerical solution of the {N}avier-{S}tokes
-  equations using the finite element technique,'' \emph{Comput. \& Fluids},
-  vol.~1, no.~1, pp. 73--100, Jan. 1973.
-
-\bibitem{venditti2000adjoint}
-D.~A. Venditti and D.~L. Darmofal, ``Adjoint error estimation and grid
-  adaptation for functional outputs: Application to quasi-one-dimensional
-  flow,'' \emph{J. of Comput. Physics}, vol. 164, no.~1, pp. 204--227, Oct.
-  2000.
-
-\bibitem{venditti2002adjoint}
-------, ``Grid adaptation for functional outputs: Application to
-  two-dimensional inviscid flows,'' \emph{J. of Comput. Physics}, vol. 176,
-  no.~1, pp. 40--69, Feb. 2002.
-
-\bibitem{venditti2003adjoint}
-------, ``Anisotropic grid adaptation for functional outputs: Application to
-  two-dimensional viscous flows,'' \emph{J. Comput. Phys.}, vol. 187, no.~1,
-  pp. 22--46, May. 2003.
-
-\bibitem{boussetta2006adaptive}
-R.~Boussetta, T.~Coupez, and L.~Fourment, ``Adaptive remeshing based on a
-  posteriori error estimation for forging simulation,'' \emph{Comput. Methods
-  in Appl. Mechanics and Eng.}, vol. 195, no.~48, pp. 6626--6645, Oct. 2006.
-
-\bibitem{dealiistep14}
-W.~Bangerth. \emph{Deal ii Step 14}. (2017) [Online]. Available:
-  \url{https://www.dealii.org/8.4.0/doxygen/deal.II/step_14.html}, Accessed on:
-  Dec. 1, 2017.
-
-\bibitem{granzow2017adjoint}
-B.~N. Granzow, A.~A. Oberai, and M.~S. Shephard, ``Adjoint-based error
-  estimation and mesh adaptation for stabilized finite deformation
-  elasticity,'' submitted for publication.
-
-\bibitem{dong2017recovery}
-L.~Dong and A.~A. Oberai, ``Recovery of cellular traction in three-dimensional
-  nonlinear hyperelastic matrices,'' \emph{Comput. Methods in Appl. Mechanics
-  and Eng.}, vol. 314, pp. 296--313, Feb. 2017.
-
-\bibitem{bloomfield2017component}
-M.~O. Bloomfield, Z.~Li, B.~Granzow, D.~A. Ibanez, A.~A. Oberai, G.~A. Hansen
-  \emph{et~al.}, ``Component-based workflows for parallel thermomechanical
-  analysis of arrayed geometries,'' \emph{Eng. with Comput.}, vol.~33, no.~3,
-  pp. 509--517, Jul. 2017.
-
-\bibitem{simo2006computational}
-J.~C. Simo and T.~J. Hughes, \emph{Computational Inelasticity}.\hskip 1em plus
-  0.5em minus 0.4em\relax New York, NY, USA: Springer, 2006.
-
-\bibitem{li2017simulation}
-Z.~Li, M.~O. Bloomfield, and A.~A. Oberai, ``Simulation of finite-strain
-  inelastic phenomena governed by creep and plasticity,'' \emph{Comput.
-  Mechanics}, to be published.
-
-\bibitem{richardson1911approximate}
-L.~F. Richardson, ``The approximate arithmetical solution by finite differences
-  of physical problems involving differential equations, with an application to
-  the stresses in a masonry dam,'' \emph{Philosophical Trans. of the Royal
-  Society of London}, vol. 210, pp. 307--357, Jan. 1911.
-
-\bibitem{giles2003adjoint}
-M.~B. Giles and N.~A. Pierce, ``Chapter 2 - {A}djoint error correction for
-  integral outputs,'' in \emph{Error Estimation and Adaptive Discretization
-  Methods in Computational Fluid Dynamics}.\hskip 1em plus 0.5em minus
-  0.4em\relax Berlin, Germany: Springer, 2016, pp. 47--95.
-
-\bibitem{pierce2004adjoint}
-N.~A. Pierce and M.~B. Giles, ``Adjoint and defect error bounding and
-  correction for functional estimates,'' \emph{J. of Comput. Physics}, vol.
-  200, no.~2, pp. 769--794, Nov. 2004.
-
-\bibitem{prudhomme1999goal}
-S.~Prudhomme and J.~T. Oden, ``On goal-oriented error estimation for elliptic
-  problems: {A}pplication to the control of pointwise errors,'' \emph{Comput.
-  Methods in Appl. Mechanics and Eng.}, vol. 176, no. 1-4, pp. 313--331, Jul.
-  1999.
-
-\bibitem{prudhomme2003practical}
-S.~Prudhomme, J.~T. Oden, T.~Westermann, J.~Bass, and M.~E. Botkin, ``Practical
-  methods for a posteriori error estimation in engineering applications,''
-  \emph{Int. J. for Numerical Methods. in Eng.}, vol.~56, no.~8, pp.
-  1193--1224, Jan. 2003.
-
-\bibitem{connors2013method}
-J.~M. Connors, J.~W. Banks, J.~A. Hittinger, and C.~S. Woodward, ``A method to
-  calculate numerical errors using adjoint error estimation for linear
-  advection,'' \emph{SIAM J. on Numerical Anal.}, vol.~51, no.~2, pp. 894--926,
-  Mar. 2013.
-
-\bibitem{wick2016goal}
-T.~Wick, ``Goal functional evaluations for phase-field fracture using
-  {PU}-based {DWR} mesh adaptivity,'' \emph{Comput. Mechanics}, vol.~57, no.~6,
-  pp. 1017--1035, Mar. 2016.
-
-\bibitem{franca1992stabilized}
-L.~P. Franca, S.~L. Frey, and T.~J. Hughes, ``Stabilized finite element
-  methods: {I}. {A}pplication to the advective-diffusive model,'' \emph{Comput.
-  Methods in Appl. Mechanics and Eng.}, vol.~95, no.~2, pp. 253--276, Mar.
-  1992.
-
-\bibitem{hughes1989new}
-T.~J. Hughes, L.~P. Franca, and G.~M. Hulbert, ``A new finite element
-  formulation for computational fluid dynamics: {VIII}. {T}he
-  {G}alerkin/least-squares method for advective-diffusive equations,''
-  \emph{Comput. Methods in Appl. Mechanics and Eng.}, vol.~73, no.~2, pp.
-  173--189, May. 1989.
-
-\bibitem{hughes1986new}
-T.~J. Hughes, L.~P. Franca, and M.~Balestra, ``A new finite element formulation
-  for computational fluid dynamics: {V}. {C}ircumventing the
-  {B}abu{\v{s}}ka-{B}rezzi condition: {A} stable {P}etrov-{G}alerkin
-  formulation of the {S}tokes problem accommodating equal-order
-  interpolations,'' \emph{Comput. Methods in Appl. Mechanics and Eng.},
-  vol.~59, no.~1, pp. 85--99, Nov. 1986.
-
-\bibitem{barth2004taxonomy}
-T.~Barth, P.~Bochev, M.~Gunzburger, and J.~Shadid, ``A taxonomy of consistently
-  stabilized finite element methods for the {S}tokes problem,'' \emph{SIAM J.
-  on Scientific Comput.}, vol.~25, no.~5, pp. 1585--1607, Jul. 2004.
-
-\bibitem{brooks1982streamline}
-A.~N. Brooks and T.~J. Hughes, ``Streamline upwind {P}etrov-{G}alerkin
-  formulations for convection dominated flows with particular emphasis on the
-  incompressible {N}avier-{S}tokes equations,'' \emph{Comput. Methods in Appl.
-  Mechanics and Eng.}, vol.~32, no.~1, pp. 199--259, Sep. 1982.
-
-\bibitem{franca1992stabilizedii}
-L.~P. Franca and S.~L. Frey, ``Stabilized finite element methods: {II}. {T}he
-  incompressible {N}avier-{S}tokes equations,'' \emph{Comput. Methods in Appl.
-  Mechanics and Eng.}, vol.~95, no.~2, pp. 209--233, Sep. 1992.
-
-\bibitem{tezduyar1992incompressible}
-T.~E. Tezduyar, S.~Mittal, S.~Ray, and R.~Shih, ``Incompressible flow
-  computations with stabilized bilinear and linear equal-order-interpolation
-  velocity-pressure elements,'' \emph{Comput. Methods in Appl. Mechanics and
-  Eng.}, vol.~95, no.~2, pp. 221--242, Mar. 1992.
-
-\bibitem{hughes1998variational}
-T.~J. Hughes, G.~R. Feij{\'o}o, L.~Mazzei, and J.-B. Quincy, ``The variational
-  multiscale method: {A} paradigm for computational mechanics,'' \emph{Comput.
-  Methods in Appl. Mechanics and Eng.}, vol. 166, no.~1, pp. 3--24, Nov. 1998.
-
-\bibitem{hughes2007variational}
-T.~J. Hughes and G.~Sangalli, ``Variational multiscale analysis: {T}he
-  fine-scale {G}reen's function, projection, optimization, localization, and
-  stabilized methods,'' \emph{SIAM J. on Numerical Anal.}, vol.~45, no.~2, pp.
-  539--557, Mar. 2007.
-
-\bibitem{ainsworth2011posteriori}
-M.~Ainsworth and J.~T. Oden, \emph{{A Posteriori Error Estimation in Finite
-  Element Analysis}}.\hskip 1em plus 0.5em minus 0.4em\relax Hoboken, NJ, USA:
-  John Wiley \& Sons, Ltd, 2011.
-
-\bibitem{hauke2006multiscale}
-G.~Hauke, M.~H. Doweidar, and M.~Miana, ``The multiscale approach to error
-  estimation and adaptivity,'' \emph{Comput. Methods in Appl. Mechanics and
-  Eng.}, vol. 195, no.~13, pp. 1573--1593, Feb. 2006.
-
-\bibitem{hauke2008variational}
-G.~Hauke, D.~Fuster, and M.~H. Doweidar, ``Variational multiscale a-posteriori
-  error estimation for multi-dimensional transport problems,'' \emph{Comput.
-  Methods in Appl. Mechanics and Eng.}, vol. 197, no.~33, pp. 2701--2718, Jan.
-  2008.
-
-\bibitem{masud2011variational}
-A.~Masud, T.~J. Truster, and L.~A. Bergman, ``A variational multiscale a
-  posteriori error estimation method for mixed form of nearly incompressible
-  elasticity,'' \emph{Comput. Methods in Appl. Mechanics and Eng.}, vol. 200,
-  no.~47, pp. 3453--3481, Mar. 2011.
-
-\bibitem{masud2013framework}
-A.~Masud and T.~J. Truster, ``A framework for residual-based stabilization of
-  incompressible finite elasticity: Stabilized formulations and f methods for
-  linear triangles and tetrahedra,'' \emph{Comput. Methods in Appl. Mechanics
-  and Eng.}, vol. 267, pp. 359--399, Dec. 2013.
-
-\bibitem{larson2007adaptive}
-M.~G. Larson and A.~M{\aa}lqvist, ``Adaptive variational multiscale methods
-  based on a posteriori error estimation: energy norm estimates for elliptic
-  problems,'' \emph{Comput. Methods in Appl. Mechanics and Eng.}, vol. 196,
-  no.~21, pp. 2313--2324, Apr. 2007.
-
-\bibitem{bangerth2013adaptive}
-W.~Bangerth and R.~Rannacher, \emph{Adaptive Finite Element Methods for
-  Differential Equations}.\hskip 1em plus 0.5em minus 0.4em\relax Basel,
-  Switzerland: Birkh{\"a}user Basel, 2013.
-
-\bibitem{hauke2009variational}
-G.~Hauke and D.~Fuster, ``Variational multiscale a posteriori error estimation
-  for quantities of interest,'' \emph{J. of Appl. Mechanics}, vol.~76, no.~2,
-  pp. 21\,201--21\,207, Jan. 2009.
-
-\bibitem{oberai1998multiscale}
-A.~A. Oberai and P.~M. Pinsky, ``A multiscale finite element method for the
-  {H}elmholtz equation,'' \emph{Comput. Methods in Appl. Mechanics and Eng.},
-  vol. 154, no.~3, pp. 281--297, Mar. 1998.
-
-\bibitem{eriksson1995introduction}
-K.~Eriksson, D.~Estep, P.~Hansbo, and C.~Johnson, ``Introduction to adaptive
-  methods for differential equations,'' \emph{Acta Numerica}, vol.~4, pp.
-  105--158, Jan. 1995.
-
-\bibitem{zienkiewicz1992superconvergenti}
-O.~C. Zienkiewicz and J.~Z. Zhu, ``The superconvergent patch recovery and a
-  posteriori error estimates. {P}art 1{:} {T}he recovery technique,''
-  \emph{Int. J. for Numerical Methods. in Eng.}, vol.~33, no.~7, pp.
-  1331--1364, May. 1992.
-
-\bibitem{zienkiewicz1992superconvergentii}
-------, ``The superconvergent patch recovery and a posteriori error estimates.
-  {P}art 2: {E}rror estimates and adaptivity,'' \emph{Int. J. for Numerical
-  Methods. in Eng.}, vol.~33, no.~7, pp. 1365--1382, May. 1992.
+\bibitem{szegedy2016rethinking}
+C.~Szegedy, V.~Vanhoucke, S.~Ioffe, J.~Shlens, and Z.~Wojna, ``Rethinking the
+  inception architecture for computer vision,'' in \emph{Proceedings of the
+  IEEE Conference on Computer Vision and Pattern Recognition}, 2016, pp.
+  2818--2826.
 
 \end{thebibliography}

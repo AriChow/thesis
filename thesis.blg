@@ -6,66 +6,85 @@ A level-1 auxiliary file: title.aux
 A level-1 auxiliary file: acknowledge.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: introduction.aux
-A level-1 auxiliary file: automated.aux
-A level-1 auxiliary file: refine.aux
-A level-1 auxiliary file: vms.aux
+A level-1 auxiliary file: COMMAT.aux
+A level-1 auxiliary file: ISBI.aux
+A level-1 auxiliary file: SPIE.aux
+A level-1 auxiliary file: EP.aux
 A level-1 auxiliary file: conclusions.aux
 A level-1 auxiliary file: bibliography.aux
-A level-1 auxiliary file: appendix.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references.bib
+Warning--entry type for "Pattan2010" isn't style-file defined
+--line 2075 of file references.bib
+Warning--I didn't find a database entry for "XuH2015"
+Warning--I didn't find a database entry for "Ferris2007"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty year in smith2015parma
-Warning--empty journal in granzow2017adjoint
-Warning--empty year in granzow2017adjoint
-Warning--empty year in li2017simulation
+Warning--there's a url but no urldate in Rodgers2006
+Warning--there's a url but no urldate in Broderick2008
+Warning--there's a url but no urldate in Kalidindi2011
+Warning--there's a url but no urldate in DeCost2015
+Warning--missing publisher in Mao2014
+Warning--there's a url but no urldate in Mao2014
+Warning--empty booktitle in Keogh2010
+Warning--there's a url but no urldate in Keogh2010
+Warning--there's a url but no urldate in Lievers2004
+Warning--there's a url but no urldate in Krizhevsky2012
+Warning--missing department in gini
+Warning--there's a url but no urldate in Pattan2010
+Warning--there's a url but no urldate in MacSleyne2008
+Warning--there's a url but no urldate in Sluytman2012
+Warning--there's a url but no urldate in Impoco2015
+Warning--there's a url but no urldate in Bostanabad2016
+Warning--there's a url but no urldate in Taffese2015
+Warning--there's a url but no urldate in Guo2016
+Warning--empty journal in doshi2017towards
 
 Done.
 You've used 68 entries,
             4355 wiz_defined-function locations,
-            1238 strings with 21023 characters,
-and the built_in function-call counts, 56790 in all, are:
-= -- 4815
-> -- 1306
-< -- 596
-+ -- 736
-- -- 206
-* -- 2835
-:= -- 8427
-add.period$ -- 140
+            1298 strings with 20794 characters,
+and the built_in function-call counts, 56944 in all, are:
+= -- 4800
+> -- 1325
+< -- 588
++ -- 755
+- -- 215
+* -- 2810
+:= -- 8502
+add.period$ -- 123
 call.type$ -- 68
-change.case$ -- 65
-chr.to.int$ -- 1338
-cite$ -- 72
-duplicate$ -- 4015
-empty$ -- 4069
-format.name$ -- 263
-if$ -- 13043
+change.case$ -- 68
+chr.to.int$ -- 1389
+cite$ -- 87
+duplicate$ -- 3934
+empty$ -- 4133
+format.name$ -- 259
+if$ -- 13144
 int.to.chr$ -- 0
 int.to.str$ -- 68
-missing$ -- 645
+missing$ -- 609
 newline$ -- 227
-num.names$ -- 68
-pop$ -- 1126
+num.names$ -- 71
+pop$ -- 1144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 4503
+skip$ -- 4609
 stack$ -- 0
-substring$ -- 3193
-swap$ -- 3673
-text.length$ -- 150
+substring$ -- 3330
+swap$ -- 3413
+text.length$ -- 125
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 68
-warning$ -- 4
-while$ -- 281
+warning$ -- 19
+while$ -- 283
 width$ -- 70
-write$ -- 712
-(There were 4 warnings)
+write$ -- 700
+(There were 22 warnings)

@@ -1,33 +1,28 @@
-\contentsline {figure}{\numberline {2.1}{\ignorespaces A schematic for the generic programming model of PDEs.\relax }}{8}{figure.caption.10}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of a nested mesh (red edges) obtained via a uniform refinement of a base mesh (black edges) in three dimensions.\relax }}{15}{figure.caption.14}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Domain and initial mesh (left) for the Poisson's equation example with the QoI point indicated in red, final adapted mesh (middle), and a close up of the upper-right hand corner of the final adapted mesh (right).\relax }}{25}{figure.caption.17}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Effectivity indices for the adaptive Poisson's equation example.\relax }}{25}{figure.caption.18}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Errors for the point-wise QoI for the adaptive Poisson's equation example.\relax }}{26}{figure.caption.19}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Error convergence using uniform mesh refinement and adjoint-based error estimation for the adaptive Poisson's equation example.\relax }}{27}{figure.caption.20}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Domains for the microglial cell example.\relax }}{29}{figure.caption.21}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces A close-up of the initial mesh (left) the mesh after 5 adaptive iterations (center) and the final adapted mesh (right) for the microglial cell example.\relax }}{29}{figure.caption.22}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces The parallel mesh partitioning for the initial mesh (left) and the final adapted mesh (right) for the microglial cell example.\relax }}{30}{figure.caption.23}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Breakdown of the CPU time spent for each portion of the adaptive process for the microglial cell example.\relax }}{31}{figure.caption.24}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces The solder joint array geometry (left) and the geometric specification of the integrated von-Mises QoI (right).\relax }}{32}{figure.caption.25}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Weak scaling for the Goal application.\relax }}{33}{figure.caption.26}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces The $x$-component of the adjoint displacement solution (left), and the pressure component of the adjoint solution (right).\relax }}{34}{figure.caption.27}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces The spatial distribution of errors as computed by adjoint-based error estimation for the solder joint array.\relax }}{35}{figure.caption.28}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Cross-sectional view of the initial mesh for the solder joint geometry (left) and the final adapted mesh (right).\relax }}{35}{figure.caption.29}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces The initial mesh for the solder joint geometry (left) and the final adapted mesh (right).\relax }}{35}{figure.caption.30}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Error convergence histories for the solder joint example problem with the integrated von-Mises stress QoI.\relax }}{36}{figure.caption.31}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Edges of a base mesh (black) and a nested mesh refined with the Unif scheme (red) in two dimensions.\relax }}{41}{figure.caption.32}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Edges of a base mesh (black) and a nested mesh refined with the Long scheme (red) in two dimensions.\relax }}{42}{figure.caption.33}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Edges of a base mesh (black) and a nested mesh refined with the Single scheme (red) in two dimensions.\relax }}{43}{figure.caption.34}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Effectivity indices using the Unif, Long, and Single refinement schemes for the Poisson example problem.\relax }}{47}{figure.caption.35}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Ratio of adjoint problem degrees of freedom to primal problem degrees of freedom using the Unif, Long, and Single refinement schemes for the Poisson example problem.\relax }}{48}{figure.caption.36}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Geometry and initial mesh used for the second Poisson's equation example with the point of interest shown in red.\relax }}{49}{figure.caption.37}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Error evolution for adaptive schemes for the second Poisson's equation example.\relax }}{50}{figure.caption.38}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces The final adapted mesh using the Unif strategy to solve the adjoint problem (left) and a close-up of the upper right-hand corner of this mesh (right).\relax }}{51}{figure.caption.39}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces The final adapted mesh using the Long strategy to solve the adjoint problem (left) and a close-up of the upper right-hand corner of this mesh (right).\relax }}{51}{figure.caption.40}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces The final adapted mesh using the Single strategy to solve the adjoint problem (left) and a close-up of the upper right-hand corner of this mesh (right).\relax }}{52}{figure.caption.41}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The primal solution $u^h$ (left) and the dual solutions $z^h$ corresponding to $J_1(u)$ (center) and $J_2(u)$ (right).\relax }}{73}{figure.caption.42}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Initial meshes for the outputs $J_1(u)$ (left) and $J_2(u)$ (right).\relax }}{74}{figure.caption.43}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Final adapted meshes for the output $J_1(u)$ using the SPR (left), VMS1 (center), and VMS2 (right) adaptive schemes.\relax }}{75}{figure.caption.44}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Convergence history for various adaptive schemes for the output $J_1(u)$.\relax }}{75}{figure.caption.45}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Final adapted meshes for the output $J_2(u)$ using the SPR (left), VMS1 (center), and VMS2 (right) adaptive schemes.\relax }}{76}{figure.caption.46}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Convergence history for various adaptive schemes for the output $J_2(u)$.\relax }}{76}{figure.caption.47}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Examples of micrographs used in classification. Micrographs shown in (a) and (b) are longitudinal and transverse cross-sectional views of dendrites, whereas micrographs in (c) do not contain dendrites. Micrographs in (a), (b) and (c) were used in Task 1, and micrographs in (a) and (b) were used in Task 2.\relax }}{6}{figure.caption.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Overview of approach used in classification of micrograph data. The approach summarized here shows 140 different combinations of feature extraction, feature selection and classification methods completed. The same approach presented here was completed first for Task 1 (Data Set 1), then for Task 2 (Data Set 2).\relax }}{7}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Flowchart of microstructure recognition tasks, referred to here as Task 1 and Task 2. Tasks 1 and 2 are both binary classification tasks. Task 1 involves distinguishing between micrographs that depict dendritic morphologies from those that do not contain this particular microstructural feature. From micrographs identified as containing dendrites (completed in Task 1), Task 2 involves distinguishing between different cross-sectional views (longitudinal or transverse) of dendritic microstructures.\relax }}{8}{figure.caption.12}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Depiction of the different morphologies in the natural data with respect to a multichannel image, overlaid with different protein markers. The three types of morphologies analyzed in this study is represented on the right.\relax }}{30}{figure.caption.14}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Development of the 3D virtual model\relax }}{32}{figure.caption.15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 3D virtual models and their corresponding projections along different planes of view (a) Linear model of RoundLumen- (b) Linear model of RoundLumen+ (c) Non-linear model of RoundLumen+ (d) Non-linear model of Twins\relax }}{32}{figure.caption.16}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Examples of vessel classes RoundLumen- (a/d), RoundLumen+ (b/e) and Twins (c/f) for natural (a/b/c) and virtual data (d/e/f)\relax }}{35}{figure.caption.17}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces ROC curves for classification: (a) \textit {RoundLumen} and \textit {Twins} and (b) \textit {RoundLumen-} and \textit {RoundLumen+} .\relax }}{36}{figure.caption.18}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Examples of a single colon tumor tissue sample stained with (a) E\_cad (b) pck26 (c) CK15 (d) Vimentin\relax }}{39}{figure.caption.19}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Preliminary noise reduction on an image from CK15 (a) Original image (b) Noise-reduced image \relax }}{40}{figure.caption.20}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Images from (a) E\_cad, (b) pck26 and (c) CK15 are used to form the (d) Combined image\relax }}{41}{figure.caption.21}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Three sample images from E\_cad stained tissues\relax }}{44}{figure.caption.22}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Discrete distributions of QoI scores for (a) E\_cad (b) pck26 (c) CK15\relax }}{44}{figure.caption.23}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Representation of a machine learning pipeline\relax }}{46}{figure.caption.24}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Naive methodology used in the error propagation model\relax }}{53}{figure.caption.25}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Representation of an image classification pipeline\relax }}{56}{figure.caption.26}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Representation of the image classification pipeline\relax }}{57}{figure.caption.27}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Combined algorithm selection and hyper-parameter optimization in a data analytic pipeline. The algorithms and corresponding hyper-parameters are optimized simultaneously.\relax }}{59}{figure.caption.28}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Hyper-parameter optimization in a data analytic pipeline. Each path in the pipeline is individually optimized.\relax }}{59}{figure.caption.29}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Plots of error contributions from computational steps in the pipeline.\relax }}{62}{figure.caption.30}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Plots of error contributions from algorithms in the pipeline (method 1).\relax }}{64}{figure.caption.31}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Pipeline including naive algorithms for error propagation\relax }}{65}{figure.caption.32}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Pipeline including naive algorithms for error propagation\relax }}{66}{figure.caption.33}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Plots of error propagation using the naive algorithm based methodology.\relax }}{67}{figure.caption.34}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Plots of propagation factor $\gamma $ using the naive algorithm based methodology.\relax }}{68}{figure.caption.35}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Plots of error propagation using the naive algorithm based methodology.\relax }}{69}{figure.caption.36}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Plots of propagation factor $\gamma $ using the naive algorithm based methodology.\relax }}{70}{figure.caption.37}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Plots of error contribution and error propagation on test data from \textit {breast} data.\relax }}{71}{figure.caption.38}

@@ -26,6 +26,32 @@ bottom=1in}
 \floatstyle{plaintop}
 \restylefloat{table}
 
+% COMMAT
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+\tikzstyle{line} = [thick,->,>=stealth]
+
+%\tikzstyle{line} = [draw, -latex']
+\tikzstyle{decision} = [diamond, draw, fill=green!30, 
+    text width=10em, text badly centered, inner sep=0pt]
+\tikzstyle{process} = [rectangle, draw, fill=orange!30, 
+    text width=10em, text centered, rounded corners, minimum height=5em]
+\tikzstyle{input} = [rectangle, draw, fill=blue!30, 
+    text width=10em, text centered, rounded corners, minimum height=5em]
+\tikzstyle{block} = [rectangle, draw, fill=none, 
+    text width=10em, text centered, rounded corners, minimum height=5em]
+\tikzstyle{line} = [draw, -latex']
+
+\usepackage{adjustbox}
+\usepackage[justification=centering]{caption}
+
+
 % mathematics
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -50,7 +76,7 @@ bottom=1in}
 % algorithms
 \usepackage{algpseudocode}
 \usepackage{algorithm}
-
+\usepackage{longtable}
 % code listings
 \usepackage{listings}
 \lstdefinestyle{mystyle}{
@@ -112,12 +138,13 @@ bottom=1in}
 \include{abstract}
 \include{introduction}
 %\include{automated}
+\include{COMMAT}
+\include{ISBI}
 \include{SPIE}
-%\include{COMMAT}
-\include{refine}
-%\include{EP}
-\include{vms}
+%\include{refine}
+\include{EP}
+%\include{vms}
 \include{conclusions}
 \include{bibliography}
-\include{appendix}
+%\include{appendix}
 \end{document}
