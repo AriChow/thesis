@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 APR 2018 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 APR 2018 18:01
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
@@ -1363,15 +1364,16 @@ Overfull \hbox (3.30058pt too wide) in paragraph at lines 8--8
 ]
 \openout2 = `abstract.aux'.
 
- (./abstract.tex) [10
+ (./abstract.tex [10
 
 
 
 
-]
+]) [11]
 \openout2 = `introduction.aux'.
 
- (./introduction.tex
+
+(./introduction.tex
 CHAPTER 1.
 ) [1
 
@@ -1395,14 +1397,14 @@ LaTeX Warning: Citation `Ferris2007' on page 2 undefined on input line 14.
 
 
 
-] [3] [4] <img/example_images_v2.png, id=588, 733.74126pt x 653.44125pt>
+] [3] [4] <img/example_images_v2.png, id=592, 733.74126pt x 653.44125pt>
 File: img/example_images_v2.png Graphic file (type png)
 
 <use img/example_images_v2.png>
 Package pdftex.def Info: img/example_images_v2.png used on input line 51.
 (pdftex.def)             Requested size: 403.55894pt x 359.3938pt.
  [5]
-<img/flowchart_approach_updated.png, id=597, 1093.08376pt x 690.58pt>
+<img/flowchart_approach_updated.png, id=601, 1093.08376pt x 690.58pt>
 File: img/flowchart_approach_updated.png Graphic file (type png)
 
 <use img/flowchart_approach_updated.png>
@@ -1476,7 +1478,7 @@ l.6 ... on Biomedical Imaging}, pp. 629-632, 2017}
 
 LaTeX Warning: Reference `morphologies' on page 29 undefined on input line 24.
 
-[29] <img/morphologies.png, id=830, 979.66pt x 483.8075pt>
+[29] <img/morphologies.png, id=834, 979.66pt x 483.8075pt>
 File: img/morphologies.png Graphic file (type png)
 
 <use img/morphologies.png>
@@ -1492,26 +1494,26 @@ LaTeX Warning: Reference `table:classes' on page 30 undefined on input line 33.
 
 
 [30 <./img/morphologies.png>]
-<img/3D_model.png, id=843, 971.63pt x 282.05376pt>
+<img/3D_model.png, id=847, 971.63pt x 282.05376pt>
 File: img/3D_model.png Graphic file (type png)
  <use img/3D_model.png>
 Package pdftex.def Info: img/3D_model.png used on input line 64.
 (pdftex.def)             Requested size: 469.75502pt x 136.3612pt.
 
-[31] <img/slicer.png, id=850, 897.3525pt x 573.14125pt>
+[31] <img/slicer.png, id=854, 897.3525pt x 573.14125pt>
 File: img/slicer.png Graphic file (type png)
  <use img/slicer.png>
 Package pdftex.def Info: img/slicer.png used on input line 71.
 (pdftex.def)             Requested size: 469.75502pt x 300.02911pt.
 
 [32 <./img/3D_model.png> <./img/slicer.png>] [33]
-<img/slices.png, id=871, 853.1875pt x 509.905pt>
+<img/slices.png, id=876, 853.1875pt x 509.905pt>
 File: img/slices.png Graphic file (type png)
  <use img/slices.png>
 Package pdftex.def Info: img/slices.png used on input line 110.
 (pdftex.def)             Requested size: 469.75502pt x 280.75204pt.
  [34]
-[35 <./img/slices.png>] <img/results.png, id=884, 878.28125pt x 356.33125pt>
+[35 <./img/slices.png>] <img/results.png, id=888, 878.28125pt x 356.33125pt>
 File: img/results.png Graphic file (type png)
 
 <use img/results.png>
@@ -1543,21 +1545,21 @@ ng in sig-nif-i-cant growth of biomed-
 
 
 
-] <img/SPIE_example_images.png, id=901, 2026.57124pt x 529.98pt>
+] <img/SPIE_example_images.png, id=906, 2026.57124pt x 529.98pt>
 File: img/SPIE_example_images.png Graphic file (type png)
 
 <use img/SPIE_example_images.png>
 Package pdftex.def Info: img/SPIE_example_images.png used on input line 26.
 (pdftex.def)             Requested size: 469.75502pt x 122.84708pt.
 
-<img/SPIE_noise_reduction.png, id=904, 1358.07375pt x 557.08125pt>
+<img/SPIE_noise_reduction.png, id=909, 1358.07375pt x 557.08125pt>
 File: img/SPIE_noise_reduction.png Graphic file (type png)
 
 <use img/SPIE_noise_reduction.png>
 Package pdftex.def Info: img/SPIE_noise_reduction.png used on input line 36.
 (pdftex.def)             Requested size: 422.77664pt x 173.41592pt.
  [39 <./img/SPIE_example_images.png>]
-<img/SPIE_combined.png, id=914, 2075.755pt x 451.6875pt>
+<img/SPIE_combined.png, id=918, 2075.755pt x 451.6875pt>
 File: img/SPIE_combined.png Graphic file (type png)
 
 <use img/SPIE_combined.png>
@@ -1569,14 +1571,14 @@ Missing character: There is no ï in font cmr12!
 Missing character: There is no ï in font cmr12!
 Missing character: There is no ï in font cmr12!
  [42]
-<img/ugly_samples.png, id=937, 1836.8625pt x 484.81125pt>
+<img/ugly_samples.png, id=941, 1836.8625pt x 484.81125pt>
 File: img/ugly_samples.png Graphic file (type png)
 
 <use img/ugly_samples.png>
 Package pdftex.def Info: img/ugly_samples.png used on input line 155.
 (pdftex.def)             Requested size: 469.75502pt x 123.98401pt.
  [43]
-<img/ugly_distributions.png, id=942, 2079.77pt x 520.94624pt>
+<img/ugly_distributions.png, id=946, 2079.77pt x 520.94624pt>
 File: img/ugly_distributions.png Graphic file (type png)
 
 <use img/ugly_distributions.png>
@@ -1595,7 +1597,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.1})
                    \relax 
 l.4 \let\thefootnote\relax\footnotetext{}
                                          
-<img/EP/generalized_pipeline.png, id=950, 753.81625pt x 481.8pt>
+<img/EP/generalized_pipeline.png, id=955, 753.81625pt x 481.8pt>
 File: img/EP/generalized_pipeline.png Graphic file (type png)
 
 <use img/EP/generalized_pipeline.png>
@@ -1613,7 +1615,7 @@ iza-tion (CASH)
  []
 
 [49] [50] [51]
-<img/EP/generalized_naive.png, id=1026, 752.8125pt x 494.84875pt>
+<img/EP/generalized_naive.png, id=1030, 752.8125pt x 494.84875pt>
 File: img/EP/generalized_naive.png Graphic file (type png)
 
 <use img/EP/generalized_naive.png>
@@ -1625,26 +1627,26 @@ Overfull \hbox (4.5447pt too wide) in paragraph at lines 139--139
  []
 
 [53 <./img/EP/generalized_naive.png>] [54]
-<img/EP/flowchart.png, id=1044, 873.2625pt x 750.805pt>
+<img/EP/flowchart.png, id=1048, 873.2625pt x 750.805pt>
 File: img/EP/flowchart.png Graphic file (type png)
 
 <use img/EP/flowchart.png>
 Package pdftex.def Info: img/EP/flowchart.png used on input line 179.
 (pdftex.def)             Requested size: 436.63017pt x 375.40158pt.
  [55] [56 <./img/EP/flowchart.png>]
-<img/EP/pipeline.png, id=1057, 1126.2075pt x 740.7675pt>
+<img/EP/pipeline.png, id=1062, 1126.2075pt x 740.7675pt>
 File: img/EP/pipeline.png Graphic file (type png)
 
 <use img/EP/pipeline.png>
 Package pdftex.def Info: img/EP/pipeline.png used on input line 187.
 (pdftex.def)             Requested size: 450.47502pt x 296.30174pt.
- <img/EP/CASH.png, id=1058, 901.3675pt x 460.72125pt>
+ <img/EP/CASH.png, id=1063, 901.3675pt x 460.72125pt>
 File: img/EP/CASH.png Graphic file (type png)
 
 <use img/EP/CASH.png>
 Package pdftex.def Info: img/EP/CASH.png used on input line 220.
 (pdftex.def)             Requested size: 360.5406pt x 184.28523pt.
- <img/EP/HPO.png, id=1059, 901.3675pt x 433.62pt>
+ <img/EP/HPO.png, id=1064, 901.3675pt x 433.62pt>
 File: img/EP/HPO.png Graphic file (type png)
 
 <use img/EP/HPO.png>
@@ -1652,7 +1654,7 @@ Package pdftex.def Info: img/EP/HPO.png used on input line 226.
 (pdftex.def)             Requested size: 360.5406pt x 173.44492pt.
  [57 <./img/EP/pipeline.png>] [58] [59 <./img/EP/CASH.png> <./img/EP/HPO.png>] 
 [60]
-<img/EP/agnostic_error_step_breast.jpg, id=1097, 642.4pt x 481.8pt>
+<img/EP/agnostic_error_step_breast.jpg, id=1102, 642.4pt x 481.8pt>
 File: img/EP/agnostic_error_step_breast.jpg Graphic file (type jpg)
 
 <use img/EP/agnostic_error_step_breast.jpg>
@@ -1664,7 +1666,7 @@ Overfull \hbox (2.80678pt too wide) in paragraph at lines 263--264
  [][] 
  []
 
-<img/EP/agnostic_error_step_brain.jpg, id=1098, 642.4pt x 481.8pt>
+<img/EP/agnostic_error_step_brain.jpg, id=1103, 642.4pt x 481.8pt>
 File: img/EP/agnostic_error_step_brain.jpg Graphic file (type jpg)
 
 <use img/EP/agnostic_error_step_brain.jpg>
@@ -1676,7 +1678,7 @@ Overfull \hbox (2.80678pt too wide) in paragraph at lines 269--270
  [][] 
  []
 
-<img/EP/agnostic_error_step_matsc_dataset1.jpg, id=1099, 642.4pt x 481.8pt>
+<img/EP/agnostic_error_step_matsc_dataset1.jpg, id=1104, 642.4pt x 481.8pt>
 File: img/EP/agnostic_error_step_matsc_dataset1.jpg Graphic file (type jpg)
 
 <use img/EP/agnostic_error_step_matsc_dataset1.jpg>
@@ -1688,7 +1690,7 @@ Overfull \hbox (2.80678pt too wide) in paragraph at lines 275--276
  [][] 
  []
 
-<img/EP/agnostic_error_step_matsc_dataset2.jpg, id=1100, 642.4pt x 481.8pt>
+<img/EP/agnostic_error_step_matsc_dataset2.jpg, id=1105, 642.4pt x 481.8pt>
 File: img/EP/agnostic_error_step_matsc_dataset2.jpg Graphic file (type jpg)
 
 <use img/EP/agnostic_error_step_matsc_dataset2.jpg>
@@ -1703,7 +1705,7 @@ Overfull \hbox (2.80678pt too wide) in paragraph at lines 281--282
 [61] [62 <./img/EP/agnostic_error_step_breast.jpg> <./img/EP/agnostic_error_ste
 p_brain.jpg> <./img/EP/agnostic_error_step_matsc_dataset1.jpg> <./img/EP/agnost
 ic_error_step_matsc_dataset2.jpg>]
-<img/EP/agnostic_error_alg_breast.jpg, id=1113, 642.4pt x 481.8pt>
+<img/EP/agnostic_error_alg_breast.jpg, id=1118, 642.4pt x 481.8pt>
 File: img/EP/agnostic_error_alg_breast.jpg Graphic file (type jpg)
 
 <use img/EP/agnostic_error_alg_breast.jpg>
@@ -1715,7 +1717,7 @@ Overfull \hbox (2.80678pt too wide) in paragraph at lines 303--304
  [][] 
  []
 
-<img/EP/agnostic_error_alg_brain.jpg, id=1114, 642.4pt x 481.8pt>
+<img/EP/agnostic_error_alg_brain.jpg, id=1119, 642.4pt x 481.8pt>
 File: img/EP/agnostic_error_alg_brain.jpg Graphic file (type jpg)
 
 <use img/EP/agnostic_error_alg_brain.jpg>
@@ -1727,7 +1729,7 @@ Overfull \hbox (2.80678pt too wide) in paragraph at lines 309--310
  [][] 
  []
 
-<img/EP/agnostic_error_alg_matsc_dataset1.jpg, id=1115, 642.4pt x 481.8pt>
+<img/EP/agnostic_error_alg_matsc_dataset1.jpg, id=1120, 642.4pt x 481.8pt>
 File: img/EP/agnostic_error_alg_matsc_dataset1.jpg Graphic file (type jpg)
 
 <use img/EP/agnostic_error_alg_matsc_dataset1.jpg>
@@ -1739,7 +1741,7 @@ Overfull \hbox (2.80678pt too wide) in paragraph at lines 315--316
  [][] 
  []
 
-<img/EP/agnostic_error_alg_matsc_dataset2.jpg, id=1116, 642.4pt x 481.8pt>
+<img/EP/agnostic_error_alg_matsc_dataset2.jpg, id=1121, 642.4pt x 481.8pt>
 File: img/EP/agnostic_error_alg_matsc_dataset2.jpg Graphic file (type jpg)
 
 <use img/EP/agnostic_error_alg_matsc_dataset2.jpg>
@@ -1751,7 +1753,7 @@ Overfull \hbox (2.80678pt too wide) in paragraph at lines 321--322
  [][] 
  []
 
-[63] <img/EP/times_algorithms.jpg, id=1122, 1003.75pt x 501.875pt>
+[63] <img/EP/times_algorithms.jpg, id=1126, 1003.75pt x 501.875pt>
 File: img/EP/times_algorithms.jpg Graphic file (type jpg)
 
 <use img/EP/times_algorithms.jpg>
@@ -1760,14 +1762,14 @@ Package pdftex.def Info: img/EP/times_algorithms.jpg used on input line 372.
  [64 <./img/EP/agnostic_error_alg_breast.jpg> <./img/EP/agnostic_error_alg_brai
 n.jpg> <./img/EP/agnostic_error_alg_matsc_dataset1.jpg> <./img/EP/agnostic_erro
 r_alg_matsc_dataset2.jpg>]
-<img/EP/naive.png, id=1127, 860.21375pt x 566.115pt>
+<img/EP/naive.png, id=1131, 860.21375pt x 566.115pt>
 File: img/EP/naive.png Graphic file (type png)
  <use img/EP/naive.png>
 Package pdftex.def Info: img/EP/naive.png used on input line 385.
 (pdftex.def)             Requested size: 430.10582pt x 283.05681pt.
 
 [65 <./img/EP/times_algorithms.jpg>] [66 <./img/EP/naive.png>]
-<img/EP/error_propagation_random_pipeline_breast.jpg, id=1137, 642.4pt x 481.8p
+<img/EP/error_propagation_random_pipeline_breast.jpg, id=1141, 642.4pt x 481.8p
 t>
 File: img/EP/error_propagation_random_pipeline_breast.jpg Graphic file (type jp
 g)
@@ -1781,7 +1783,7 @@ Overfull \hbox (22.07794pt too wide) in paragraph at lines 400--401
  []
 
 
-<img/EP/error_propagation_random_pipeline_brain.jpg, id=1138, 642.4pt x 481.8pt
+<img/EP/error_propagation_random_pipeline_brain.jpg, id=1142, 642.4pt x 481.8pt
 >
 File: img/EP/error_propagation_random_pipeline_brain.jpg Graphic file (type jpg
 )
@@ -1795,7 +1797,7 @@ Overfull \hbox (22.07794pt too wide) in paragraph at lines 406--407
  []
 
 
-<img/EP/error_propagation_random_pipeline_matsc_dataset1.jpg, id=1139, 642.4pt 
+<img/EP/error_propagation_random_pipeline_matsc_dataset1.jpg, id=1143, 642.4pt 
 x 481.8pt>
 File: img/EP/error_propagation_random_pipeline_matsc_dataset1.jpg Graphic file 
 (type jpg)
@@ -1809,7 +1811,7 @@ Overfull \hbox (22.07794pt too wide) in paragraph at lines 412--413
  []
 
 
-<img/EP/error_propagation_random_pipeline_matsc_dataset2.jpg, id=1140, 642.4pt 
+<img/EP/error_propagation_random_pipeline_matsc_dataset2.jpg, id=1144, 642.4pt 
 x 481.8pt>
 File: img/EP/error_propagation_random_pipeline_matsc_dataset2.jpg Graphic file 
 (type jpg)
@@ -1826,7 +1828,7 @@ Overfull \hbox (22.07794pt too wide) in paragraph at lines 418--419
 pagation_random_pipeline_brain.jpg> <./img/EP/error_propagation_random_pipeline
 _matsc_dataset1.jpg> <./img/EP/error_propagation_random_pipeline_matsc_dataset2
 .jpg>]
-<img/EP/propagation_factor_random_pipeline_breast.jpg, id=1145, 642.4pt x 481.8
+<img/EP/propagation_factor_random_pipeline_breast.jpg, id=1149, 642.4pt x 481.8
 pt>
 File: img/EP/propagation_factor_random_pipeline_breast.jpg Graphic file (type j
 pg)
@@ -1840,7 +1842,7 @@ Overfull \hbox (22.07794pt too wide) in paragraph at lines 433--434
  []
 
 
-<img/EP/propagation_factor_random_pipeline_brain.jpg, id=1146, 642.4pt x 481.8p
+<img/EP/propagation_factor_random_pipeline_brain.jpg, id=1150, 642.4pt x 481.8p
 t>
 File: img/EP/propagation_factor_random_pipeline_brain.jpg Graphic file (type jp
 g)
@@ -1854,7 +1856,7 @@ Overfull \hbox (22.07794pt too wide) in paragraph at lines 439--440
  []
 
 
-<img/EP/propagation_factor_random_pipeline_matsc_dataset1.jpg, id=1147, 642.4pt
+<img/EP/propagation_factor_random_pipeline_matsc_dataset1.jpg, id=1151, 642.4pt
  x 481.8pt>
 File: img/EP/propagation_factor_random_pipeline_matsc_dataset1.jpg Graphic file
  (type jpg)
@@ -1868,7 +1870,7 @@ Overfull \hbox (22.07794pt too wide) in paragraph at lines 445--446
  []
 
 
-<img/EP/propagation_factor_random_pipeline_matsc_dataset2.jpg, id=1148, 642.4pt
+<img/EP/propagation_factor_random_pipeline_matsc_dataset2.jpg, id=1152, 642.4pt
  x 481.8pt>
 File: img/EP/propagation_factor_random_pipeline_matsc_dataset2.jpg Graphic file
  (type jpg)
@@ -1974,7 +1976,7 @@ Overfull \hbox (22.07794pt too wide) in paragraph at lines 516--517
  []
 
 [69]
-<img/EP/agnostic_error_step_val_test_breast.jpg, id=1158, 642.4pt x 481.8pt>
+<img/EP/agnostic_error_step_val_test_breast.jpg, id=1162, 642.4pt x 481.8pt>
 File: img/EP/agnostic_error_step_val_test_breast.jpg Graphic file (type jpg)
 
 <use img/EP/agnostic_error_step_val_test_breast.jpg>
@@ -1986,7 +1988,7 @@ Overfull \hbox (22.07794pt too wide) in paragraph at lines 532--533
  [][] 
  []
 
-<img/EP/agnostic_error_alg_breast_test.jpg, id=1159, 642.4pt x 481.8pt>
+<img/EP/agnostic_error_alg_breast_test.jpg, id=1163, 642.4pt x 481.8pt>
 File: img/EP/agnostic_error_alg_breast_test.jpg Graphic file (type jpg)
 
 <use img/EP/agnostic_error_alg_breast_test.jpg>
@@ -1999,7 +2001,7 @@ Overfull \hbox (22.07794pt too wide) in paragraph at lines 538--539
  []
 
 
-<img/EP/error_propagation_random_pipeline_steps_test_breast.jpg, id=1160, 642.4
+<img/EP/error_propagation_random_pipeline_steps_test_breast.jpg, id=1164, 642.4
 pt x 481.8pt>
 File: img/EP/error_propagation_random_pipeline_steps_test_breast.jpg Graphic fi
 le (type jpg)
@@ -2082,9 +2084,9 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
  25088 strings out of 492995
- 475214 string characters out of 6132704
- 589719 words of memory out of 5000000
- 27761 multiletter control sequences out of 15000+600000
+ 475211 string characters out of 6132704
+ 589705 words of memory out of 5000000
+ 27760 multiletter control sequences out of 15000+600000
  18240 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,15n,79p,2209b,786s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2105,10 +2107,10 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 /2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (89 pages, 6009908 bytes).
+Output written on thesis.pdf (90 pages, 6012361 bytes).
 PDF statistics:
- 1354 PDF objects out of 1440 (max. 8388607)
- 1178 compressed objects within 12 object streams
- 298 named destinations out of 1000 (max. 500000)
+ 1358 PDF objects out of 1440 (max. 8388607)
+ 1181 compressed objects within 12 object streams
+ 299 named destinations out of 1000 (max. 500000)
  797 words of extra memory for PDF output out of 10000 (max. 10000000)
 
