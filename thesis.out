@@ -4,70 +4,71 @@
 \BOOKMARK [0][-]{section*.6}{ACKNOWLEDGMENT}{}% 4
 \BOOKMARK [0][-]{section*.8}{ABSTRACT}{}% 5
 \BOOKMARK [0][-]{chapter.1}{INTRODUCTION AND BACKGROUND}{}% 6
-\BOOKMARK [1][-]{section.1.1}{Outline}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.1}{Overview}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.2}{Contributions}{chapter.1}% 8
-\BOOKMARK [0][-]{chapter.2}{IMAGE DRIVEN MACHINE LEARNING METHODS FOR MICROSTRUCTURE RECOGNITION}{}% 9
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{Alloy Fabrication and Sample Preparation}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.3}{Image Data Sets}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.4}{Approach}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.5}{Computer Vision and Machine Learning Methods}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.5.1}{Feature extraction}{section.2.5}% 15
-\BOOKMARK [2][-]{subsection.2.5.2}{Dimensionality reduction}{section.2.5}% 16
-\BOOKMARK [2][-]{subsection.2.5.3}{Classification}{section.2.5}% 17
-\BOOKMARK [2][-]{subsection.2.5.4}{Related Work in Materials Science}{section.2.5}% 18
-\BOOKMARK [1][-]{section.2.6}{Selection of Model Parameters}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.7}{Software and Hardware Specifications}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.8}{Results and Discussion}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.8.1}{Task 1 - Dendritic versus non-dendritic microstructures}{section.2.8}% 22
-\BOOKMARK [2][-]{subsection.2.8.2}{Task 2 - Longitudinal versus transverse cross-sectional views of dendrites}{section.2.8}% 23
-\BOOKMARK [1][-]{section.2.9}{Limitations}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.10}{Conclusions}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.11}{Future Work}{chapter.2}% 26
-\BOOKMARK [0][-]{chapter.3}{BLOOD VESSEL CHARACTERIZATION USING VIRTUAL 3D MODELS AND CONVOLUTIONAL NEURAL NETWORKS IN FLUORESCENCE MICROSCOPY}{}% 27
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.2}{Data}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.2.1}{Natural data}{section.3.2}% 30
-\BOOKMARK [2][-]{subsection.3.2.2}{Virtual data}{section.3.2}% 31
-\BOOKMARK [1][-]{section.3.3}{Methods}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.4}{Experiments and results}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.5}{Conclusions}{chapter.3}% 34
-\BOOKMARK [0][-]{chapter.4}{A MACHINE LEARNING APPROACH TO QUANTIFYING NOISE IN MEDICAL IMAGES}{}% 35
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.2}{Data}{chapter.4}% 37
-\BOOKMARK [2][-]{subsection.4.2.1}{Preliminary noise reduction}{section.4.2}% 38
-\BOOKMARK [2][-]{subsection.4.2.2}{Combination of the three markers}{section.4.2}% 39
-\BOOKMARK [2][-]{subsection.4.2.3}{Feature extraction}{section.4.2}% 40
-\BOOKMARK [2][-]{subsection.4.2.4}{Data preprocessing}{section.4.2}% 41
-\BOOKMARK [1][-]{section.4.3}{Methods and experiments}{chapter.4}% 42
-\BOOKMARK [2][-]{subsection.4.3.1}{Random undersampling}{section.4.3}% 43
-\BOOKMARK [2][-]{subsection.4.3.2}{Classification and analysis}{section.4.3}% 44
-\BOOKMARK [2][-]{subsection.4.3.3}{Quality of image score}{section.4.3}% 45
-\BOOKMARK [2][-]{subsection.4.3.4}{Defining the ugly class}{section.4.3}% 46
-\BOOKMARK [1][-]{section.4.4}{Conclusions}{chapter.4}% 47
-\BOOKMARK [0][-]{chapter.5}{RANDOM SEARCH BASED QUANTIFICATION OF CONTRIBUTION AND PROPAGATION OF ERROR IN IMAGE CLASSIFICATION PIPELINES}{}% 48
-\BOOKMARK [1][-]{section.5.1}{Introduction and Motivation}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.2}{Foundations}{chapter.5}% 50
-\BOOKMARK [2][-]{subsection.5.2.1}{Algorithm selection and hyper-parameter optimization}{section.5.2}% 51
-\BOOKMARK [3][-]{subsubsection.5.2.1.1}{Hyper-parameter optimization \(HPO\)}{subsection.5.2.1}% 52
-\BOOKMARK [3][-]{subsubsection.5.2.1.2}{Combined algorithm selection and hyper-parameter optimization \(CASH\)}{subsection.5.2.1}% 53
-\BOOKMARK [2][-]{subsection.5.2.2}{Optimization methods}{section.5.2}% 54
-\BOOKMARK [3][-]{subsubsection.5.2.2.1}{Grid search}{subsection.5.2.2}% 55
-\BOOKMARK [3][-]{subsubsection.5.2.2.2}{Random search}{subsection.5.2.2}% 56
-\BOOKMARK [3][-]{subsubsection.5.2.2.3}{Bayesian optimization}{subsection.5.2.2}% 57
-\BOOKMARK [1][-]{section.5.3}{Proposed methods}{chapter.5}% 58
-\BOOKMARK [2][-]{subsection.5.3.1}{Error quantification}{section.5.3}% 59
-\BOOKMARK [3][-]{subsubsection.5.3.1.1}{Quantification of error from computational steps}{subsection.5.3.1}% 60
-\BOOKMARK [3][-]{subsubsection.5.3.1.2}{Quantification of error from algorithms}{subsection.5.3.1}% 61
-\BOOKMARK [2][-]{subsection.5.3.2}{Error propagation}{section.5.3}% 62
-\BOOKMARK [1][-]{section.5.4}{Experiments and results}{chapter.5}% 63
-\BOOKMARK [2][-]{subsection.5.4.1}{Optimization frameworks}{section.5.4}% 64
-\BOOKMARK [2][-]{subsection.5.4.2}{Datasets}{section.5.4}% 65
-\BOOKMARK [2][-]{subsection.5.4.3}{Error quantification experiments}{section.5.4}% 66
-\BOOKMARK [3][-]{subsubsection.5.4.3.1}{Error contribution from computational steps}{subsection.5.4.3}% 67
-\BOOKMARK [3][-]{subsubsection.5.4.3.2}{Error contribution from algorithms}{subsection.5.4.3}% 68
-\BOOKMARK [2][-]{subsection.5.4.4}{Error propagation experiments}{section.5.4}% 69
-\BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 70
-\BOOKMARK [0][-]{chapter.6}{CONCLUSIONS AND FUTURE WORK}{}% 71
-\BOOKMARK [1][-]{section.6.1}{Conclusions}{chapter.6}% 72
-\BOOKMARK [0][-]{section*.39}{REFERENCES}{}% 73
+\BOOKMARK [1][-]{section.1.3}{Outline}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{IMAGE DRIVEN MACHINE LEARNING METHODS FOR MICROSTRUCTURE RECOGNITION}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Alloy Fabrication and Sample Preparation}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Image Data Sets}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.4}{Approach}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.5}{Computer Vision and Machine Learning Methods}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.5.1}{Feature extraction}{section.2.5}% 16
+\BOOKMARK [2][-]{subsection.2.5.2}{Dimensionality reduction}{section.2.5}% 17
+\BOOKMARK [2][-]{subsection.2.5.3}{Classification}{section.2.5}% 18
+\BOOKMARK [2][-]{subsection.2.5.4}{Related Work in Materials Science}{section.2.5}% 19
+\BOOKMARK [1][-]{section.2.6}{Selection of Model Parameters}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.7}{Software and Hardware Specifications}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.8}{Results and Discussion}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.8.1}{Task 1 - Dendritic versus non-dendritic microstructures}{section.2.8}% 23
+\BOOKMARK [2][-]{subsection.2.8.2}{Task 2 - Longitudinal versus transverse cross-sectional views of dendrites}{section.2.8}% 24
+\BOOKMARK [1][-]{section.2.9}{Limitations}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.10}{Conclusions}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.11}{Future Work}{chapter.2}% 27
+\BOOKMARK [0][-]{chapter.3}{BLOOD VESSEL CHARACTERIZATION USING VIRTUAL 3D MODELS AND CONVOLUTIONAL NEURAL NETWORKS IN FLUORESCENCE MICROSCOPY}{}% 28
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.2}{Data}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.2.1}{Natural data}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.2}{Virtual data}{section.3.2}% 32
+\BOOKMARK [1][-]{section.3.3}{Methods}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.4}{Experiments and results}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.5}{Conclusions}{chapter.3}% 35
+\BOOKMARK [0][-]{chapter.4}{A MACHINE LEARNING APPROACH TO QUANTIFYING NOISE IN MEDICAL IMAGES}{}% 36
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.2}{Data}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.2.1}{Preliminary noise reduction}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.2}{Combination of the three markers}{section.4.2}% 40
+\BOOKMARK [2][-]{subsection.4.2.3}{Feature extraction}{section.4.2}% 41
+\BOOKMARK [2][-]{subsection.4.2.4}{Data preprocessing}{section.4.2}% 42
+\BOOKMARK [1][-]{section.4.3}{Methods and experiments}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.3.1}{Random undersampling}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.2}{Classification and analysis}{section.4.3}% 45
+\BOOKMARK [2][-]{subsection.4.3.3}{Quality of image score}{section.4.3}% 46
+\BOOKMARK [2][-]{subsection.4.3.4}{Defining the ugly class}{section.4.3}% 47
+\BOOKMARK [1][-]{section.4.4}{Conclusions}{chapter.4}% 48
+\BOOKMARK [0][-]{chapter.5}{RANDOM SEARCH BASED QUANTIFICATION OF CONTRIBUTION AND PROPAGATION OF ERROR IN IMAGE CLASSIFICATION PIPELINES}{}% 49
+\BOOKMARK [1][-]{section.5.1}{Introduction and Motivation}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.2}{Foundations}{chapter.5}% 51
+\BOOKMARK [2][-]{subsection.5.2.1}{Algorithm selection and hyper-parameter optimization}{section.5.2}% 52
+\BOOKMARK [3][-]{subsubsection.5.2.1.1}{Hyper-parameter optimization \(HPO\)}{subsection.5.2.1}% 53
+\BOOKMARK [3][-]{subsubsection.5.2.1.2}{Combined algorithm selection and hyper-parameter optimization \(CASH\)}{subsection.5.2.1}% 54
+\BOOKMARK [2][-]{subsection.5.2.2}{Optimization methods}{section.5.2}% 55
+\BOOKMARK [3][-]{subsubsection.5.2.2.1}{Grid search}{subsection.5.2.2}% 56
+\BOOKMARK [3][-]{subsubsection.5.2.2.2}{Random search}{subsection.5.2.2}% 57
+\BOOKMARK [3][-]{subsubsection.5.2.2.3}{Bayesian optimization}{subsection.5.2.2}% 58
+\BOOKMARK [1][-]{section.5.3}{Proposed methods}{chapter.5}% 59
+\BOOKMARK [2][-]{subsection.5.3.1}{Error quantification}{section.5.3}% 60
+\BOOKMARK [3][-]{subsubsection.5.3.1.1}{Quantification of error from computational steps}{subsection.5.3.1}% 61
+\BOOKMARK [3][-]{subsubsection.5.3.1.2}{Quantification of error from algorithms}{subsection.5.3.1}% 62
+\BOOKMARK [2][-]{subsection.5.3.2}{Error propagation}{section.5.3}% 63
+\BOOKMARK [1][-]{section.5.4}{Experiments and results}{chapter.5}% 64
+\BOOKMARK [2][-]{subsection.5.4.1}{Optimization frameworks}{section.5.4}% 65
+\BOOKMARK [2][-]{subsection.5.4.2}{Datasets}{section.5.4}% 66
+\BOOKMARK [2][-]{subsection.5.4.3}{Error quantification experiments}{section.5.4}% 67
+\BOOKMARK [3][-]{subsubsection.5.4.3.1}{Error contribution from computational steps}{subsection.5.4.3}% 68
+\BOOKMARK [3][-]{subsubsection.5.4.3.2}{Error contribution from algorithms}{subsection.5.4.3}% 69
+\BOOKMARK [2][-]{subsection.5.4.4}{Error propagation experiments}{section.5.4}% 70
+\BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 71
+\BOOKMARK [0][-]{chapter.6}{CONCLUSIONS AND FUTURE WORK}{}% 72
+\BOOKMARK [1][-]{section.6.1}{Conclusions}{chapter.6}% 73
+\BOOKMARK [0][-]{section*.40}{REFERENCES}{}% 74
