@@ -1,4 +1,4 @@
-\chapter{RANDOM SEARCH BASED QUANTIFICATION OF CONTRIBUTION AND PROPAGATION OF ERROR IN IMAGE CLASSIFICATION PIPELINES}
+\chapter{RANDOM SEARCH BASED QUANTIFICATION OF ERROR CONTRIBUTION   IN IMAGE CLASSIFICATION PIPELINES}
 \label{chap:EP}
 
 \let\thefootnote\relax\footnotetext{}
@@ -7,6 +7,8 @@
 \section{Introduction and Motivation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Introduction} 
+\label{sec1}
 Machine learning and data science has entered many domains of human effort in modern times. The number of self-reported data scientists has doubled in recent years \cite{harrison1995validity}. They have entered various domains including academia, industry and business among others. There has therefore been a demand for machine learning tools that are flexible, powerful and most importantly interpretable. The effective application of machine learning tools unfortunately requires an expert understanding of the frameworks and algorithms that are present in a machine learning pipeline. It also requires knowledge of the problem domain and understanding of the assumptions used in the analysis. In order for these tools to be used adequately by non-experts; additional tools must be developed for understanding and interpreting the results of the application of a data analytic pipeline on a domain specific problem.  
 
 \begin{figure}[H]
@@ -69,7 +71,7 @@ Random search is the optimization method where trial configurations are randomly
 
 \subsubsection{Bayesian optimization}
 \label{subsubsec1}
-Sequential model based Bayesian optimization (SMBO) \cite{hutter2011sequential} is the method of choice when it comes to optimization of complicated black-box functions. In a nutshell, it consists of two components. The first is a probabilistic model and the second is an acquisition function. The probabilistic model can be modelled using Gaussian processes (Spearmint) \cite{snoek2012practical}, random forests (SMAC) \cite{hutter2011sequential} and using density estimation with Tree-structured Parzen estimators (TPE) \cite{bergstra2011algorithms}. The acquisition function determines the future candidates or trials for evaluation. The acquisiton function is relatively cheap to evaluate compared to the actual objective function $f^D$. One of the most prominent acquisition functions is \textit{expected improvement} (EI) \cite{movckus1975bayesian}. We use the sequential model-based algorithm configuration (SMAC) that uses random forests as the Bayesian optimization framework. 
+Sequential model based Bayesian optimization (SMBO) \cite{hutter2011sequential} is the method of choice when it comes to optimization of complicated black-box functions. In a nutshell, it consists of two components. The first is a probabilistic model and the second is an acquisition function. The probabilistic model can be modelled using Gaussian processes (Spearmint) \cite{snoek2012practical}, random forests (SMAC) \cite{hutter2011sequential} and using density estimation with Tree-structured Parzen estimators (TPE) \cite{bergstra2011algorithms}. The acquisition function determines the future candidates or trials for evaluation. The acquisiton function is relatively cheap to evaluate compared to the actual objective function $f^D$. One of the most prominent acquisition functions is \textit{expected improvement} (EI) \cite{expected_improvement}. We use the sequential model-based algorithm configuration (SMAC) that uses random forests as the Bayesian optimization framework. 
 
 \section{Proposed methods}
 \label{sec3}
@@ -106,121 +108,121 @@ where, $i = {1, ..., n}, j = {1, ..., |\theta_{ij}|}$, $|\theta_{ij}|$ represent
 % EC_{A_{ij}}^* = \frac{1}{|A_{ij}^p|}\sum_{j=1}^{|A_{ij}^p|} {E_{A_{ij}}^k}^* - E_{A_{ij}}^*,
 % \end{equation}
 % where, $|A_{ij}^p|$ is the number of paths in the pipeline that algorithm $A_{ij}$ is involved in. ${E_{A_{ij}}^k}^*$ is the minimum error found over the $k$-th path that the $A_{ij}$ is involved in. $E_{A_{ij}}^*$ is the minimum error over all the paths that go through $A_{ij}$.
-\subsection{Error propagation}
-\label{subsec2}
-Understanding how error propagates along a machine learning pipeline is important for it's analysis. The final error that is obtained in a pipeline consists of two sources. The first is the actual error that originates from the various components of the pipeline. The second is the error that is accumulated along the pipeline because of the propagation or the propagated error. For example an algorithm like principal components analysis that is used for transforming the features may provide a better performance with one feature extraction algorithm over another. Data scientists and domain experts alike may use this tool to understand and analyze a pipeline in detail to make sense of how the error propagates. This difference in performance maybe attributed to propagation. We propose a method to model the error propagation for both algorithms and steps using the error contributions computed using the formulation in the previous section. This is done by introducing \textit{naive} algorithms at each step of the pipeline. This model is represented in Fig. \ref{fig:naive}. 
-\begin{figure}[H]
-\label{naive_pipeline}
-    \centering
-    \includegraphics[scale=0.5]{img/EP/generalized_naive}
-    \caption{Naive methodology used in the error propagation model}
-    \label{fig:naive}
-\end{figure}
-As shown in the figure above, \textit{naive} algorithms are introduced at each step. The are denoted as $N_i$.This naive formulation is an integral component for the error propagation model. The assumption we make is that all of the error that is made by the naive algorithms is because of the algorithm itself and no error is propagated because of it. We can therefore define 6 different types of errors using this approach. These errors are represented in Table 1.
+% \subsection{Error propagation}
+% \label{subsec2}
+% Understanding how error propagates along a machine learning pipeline is important for it's analysis. The final error that is obtained in a pipeline consists of two sources. The first is the actual error that originates from the various components of the pipeline. The second is the error that is accumulated along the pipeline because of the propagation or the propagated error. For example an algorithm like principal components analysis that is used for transforming the features may provide a better performance with one feature extraction algorithm over another. Data scientists and domain experts alike may use this tool to understand and analyze a pipeline in detail to make sense of how the error propagates. This difference in performance maybe attributed to propagation. We propose a method to model the error propagation for both algorithms and steps using the error contributions computed using the formulation in the previous section. This is done by introducing \textit{naive} algorithms at each step of the pipeline. This model is represented in Fig. \ref{fig:naive}. 
+% \begin{figure}[H]
+% \label{naive_pipeline}
+%     \centering
+%     \includegraphics[scale=0.5]{generalized_naive}
+%     \caption{Naive methodology used in the error propagation model}
+%     \label{fig:naive}
+% \end{figure}
+% As shown in the figure above, \textit{naive} algorithms are introduced at each step. The are denoted as $N_i$.This naive formulation is an integral component for the error propagation model. The assumption we make is that all of the error that is made by the naive algorithms is because of the algorithm itself and no error is propagated because of it. We can therefore define 6 different types of errors using this approach. These errors are represented in Table 1.
 
 
-\begin{table}[H]
-\centering
-\caption{Notations for error definitions used in the error propagation model}
-\begin{tabular}{ |m{6em}|m{10cm}| } 
- \hline
- Notation & Definition \\ 
- \hline
- $E_{opt->opt}$ & Minimum error found by using the optimum algorithm or hyperparameter the current step or algorithm respectively and all the steps or algorithms that proceed it. \\ 
- \hline
- $E_{agnostic->opt}$ & Minimum error found by using the $agnostic$ methodology for the current step or algorithm and optimizing all the steps or algorithms that proceed it. \\ 
- \hline
-  $E_{naive->opt}$ & Minimum error found by using the naive algorithm for the current step or algorithm and optimizing all the steps or algorithms that proceed it. \\ 
- \hline
- $E_{opt->naive}$ & Minimum error found by using the optimum algorithm or hyperparameters for the current step or algorithms respectively and naive algorithms for all the steps or algorithms that proceed it. \\ 
- \hline
- $E_{naive->naive}$ & Minimum error found by using the naive algorithm for the current step or algorithm and naive algorithms all the steps that proceed it. \\ 
- \hline
- $E_{agnostic->naive}$ & Minimum error found by using the $agnostic$ methodology for the current step or algorithm and naive algorithms all the steps that proceed it.\\ 
- \hline
- \end{tabular}
-\label{table:1}
-\end{table}
+% \begin{table}[h!]
+% \centering
+% \caption{Notations for error definitions used in the error propagation model}
+% \begin{tabular}{ |m{6em}|m{10cm}| } 
+%  \hline
+%  Notation & Definition \\ 
+%  \hline
+%  $E_{opt->opt}$ & Minimum error found by using the optimum algorithm or hyperparameter the current step or algorithm respectively and all the steps or algorithms that proceed it. \\ 
+%  \hline
+%  $E_{agnostic->opt}$ & Minimum error found by using the $agnostic$ methodology for the current step or algorithm and optimizing all the steps or algorithms that proceed it. \\ 
+%  \hline
+%   $E_{naive->opt}$ & Minimum error found by using the naive algorithm for the current step or algorithm and optimizing all the steps or algorithms that proceed it. \\ 
+%  \hline
+%  $E_{opt->naive}$ & Minimum error found by using the optimum algorithm or hyperparameters for the current step or algorithms respectively and naive algorithms for all the steps or algorithms that proceed it. \\ 
+%  \hline
+%  $E_{naive->naive}$ & Minimum error found by using the naive algorithm for the current step or algorithm and naive algorithms all the steps that proceed it. \\ 
+%  \hline
+%  $E_{agnostic->naive}$ & Minimum error found by using the $agnostic$ methodology for the current step or algorithm and naive algorithms all the steps that proceed it.\\ 
+%  \hline
+%  \end{tabular}
+% \label{table:1}
+% \end{table}
 
-Let us now define 3 types of error contributions using the notations in Table 1.
-\begin{equation}
-\label{ep_errors}
-\begin{aligned}
-\Delta E_1 =& E_{agnostic->opt} - E_{opt->opt} \\
-\Delta E_2 =& E_{agnostic->naive} - E_{opt->naive} \\ 
-\Delta E_3 =& E_{naive->naive} - E_{naive->opt}
-\end{aligned}
-\end{equation}
-Eq. \ref{ep_errors} represents the error contributions from each step of the pipeline using the naive and agnostic methodology. $\Delta E_1$ is the same as the error contribution $EC_{S_i}$ for steps or $EC_{A_{ij}}$ for algorithms. described in Section 3.1. It is the error contribution from a particular step or algorithm with respect to the pipeline or path respectively. $\Delta E_2$ is the error contribution from a step or algorithm with naive algorithms in the steps proceeding it. This value represents the error contribution without error propagation. $\Delta E_3$ is the quantification of the actual error that is added by the naive algorithms.  Let us define the actual error contributed by a step or algorithm as $\alpha$ and the propagated error as a multiple of the actual error. Let this be denoted as $\gamma\alpha$. We denote $\gamma$ as the \textit{propagation factor}.  Then we can write $\Delta E_1$ as,
-\begin{equation}
-\Delta E_1 = \alpha + \gamma\alpha
-\end{equation}
-Similarly, $\Delta E_2$ consists of the actual error from the step or algorithm and the propagated error. The propagated error is a multiple of the actual error and the error added by the naive algorithms. Therefore, we can formalize this as:
-\begin{equation}
-\Delta E_2 = \alpha + \gamma(\alpha + \Delta E_3)
-\end{equation}
-Let as denote the actual error as $E_{direct}$ which is the same as $\alpha$, and the propagated error as $E_{propagation}$ which is $\gamma\alpha$. Solving Eq. 7 and Eq. 8 simultaneously, we get the values for $E_{direct}$, $E_{propagation}$ and the \textit{propagation factor} $\gamma$
-\begin{equation}
-\begin{aligned}
-E_{direct} =& \frac{\Delta E_1 \Delta E_3}{\Delta E_2 + \Delta E_3 - \Delta E_1} \\
-E_{propagation} =& \frac{\Delta E_1 (\Delta E2 - \Delta E_1)}{\Delta E_2 + \Delta E_3 - \Delta E_1}\\
-\gamma =& \frac{\Delta E_2 - \Delta E_1}{\Delta E_3}
-\end{aligned}
-\end{equation}
+% Let us now define 3 types of error contributions using the notations in Table 1.
+% \begin{equation}
+% \label{ep_errors}
+% \begin{aligned}
+% \Delta E_1 =& E_{agnostic->opt} - E_{opt->opt} \\
+% \Delta E_2 =& E_{agnostic->naive} - E_{opt->naive} \\ 
+% \Delta E_3 =& E_{naive->naive} - E_{naive->opt}
+% \end{aligned}
+% \end{equation}
+% Eq. \ref{ep_errors} represents the error contributions from each step of the pipeline using the naive and agnostic methodology. $\Delta E_1$ is the same as the error contribution $EC_{S_i}$ for steps or $EC_{A_{ij}}$ for algorithms. described in Section 3.1. It is the error contribution from a particular step or algorithm with respect to the pipeline or path respectively. $\Delta E_2$ is the error contribution from a step or algorithm with naive algorithms in the steps proceeding it. This value represents the error contribution without error propagation. $\Delta E_3$ is the quantification of the actual error that is added by the naive algorithms.  Let us define the actual error contributed by a step or algorithm as $\alpha$ and the propagated error as a multiple of the actual error. Let this be denoted as $\gamma\alpha$. We denote $\gamma$ as the \textit{propagation factor}.  Then we can write $\Delta E_1$ as,
+% \begin{equation}
+% \Delta E_1 = \alpha + \gamma\alpha
+% \end{equation}
+% Similarly, $\Delta E_2$ consists of the actual error from the step or algorithm and the propagated error. The propagated error is a multiple of the actual error and the error added by the naive algorithms. Therefore, we can formalize this as:
+% \begin{equation}
+% \Delta E_2 = \alpha + \gamma(\alpha + \Delta E_3)
+% \end{equation}
+% Let as denote the actual error as $E_{direct}$ which is the same as $\alpha$, and the propagated error as $E_{propagation}$ which is $\gamma\alpha$. Solving Eq. 7 and Eq. 8 simultaneously, we get the values for $E_{direct}$, $E_{propagation}$ and the \textit{propagation factor} $\gamma$
+% \begin{equation}
+% \begin{aligned}
+% E_{direct} =& \frac{\Delta E_1 \Delta E_3}{\Delta E_2 + \Delta E_3 - \Delta E_1} \\
+% E_{propagation} =& \frac{\Delta E_1 (\Delta E2 - \Delta E_1)}{\Delta E_2 + \Delta E_3 - \Delta E_1}\\
+% \gamma =& \frac{\Delta E_2 - \Delta E_1}{\Delta E_3}
+% \end{aligned}
+% \end{equation}
 
  
 
 \section{Experiments and results}
 \label{sec4}
-In this section, we describe the experiments performed on the data analytic pipeline to quantify the error contributions and propagation from different components of the pipeline. Image classification is the data analytic problem chosen for demonstrating the error quantification experiments. A representation of an image classification pipeline is shown in Fig. 3 in the form of a flowchart.  
+In this section, we describe the experiments performed on the data analytic pipeline to quantify the error contributions and propagation from different components of the pipeline. Image classification is the data analytic problem chosen for demonstrating the error quantification experiments. A representation of an image classification pipeline is shown in Fig. \ref{fig:flowchart} in the form of a flowchart.  
 \begin{figure}[H]
-\label{flowchart}
+\label{fig:flowchart}
     \centering
     \includegraphics[scale=0.5]{img/EP/flowchart}
-    \caption{Representation of an image classification pipeline}
+    \caption{Representation of an image classification pipeline. The pipeline consists of the steps represented by green ellipses and the outputs of each step represented by blue rectangles. In this work, we focus on the steps and outputs after pre-processing.}
 \end{figure}
-In this work, we focus on real world datasets from the domains of medical pathology and material science.  Therefore, the flowchart starts with a sample that is imaged with acquisition technology like a camera or a microscope. The image is then processed using image pre-processing algorithms like normalization and standardization. This may also include image segmentation algorithms. This is followed by feature extraction algorithms that extract useful information from the images. Sometimes, the features extracted are transformed to a different vector space using feature transformation (feature selection or dimensionality reduction) algorithms. The dataset is then divided into training and test datasets in an 80-20 split. Finally, learning algorithms like random forests and logistic regression are used as learning algorithms to build a predictive model for the image classification problem. The performance of the pipeline is evaluated using classification metrics like F1-score, accuracy, precision and recall. We use the validation and test errors as the estimate of the out-of-sample error. This error is then used as a feedback to quantify the contribution of the errors from different components of the pipeline. The specific pipeline used in this work is shown in the following figure.
+In this work, we focus on real world datasets from the domains of medical pathology and material science.  Therefore, the flowchart starts with a sample that is imaged with acquisition technology like a camera or a microscope. The image is then processed using image pre-processing algorithms like normalization and standardization. This may also include image segmentation algorithms. This is followed by feature extraction algorithms that extract useful information from the images. Sometimes, the features extracted are transformed to a different vector space using feature transformation (feature selection or dimensionality reduction) algorithms. The dataset is then divided into training and test datasets in a 80-20 split. Finally, classification algorithms like random forests \cite{breiman2001random} and support vector machines (SVM) \cite{cortes1995support} are used for learning to build a predictive model for the image classification problem. The performance of the pipeline is evaluated using classification metrics like F1-score, accuracy, precision and recall. We use the cross entropy loss on the validation and test as the estimate of the out-of-sample error. This error is then used as a feedback to quantify the contribution of the errors from different components of the pipeline. The specific pipeline used in this work is shown in the following figure.
 
-\begin{figure}[H]
-\label{image_pipeline}
+\begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.4]{img/EP/pipeline}
-    \caption{Representation of the image classification pipeline}
+    \caption{Representation of the image classification pipeline as a directed acyclic graph. This is an instantiation of the generalized data analytic pipeline in Fig. \ref{fig:pipeline}}
+    \label{fig:images_pipeline}
 \end{figure}
  The above figure shows the pipeline used in this work. There are 3 computational steps in this pipeline, namely feature extraction ($S_1$), feature transformation ($S_2$) and learning algorithms ($S_3$). The steps, algorithms and corresponding hyperparameters $A_{ij}(\theta_{ij})$ is described in Table 2.
 
-%\begin{table}[h!]
-%\label{algorithms_table}
-%\centering
-%\caption{Algorithms and hyper-parameters used in the image classification pipeline}
-%\begin{tabular}{ |m{6em}|m{3cm}|m{8cm}| } 
-% \hline
-% Step & $A_{ij}(\theta_{ij})$ & Definition \\ 
-% \hline
-% \multirow{3}{}{Feature extraction} & $A_{11}(\theta_{11})$ & Haralick texture features ($distance$) \\ 
-% & $A_{12}(\theta_{12})$ & Pre-trained CNN trained on ImageNet \cite{deng2009imagenet} database with VGG16 \cite{simonyan2014very} network  \\
-%  & $A_{13}(\theta_{13})$ & Pre-trained CNN trained on ImageNet \cite{deng2009imagenet} database with Inception \cite{szegedy2016rethinking} network  \\
-% \hline
-% \multirow{3}{}{Feature transformation} & $A_{21}(\theta_{21})$ & PCA ($whitening$) \cite{wold1987principal} \\
-% & $A_{22}(\theta_{22})$ & ISOMAP (\textit{number of neighbors, number of components}) \cite{tenenbaum2000global} \\
-% \hline
-% \multirow{3}{}{Learning algorithms} & $A_{21}(\theta_{31})$ & Random forests (\textit{number of trees, maximum number of features}) \cite{breiman2001random} \\
-% & $A_{21}(\theta_{32})$ & SVM ($C, \gamma$) \cite{cortes1995support}\\
-% \hline
-% \end{tabular}
-%\label{table:2}
-%\end{table}
-The algorithms defined above in the table are selected for making up the components of the pipeline in Fig. 4. This is meant to serve as an example for demonstrating the experiments using the error quantification framework described in section 3. It can easily be generalized to any data analytic problem that involve pipelines. 
+\begin{table}[!htb]
+\label{algorithms_table}
+\centering
+\caption{Algorithms and hyper-parameters used in the image classification pipeline. The specific algorithms and corresponding \textit{hyperparameters} are defined in the last column}
+\begin{tabular}{ |m{6em}|m{3cm}|m{8cm}| } 
+ \hline
+ Step & $A_{ij}(\theta_{ij})$ & Definition \\ 
+ \hline
+ \multirow{3}{*}{Feature extraction} & $A_{11}(\theta_{11})$ & Haralick texture features ($distance$) \\ 
+ & $A_{12}(\theta_{12})$ & Pre-trained CNN trained on ImageNet \cite{deng2009imagenet} database with VGG16 \cite{simonyan2014very} network  \\
+  & $A_{13}(\theta_{13})$ & Pre-trained CNN trained on ImageNet \cite{deng2009imagenet} database with Inception \cite{szegedy2016rethinking} network  \\
+ \hline
+ \multirow{3}{*}{Feature transformation} & $A_{21}(\theta_{21})$ & PCA ($whitening$) \cite{wold1987principal} \\
+ & $A_{22}(\theta_{22})$ & ISOMAP (\textit{number of neighbors, number of components}) \cite{tenenbaum2000global} \\
+ \hline
+ \multirow{3}{*}{Learning algorithms} & $A_{21}(\theta_{31})$ & Random forests (\textit{number of trees, maximum number of features}) \cite{breiman2001random} \\
+ & $A_{21}(\theta_{32})$ & SVM ($C, \gamma$) \cite{cortes1995support}\\
+ \hline
+ \end{tabular}
+\label{table:2}
+\end{table}
+The algorithms defined above in the table are selected for making up the components of the pipeline in Fig. \ref{fig:images_pipeline}. This is meant to serve as an example for demonstrating the experiments using the error quantification framework described in section \ref{sec3}. It can easily be generalized to any data analytic problem that involve pipelines. 
 
 \subsection{Optimization frameworks}
-Experiments are performed using two optimization frameworks. These frameworks have been described in detail in Section 2.1. 
-The first global optimization framework is the CASH framework described in Section 2.1.2. Here, the pipeline is optimized as a whole including the algorithms, which are themselves considered as hyper-parameters in this framework. The following figure is a representation of this. This is used for quantification of the contribution and propagation of error with respect to steps in the pipeline.
+Experiments are performed using two optimization frameworks. These frameworks have been described in detail in Section \ref{subsec_AS_HPO}. 
+The first global optimization framework is the CASH framework described in Section \ref{subsubsec_CASH}. Here, the pipeline is optimized as a whole including the algorithms, which are themselves considered as hyper-parameters in this framework. The following figure is a representation of this. This is used for quantification of the contribution and propagation of error with respect to \textit{computational steps} in the pipeline.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{img/EP/CASH}
     \caption{Combined algorithm selection and hyper-parameter optimization in a data analytic pipeline. The algorithms and corresponding hyper-parameters are optimized simultaneously.}
     \label{fig:CASH}
-The second is the hyperparameter optimization (HPO) framework where each path in the pipeline is optimized as shown in the following figure. This framework is used for quantifying the contribution and propagation of error with respect to algorithms in the each path of the pipeline.
+The second framework is the hyperparameter optimization (HPO) framework where each path in the pipeline is optimized individually. This is described in detail in section \ref{subsubsec_HPO}. This framework is used for quantifying the contribution and propagation of error with respect to \textit{algorithms} in the each path of the pipeline.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{img/EP/HPO}
@@ -228,10 +230,12 @@ The second is the hyperparameter optimization (HPO) framework where each path in
     \label{fig:HPO}
 \end{figure}
 \end{figure}
+Specifically, we choose the path \textit{haralick texture features} - \textit{PCA} - \textit{random forests} to demonstrate the error quantification approach for algorithms.
+
 \subsection{Datasets}
 Four datasets from the domains of medicine and material science are used in this work. They are image datasets of breast cancer\cite{bilgin2007cell}, brain cancer \cite{gunduz2004cell}, and two datasets of microstructures in material science \cite{chowdhury2016image}. They are described in the following table.
 
-\begin{table}[H]
+\begin{table}[h]
 \centering
 \caption{Notations for error definitions used in the error propagation model}
 \begin{tabular}{ |c|c| } 
@@ -252,10 +256,10 @@ Four datasets from the domains of medicine and material science are used in this
 The above table represents datasets from the scientific domain. These datasets have been chosen because they represent examples of real world datasets. They are noisy in the sense that they have artefacts in the images, are heavily imbalanced and are small in terms of number of samples. They are different from the very large datasets like ImageNet \cite{deng2009imagenet}, where deep learning techniques like convolutional neural networks have been shown to be superior. Even though deep neural networks represent an end-to-end workflow where the input image is fed into the network and the output classification is obtained at the other end, they may also be represented as pipelines, if the hyper-parameters of the network are considered. \cite{shin2016deep} has shown that machine learning problems involving datasets from medical imaging may be solved using pre-trained and fine-tuned neural networks rather than training them from scratch. We have therefore used pre-trained models such as VGGnet \cite{simonyan2014very} and InceptionNet \cite{szegedy2016rethinking} as pre-trained feature extraction models that fit naturally in the pipeline framework described here for the purpose of illustrating the error quantification methodology.
 
 \subsection{Error quantification experiments}
-Experiments based on the quantification of error contributions framework described in section 3.1 are presented here. The plots are of the error contribution values calculated using Eqs. 3, 4 and 5 on the 4 datasets described in Table 3. The error contribution values are obtained from the trials in the results of optimization methods in Section 2. Grid search is only run once while the other algorithms are averaged over 5 runs with the mean and standard deviation shown in the following plots. These results are on the validation error obtained at the end of the pipeline. Random search and Bayesian optimization (using the SMAC algorithm) are also implemented on both the frameworks described in Section 4.1.
+Experiments based on the quantification of error contributions framework described in section 3.1 are presented here. The plots are of the error contribution values calculated using Eqs. 3, 4 and 5 on the 4 datasets described in Table 3. The error contribution values are obtained from the trials in the optimization methods described in Section 2. Grid search is only run once while the other algorithms are averaged over 5 runs with the mean and standard deviation shown in the following plots. These results are computed on the validation error (cross-entropy loss) obtained at the end of the pipeline. Random search and Bayesian optimization (using the SMAC algorithm) are implemented on both the frameworks described in Section 4.1 for computational steps and algorithms respectively. The grid search results maybe used as the gold standard to compare the performance of other optimization algorithms. 
 
 \subsubsection{Error contribution from computational steps}
-The error contributions from computational steps in the pipeline is shown in the following figure. We can observe that most of the error comes from feature extraction algorithms. The error is calculated using the formulation of $EC_{S_i}$ in section 3.1.1. This confirms our belief that feature extraction algorithms are the most important components of a machine learning pipeline. The grid search results maybe used as the gold standard to compare the performance of other optimization algorithms. 
+The results of error contributions from computational steps in the pipeline is shown in the following figure. The error is calculated using the formulation of $EC_{S_i}$ in section 3.1.1. We can observe that most of the error comes from feature extraction algorithms. This confirms our intuitive belief that feature extraction algorithms are the most important components of a machine learning pipeline. 
 \begin{figure}[H]
 \centering
 \begin{subfigure}{.5\textwidth}
@@ -283,11 +287,11 @@ The error contributions from computational steps in the pipeline is shown in the
   \label{fig:sfig4}
 \end{subfigure}
 
-\caption{Plots of error contributions from computational steps in the pipeline.}
+\caption{Plots of error contributions from computational steps in the pipeline. Random search (blue) follows the behavior of grid search (red), whereas, bayesin optimization does not. Hence, random search maybe used to quantify the error contributions instead of grid search.}
 \label{fig:fig}
 \end{figure}
 
-The mean and standard deviation values of $EC_{S_i}$ calculated using Eq. \ref{eq_step} is represented in the figure above for the 4 datasets in Table 3. The standard deviation of grid search is 0 because it was only run once for each dataset due to the time required for computation and also because of the robustness of the grid search method (the results don't change because we try out every single configuration). We observe from the plots results for both random search and Bayesian optimization (SMAC) follow the behavior of grid search. The random search results using the CASH framework mirrors the behavior of grid search, but the results are not robust because of the relatively high standard deviation. This is because the search trials do not include all the configurations of algorithms in the pipeline, which are necessary for the computation $EC_{S_i}$ using Eq. \ref{eq_step}. The results of SMAC in the CASH framework are even worse. This is because the trials for SMAC are even more sparse with respect to the algorithms it selects for optimization of  the error in Eq. 2. SMAC only samples a few configurations based on the updated probabilistic model as it narrows in on the optimum error. Therefore, it sometimes gives erroneous results as can be seen for $matsc1$ and $matsc2$ in Figs. 7(c) and 7(d) respectively.
+The mean and standard deviation values of $EC_{S_i}$ calculated using Eq. \ref{eq_step} is represented in the figure above for the 4 datasets in Table 3. The standard deviation of grid search is 0 because it was only run once for each dataset due to the time required for computation and also because of the robustness of the grid search method (the results don't change because we try out every single configuration). We observe from the results, that both random search follows the behavior of grid search. It mirrors the behavior of grid search, but the results are not robust because of the high standard deviation. This is expected because the search trials may not include all the configurations of algorithms in the pipeline as opposed to grid search where all the configurations of algorithms and hyperparameters are evaluated. The results of SMAC (bayesian optimization) in the CASH framework do not follow the behavior of grid search. This is because the trials for SMAC are even more sparse with respect to the algorithms it selects for optimization of  the error in Eq. 2. SMAC only samples a few configurations based on the updated probabilistic model as it narrows in on the optimum error. Therefore, it sometimes gives erroneous results as can be seen for $matsc1$ and $matsc2$ in Figs. 7(c) and 7(d) respectively.
 
 
 \subsubsection{Error contribution from algorithms}
@@ -323,7 +327,7 @@ In the following figure, the error contributions from algorithms are quantified 
   \label{fig:sfig4}
 \end{subfigure}
 
-\caption{Plots of error contributions from algorithms in the pipeline (method 1).}
+\caption{Plots of error contributions from algorithms in the pipeline. Random search again mirrors the trend of grid search more than bayesian optimization. Therefore random search maybe used instead of grid search for computing the contribution of error from algorithms in a path.}
 \label{fig:fig}
 \end{figure}
 
@@ -336,25 +340,25 @@ In the following figure, the error contributions from algorithms are quantified 
 % \centering
 % \begin{subfigure}{.5\textwidth}
 %   \centering
-%   \includegraphics[scale=0.37]{img/EP/agnostic_error_alg_2_breast}
+%   \includegraphics[scale=0.37]{agnostic_error_alg_2_breast}
 %   \caption{\textit{breast}}
 %   \label{fig:sfig1}
 % \end{subfigure}%
 % \begin{subfigure}{.5\textwidth}
 %   \centering
-%   \includegraphics[scale=0.37]{img/EP/agnostic_error_alg_2_brain}
+%   \includegraphics[scale=0.37]{agnostic_error_alg_2_brain}
 %   \caption{\textit{brain}}
 %   \label{fig:sfig2}
 % \end{subfigure}
 % \begin{subfigure}{.5\textwidth}
 %   \centering
-%   \includegraphics[scale=0.37]{img/EP/agnostic_error_alg_2_matsc_dataset1}
+%   \includegraphics[scale=0.37]{agnostic_error_alg_2_matsc_dataset1}
 %   \caption{\textit{matsc1}}
 %   \label{fig:sfig3}
 % \end{subfigure}%
 % \begin{subfigure}{.5\textwidth}
 %   \centering
-%   \includegraphics[scale=0.37]{img/EP/agnostic_error_alg_2_matsc_dataset2}
+%   \includegraphics[scale=0.37]{agnostic_error_alg_2_matsc_dataset2}
 %   \caption{\textit{matsc2}}
 %   \label{fig:sfig4}
 % \end{subfigure}
@@ -365,206 +369,203 @@ In the following figure, the error contributions from algorithms are quantified 
 % We can see from the plots in the figure above that the error is distributed among various algorithms and not just 3 dominant algorithms. This error can be regarded as the cost of not optimizing the path that flows through the particular algorithm.
 % We again observe the same trend while comparing the different optimization approaches. HPO does a better job at capturing the error contribution for reasons stated above. Random search in the CASH framework follows the behavior of grid search but has higher variance. SMAC does a poor job at computing the error contributions from the pipeline altogether. 
 
-The following figure shows the average computation times of each of the algorithms used in the above error quantification experiments. We can clearly observe that random search is the most efficient in terms of computational time among the 3 algorithms used in this work.
+The following figure shows the average computation times of each of the algorithms used in the error quantification experiments. We can observe that random search and bayesian optimization are both efficient in terms of computational time as opposed to grid search.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.45]{img/EP/times_algorithms}
-    \caption{Pipeline including naive algorithms for error propagation}
+    \caption{Pipeline including naive algorithms for error propagation. Random search and bayesian optimization are both much more efficient that grid search in terms of computation time.}
     \label{fig:flowchart}
 \end{figure}
 
-From Figs. 7, 8 and 9, we observe that the random search based optimization on the CASH framework follows the behavior of grid search and can be used for quantification of error contributions from computational steps. In addition, we see from Fig. 10, that the average computation time for random search on the CASH framework is the least among all the optimization frameworks. Therefore, we use the random search framework for quantification of error contributions in the pipeline in the following section
+From Figs. 7, 8 and 9, we observe that the random search based optimization follows the behavior of grid search or both steps and algorithms. In addition, we see from Fig. 10, that the average computation time for random search on the CASH framework is the least among all the optimization frameworks. Therefore, we use the random search framework for quantification of error propagation in the pipeline in the following section.
 
+% \subsection{Error propagation experiments}
+% The set of experiments in this section correspond to the error propagation model formulated in Section 3.2. The corresponding pipeline including the naive algorithms are represented in the following figure.
 
-\subsection{Error propagation experiments}
-The set of experiments in this section correspond to the error propagation model formulated in Section 3.2. The corresponding pipeline including the naive algorithms are represented in the following figure.
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[scale=0.5]{naive}
+%     \caption{Pipeline including naive algorithms for error propagation}
+%     \label{fig:flowchart}
+% \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.5]{img/EP/naive}
-    \caption{Pipeline including naive algorithms for error propagation}
-    \label{fig:flowchart}
-\end{figure}
+% The naive algorithms used in this work are \textit{vectorization} (flattening the image into a vector) for feature extraction, \textit{no transformation} for feature transformation, and \textit{1-nearest neaighbors} algorithm as the classification or learning algorithm. The naive algorithms are selected with the assumption that the only error that result from them is the direct error, as discussed in Section 3.2.
 
-The naive algorithms used in this work are \textit{vectorization} (flattening the image into a vector) for feature extraction, \textit{no transformation} for feature transformation, and \textit{1-nearest neaighbors} algorithm as the classification or learning algorithm. The naive algorithms are selected such that the only error that result from them is the direct error, as stated in Section 3.2.
+% The following figures shows the results of the error propagation framework. The results are obtained based on the CASH based random search for steps and HPO based random search on paths for algorithms. 
+% Fig. 11 shows the plots for error propagation along the steps in the image classification pipeline. The plots show the total error $EC_{S_i}$, the direct error $E_{direct}$ and the propagation error $E_{propagation}$. These values are computed using error propagation model defined in section 3.2.1.
+% The total error is the error contribution calculated using Eq. 3. We can see from the results that the total error is dominated by the direct error from the algorithms in the steps. The propagation error is the difference between the total error and the direct error from the algorithms. We also note that the propagation error progressively reduces in magnitude from feature extraction algorithms (that are at the beginning of the pipeline) to learning algorithms (that are at the end of the pipeline). Therefore, the model captures our intuition that usually more error is propagated from steps that exist closer to the beginning of the pipeline.
 
-The following figures shows the results of the error propagation framework. The results are obtained based on the CASH based random search for steps and HPO based random search on paths for algorithms. 
-Fig. 11 shows the plots for error propagation along the steps in the image classification pipeline. The plots show the total error $EC_{S_i}$, the direct error $E_{direct}$ and the propagation error $E_{propagation}$. These values are computed using error propagation model defined in section 3.2.1.
-The total error is the error contribution calculated using Eq. 3. We can see from the results that the total error is dominated by the direct error from the algorithms in the steps. The propagation error is the difference between the total error and the direct error from the algorithms. We also note that the propagation error progressively reduces in magnitude from feature extraction algorithms (that are at the beginning of the pipeline) to learning algorithms (that are at the end of the pipeline). Therefore, the model captures our intuition that usually more error is propagated from steps that exist closer to the beginning of the pipeline.
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/error_propagation_random_pipeline_breast}
-  \caption{\textit{breast}}
-  \label{fig:sfig1}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/error_propagation_random_pipeline_brain}
-  \caption{\textit{brain}}
-  \label{fig:sfig2}
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/error_propagation_random_pipeline_matsc_dataset1}
-  \caption{\textit{matsc1}}
-  \label{fig:sfig3}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/error_propagation_random_pipeline_matsc_dataset2}
-  \caption{\textit{matsc2}}
-  \label{fig:sfig4}
-\end{subfigure}
-
-\caption{Plots of error propagation using the naive algorithm based methodology.}
-\label{fig:fig}
-\end{figure}
-
-The following figure shows the propagation factor $\gamma$ computed in Eq. 6. The value of this factor quantifies the propagation from a particular step in the pipeline. A relatively high value means that the factor by which the error is propagated down the pipeline from a particular step is large. As expected, we observe that there the propagation factors are large for feature extraction algorithms and they progressively reduce in magnitude as we move closer towards the end of the pipeline. The propagation factor for learning algorithms is $0$ because this step is at the end of the pipeline, and all the error from the step is directly due to the algorithms themselves.
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/propagation_factor_random_pipeline_breast}
-  \caption{\textit{breast}}
-  \label{fig:sfig1}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/propagation_factor_random_pipeline_brain}
-  \caption{\textit{brain}}
-  \label{fig:sfig2}
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/propagation_factor_random_pipeline_matsc_dataset1}
-  \caption{\textit{matsc1}}
-  \label{fig:sfig3}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/propagation_factor_random_pipeline_matsc_dataset2}
-  \caption{\textit{matsc2}}
-  \label{fig:sfig4}
-\end{subfigure}
-
-\caption{Plots of propagation factor $\gamma$ using the naive algorithm based methodology.}
-\label{fig:fig}
-\end{figure}
-
-The same computations for error propagation are carried out with respect to algorithms. Again in this formulation, we optimize a path in the pipeline. The path used here is the same as that used in the error contribution experiments for algorithms in section 4.3.2 - \textit{haralick texture features}, $PCA$ and \textit{random forests}. The following figures represent the corresponding plots representing the error propagation and propagation factors with respect to algorithms.
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/error_propagation_random_pipeline_breast}
-  \caption{\textit{breast}}
-  \label{fig:sfig1}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/error_propagation_random_pipeline_brain}
-  \caption{\textit{brain}}
-  \label{fig:sfig2}
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/error_propagation_random_pipeline_matsc_dataset1}
-  \caption{\textit{matsc1}}
-  \label{fig:sfig3}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/error_propagation_random_pipeline_matsc_dataset2}
-  \caption{\textit{matsc2}}
-  \label{fig:sfig4}
-\end{subfigure}
-
-\caption{Plots of error propagation using the naive algorithm based methodology.}
-\label{fig:fig}
-\end{figure}
-
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/propagation_factor_random_pipeline_breast}
-  \caption{\textit{breast}}
-  \label{fig:sfig1}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/propagation_factor_random_pipeline_brain}
-  \caption{\textit{brain}}
-  \label{fig:sfig2}
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/propagation_factor_random_pipeline_matsc_dataset1}
-  \caption{\textit{matsc1}}
-  \label{fig:sfig3}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/propagation_factor_random_pipeline_matsc_dataset2}
-  \caption{\textit{matsc2}}
-  \label{fig:sfig4}
-\end{subfigure}
-
-\caption{Plots of propagation factor $\gamma$ using the naive algorithm based methodology.}
-\label{fig:fig}
-\end{figure}
-
-
-All of the figures shown above are computed with respect to the validation dataset. We also perform the same experiments on the held out test data. The following figure shows the results of the error contribution and propagation on the test data for \textit{breast} dataset. We compare the results of the held out test data with the results from the validation data. As we can see, the magnitude of error contributions from the test data are slightly larger that that from validation data. This can be explained due to slight overfitting on the validation dataset. The error propagation results on the test dataset is also different from the validation dataset. This can also be due to error from generalization.
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/agnostic_error_step_val_test_breast}
-  \caption{\textit{Error contributions from computational steps}}
-  \label{fig:sfig1}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/agnostic_error_alg_breast_test}
-  \caption{\textit{Error  from algorithms (\textit{method 1})}}
-  \label{fig:sfig1}
-\end{subfigure}
+% \begin{figure}[H]
+% \centering
 % \begin{subfigure}{.5\textwidth}
 %   \centering
-%   \includegraphics[scale=0.4]{img/EP/agnostic_error_alg_2_val_test_breast}
-%   \caption{\textit{Error from algorithms (\textit{method 2})}}
+%   \includegraphics[scale=0.4]{error_propagation_random_pipeline_breast}
+%   \caption{\textit{breast}}
 %   \label{fig:sfig1}
 % \end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/error_propagation_random_pipeline_steps_test_breast}
-  \caption{\textit{Error propagation}}
-  \label{fig:sfig4}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{img/EP/error_propagation_random_pipeline_steps_test_breast}
-  \caption{\textit{Propagation factor}}
-  \label{fig:sfig4}
-\end{subfigure}
-\caption{Plots of error contribution and error propagation on test data from \textit{breast} data.}
-\label{fig:fig}
-\end{figure}
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{error_propagation_random_pipeline_brain}
+%   \caption{\textit{brain}}
+%   \label{fig:sfig2}
+% \end{subfigure}
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{error_propagation_random_pipeline_matsc_dataset1}
+%   \caption{\textit{matsc1}}
+%   \label{fig:sfig3}
+% \end{subfigure}%
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{error_propagation_random_pipeline_matsc_dataset2}
+%   \caption{\textit{matsc2}}
+%   \label{fig:sfig4}
+% \end{subfigure}
+
+% \caption{Plots of error propagation using the naive algorithm based methodology. The total error is dominated by the direct error introduced by the steps. The propagation error reduces as we move toward the end of the pipeline.}
+% \label{fig:fig}
+% \end{figure}
+
+% The following figure shows the propagation factor $\gamma$ computed in Eq. 6. The value of this factor quantifies the propagation from a particular step in the pipeline. A relatively high value means that the factor by which the error is propagated down the pipeline from a particular step is large. As expected, we observe that the propagation factors are large for feature extraction algorithms and they progressively reduce in magnitude as we move closer towards the end of the pipeline. The propagation factor for learning algorithms is $0$ because this step is at the end of the pipeline, and all the error from the step is directly due to the algorithms themselves and no error is propagated.
+
+% \begin{figure}[H]
+% \centering
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{propagation_factor_random_pipeline_breast}
+%   \caption{\textit{breast}}
+%   \label{fig:sfig1}
+% \end{subfigure}%
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{propagation_factor_random_pipeline_brain}
+%   \caption{\textit{brain}}
+%   \label{fig:sfig2}
+% \end{subfigure}
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{propagation_factor_random_pipeline_matsc_dataset1}
+%   \caption{\textit{matsc1}}
+%   \label{fig:sfig3}
+% \end{subfigure}%
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{propagation_factor_random_pipeline_matsc_dataset2}
+%   \caption{\textit{matsc2}}
+%   \label{fig:sfig4}
+% \end{subfigure}
+
+% \caption{Plots of propagation factor $\gamma$ using the naive algorithm based methodology. The propagation factors are higher for steps closer to the beginning of the pipeline and progressively reduce in magnitude towards the end of the pipeline. The propagation factor from learning algorithms is non-existent because no error is propagated.}
+% \label{fig:fig}
+% \end{figure}
+
+% The same computations for error propagation are carried out with respect to algorithms. Again in this formulation, we optimize a path in the pipeline. The path used here is the same as that used in the error contribution experiments for algorithms in section 4.3.2 - \textit{haralick texture features}, $PCA$ and \textit{random forests}. The following figures represent the corresponding plots representing the error propagation and propagation factors with respect to algorithms.
+
+% \begin{figure}[H]
+% \centering
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{error_propagation_random_pipeline_breast}
+%   \caption{\textit{breast}}
+%   \label{fig:sfig1}
+% \end{subfigure}%
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{error_propagation_random_pipeline_brain}
+%   \caption{\textit{brain}}
+%   \label{fig:sfig2}
+% \end{subfigure}
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{error_propagation_random_pipeline_matsc_dataset1}
+%   \caption{\textit{matsc1}}
+%   \label{fig:sfig3}
+% \end{subfigure}%
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{error_propagation_random_pipeline_matsc_dataset2}
+%   \caption{\textit{matsc2}}
+%   \label{fig:sfig4}
+% \end{subfigure}
+
+% \caption{Plots of error propagation from the steps using the naive algorithm based methodology.}
+% \label{fig:fig}
+% \end{figure}
+
+
+% \begin{figure}[H]
+% \centering
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{propagation_factor_random_pipeline_breast}
+%   \caption{\textit{breast}}
+%   \label{fig:sfig1}
+% \end{subfigure}%
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{propagation_factor_random_pipeline_brain}
+%   \caption{\textit{brain}}
+%   \label{fig:sfig2}
+% \end{subfigure}
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{propagation_factor_random_pipeline_matsc_dataset1}
+%   \caption{\textit{matsc1}}
+%   \label{fig:sfig3}
+% \end{subfigure}%
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{propagation_factor_random_pipeline_matsc_dataset2}
+%   \caption{\textit{matsc2}}
+%   \label{fig:sfig4}
+% \end{subfigure}
+
+% \caption{Plots of propagation factor $\gamma$ from algorithms using the naive algorithm based methodology.}
+% \label{fig:fig}
+% \end{figure}
+
+
+% All of the figures shown above are computed with respect to the validation dataset. We also perform the same experiments on the 20 \% held out test data. The following figure shows the results of the error contribution and propagation on the test data for \textit{breast} dataset. We compare the results of the held out test data with the results from the validation data. As we can see, the magnitude of error contributions from the test data are slightly larger that that from validation data. This can be explained due to slight overfitting on the validation dataset. The error propagation results on the test dataset is also different from the validation dataset. This can also be due to error from generalization.
+
+% \begin{figure}[H]
+% \centering
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{agnostic_error_step_val_test_breast}
+%   \caption{\textit{Error contributions from computational steps}}
+%   \label{fig:sfig1}
+% \end{subfigure}%
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{agnostic_error_alg_breast_test}
+%   \caption{\textit{Error  from algorithms (\textit{method 1})}}
+%   \label{fig:sfig1}
+% \end{subfigure}
+% % \begin{subfigure}{.5\textwidth}
+% %   \centering
+% %   \includegraphics[scale=0.4]{agnostic_error_alg_2_val_test_breast}
+% %   \caption{\textit{Error from algorithms (\textit{method 2})}}
+% %   \label{fig:sfig1}
+% % \end{subfigure}%
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{error_propagation_random_pipeline_steps_test_breast}
+%   \caption{\textit{Error propagation}}
+%   \label{fig:sfig4}
+% \end{subfigure}%
+% \begin{subfigure}{.5\textwidth}
+%   \centering
+%   \includegraphics[scale=0.4]{error_propagation_random_pipeline_steps_test_breast}
+%   \caption{\textit{Propagation factor}}
+%   \label{fig:sfig4}
+% \end{subfigure}
+% \caption{Plots of error contribution and error propagation on test data from \textit{breast} data. The difference between the results for test and validation data maybe accounted for by the error from generalization.}
+% \label{fig:fig}
+% \end{figure}
 
 
 \section{Conclusion}
 This work proposes a methodology for making black box machine learning pipelines interpretable. The suggested approach involves understanding the sources and flow of error in data analytic pipelines. Specifically, we propose a methodology to quantify the error contributions from different parts of an image classification pipeline, namely computational steps and algorithms. This methodology is described as the \textit{agnostic} method described in Section 3.1. The results in Section 4.3 show that the black-box optimization methods like random search and Bayesian optimization is able to quantify the error contributions as well as grid search although the CASH framework of Bayesian optimization is not as accurate due to reasons specified above. The error quantification methodology maybe used by machine learning practitioners to understand and interpret results of a specific machine learning problem on a dataset. Understanding the source of error in terms of steps and algorithms will help data scientists quickly iterate and find the best set of algorithms along with their hyper-parameter configurations for solving a particular task. We also propose a model for error propagation to analyse the error from the pipeline even further. This methodology is denoted as the \textit{naive} framework, where we use \textit{naive} algorithms in each step of the pipeline. \textit{Naive} algorithms represent algorithms where the assumption is that all of the error is a result of the direct error from the algorithm itself and not due to accumulation and propagation of error. This is described in detail in section 3.4. The results from section 4.4 show that most of the error propagates from the feature extraction algorithms followed by feature transformation algorithms. This support our intuition that error accumulates and flows along the pipeline, with the most amount of error coming from steps at the beginning of the machine learning pipeline and it gradually reduces to zero at the end of the pipeline (learning algorithms), where all of the error is directly due to algorithms themselves.
 In terms of future work, this formulation could be expanded to cover more data analytic problems that involve complicated algorithms. For example, this framework maybe used to interpret problems in other applications like speech recognition, text classification and even unsupervised machine learning problems. Essentially, the error quantification framework maybe used by any practitioner that works with pipelines for solving a machine learning problem. The pipeline may even be extended to include processes like data cleaning. This framework may also be included to understand and interpret deep neural networks, which are end-to-end in nature. This maybe used for comparing the performance of candidate networks for solving the problem.
-
-
 \label{sec5}

@@ -20,8 +20,9 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references.bib
 Warning--entry type for "Pattan2010" isn't style-file defined
 --line 2075 of file references.bib
+Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "XuH2015"
-Warning--I didn't find a database entry for "Ferris2007"
+Warning--I didn't find a database entry for "expected_improvement"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -46,45 +47,45 @@ Warning--there's a url but no urldate in Guo2016
 Warning--empty journal in doshi2017towards
 
 Done.
-You've used 68 entries,
+You've used 73 entries,
             4355 wiz_defined-function locations,
-            1298 strings with 20794 characters,
-and the built_in function-call counts, 56944 in all, are:
-= -- 4800
-> -- 1325
-< -- 588
-+ -- 755
-- -- 215
-* -- 2810
-:= -- 8502
-add.period$ -- 123
-call.type$ -- 68
-change.case$ -- 68
-chr.to.int$ -- 1389
-cite$ -- 87
-duplicate$ -- 3934
-empty$ -- 4133
-format.name$ -- 259
-if$ -- 13144
+            1327 strings with 21632 characters,
+and the built_in function-call counts, 60877 in all, are:
+= -- 5160
+> -- 1411
+< -- 625
++ -- 800
+- -- 230
+* -- 3009
+:= -- 9126
+add.period$ -- 133
+call.type$ -- 73
+change.case$ -- 73
+chr.to.int$ -- 1452
+cite$ -- 92
+duplicate$ -- 4228
+empty$ -- 4392
+format.name$ -- 279
+if$ -- 14040
 int.to.chr$ -- 0
-int.to.str$ -- 68
-missing$ -- 609
-newline$ -- 227
-num.names$ -- 71
-pop$ -- 1144
+int.to.str$ -- 73
+missing$ -- 661
+newline$ -- 242
+num.names$ -- 76
+pop$ -- 1223
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 4609
+skip$ -- 4938
 stack$ -- 0
-substring$ -- 3330
-swap$ -- 3413
-text.length$ -- 125
+substring$ -- 3493
+swap$ -- 3675
+text.length$ -- 141
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 68
+type$ -- 73
 warning$ -- 19
-while$ -- 283
-width$ -- 70
-write$ -- 700
-(There were 22 warnings)
+while$ -- 301
+width$ -- 75
+write$ -- 756
+(There were 23 warnings)
