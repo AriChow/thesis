@@ -21,11 +21,6 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{xu2015machine}
-H.~Xu, R.~Liu, A.~Choudhary, and W.~Chen, ``A machine learning-based design
-  representation method for designing heterogeneous microstructures,''
-  \emph{Journal of Mechanical Design}, vol. 137, no.~5, p. 051403, 2015.
-
 \bibitem{Rodgers2006}
 J.~R. Rodgers and D.~Cebon, ``Materials informatics,'' \emph{MRS Bulletin},
   vol.~31, pp. 975--980, 12 2006, [Online]. Available:
@@ -201,10 +196,10 @@ S.~B. Kotsiantis, I.~Zaharakis, and P.~Pintelas, ``Supervised machine learning:
   A review of classification techniques,'' 2007.
 
 \bibitem{Pattan2010}
-P.~C. Pattan, V.~D. Mytri, and P.~S. Hiremath, ``Classification of cast iron
-  based on graphite grain morphology using neural network approach,'' pp.
-  75\,462S--75\,462S--6, 2010, [Online]. Available:
-  \url{http://dx.doi.org/10.1117/12.853286}
+P.~C. Pattan, V.~Mytri, and P.~Hiremath, ``Classification of cast iron based on
+  graphite grain morphology using neural network approach,'' in \emph{Second
+  International Conference on Digital Image Processing}, 2010, vol. 7546, p.
+  75462S.
 
 \bibitem{Prakash2011}
 P.~Prakash, V.~Mytri, and P.~Hiremath, ``Comparative analysis of spectral and
@@ -233,6 +228,11 @@ G.~Impoco and L.~Tuminello, ``Incremental learning to segment micrographs,''
   \emph{Computer Vision and Image Understanding}, vol. 140, pp. 144 -- 152,
   2015, [Online]. Available:
   \url{http://www.sciencedirect.com/science/article/pii/S1077314215000533}
+
+\bibitem{XuH2015}
+H.~Xu, R.~Liu, A.~Choudhary, and W.~Chen, ``A machine learning-based design
+  representation method for designing heterogeneous microstructures,''
+  \emph{Journal of Mechanical Design}, vol. 137, no.~5, p. 051403, 2015.
 
 \bibitem{Bostanabad2016}
 R.~Bostanabad, A.~T. Bui, W.~Xie, D.~W. Apley, and W.~Chen, ``Stochastic
@@ -329,6 +329,29 @@ J.~Snoek, H.~Larochelle, and R.~P. Adams, ``Practical bayesian optimization of
   machine learning algorithms,'' in \emph{Advances in neural information
   processing systems}, 2012, pp. 2951--2959.
 
+\bibitem{zhang2016flash}
+Y.~Zhang, M.~T. Bahadori, H.~Su, and J.~Sun, ``Flash: fast bayesian
+  optimization for data analytic pipelines,'' in \emph{Proceedings of the 22nd
+  ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  2016, pp. 2065--2074.
+
+\bibitem{olson2016evaluation}
+R.~S. Olson, N.~Bartley, R.~J. Urbanowicz, and J.~H. Moore, ``Evaluation of a
+  tree-based pipeline optimization tool for automating data science,'' in
+  \emph{Proceedings of the Genetic and Evolutionary Computation Conference
+  2016}, 2016, pp. 485--492.
+
+\bibitem{olson2016tpot}
+R.~S. Olson and J.~H. Moore, ``Tpot: A tree-based pipeline optimization tool
+  for automating machine learning,'' in \emph{Workshop on Automatic Machine
+  Learning}, 2016, pp. 66--74.
+
+\bibitem{olson2016automating}
+R.~S. Olson, R.~J. Urbanowicz, P.~C. Andrews, N.~A. Lavender, J.~H. Moore
+  \emph{et~al.}, ``Automating biomedical data science through tree-based
+  pipeline optimization,'' in \emph{European Conference on the Applications of
+  Evolutionary Computation}, 2016, pp. 123--137.
+
 \bibitem{ribeiro2016model}
 M.~T. Ribeiro, S.~Singh, and C.~Guestrin, ``Model-agnostic interpretability of
   machine learning,'' \emph{arXiv preprint arXiv:1606.05386}, 2016.
@@ -336,6 +359,10 @@ M.~T. Ribeiro, S.~Singh, and C.~Guestrin, ``Model-agnostic interpretability of
 \bibitem{doshi2017towards}
 F.~Doshi-Velez and B.~Kim, ``Towards a rigorous science of interpretable
   machine learning,'' 2017.
+
+\bibitem{koh2017understanding}
+P.~W. Koh and P.~Liang, ``Understanding black-box predictions via influence
+  functions,'' \emph{arXiv preprint arXiv:1703.04730}, 2017.
 
 \bibitem{hutter2011sequential}
 F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Sequential model-based
@@ -346,6 +373,16 @@ F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Sequential model-based
 J.~S. Bergstra, R.~Bardenet, Y.~Bengio, and B.~K{\'e}gl, ``Algorithms for
   hyper-parameter optimization,'' in \emph{Advances in neural information
   processing systems}, 2011, pp. 2546--2554.
+
+\bibitem{expected_improvement}
+J.~Mo{\v{c}}kus, ``On bayesian methods for seeking the extremum,'' in
+  \emph{Optimization Techniques IFIP Technical Conference}, 1975, pp. 400--404.
+
+\bibitem{eggensperger2013towards}
+K.~Eggensperger, M.~Feurer, F.~Hutter, J.~Bergstra, J.~Snoek, H.~Hoos
+  \emph{et~al.}, ``Towards an empirical foundation for assessing bayesian
+  optimization of hyperparameters,'' in \emph{NIPS workshop on Bayesian
+  Optimization in Theory and Practice}, 2013, vol.~10.
 
 \bibitem{breiman2001random}
 L.~Breiman, ``Random forests,'' \emph{Machine learning}, vol.~45, no.~1, pp.
