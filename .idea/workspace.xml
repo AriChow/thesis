@@ -2,27 +2,228 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72fbd62b-d4ef-43c3-8fad-c31cb530ab59" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/SPIE_candidacy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/data_analytic_pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/matsc_candidacy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EP.aux" beforeDir="false" afterPath="$PROJECT_DIR$/EP.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EP.tex" beforeDir="false" afterPath="$PROJECT_DIR$/EP.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliography.aux" beforeDir="false" afterPath="$PROJECT_DIR$/bibliography.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conclusions.aux" beforeDir="false" afterPath="$PROJECT_DIR$/conclusions.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/EP/agnostic_error_alg_breast.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/EP/agnostic_error_alg_breast.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/EP/agnostic_error_alg_matsc_dataset1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/EP/agnostic_error_alg_matsc_dataset1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/EP/agnostic_error_alg_matsc_dataset2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/EP/agnostic_error_alg_matsc_dataset2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/references.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.bbl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.blg" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.blg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.lof" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.lof" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.lot" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.lot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.out" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/SPIE_candidacy.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/SPIE_candidacy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/matsc_candidacy.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/matsc_candidacy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGA_260_3_CK15.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGA_260_3_Combined.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGA_260_3_E_cad.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGA_260_3_Vimentin.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGA_260_3_pck26.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGTA_264_3_CK15.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGTA_264_3_Combined.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGTA_264_3_E_cad.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGTA_264_3_Vimentin.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGTA_264_3_pck26.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGTA_269_3_CK15.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGTA_269_3_Combined.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGTA_269_3_E_cad.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGTA_269_3_Vimentin.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AGTA_269_3_pck26.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/CK15_269_features.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/all_data_training.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/all_rawscores_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/all_scores_264_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/all_scores_269_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/all_svm_nb_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/best_tables.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/best_tables_trans_long.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cd3_hand_crafted_features_test.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cd3_hand_crafted_features_train.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_264_features.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_264_features24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_264_features88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_264_features88entropy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_264_rawscores.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_264_rawscores_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_264_rawscores_88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_264_rawscores_88entropy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_264_rawscores_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_269_features24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_269_features88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_269_rawscores_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_clustered_idsk3_KLDIV.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_data.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_data_21.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_data_23.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_data_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_data_88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_data_88entropy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_data_original.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_data_original_21.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_features.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_features_signalandnoise.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_features_total.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_svm_nb.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_svm_nb_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_svm_nb_88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ck15_svm_nb_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cnn_train.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/combined_264_features24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/combined_264_rawscores_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/combined_264_rawscores_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/combined_269_features24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/combined_269_rawscores_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/combined_data_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dbn_train.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_264_features.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_264_features24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_264_features24_noisy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_264_features88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_264_features88entropy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_264_rawscores.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_264_rawscores_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_264_rawscores_88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_264_rawscores_88entropy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_264_rawscores_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_269_features.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_269_features24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_269_features24_noisy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_269_features88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_269_features88entropy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_269_rawscores_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_clustered_idsk3_KLDIV.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_data_23.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_data_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_data_24_noisy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_data_88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_data_88entropy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_data_original.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_data_original_21.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_features.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_features_signalandnoise.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_hand_crafted_features_test.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_hand_crafted_features_train.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_svm_nb.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_svm_nb_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_svm_nb_88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecad_svm_nb_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/features_test_cell_graphs.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/features_train_516.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/features_training_noisy_cell_graphs.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/features_training_noisy_cell_graphs_normalized.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/features_training_prelim-denoised_cell_graphs.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/features_training_prelim-denoised_cell_graphs_normalized.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/good_data_training.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/good_ids_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/good_ids_269.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/grade_slide_pos.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ids_AGA_260_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ids_AGTA_264_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ids_AGTA_269_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ids_remove_ecad_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/imagenet-googlenet-dag.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/kstest_results.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/label_ck15_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/label_ck15_264;.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/labels_ck15_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/labels_ck15_269.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/labels_ecad_260.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/labels_ecad_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/labels_ecad_269.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/labels_pck26_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/labels_vimentin_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/labels_vimentin_269.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/matsc_data.hdf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/matsc_dendrite_data.hdf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/matsc_result_mat_files.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_264_features.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_264_features24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_264_features88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_264_features88entropy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_264_rawscores.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_264_rawscores_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_264_rawscores_88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_264_rawscores_88entropy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_264_rawscores_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_269_features.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_269_features24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_269_features88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_269_rawscores_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_clustered_idsk3_KLDIV.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_data_21.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_data_23.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_data_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_data_88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_data_88entropy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_data_original_21.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_features.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_features1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_svm_nb_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_svm_nb_88.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck26_svm_nb_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pck6_svm_nb.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/score_ck15_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/score_ck15_269.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/score_ecad_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/score_ecad_269.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/score_pck26_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/score_pck26_269.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/score_vimentin_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/score_vimentin_269.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/scores_264_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/scores_269_svd_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sma_hand_crafted_features_test.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sma_hand_crafted_features_train.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ssl_ck15.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ssl_svd_ck15.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/targets_training_260_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_ck15.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_ck15_clustered_ids.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_ck15_clustered_ids_artificial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_ck15_clustered_idsk3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_data_cell_graphs.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_ecad.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_ecad_clustered_ids.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_ecad_clustered_idsk3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_labels.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_pck26.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_pck26_clustered_ids.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_pck26_clustered_idsk3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_prelim_noise_reduced.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/testing_vbow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/testing_vbow_256.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_ck15.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_ck15_artificial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_ck15_clustered_ids.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_ck15_clustered_ids_artificial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_ck15_clustered_idsk3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_ck15_clustered_idsk3_artificial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_ecad.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_ecad_artificial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_ecad_clustered_ids.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_ecad_clustered_ids_artificial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_ecad_clustered_idsk3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_ecad_clustered_idsk3_artificial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_labels.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_pck26.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_pck26_artificial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_pck26_clustered_ids.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_pck26_clustered_ids_artificial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_pck26_clustered_idsk3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train_pck26_clustered_idsk3_artificial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/training_260_model.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/training_prelim.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/training_vbow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/training_vbow_256.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trans_long_result_mat_files.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ugly_bad_ids.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/val_ck15.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/val_ck15_clustered_ids.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/val_ecad.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/val_ecad_clustered_ids.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/val_pck26.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/val_pck26_clustered_ids.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vimentin_264_features.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vimentin_264_features24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vimentin_269_features.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vimentin_269_features24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vimentin_data_23.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vimentin_data_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vimentin_svm_nb.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vimentin_svm_nb_24.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weighted_sum_scores_264.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weighted_svd_scores_264.mat" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,15 +233,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/thesis$matsc_candidacy.coverage" NAME="matsc_candidacy Coverage Results" MODIFIED="1524954884262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
     <SUITE FILE_PATH="coverage/thesis$SPIE_candidacy.coverage" NAME="SPIE_candidacy Coverage Results" MODIFIED="1524942933847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SPIE_candidacy.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SPIE_candidacy.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/SPIE_candidacy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+            <state relative-caret-position="424">
+              <caret line="29" lean-forward="true" selection-start-line="27" selection-end-line="29" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="matsc_candidacy.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/matsc_candidacy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -51,18 +265,13 @@
       <file leaf-file-name="data_analytic_pipeline.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/data_analytic_pipeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="277" column="18" lean-forward="true" selection-start-line="274" selection-start-column="4" selection-end-line="277" selection-end-column="18" />
+            <state relative-caret-position="3960">
+              <caret line="277" column="18" selection-start-line="274" selection-start-column="4" selection-end-line="277" selection-end-column="18" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matsc_candidacy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/matsc_candidacy.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -85,9 +294,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/code/matsc_candidacy.py" />
         <option value="$PROJECT_DIR$/code/data_analytic_pipeline.py" />
         <option value="$PROJECT_DIR$/code/SPIE_candidacy.py" />
+        <option value="$PROJECT_DIR$/code/matsc_candidacy.py" />
       </list>
     </option>
   </component>
@@ -113,7 +322,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,10 +329,16 @@
               <item name="thesis" type="b2602c69:ProjectViewProjectNode" />
               <item name="thesis" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="thesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,7 +358,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.matsc_candidacy">
     <configuration name="SPIE_candidacy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="thesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,8 +397,32 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="matsc_candidacy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="thesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/matsc_candidacy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.SPIE_candidacy" />
+      <item itemvalue="Python.matsc_candidacy" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.matsc_candidacy" />
         <item itemvalue="Python.SPIE_candidacy" />
       </list>
     </recent_temporary>
@@ -203,12 +441,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="639" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="639" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="270" height="439" id="Documentation" side_tool="true" weight="0.3296875" />
+      <window_info anchor="right" x="0" y="0" width="270" height="439" id="Documentation" order="7" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32920355" />
@@ -217,19 +455,19 @@
       <window_info content_ui="combo" id="Project" order="0" weight="0.24609375" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +481,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/SPIE_candidacy.py</url>
-          <line>50</line>
+          <line>53</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -251,8 +489,25 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/matsc_candidacy.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/code/SPIE_candidacy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/data_analytic_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3960">
+          <caret line="277" column="18" selection-start-line="274" selection-start-column="4" selection-end-line="277" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file:///anaconda3/lib/python3.6/site-packages/scipy/io/matlab/mio.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -284,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/data_analytic_pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="277" column="18" lean-forward="true" selection-start-line="274" selection-start-column="4" selection-end-line="277" selection-end-column="18" />
+        <state relative-caret-position="3960">
+          <caret line="277" column="18" selection-start-line="274" selection-start-column="4" selection-end-line="277" selection-end-column="18" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -294,8 +549,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/SPIE_candidacy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+        <state relative-caret-position="424">
+          <caret line="29" lean-forward="true" selection-start-line="27" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/matsc_candidacy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

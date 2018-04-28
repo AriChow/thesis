@@ -6,11 +6,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import StratifiedKFold, GridSearchCV
 
 
-def knn(X, y, neighbors=1):
-    clf = KNeighborsClassifier(n_neighbors=neighbors)
-    clf.fit(X, y)
-    return clf
-
 def principal_components(X, whiten=False):
     c = int(np.min(X.shape))
     pca = PCA(whiten=whiten)
@@ -54,6 +49,6 @@ for train, test in skf.split(X, y):
     estimator = GridSearchCV(logistic,
                              dict(logistic__C=Cs))
     estimator.fit(X_train, y_train)
-    
+
 
     print()
