@@ -11,7 +11,7 @@
 \label{sec1}
 Machine learning and data science has entered many domains of human effort in modern times. The number of self-reported data scientists has doubled in recent years \cite{harrison1995validity}. They have entered various domains including academia, industry and business among others. There has therefore been a demand for machine learning tools that are flexible, powerful and most importantly interpretable. The effective application of machine learning tools unfortunately requires an expert understanding of the frameworks and algorithms that are present in a machine learning pipeline. It also requires knowledge of the problem domain and understanding of the assumptions used in the analysis. In order for these tools to be used adequately by non-experts; additional tools must be developed for understanding and interpreting the results of the application of a data analytic pipeline on a domain specific problem.  
 
-\begin{figure}[H]
+\begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.5]{img/EP/generalized_pipeline}
     \caption{Representation of a machine learning pipeline}
@@ -194,7 +194,7 @@ where, $i = {1, ..., n}, j = {1, ..., |\theta_{ij}|}$, k = number of hyper-param
 \section{Experiments and results}
 \label{sec4}
 In this section, we describe the experiments performed on the data analytic pipeline to quantify the error contributions and propagation from different components of the pipeline. Image classification is the data analytic problem chosen for demonstrating the error quantification experiments. A representation of an image classification pipeline is shown in Fig. \ref{fig:flowchart} in the form of a flowchart.  
-\begin{figure}[H]
+\begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.4]{img/EP/flowchart}
     \caption{Representation of an image classification pipeline. The pipeline consists of the steps represented by green ellipses and the outputs of each step represented by blue rectangles. In this work, we focus on the steps and outputs after pre-processing.}
@@ -211,7 +211,7 @@ In this work, we focus on real world scientific datasets from the domains of med
 
  The above figure shows the pipeline used in this work. There are 3 computational steps in this pipeline, namely feature extraction ($S_1$), feature transformation ($S_2$) and learning algorithms ($S_3$). The steps, algorithms and corresponding hyperparameters $A_{ij}(\theta_{ij})$ is described in Table \ref{table:algorithms_table}.
 
-\begin{table}[H]
+\begin{table}[ht!]
 \centering
 \caption{Algorithms and hyper-parameters used in the image classification pipeline. The specific algorithms and corresponding \textit{hyperparameters} are defined in the last column}
 \begin{tabular}{@{} |m{9.7em}|m{1.5cm}|m{8cm}| @{}} 
@@ -237,14 +237,14 @@ The algorithms defined above in the table are selected for making up the compone
 \label{frameworks}
 Experiments are performed using two optimization frameworks. These frameworks have been described in detail in Section \ref{subsec_AS_HPO}. 
 The first global optimization framework is the CASH framework described in Section \ref{subsubsec_CASH}. Here, the pipeline is optimized as a whole including the algorithms, which are themselves considered as hyper-parameters in this framework. The following figure is a representation of this. This is used for quantification of the contribution and propagation of error with respect to \textit{computational steps} in the pipeline.
-\begin{figure}[H]
+\begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.4]{img/EP/CASH}
     \caption{Combined algorithm selection and hyper-parameter optimization in a data analytic pipeline. The algorithms and corresponding hyper-parameters are optimized simultaneously.}
     \label{fig:CASH}
 \end{figure}
 The second framework is the hyperparameter optimization (HPO) framework where each path in the pipeline is optimized individually. This is described in detail in section \ref{subsubsec_HPO}. This framework is used for quantifying the contribution and propagation of error with respect to \textit{algorithms} in the each path of the pipeline.
-\begin{figure}[H]
+\begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.4]{img/EP/HPO}
     \caption{Hyper-parameter optimization in a data analytic pipeline. Each path in the pipeline is individually optimized.}
@@ -255,7 +255,7 @@ Specifically, we choose the path \textit{haralick texture features} - \textit{PC
 \subsection{Datasets}
 Four datasets from the domains of medicine and material science are used in this work. They are image datasets of breast cancer\cite{bilgin2007cell}, brain cancer \cite{gunduz2004cell}, and two datasets of microstructures in material science \cite{chowdhury2016image}. They are described in the following table.
 
-\begin{table}[h]
+\begin{table}[ht!]
 \centering
 \caption{Notations for error definitions used in the error propagation model}
 \begin{tabular}{ |c|c| } 
