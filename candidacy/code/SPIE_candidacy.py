@@ -60,7 +60,7 @@ for n in names:
 
 labels = np.loadtxt(data_home + 'E_cad_CK15_pck26_labels.txt')
 
-images_home = home + '/Documents/research/GE_project/images/'
+# images_home = home + '/Documents/research/GE_project/images/'
 # names = []
 # y = []
 # for i in range(len(names1)):
@@ -85,7 +85,7 @@ images_home = home + '/Documents/research/GE_project/images/'
 #         y[i] = 0
 #
 # X = haralick_all_features(names)
-# pickle.dump([names, X, y], open('../results/GE_data.pkl', 'wb'))
+# pickle.dump([names, X, y], open('../results/GE_data_py27.pkl', 'wb'))
 
 names, X, y = pickle.load(open('../results/GE_data.pkl', 'rb'))
 

@@ -67,9 +67,9 @@
 \contentsline {subsubsection}{\numberline {5.4.3.1}Error contribution from computational steps}{60}{subsubsection.5.4.3.1}
 \contentsline {subsubsection}{\numberline {5.4.3.2}Error contribution from algorithms}{62}{subsubsection.5.4.3.2}
 \contentsline {subsubsection}{\numberline {5.4.3.3}Error contribution from hyper-parameters}{62}{subsubsection.5.4.3.3}
-\contentsline {subsubsection}{\numberline {5.4.3.4}Comparison of computation time}{63}{subsubsection.5.4.3.4}
+\contentsline {subsubsection}{\numberline {5.4.3.4}Comparison of computation time}{62}{subsubsection.5.4.3.4}
 \contentsline {section}{\numberline {5.5}Conclusion}{65}{section.5.5}
-\contentsline {chapter}{\numberline {6.}CONCLUSIONS AND FUTURE WORK}{67}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusions}{67}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future work}{68}{section.6.2}
-\contentsline {chapter}{REFERENCES}{70}{section*.34}
+\contentsline {chapter}{\numberline {6.}CONCLUSIONS AND FUTURE WORK}{66}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusions}{66}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future work}{67}{section.6.2}
+\contentsline {chapter}{REFERENCES}{69}{section*.34}

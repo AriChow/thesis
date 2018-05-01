@@ -60,34 +60,34 @@ for n in names:
 
 labels = np.loadtxt(data_home + 'E_cad_CK15_pck26_labels.txt')
 
-images_home = data_home + 'images/'
-names = []
-y = []
-for i in range(len(names1)):
-    name = names1[i]
-    label = labels[i, :]
-    patient = name[-3:]
-    group = name[-10:-7]
-    ecad = images_home + group + '/AFRemoved/E_cad_AFRemoved_' + patient + '.tif'
-    ck15 = images_home + group + '/AFRemoved/CK15_AFRemoved_' + patient + '.tif'
-    pck26 = images_home + group + '/AFRemoved/pck26_AFRemoved_' + patient + '.tif'
-    names.append(ecad)
-    names.append(ck15)
-    names.append(pck26)
-    y.append(label[0])
-    y.append(label[1])
-    y.append(label[2])
-y = np.asarray(y, dtype='int')
-for i in range(len(y)):
-    if y[i] == -1:
-        y[i] = 1
-    else:
-        y[i] = 0
+# images_home = data_home + 'images/'
+# names = []
+# y = []
+# for i in range(len(names1)):
+#     name = names1[i]
+#     label = labels[i, :]
+#     patient = name[-3:]
+#     group = name[-10:-7]
+#     ecad = images_home + group + '/AFRemoved/E_cad_AFRemoved_' + patient + '.tif'
+#     ck15 = images_home + group + '/AFRemoved/CK15_AFRemoved_' + patient + '.tif'
+#     pck26 = images_home + group + '/AFRemoved/pck26_AFRemoved_' + patient + '.tif'
+#     names.append(ecad)
+#     names.append(ck15)
+#     names.append(pck26)
+#     y.append(label[0])
+#     y.append(label[1])
+#     y.append(label[2])
+# y = np.asarray(y, dtype='int')
+# for i in range(len(y)):
+#     if y[i] == -1:
+#         y[i] = 1
+#     else:
+#         y[i] = 0
+#
+# X = haralick_all_features(names)
+# pickle.dump([names, X, y], open('../results/GE_data.pkl', 'wb'))
 
-X = haralick_all_features(names)
-pickle.dump([names, X, y], open('../results/GE_data.pkl', 'wb'))
-
-# names, X, y = pickle.load(open('../results/GE_data.pkl', 'rb'))
+names, X, y = pickle.load(open('../results/GE_data_py27.pkl', 'rb'))
 
 skf = StratifiedKFold(n_splits=5)
 params = {'C': np.logspace(-4, 4, 20)}
