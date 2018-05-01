@@ -47,10 +47,10 @@ Z = [z_end, z_end];
 
 % Plot the end marker
 plot3(X,Y,Z,'k-');
-xticklabels(xlabels);
-yticklabels(ylabels);
-xlabel(xname);
-ylabel(yname);
+xticklabels(ylabels);
+yticklabels(xlabels);
+xlabel(yname);
+ylabel(xname);
 zlabel('Accuracy');
 title([xname ' vs ' yname]);
 end % end if

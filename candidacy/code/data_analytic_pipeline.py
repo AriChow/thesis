@@ -185,6 +185,7 @@ class image_classification_pipeline(object):
 		return f[idx, :]
 
 
+
 	def haralick_all_features(self, names, idx, distance=1):
 		# if os.path.exists(self.data_location + 'features/' + self.type1 + '/haralick_' + self.data_name + '.npz'):
 		# 	f = np.load(open(self.data_location + 'features/' + self.type1 + '/haralick_' + self.data_name + '.npz', 'rb'))
