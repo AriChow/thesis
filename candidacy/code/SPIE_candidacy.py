@@ -88,87 +88,95 @@ labels = np.loadtxt(data_home + 'E_cad_CK15_pck26_labels.txt')
 # X = haralick_all_features(names)
 # pickle.dump([names, X, y], open('../results/GE_data_py27.pkl', 'wb'))
 
-names, X, y = pickle.load(open('../results/GE_data.pkl', 'rb'))
+# names, X, y = pickle.load(open('../results/GE_data.pkl', 'rb'))
+#
+# skf = StratifiedKFold(n_splits=5)
+# params = {'C': np.logspace(-4, 4, 5)}
+# probs = np.zeros(len(names))
+# for train_ids, test_ids in skf.split(X, y):
+#     X_train = X[train_ids]
+#     y_train = y[train_ids]
+#     X_test = X[test_ids]
+#     y_test = y[test_ids]
+#     slr = StandardScaler()
+#     slr.fit(X_train)
+#     X_train = slr.transform(X_train)
+#     X_test = slr.transform(X_test)
+#     # sm = SMOTE(random_state=42)
+#     # X_res, y_res = sm.fit_sample(X_train, y_train)
+#     # pca = principal_components(X_res)
+#     # X_res = pca.transform(X_res)
+#     logreg = LogisticRegression(class_weight='balanced')
+#     clf = GridSearchCV(logreg, params)
+#     clf.fit(X_train, y_train)
+#     # X_test = pca.transform(X_test)
+#     prob = clf.predict_proba(X_test)
+#     for i in range(prob.shape[0]):
+#         probs[test_ids[i]] = prob[i, 1]
+#
+# pickle.dump([names, probs], open('../results/GE_probs.pkl', 'wb'))
 
-skf = StratifiedKFold(n_splits=5)
-params = {'C': np.logspace(-4, 4, 5)}
-probs = np.zeros(len(names))
-for train_ids, test_ids in skf.split(X, y):
-    X_train = X[train_ids]
-    y_train = y[test_ids]
-    X_test = X[test_ids]
-    y_test = y[test_ids]
-    slr = StandardScaler()
-    slr.fit(X_train)
-    slr.transform(X_train)
-    slr.transform(X_test)
-    # sm = SMOTE(random_state=42)
-    # X_res, y_res = sm.fit_sample(X_train, y_train)
-    # pca = principal_components(X_train)
-    # X_train = pca.transform(X_train)
-    logreg = LogisticRegression(class_weight='balanced')
-    clf = GridSearchCV(logreg, params)
-    clf.fit(X_train, y_train)
-    # X_test = pca.transform(X_test)
-    prob = clf.predict_proba(X_test)
-    for i in range(prob.shape[0]):
-        probs[test_ids[i]] = prob[i, 1]
+names, probs = pickle.load(open('../results/GE_probs_smote_pca.pkl', 'rb'))
 
-pickle.dump([names, probs], open('../results/GE_probs.pkl', 'wb'))
 
-# names, probs = pickle.load(open('../results/GE_probs.pkl', 'rb'))
-#
-# hist, bin_edges = np.histogram(probs, 100)
-#
-# import matplotlib.pyplot as plt
-#
-# plt.figure()
-# plt.bar(np.linspace(0, 1, 100), hist)
-# plt.xlabel('Probability')
-# plt.ylabel('Frequency')
-# plt.title('Distribution of QoI scores for all images')
-# # plt.savefig('../results/all_probs.eps')
-# # plt.close()
-#
-# names_ecad = []
-# probs_ecad = []
-# names_ck15 = []
-# probs_ck15 = []
-# names_pck26 = []
-# probs_pck26 = []
-# for i in range(len(probs)):
-#     if 'E_cad' in names[i]:
-#         names_ecad.append(names)
-#         probs_ecad.append(probs[i])
-#     elif 'CK15' in names[i]:
-#         names_ck15.append(names)
-#         probs_ck15.append(probs[i])
-#     elif 'pck26' in names[i]:
-#         names_pck26.append(names)
-#         probs_pck26.append(probs[i])
-#
-# plt.figure()
-# plt.bar(np.linspace(0, 1, 100), probs_ecad)
-# plt.xlabel('Probability')
-# plt.ylabel('Frequency')
-# plt.title('Distribution of QoI scores for E_cad')
-# # plt.savefig('../results/E_cad_probs.eps')
-# # plt.close()
-#
-# plt.figure()
-# plt.bar(np.linspace(0, 1, 100), probs_ck15)
-# plt.xlabel('Probability')
-# plt.ylabel('Frequency')
-# plt.title('Distribution of QoI scores for CK15')
-# # plt.savefig('../results/CK15_probs.eps')
-# # plt.close()
-#
-# plt.figure()
-# plt.bar(np.linspace(0, 1, 100), probs_pck26)
-# plt.xlabel('Probability')
-# plt.ylabel('Frequency')
-# plt.title('Distribution of QoI scores for E_cad')
-# # plt.savefig('../results/pck26_probs.eps')
-# # plt.close()
+
+import matplotlib.pyplot as plt
+
+a = 0.01 * np.arange(101)
+b = np.arange(0, 100) * 0.01
+
+plt.figure()
+hist, _ = np.histogram(probs, a)
+plt.bar(b, hist, align='edge', width=0.01)
+# plt.xticks(np.linspace(0, 1, 100))
+plt.xlabel('Probability')
+plt.ylabel('Frequency')
+plt.title('Distribution of QoI scores for all images')
+plt.savefig('../results/all_probs_smote_pca.eps')
+plt.close()
+
+names_ecad = []
+probs_ecad = []
+names_ck15 = []
+probs_ck15 = []
+names_pck26 = []
+probs_pck26 = []
+for i in range(len(probs)):
+    if 'E_cad' in names[i]:
+        names_ecad.append(names)
+        probs_ecad.append(probs[i])
+    elif 'CK15' in names[i]:
+        names_ck15.append(names)
+        probs_ck15.append(probs[i])
+    elif 'pck26' in names[i]:
+        names_pck26.append(names)
+        probs_pck26.append(probs[i])
+
+plt.figure()
+hist, _ = np.histogram(probs_ecad, a)
+plt.bar(b, hist, align='edge', width=0.01)
+plt.xlabel('Probability')
+plt.ylabel('Frequency')
+plt.title('Distribution of QoI scores for E_cad')
+plt.savefig('../results/E_cad_probs_smote_pca.eps')
+plt.close()
+
+plt.figure()
+hist, _ = np.histogram(probs_ck15, a)
+plt.bar(b, hist, align='edge', width=0.01)
+plt.xlabel('Probability')
+plt.ylabel('Frequency')
+plt.title('Distribution of QoI scores for CK15')
+plt.savefig('../results/CK15_probs_smote_pca.eps')
+plt.close()
+
+plt.figure()
+hist, _ = np.histogram(probs_pck26, a)
+plt.bar(b, hist, align='edge', width=0.01)
+plt.xlabel('Probability')
+plt.ylabel('Frequency')
+plt.title('Distribution of QoI scores for E_cad')
+plt.savefig('../results/pck26_probs_smote_pca.eps')
+plt.close()
 
 print()
