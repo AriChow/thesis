@@ -7,6 +7,7 @@ from sklearn.model_selection import StratifiedKFold, GridSearchCV
 import cv2
 from mahotas.features import haralick
 import pickle
+from sklearn.preprocessing import StandardScaler
 
 def haralick_all_features(names, distance=1):
     # if os.path.exists(self.data_location + 'features/' + self.type1 + '/haralick_' + self.data_name + '.npz'):
@@ -32,7 +33,7 @@ def haralick_all_features(names, distance=1):
 def principal_components(X, whiten=False):
     c = int(np.min(X.shape))
     pca = PCA(whiten=whiten)
-    maxvar = 0.95
+    maxvar = 0.98
     data = X
     pca.fit(X)
     var = pca.explained_variance_ratio_
@@ -90,21 +91,25 @@ labels = np.loadtxt(data_home + 'E_cad_CK15_pck26_labels.txt')
 names, X, y = pickle.load(open('../results/GE_data.pkl', 'rb'))
 
 skf = StratifiedKFold(n_splits=5)
-params = {'C': np.logspace(-4, 4, 20)}
+params = {'C': np.logspace(-4, 4, 5)}
 probs = np.zeros(len(names))
 for train_ids, test_ids in skf.split(X, y):
     X_train = X[train_ids]
     y_train = y[test_ids]
     X_test = X[test_ids]
     y_test = y[test_ids]
-    sm = SMOTE(random_state=42)
-    X_res, y_res = sm.fit_sample(X_train, y_train)
-    pca = principal_components(X_res)
-    X_train = pca.transform(X_res)
-    logreg = LogisticRegression()
+    slr = StandardScaler()
+    slr.fit(X_train)
+    slr.transform(X_train)
+    slr.transform(X_test)
+    # sm = SMOTE(random_state=42)
+    # X_res, y_res = sm.fit_sample(X_train, y_train)
+    # pca = principal_components(X_train)
+    # X_train = pca.transform(X_train)
+    logreg = LogisticRegression(class_weight='balanced')
     clf = GridSearchCV(logreg, params)
     clf.fit(X_train, y_train)
-    X_test = pca.transform(X_test)
+    # X_test = pca.transform(X_test)
     prob = clf.predict_proba(X_test)
     for i in range(prob.shape[0]):
         probs[test_ids[i]] = prob[i, 1]

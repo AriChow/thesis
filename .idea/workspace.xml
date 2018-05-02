@@ -3,9 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="72fbd62b-d4ef-43c3-8fad-c31cb530ab59" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candidacy/code/SPIE.sh" beforeDir="false" afterPath="$PROJECT_DIR$/candidacy/code/SPIE.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMMAT.aux" beforeDir="false" afterPath="$PROJECT_DIR$/COMMAT.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMMAT.tex" beforeDir="false" afterPath="$PROJECT_DIR$/COMMAT.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EP.aux" beforeDir="false" afterPath="$PROJECT_DIR$/EP.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ISBI.aux" beforeDir="false" afterPath="$PROJECT_DIR$/ISBI.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPIE.aux" beforeDir="false" afterPath="$PROJECT_DIR$/SPIE.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract.aux" beforeDir="false" afterPath="$PROJECT_DIR$/abstract.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acknowledge.aux" beforeDir="false" afterPath="$PROJECT_DIR$/acknowledge.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliography.aux" beforeDir="false" afterPath="$PROJECT_DIR$/bibliography.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py" beforeDir="false" afterPath="$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candidacy/code/SPIE_candidacy_CCI.py" beforeDir="false" afterPath="$PROJECT_DIR$/candidacy/code/SPIE_candidacy_CCI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conclusions.aux" beforeDir="false" afterPath="$PROJECT_DIR$/conclusions.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thesis.lof" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.lof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thesis.lot" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.lot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thesis.out" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thesis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/title.aux" beforeDir="false" afterPath="$PROJECT_DIR$/title.aux" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +32,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/thesis$matsc_candidacy.coverage" NAME="matsc_candidacy Coverage Results" MODIFIED="1524954884262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
-    <SUITE FILE_PATH="coverage/thesis$SPIE_candidacy__1_.coverage" NAME="SPIE_candidacy (1) Coverage Results" MODIFIED="1525191948349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/candidacy/code" />
+    <SUITE FILE_PATH="coverage/thesis$SPIE_candidacy__1_.coverage" NAME="SPIE_candidacy (1) Coverage Results" MODIFIED="1525271783612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/candidacy/code" />
     <SUITE FILE_PATH="coverage/thesis$SPIE_candidacy.coverage" NAME="SPIE_candidacy Coverage Results" MODIFIED="1524942933847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
   </component>
   <component name="FileEditorManager">
@@ -24,11 +40,20 @@
       <file leaf-file-name="SPIE_candidacy.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="111" column="21" lean-forward="true" selection-start-line="89" selection-start-column="22" selection-end-line="111" selection-end-column="21" />
+            <state relative-caret-position="290">
+              <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
+        <entry file="file:///anaconda3/lib/python3.6/site-packages/sklearn/preprocessing/data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="529" column="33" selection-start-line="529" selection-start-column="8" selection-end-line="529" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -257,22 +282,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="639" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32920355" />
-      <window_info anchor="right" x="0" y="0" width="270" height="439" id="Documentation" order="7" side_tool="true" weight="0.3296875" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32841328" />
+      <window_info anchor="right" x="0" y="0" width="270" height="439" id="Documentation" order="7" side_tool="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32920355" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32841328" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32841328" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32841328" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32841328" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.24555735" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="SciView" order="6" weight="0.39579967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398524" />
@@ -296,16 +320,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py</url>
-          <line>168</line>
+          <line>173</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py</url>
-          <line>100</line>
-          <option name="timeStamp" value="8" />
+          <line>35</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -434,10 +463,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/sklearn/preprocessing/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="529" column="33" selection-start-line="529" selection-start-column="8" selection-end-line="529" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="111" column="21" lean-forward="true" selection-start-line="89" selection-start-column="22" selection-end-line="111" selection-end-column="21" />
+        <state relative-caret-position="290">
+          <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>

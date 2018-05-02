@@ -77,34 +77,59 @@ After feature extraction and selection, various classification models were train
 %
 We performed analysis on the two datasets (described in Section \ref{data_sets}) in the form of two classification tasks: Task 1 and Task 2. The relationship between these tasks is depicted in Figure \ref{fig:tasks_flowchart}. 
 
-%Flowchart made using tikz
-\begin{figure}
-\centering
-
-\begin{adjustbox}{width=\textwidth,height=0.75\textheight,keepaspectratio}
-\begin{tikzpicture}
-[node distance =  5cm]
-    % Place nodes
-    \node [input] (input) {Input: Micrograph};
-    \node [decision, below of=input,yshift=-1cm] (task1) {Task 1: Does the micrograph depict a dendritic microstructure?};
-    \node [decision, below of=task1,yshift=-2cm] (task2) {Task 2: Transverse cross-section?};
-    \node [process, below of=task2,yshift=0cm] (trans) {Transverse cross-section of dendritic microstructure};
-    
-    \node [process, right of=task1, xshift=4cm] (nondendrite) {Non-dendritic microstructure};
-    \node [process, right of=task2, xshift=4cm] (long) {Longitudinal cross-section of dendritic microstructure};
- 
-    % Draw edges
-   \path [line] (input) -- (task1);
-   \path [line] (task1) -- node [anchor=east] {yes} (task2);
-   \path [line] (task2) -- node [anchor=east] {yes} (trans);
-   \path [line] (task1) -- node [anchor=south]{no} (nondendrite);
-   \path [line] (task2) -- node [anchor=south]{no} (long);
-
-\end{tikzpicture}
-\end{adjustbox}
-\caption{Flowchart of microstructure recognition tasks, referred to here as Task 1 and Task 2.  Tasks 1 and 2 are both binary classification tasks.  Task 1 involves distinguishing between micrographs that depict dendritic morphologies from those that do not contain this particular microstructural feature.  From micrographs identified as containing dendrites (completed in Task 1), Task 2 involves distinguishing between different cross-sectional views (longitudinal or transverse) of dendritic microstructures.}
-\label{fig:tasks_flowchart}
-\end{figure}
+%%Flowchart made using tikz
+%\begin{figure}[t!]
+%\centering
+%\begin{adjustbox}{width=\textwidth,height=0.75\textheight,keepaspectratio}
+%\subfigure[Task 1]{
+%% \centering
+%\begin{tikzpicture}
+%[node distance =  5cm]
+%    % Place nodes
+%    \node [input] (input) {Input: Micrograph};
+%    \node [decision, below of=input,yshift=-2cm] (task1) {Task 1: Does the micrograph depict a dendritic microstructure?};
+%    % \node [decision, below of=task1,yshift=-2cm] (task2) {Task 2: Transverse cross-section?};
+%    % \node [process, below of=task2,yshift=0cm] (trans) {Transverse cross-section of dendritic microstructure};
+%    \node [process, below of=task1,yshift=0cm] (dendrite) {Dendritic microstructure};
+%    \node [process, right of=task1, xshift=2cm] (nondendrite) {Non-dendritic microstructure};
+%    % \node [process, right of=task2, xshift=4cm] (long) {Longitudinal cross-section of dendritic microstructure};
+% 
+%    % Draw edges
+%   \path [line] (input) -- (task1);
+%%   \path [line] (task1) -- node [anchor=east] {yes} (task2);
+%  \path [line] (task1) -- node [anchor=east] {yes} (dendrite);
+%   \path [line] (task1) -- node [anchor=south]{no} (nondendrite);
+%%   \path [line] (task2) -- node [anchor=south]{no} (long);
+%
+%\end{tikzpicture}
+%}
+%
+%\subfigure[Task 2]{
+%% \centering
+%\begin{tikzpicture}
+%[node distance =  5cm]
+%    % Place nodes
+%    \node [input] (input) {Input: Dendritic Micrograph};
+%    % \node [decision, below of=input,yshift=-1cm] (task1) {Task 1: Does the micrograph depict a dendritic microstructure?};
+%    \node [decision, below of=input, yshift=-2cm] (task2) {Task 2: Transverse cross-section?};
+%    \node [process, below of=task2,yshift=0cm] (trans) {Transverse cross-section of dendritic microstructure};
+%    
+%    % \node [process, right of=task1, xshift=4cm] (nondendrite) {Non-dendritic microstructure};
+%    \node [process, right of=task2, xshift=2cm] (long) {Longitudinal cross-section of dendritic microstructure};
+% 
+%    % Draw edges
+%   \path [line] (input) -- (task2);
+%%   \path [line] (task1) -- node [anchor=east] {yes} (task2);
+%   \path [line] (task2) -- node [anchor=east] {yes} (trans);
+%%   \path [line] (task1) -- node [anchor=south]{no} (nondendrite);
+%   \path [line] (task2) -- node [anchor=south]{no} (long);
+%
+%\end{tikzpicture}
+%}
+%\end{adjustbox}
+%\caption{Flowchart of microstructure recognition tasks, referred to here as Task 1 and Task 2.  Tasks 1 and 2 are both binary classification tasks. (a) Task 1 involves distinguishing between micrographs that depict dendritic morphologies from those that do not contain this particular microstructural feature.  (b) Task 2 involves distinguishing between different cross-sectional views (longitudinal or transverse) of dendritic microstructures.}
+%\label{fig:tasks_flowchart}
+%\end{figure}
 %----------------------------------------------------------------------------------
 \section{Computer Vision and Machine Learning Methods}
 \label{methods}
