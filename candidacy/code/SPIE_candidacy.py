@@ -116,7 +116,7 @@ labels = np.loadtxt(data_home + 'E_cad_CK15_pck26_labels.txt')
 #
 # pickle.dump([names, probs], open('../results/GE_probs.pkl', 'wb'))
 
-names, probs = pickle.load(open('../results/GE_probs_smote_pca.pkl', 'rb'))
+names, probs = pickle.load(open('../results/GE_probs.pkl', 'rb'))
 
 
 
@@ -129,10 +129,10 @@ plt.figure()
 hist, _ = np.histogram(probs, a)
 plt.bar(b, hist, align='edge', width=0.01)
 # plt.xticks(np.linspace(0, 1, 100))
-plt.xlabel('Probability')
+plt.xlabel('QoI')
 plt.ylabel('Frequency')
 plt.title('Distribution of QoI scores for all images')
-plt.savefig('../results/all_probs_smote_pca.eps')
+plt.savefig('../results/all_probs.eps')
 plt.close()
 
 names_ecad = []
@@ -155,28 +155,28 @@ for i in range(len(probs)):
 plt.figure()
 hist, _ = np.histogram(probs_ecad, a)
 plt.bar(b, hist, align='edge', width=0.01)
-plt.xlabel('Probability')
+plt.xlabel('QoI')
 plt.ylabel('Frequency')
 plt.title('Distribution of QoI scores for E_cad')
-plt.savefig('../results/E_cad_probs_smote_pca.eps')
+plt.savefig('../results/E_cad_probs.eps')
 plt.close()
 
 plt.figure()
 hist, _ = np.histogram(probs_ck15, a)
 plt.bar(b, hist, align='edge', width=0.01)
-plt.xlabel('Probability')
+plt.xlabel('QoI')
 plt.ylabel('Frequency')
 plt.title('Distribution of QoI scores for CK15')
-plt.savefig('../results/CK15_probs_smote_pca.eps')
+plt.savefig('../results/CK15_probs.eps')
 plt.close()
 
 plt.figure()
 hist, _ = np.histogram(probs_pck26, a)
 plt.bar(b, hist, align='edge', width=0.01)
-plt.xlabel('Probability')
+plt.xlabel('QoI')
 plt.ylabel('Frequency')
 plt.title('Distribution of QoI scores for E_cad')
-plt.savefig('../results/pck26_probs_smote_pca.eps')
+plt.savefig('../results/pck26_probs.eps')
 plt.close()
 
 print()
