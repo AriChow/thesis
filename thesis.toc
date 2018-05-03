@@ -1,7 +1,7 @@
 \contentsline {chapter}{LIST OF TABLES}{vi}{chapter*.3}
 \contentsline {chapter}{LIST OF FIGURES}{vii}{chapter*.5}
-\contentsline {chapter}{ACKNOWLEDGMENT}{x}{section*.6}
-\contentsline {chapter}{ABSTRACT}{xi}{section*.8}
+\contentsline {chapter}{ACKNOWLEDGMENT}{ix}{section*.6}
+\contentsline {chapter}{ABSTRACT}{x}{section*.8}
 \contentsline {chapter}{\numberline {1.}INTRODUCTION AND BACKGROUND}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Overview}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Contributions}{3}{section.1.2}
@@ -32,44 +32,42 @@
 \contentsline {section}{\numberline {3.3}Methods}{35}{section.3.3}
 \contentsline {section}{\numberline {3.4}Experiments and results}{36}{section.3.4}
 \contentsline {section}{\numberline {3.5}Conclusions}{39}{section.3.5}
-\contentsline {chapter}{\numberline {4.}A MACHINE LEARNING APPROACH TO QUANTIFYING NOISE IN MEDICAL IMAGES}{40}{chapter.4}
+\contentsline {chapter}{\numberline {4.}A MACHINE LEARNING BASED APPROACH TO QUANTIFYING NOISE IN MEDICAL IMAGES}{40}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{40}{section.4.1}
 \contentsline {section}{\numberline {4.2}Data}{40}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Preliminary noise reduction}{41}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Combination of the three markers}{42}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Feature extraction}{43}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Data preprocessing}{43}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}Methods and experiments}{43}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Random undersampling}{44}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Classification and analysis}{44}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Quality of image score}{44}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Defining the \textit {ugly} class}{45}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Conclusions}{46}{section.4.4}
-\contentsline {chapter}{\numberline {5.}ALGORITHM SELECTION AND HYPERPARAMETER OPTIMIZATION BASED QUANTIFICATION OF ERROR CONTRIBUTION IN IMAGE CLASSIFICATION PIPELINES}{47}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{47}{section.5.1}
-\contentsline {section}{\numberline {5.2}Foundations}{50}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Algorithm selection and hyper-parameter optimization}{50}{subsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.1.1}Hyper-parameter optimization (HPO)}{50}{subsubsection.5.2.1.1}
-\contentsline {subsubsection}{\numberline {5.2.1.2}Combined algorithm selection and hyper-parameter optimization (CASH)}{51}{subsubsection.5.2.1.2}
-\contentsline {subsection}{\numberline {5.2.2}Optimization methods}{51}{subsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.1}Grid search}{51}{subsubsection.5.2.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2.2}Random search}{52}{subsubsection.5.2.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.3}Bayesian optimization}{52}{subsubsection.5.2.2.3}
-\contentsline {section}{\numberline {5.3}Proposed methods}{52}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Error contribution with the agnostic methodology}{52}{subsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.1.1}Quantification of error from computational steps}{53}{subsubsection.5.3.1.1}
-\contentsline {subsubsection}{\numberline {5.3.1.2}Quantification of error from algorithms}{54}{subsubsection.5.3.1.2}
-\contentsline {subsubsection}{\numberline {5.3.1.3}Quantification of error from hyper-parameters}{54}{subsubsection.5.3.1.3}
-\contentsline {section}{\numberline {5.4}Experiments and results}{55}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Optimization frameworks}{57}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Datasets}{58}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Error quantification experiments}{59}{subsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.3.1}Error contribution from computational steps}{59}{subsubsection.5.4.3.1}
-\contentsline {subsubsection}{\numberline {5.4.3.2}Error contribution from algorithms}{61}{subsubsection.5.4.3.2}
-\contentsline {subsubsection}{\numberline {5.4.3.3}Error contribution from hyper-parameters}{61}{subsubsection.5.4.3.3}
-\contentsline {subsubsection}{\numberline {5.4.3.4}Comparison of computation time}{61}{subsubsection.5.4.3.4}
-\contentsline {section}{\numberline {5.5}Conclusion}{64}{section.5.5}
-\contentsline {chapter}{\numberline {6.}CONCLUSIONS AND FUTURE WORK}{65}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusions}{65}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future work}{66}{section.6.2}
-\contentsline {chapter}{REFERENCES}{68}{section*.33}
+\contentsline {subsection}{\numberline {4.2.1}Feature extraction}{41}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Data preprocessing}{42}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Methods and experiments}{42}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Random undersampling}{42}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Classification and analysis}{42}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Quality of image score}{43}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Defining the \textit {ugly} class}{43}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Conclusions}{45}{section.4.4}
+\contentsline {chapter}{\numberline {5.}ALGORITHM SELECTION AND HYPERPARAMETER OPTIMIZATION BASED QUANTIFICATION OF ERROR CONTRIBUTION IN IMAGE CLASSIFICATION PIPELINES}{46}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{46}{section.5.1}
+\contentsline {section}{\numberline {5.2}Foundations}{49}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Algorithm selection and hyper-parameter optimization}{49}{subsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.1.1}Hyper-parameter optimization (HPO)}{49}{subsubsection.5.2.1.1}
+\contentsline {subsubsection}{\numberline {5.2.1.2}Combined algorithm selection and hyper-parameter optimization (CASH)}{50}{subsubsection.5.2.1.2}
+\contentsline {subsection}{\numberline {5.2.2}Optimization methods}{50}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}Grid search}{50}{subsubsection.5.2.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2.2}Random search}{51}{subsubsection.5.2.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.3}Bayesian optimization}{51}{subsubsection.5.2.2.3}
+\contentsline {section}{\numberline {5.3}Proposed methods}{51}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Error contribution with the agnostic methodology}{51}{subsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.1.1}Quantification of error from computational steps}{52}{subsubsection.5.3.1.1}
+\contentsline {subsubsection}{\numberline {5.3.1.2}Quantification of error from algorithms}{53}{subsubsection.5.3.1.2}
+\contentsline {subsubsection}{\numberline {5.3.1.3}Quantification of error from hyper-parameters}{53}{subsubsection.5.3.1.3}
+\contentsline {section}{\numberline {5.4}Experiments and results}{54}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Optimization frameworks}{56}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Datasets}{57}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Error quantification experiments}{58}{subsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.3.1}Error contribution from computational steps}{58}{subsubsection.5.4.3.1}
+\contentsline {subsubsection}{\numberline {5.4.3.2}Error contribution from algorithms}{60}{subsubsection.5.4.3.2}
+\contentsline {subsubsection}{\numberline {5.4.3.3}Error contribution from hyper-parameters}{60}{subsubsection.5.4.3.3}
+\contentsline {subsubsection}{\numberline {5.4.3.4}Comparison of computation time}{60}{subsubsection.5.4.3.4}
+\contentsline {section}{\numberline {5.5}Conclusion}{63}{section.5.5}
+\contentsline {chapter}{\numberline {6.}CONCLUSIONS AND FUTURE WORK}{64}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusions}{64}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future work}{65}{section.6.2}
+\contentsline {chapter}{REFERENCES}{67}{section*.32}

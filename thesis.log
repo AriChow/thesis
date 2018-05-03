@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 MAY 2018 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 MAY 2018 11:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -979,9 +979,33 @@ Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \c@rmk=\count177
 
 (./thesis.aux (./title.aux) (./acknowledge.aux) (./abstract.aux)
-(./introduction.aux) (./COMMAT.aux) (./ISBI.aux) (./SPIE.aux
+(./introduction.aux) (./COMMAT.aux) (./ISBI.aux) (./SPIE1.aux
+
+LaTeX Warning: Label `fig:example_images' multiply defined.
+
 
 LaTeX Warning: Label `eq:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:ecad_example' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:ecad_example' multiply defined.
+
+
+LaTeX Warning: Label `fig:pck26_example' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:pck26_example' multiply defined.
+
+
+LaTeX Warning: Label `fig:CK15_example' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:CK15_example' multiply defined.
+
+
+LaTeX Warning: Label `fig:example_images' multiply defined.
 
 ) (./EP.aux
 
@@ -991,13 +1015,25 @@ LaTeX Warning: Label `subsubsec1' multiply defined.
 LaTeX Warning: Label `fig:sfig1' multiply defined.
 
 
+LaTeX Warning: Label `sub@fig:sfig1' multiply defined.
+
+
 LaTeX Warning: Label `fig:sfig2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sfig2' multiply defined.
 
 
 LaTeX Warning: Label `fig:sfig3' multiply defined.
 
 
+LaTeX Warning: Label `sub@fig:sfig3' multiply defined.
+
+
 LaTeX Warning: Label `fig:sfig4' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sfig4' multiply defined.
 
 ) (./conclusions.aux) (./bibliography.aux))
 \openout1 = `thesis.aux'.
@@ -1123,7 +1159,7 @@ LaTeX Info: Redefining \nameref on input line 134.
 \openout2 = `title.aux'.
 
  (./title.tex
-<img/rpi_seal.png, id=312, 158.84344pt x 158.09062pt>
+<img/rpi_seal.png, id=304, 158.84344pt x 158.09062pt>
 File: img/rpi_seal.png Graphic file (type png)
  <use img/rpi_seal.png>
 Package pdftex.def Info: img/rpi_seal.png used on input line 9.
@@ -1159,13 +1195,13 @@ RUC-TURE
 
 
 ]
-Overfull \hbox (11.35585pt too wide) in paragraph at lines 48--48
+Overfull \hbox (11.35585pt too wide) in paragraph at lines 46--46
  [][] [][]\OT1/cmr/m/n/12 ALGORITHM SE-LEC-TION AND HY-PER-PA-RAM-E-TER OP-TI-M
 IZA-TION BASED 
  []
 
 
-Overfull \hbox (1.41518pt too wide) in paragraph at lines 53--53
+Overfull \hbox (1.41518pt too wide) in paragraph at lines 51--51
  [][] [][]\OT1/cmr/m/n/12 Combined al-go-rithm se-lec-tion and hyper-parameter 
 op-ti-miza- 
  []
@@ -1182,7 +1218,7 @@ op-ti-miza-
 
 
 ] (./thesis.lof
-Overfull \hbox (3.30058pt too wide) in paragraph at lines 9--9
+Overfull \hbox (3.30058pt too wide) in paragraph at lines 8--8
  [][] [][]\OT1/cmr/m/n/12 ROC curves for clas-si-fi-ca-tion: (a) \OT1/cmr/m/it/
 12 Round-Lu-men \OT1/cmr/m/n/12 and \OT1/cmr/m/it/12 Twins \OT1/cmr/m/n/12 and 
 (b) \OT1/cmr/m/it/12 RoundLumen- 
@@ -1191,14 +1227,14 @@ Overfull \hbox (3.30058pt too wide) in paragraph at lines 9--9
 [7
 
 
-] [8])
+])
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
-) [9]
+) [8]
 \openout2 = `acknowledge.aux'.
 
- (./acknowledge.tex) [10
+ (./acknowledge.tex) [9
 
 
 
@@ -1206,18 +1242,18 @@ Overfull \hbox (3.30058pt too wide) in paragraph at lines 9--9
 ]
 \openout2 = `abstract.aux'.
 
- (./abstract.tex [11
+ (./abstract.tex [10
 
 
 
 
-]) [12]
+]) [11]
 \openout2 = `introduction.aux'.
 
 
 (./introduction.tex
 CHAPTER 1.
-<img/EP/flowchart.png, id=596, 873.2625pt x 750.805pt>
+<img/EP/flowchart.png, id=558, 873.2625pt x 750.805pt>
 File: img/EP/flowchart.png Graphic file (type png)
 
 <use img/EP/flowchart.png>
@@ -1227,11 +1263,14 @@ Package pdftex.def Info: img/EP/flowchart.png used on input line 12.
 
 
 
-] [2 <./img/EP/flowchart.png>] [3]) [4]
+] [2 <./img/EP/flowchart.png>] [3]
+
+LaTeX Warning: Reference `chap:SPIE' on page 4 undefined on input line 42.
+
+) [4]
 \openout2 = `COMMAT.aux'.
 
-
-(./COMMAT.tex
+ (./COMMAT.tex
 CHAPTER 2.
 
 Package hyperref Warning: Ignoring empty anchor on input line 6.
@@ -1243,22 +1282,26 @@ LaTeX Warning: Citation `xu2015machine' on page 5 undefined on input line 14.
 
 
 
-] [6] [7] <img/example_images_v2.png, id=662, 733.74126pt x 653.44125pt>
+] [6] [7] <img/example_images_v2.png, id=622, 733.74126pt x 653.44125pt>
 File: img/example_images_v2.png Graphic file (type png)
 
 <use img/example_images_v2.png>
 Package pdftex.def Info: img/example_images_v2.png used on input line 51.
 (pdftex.def)             Requested size: 403.55894pt x 359.3938pt.
  [8]
-<img/flowchart_approach_updated.png, id=671, 1093.08376pt x 690.58pt>
+<img/flowchart_approach_updated.png, id=632, 1093.08376pt x 690.58pt>
 File: img/flowchart_approach_updated.png Graphic file (type png)
 
 <use img/flowchart_approach_updated.png>
 Package pdftex.def Info: img/flowchart_approach_updated.png used on input line 
 72.
 (pdftex.def)             Requested size: 437.22575pt x 276.2271pt.
- [9 <./img/example_images_v2.png>]
-[10 <./img/flowchart_approach_updated.png>]
+
+
+LaTeX Warning: Reference `fig:tasks_flowchart' on page 9 undefined on input lin
+e 78.
+
+[9 <./img/example_images_v2.png>] [10 <./img/flowchart_approach_updated.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 146--148
 
  []
@@ -1294,6 +1337,11 @@ LaTeX Warning: Reference `tab:parameters' on page 19 undefined on input line 29
 9.
 
 [19] [20] [21] [22] [23] [24] [25] [26] [27]
+
+LaTeX Warning: Reference `fig:tasks_flowchart' on page 28 undefined on input li
+ne 589.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 587--596
 
  []
@@ -1321,7 +1369,7 @@ l.6 ... on Biomedical Imaging}, pp. 629-632, 2017}
 
 LaTeX Warning: Reference `morphologies' on page 31 undefined on input line 24.
 
-[31] <img/morphologies.png, id=900, 979.66pt x 483.8075pt>
+[31] <img/morphologies.png, id=857, 979.66pt x 483.8075pt>
 File: img/morphologies.png Graphic file (type png)
 
 <use img/morphologies.png>
@@ -1337,26 +1385,26 @@ LaTeX Warning: Reference `table:classes' on page 32 undefined on input line 33.
 
 
 [32 <./img/morphologies.png>]
-<img/3D_model.png, id=913, 971.63pt x 282.05376pt>
+<img/3D_model.png, id=871, 971.63pt x 282.05376pt>
 File: img/3D_model.png Graphic file (type png)
  <use img/3D_model.png>
 Package pdftex.def Info: img/3D_model.png used on input line 64.
 (pdftex.def)             Requested size: 469.75502pt x 136.3612pt.
 
-[33] <img/slicer.png, id=920, 897.3525pt x 573.14125pt>
+[33] <img/slicer.png, id=878, 897.3525pt x 573.14125pt>
 File: img/slicer.png Graphic file (type png)
  <use img/slicer.png>
 Package pdftex.def Info: img/slicer.png used on input line 71.
 (pdftex.def)             Requested size: 469.75502pt x 300.02911pt.
 
 [34 <./img/3D_model.png> <./img/slicer.png>] [35]
-<img/slices.png, id=940, 853.1875pt x 509.905pt>
+<img/slices.png, id=898, 853.1875pt x 509.905pt>
 File: img/slices.png Graphic file (type png)
  <use img/slices.png>
 Package pdftex.def Info: img/slices.png used on input line 110.
 (pdftex.def)             Requested size: 469.75502pt x 280.75204pt.
  [36]
-[37 <./img/slices.png>] <img/results.png, id=953, 878.28125pt x 356.33125pt>
+[37 <./img/slices.png>] <img/results.png, id=910, 878.28125pt x 356.33125pt>
 File: img/results.png Graphic file (type png)
 
 <use img/results.png>
@@ -1372,9 +1420,9 @@ LaTeX Warning: Reference `table:results1' on page 38 undefined on input line 16
 0.
 
 [38 <./img/results.png>]) [39]
-\openout2 = `SPIE.aux'.
+\openout2 = `SPIE1.aux'.
 
- (./SPIE.tex
+ (./SPIE1.tex
 CHAPTER 4.
 pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.1})
  has been already used, duplicate ignored
@@ -1382,8 +1430,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.1})
                    \relax 
 l.9 vol. 9791, pp. 979110U, 2016.}
                                   
-Missing character: There is no ï in font cmr12!
-
 Overfull \hbox (1.66182pt too wide) in paragraph at lines 14--17
 []\OT1/cmr/m/n/12 As ad-vances in med-i-cal imag-ing tech-nol-ogy are re-sult-i
 ng in sig-nif-i-cant growth of biomed-
@@ -1393,48 +1439,158 @@ ng in sig-nif-i-cant growth of biomed-
 
 
 
-] <img/SPIE_example_images.png, id=971, 2026.57124pt x 529.98pt>
-File: img/SPIE_example_images.png Graphic file (type png)
+]
+Package epstopdf Info: Source file: <img/SPIE/ecad_example.eps>
+(epstopdf)                    date: 2018-05-03 11:16:30
+(epstopdf)                    size: 8510826 bytes
+(epstopdf)             Output file: <img/SPIE/ecad_example-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2018-05-03 11:16:36
+(epstopdf)                    size: 955983 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/SPIE/ecad_example-eps-
+converted-to.pdf img/SPIE/ecad_example.eps>
+(epstopdf)             \includegraphics on input line 28.
+Package epstopdf Info: Output file is already uptodate.
 
-<use img/SPIE_example_images.png>
-Package pdftex.def Info: img/SPIE_example_images.png used on input line 26.
-(pdftex.def)             Requested size: 469.75502pt x 122.84708pt.
+<img/SPIE/ecad_example-eps-converted-to.pdf, id=929, 2055.68pt x 2055.68pt>
+File: img/SPIE/ecad_example-eps-converted-to.pdf Graphic file (type pdf)
 
-<img/SPIE_noise_reduction.png, id=974, 1358.07375pt x 557.08125pt>
-File: img/SPIE_noise_reduction.png Graphic file (type png)
+<use img/SPIE/ecad_example-eps-converted-to.pdf>
+Package pdftex.def Info: img/SPIE/ecad_example-eps-converted-to.pdf used on inp
+ut line 28.
+(pdftex.def)             Requested size: 140.92793pt x 140.90106pt.
+Package epstopdf Info: Source file: <img/SPIE/pck26_example.eps>
+(epstopdf)                    date: 2018-05-03 11:16:31
+(epstopdf)                    size: 8510827 bytes
+(epstopdf)             Output file: <img/SPIE/pck26_example-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2018-05-03 11:16:37
+(epstopdf)                    size: 853333 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/SPIE/pck26_example-eps
+-converted-to.pdf img/SPIE/pck26_example.eps>
+(epstopdf)             \includegraphics on input line 35.
+Package epstopdf Info: Output file is already uptodate.
 
-<use img/SPIE_noise_reduction.png>
-Package pdftex.def Info: img/SPIE_noise_reduction.png used on input line 36.
-(pdftex.def)             Requested size: 422.77664pt x 173.41592pt.
- [41 <./img/SPIE_example_images.png>]
-<img/SPIE_combined.png, id=984, 2075.755pt x 451.6875pt>
-File: img/SPIE_combined.png Graphic file (type png)
+<img/SPIE/pck26_example-eps-converted-to.pdf, id=930, 2055.68pt x 2055.68pt>
+File: img/SPIE/pck26_example-eps-converted-to.pdf Graphic file (type pdf)
 
-<use img/SPIE_combined.png>
-Package pdftex.def Info: img/SPIE_combined.png used on input line 47.
-(pdftex.def)             Requested size: 469.75502pt x 102.21802pt.
- [42 <./img/SPIE_noise_reduction.png>] [43 <./img/SPIE_combined.png>]
-Missing character: There is no ï in font cmr12!
-Missing character: There is no ï in font cmr12!
-Missing character: There is no ï in font cmr12!
-Missing character: There is no ï in font cmr12!
- [44]
-<img/ugly_samples.png, id=1008, 1836.8625pt x 484.81125pt>
+<use img/SPIE/pck26_example-eps-converted-to.pdf>
+Package pdftex.def Info: img/SPIE/pck26_example-eps-converted-to.pdf used on in
+put line 35.
+(pdftex.def)             Requested size: 140.92793pt x 140.90106pt.
+Package epstopdf Info: Source file: <img/SPIE/CK15_example.eps>
+(epstopdf)                    date: 2018-05-03 11:16:30
+(epstopdf)                    size: 8510826 bytes
+(epstopdf)             Output file: <img/SPIE/CK15_example-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2018-05-03 11:16:38
+(epstopdf)                    size: 1292426 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/SPIE/CK15_example-eps-
+converted-to.pdf img/SPIE/CK15_example.eps>
+(epstopdf)             \includegraphics on input line 42.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/SPIE/CK15_example-eps-converted-to.pdf, id=931, 2055.68pt x 2055.68pt>
+File: img/SPIE/CK15_example-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/SPIE/CK15_example-eps-converted-to.pdf>
+Package pdftex.def Info: img/SPIE/CK15_example-eps-converted-to.pdf used on inp
+ut line 42.
+(pdftex.def)             Requested size: 140.92793pt x 140.90106pt.
+ [41 <./img/SPIE/ecad_example-eps-converted-to.pdf> <./img/SPIE/pck26_example-e
+ps-converted-to.pdf> <./img/SPIE/CK15_example-eps-converted-to.pdf>]
+
+LaTeX Warning: Citation `chawla2002smote' on page 42 undefined on input line 58
+.
+
+
+LaTeX Warning: Citation `world1987principal' on page 42 undefined on input line
+ 59.
+
+[42]
+Package epstopdf Info: Source file: <img/SPIE/E_cad_AFRemoved_260143_9945.eps>
+(epstopdf)                    date: 2018-05-03 11:16:30
+(epstopdf)                    size: 8510841 bytes
+(epstopdf)             Output file: <img/SPIE/E_cad_AFRemoved_260143_9945-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2018-05-03 11:16:38
+(epstopdf)                    size: 1243268 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/SPIE/E_cad_AFRemoved_2
+60143_9945-eps-converted-to.pdf img/SPIE/E_cad_AFRemoved_260143_9945.eps>
+(epstopdf)             \includegraphics on input line 86.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/SPIE/E_cad_AFRemoved_260143_9945-eps-converted-to.pdf, id=956, 2055.68pt x
+ 2055.68pt>
+File: img/SPIE/E_cad_AFRemoved_260143_9945-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use img/SPIE/E_cad_AFRemoved_260143_9945-eps-converted-to.pdf>
+Package pdftex.def Info: img/SPIE/E_cad_AFRemoved_260143_9945-eps-converted-to.
+pdf used on input line 86.
+(pdftex.def)             Requested size: 140.92793pt x 140.90106pt.
+Package epstopdf Info: Source file: <img/SPIE/CK15_AFRemoved_269_084_0077.eps>
+(epstopdf)                    date: 2018-05-03 11:16:30
+(epstopdf)                    size: 8510841 bytes
+(epstopdf)             Output file: <img/SPIE/CK15_AFRemoved_269_084_0077-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2018-05-03 11:16:39
+(epstopdf)                    size: 1836171 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/SPIE/CK15_AFRemoved_26
+9_084_0077-eps-converted-to.pdf img/SPIE/CK15_AFRemoved_269_084_0077.eps>
+(epstopdf)             \includegraphics on input line 93.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/SPIE/CK15_AFRemoved_269_084_0077-eps-converted-to.pdf, id=957, 2055.68pt x
+ 2055.68pt>
+File: img/SPIE/CK15_AFRemoved_269_084_0077-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use img/SPIE/CK15_AFRemoved_269_084_0077-eps-converted-to.pdf>
+Package pdftex.def Info: img/SPIE/CK15_AFRemoved_269_084_0077-eps-converted-to.
+pdf used on input line 93.
+(pdftex.def)             Requested size: 140.92793pt x 140.90106pt.
+Package epstopdf Info: Source file: <img/SPIE/pck26_AFRemoved_260_084_5262.eps>
+
+(epstopdf)                    date: 2018-05-03 11:16:30
+(epstopdf)                    size: 8510842 bytes
+(epstopdf)             Output file: <img/SPIE/pck26_AFRemoved_260_084_5262-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2018-05-03 11:16:39
+(epstopdf)                    size: 732184 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/SPIE/pck26_AFRemoved_2
+60_084_5262-eps-converted-to.pdf img/SPIE/pck26_AFRemoved_260_084_5262.eps>
+(epstopdf)             \includegraphics on input line 100.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/SPIE/pck26_AFRemoved_260_084_5262-eps-converted-to.pdf, id=958, 2055.68pt 
+x 2055.68pt>
+File: img/SPIE/pck26_AFRemoved_260_084_5262-eps-converted-to.pdf Graphic file (
+type pdf)
+ <use img/SPIE/pck26_AFRemoved_260_084_5262-eps-converted-to.pdf>
+Package pdftex.def Info: img/SPIE/pck26_AFRemoved_260_084_5262-eps-converted-to
+.pdf used on input line 100.
+(pdftex.def)             Requested size: 140.92793pt x 140.90106pt.
+
+[43 <./img/SPIE/E_cad_AFRemoved_260143_9945-eps-converted-to.pdf> <./img/SPIE/C
+K15_AFRemoved_269_084_0077-eps-converted-to.pdf> <./img/SPIE/pck26_AFRemoved_26
+0_084_5262-eps-converted-to.pdf>]
+<img/ugly_samples.png, id=973, 1836.8625pt x 484.81125pt>
 File: img/ugly_samples.png Graphic file (type png)
 
 <use img/ugly_samples.png>
-Package pdftex.def Info: img/ugly_samples.png used on input line 155.
+Package pdftex.def Info: img/ugly_samples.png used on input line 116.
 (pdftex.def)             Requested size: 469.75502pt x 123.98401pt.
- [45]
-<img/ugly_distributions.png, id=1013, 2079.77pt x 520.94624pt>
+
+<img/ugly_distributions.png, id=974, 2079.77pt x 520.94624pt>
 File: img/ugly_distributions.png Graphic file (type png)
 
 <use img/ugly_distributions.png>
-Package pdftex.def Info: img/ugly_distributions.png used on input line 162.
+Package pdftex.def Info: img/ugly_distributions.png used on input line 123.
 (pdftex.def)             Requested size: 469.75502pt x 117.66093pt.
-Missing character: There is no ï in font cmr12!
-Missing character: There is no ï in font cmr12!
-) [46 <./img/ugly_samples.png> <./img/ugly_distributions.png>]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¯ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¯ in font cmr12!
+ [44 <./img/ugly_samples.png> <./img/ugly_distributions.png>]) [45]
 \openout2 = `EP.aux'.
 
  (./EP.tex
@@ -1445,30 +1601,30 @@ pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.1})
                    \relax 
 l.4 \let\thefootnote\relax\footnotetext{}
                                          
-<img/EP/generalized_pipeline.png, id=1021, 753.81625pt x 481.8pt>
+<img/EP/generalized_pipeline.png, id=988, 753.81625pt x 481.8pt>
 File: img/EP/generalized_pipeline.png Graphic file (type png)
 
 <use img/EP/generalized_pipeline.png>
 Package pdftex.def Info: img/EP/generalized_pipeline.png used on input line 16.
 
 (pdftex.def)             Requested size: 376.90721pt x 240.8994pt.
- [47
+ [46
 
 
 
-] [48 <./img/EP/generalized_pipeline.png>] [49] [50]
+] [47 <./img/EP/generalized_pipeline.png>] [48] [49]
 Overfull \hbox (10.3964pt too wide) in paragraph at lines 56--56
 []\OT1/cmr/bx/n/12 Combined al-go-rithm se-lec-tion and hyper-parameter op-ti-m
 iza-tion (CASH) 
  []
 
-[51] [52] [53] [54]
+[50] [51] [52] [53]
 File: img/EP/flowchart.png Graphic file (type png)
  <use img/EP/flowchart.png>
 Package pdftex.def Info: img/EP/flowchart.png used on input line 199.
 (pdftex.def)             Requested size: 349.29881pt x 300.31668pt.
 
-<img/EP/pipeline.png, id=1117, 1126.2075pt x 740.7675pt>
+<img/EP/pipeline.png, id=1083, 1126.2075pt x 740.7675pt>
 File: img/EP/pipeline.png Graphic file (type png)
 
 <use img/EP/pipeline.png>
@@ -1479,19 +1635,19 @@ Overfull \hbox (4.73056pt too wide) in paragraph at lines 225--225
 []|[]| 
  []
 
-[55] [56] <img/EP/CASH.png, id=1149, 901.3675pt x 460.72125pt>
+[54] [55] <img/EP/CASH.png, id=1115, 901.3675pt x 460.72125pt>
 File: img/EP/CASH.png Graphic file (type png)
 
 <use img/EP/CASH.png>
 Package pdftex.def Info: img/EP/CASH.png used on input line 242.
 (pdftex.def)             Requested size: 360.5406pt x 184.28523pt.
- <img/EP/HPO.png, id=1151, 901.3675pt x 433.62pt>
+ <img/EP/HPO.png, id=1117, 901.3675pt x 433.62pt>
 File: img/EP/HPO.png Graphic file (type png)
 
 <use img/EP/HPO.png>
 Package pdftex.def Info: img/EP/HPO.png used on input line 249.
 (pdftex.def)             Requested size: 360.5406pt x 173.44492pt.
- [57 <./img/EP/pipeline.png>] [58 <./img/EP/CASH.png> <./img/EP/HPO.png>]
+ [56 <./img/EP/pipeline.png>] [57 <./img/EP/CASH.png> <./img/EP/HPO.png>]
 Package epstopdf Info: Source file: <img/EP/agnostic_error_steps_breast.eps>
 (epstopdf)                    date: 2018-05-01 14:43:36
 (epstopdf)                    size: 33946 bytes
@@ -1504,7 +1660,7 @@ s_breast-eps-converted-to.pdf img/EP/agnostic_error_steps_breast.eps>
 (epstopdf)             \includegraphics on input line 288.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_steps_breast-eps-converted-to.pdf, id=1187, 462.72874pt 
+<img/EP/agnostic_error_steps_breast-eps-converted-to.pdf, id=1154, 462.72874pt 
 x 346.29375pt>
 File: img/EP/agnostic_error_steps_breast-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1524,7 +1680,7 @@ s_brain-eps-converted-to.pdf img/EP/agnostic_error_steps_brain.eps>
 (epstopdf)             \includegraphics on input line 294.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_steps_brain-eps-converted-to.pdf, id=1188, 462.72874pt x
+<img/EP/agnostic_error_steps_brain-eps-converted-to.pdf, id=1155, 462.72874pt x
  346.29375pt>
 File: img/EP/agnostic_error_steps_brain-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1546,7 +1702,7 @@ s_matsc_dataset1-eps-converted-to.pdf img/EP/agnostic_error_steps_matsc_dataset
 (epstopdf)             \includegraphics on input line 300.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_steps_matsc_dataset1-eps-converted-to.pdf, id=1189, 462.
+<img/EP/agnostic_error_steps_matsc_dataset1-eps-converted-to.pdf, id=1156, 462.
 72874pt x 346.29375pt>
 File: img/EP/agnostic_error_steps_matsc_dataset1-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1569,7 +1725,7 @@ s_matsc_dataset2-eps-converted-to.pdf img/EP/agnostic_error_steps_matsc_dataset
 (epstopdf)             \includegraphics on input line 306.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_steps_matsc_dataset2-eps-converted-to.pdf, id=1190, 462.
+<img/EP/agnostic_error_steps_matsc_dataset2-eps-converted-to.pdf, id=1157, 462.
 72874pt x 346.29375pt>
 File: img/EP/agnostic_error_steps_matsc_dataset2-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1578,8 +1734,8 @@ ile (type pdf)
 Package pdftex.def Info: img/EP/agnostic_error_steps_matsc_dataset2-eps-convert
 ed-to.pdf used on input line 306.
 (pdftex.def)             Requested size: 171.20695pt x 128.12668pt.
- [59]
-[60 <./img/EP/agnostic_error_steps_breast-eps-converted-to.pdf> <./img/EP/agnos
+ [58]
+[59 <./img/EP/agnostic_error_steps_breast-eps-converted-to.pdf> <./img/EP/agnos
 tic_error_steps_brain-eps-converted-to.pdf> <./img/EP/agnostic_error_steps_mats
 c_dataset1-eps-converted-to.pdf> <./img/EP/agnostic_error_steps_matsc_dataset2-
 eps-converted-to.pdf>]
@@ -1595,7 +1751,7 @@ breast-eps-converted-to.pdf img/EP/agnostic_error_alg_breast.eps>
 (epstopdf)             \includegraphics on input line 327.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_alg_breast-eps-converted-to.pdf, id=1357, 462.72874pt x 
+<img/EP/agnostic_error_alg_breast-eps-converted-to.pdf, id=1322, 462.72874pt x 
 346.29375pt>
 File: img/EP/agnostic_error_alg_breast-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -1615,7 +1771,7 @@ brain-eps-converted-to.pdf img/EP/agnostic_error_alg_brain.eps>
 (epstopdf)             \includegraphics on input line 333.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_alg_brain-eps-converted-to.pdf, id=1358, 462.72874pt x 3
+<img/EP/agnostic_error_alg_brain-eps-converted-to.pdf, id=1323, 462.72874pt x 3
 46.29375pt>
 File: img/EP/agnostic_error_alg_brain-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1637,7 +1793,7 @@ s>
 (epstopdf)             \includegraphics on input line 339.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_alg_matsc_dataset1-eps-converted-to.pdf, id=1359, 462.72
+<img/EP/agnostic_error_alg_matsc_dataset1-eps-converted-to.pdf, id=1324, 462.72
 874pt x 346.29375pt>
 File: img/EP/agnostic_error_alg_matsc_dataset1-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1660,7 +1816,7 @@ s>
 (epstopdf)             \includegraphics on input line 345.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_alg_matsc_dataset2-eps-converted-to.pdf, id=1360, 462.72
+<img/EP/agnostic_error_alg_matsc_dataset2-eps-converted-to.pdf, id=1325, 462.72
 874pt x 346.29375pt>
 File: img/EP/agnostic_error_alg_matsc_dataset2-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1681,7 +1837,7 @@ r_breast-eps-converted-to.pdf img/EP/agnostic_error_hyper_breast.eps>
 (epstopdf)             \includegraphics on input line 364.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_hyper_breast-eps-converted-to.pdf, id=1363, 462.72874pt 
+<img/EP/agnostic_error_hyper_breast-eps-converted-to.pdf, id=1328, 462.72874pt 
 x 346.29375pt>
 File: img/EP/agnostic_error_hyper_breast-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1721,7 +1877,7 @@ r_matsc_dataset1-eps-converted-to.pdf img/EP/agnostic_error_hyper_matsc_dataset
 (epstopdf)             \includegraphics on input line 376.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_hyper_matsc_dataset1-eps-converted-to.pdf, id=1364, 462.
+<img/EP/agnostic_error_hyper_matsc_dataset1-eps-converted-to.pdf, id=1329, 462.
 72874pt x 346.29375pt>
 File: img/EP/agnostic_error_hyper_matsc_dataset1-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1744,7 +1900,7 @@ r_matsc_dataset2-eps-converted-to.pdf img/EP/agnostic_error_hyper_matsc_dataset
 (epstopdf)             \includegraphics on input line 382.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_hyper_matsc_dataset2-eps-converted-to.pdf, id=1365, 462.
+<img/EP/agnostic_error_hyper_matsc_dataset2-eps-converted-to.pdf, id=1330, 462.
 72874pt x 346.29375pt>
 File: img/EP/agnostic_error_hyper_matsc_dataset2-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1755,34 +1911,34 @@ ed-to.pdf used on input line 382.
 (pdftex.def)             Requested size: 171.20695pt x 128.12668pt.
 
 
-LaTeX Warning: Reference `fig:eq_alg' on page 61 undefined on input line 433.
+LaTeX Warning: Reference `fig:eq_alg' on page 60 undefined on input line 433.
 
-[61] <img/EP/times_algorithms.jpg, id=1374, 1003.75pt x 501.875pt>
+[60] <img/EP/times_algorithms.jpg, id=1338, 1003.75pt x 501.875pt>
 File: img/EP/times_algorithms.jpg Graphic file (type jpg)
 
 <use img/EP/times_algorithms.jpg>
 Package pdftex.def Info: img/EP/times_algorithms.jpg used on input line 437.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
- [62 <./img/EP/agnostic_error_alg_breast-eps-converted-to.pdf> <./img/EP/agnost
+ [61 <./img/EP/agnostic_error_alg_breast-eps-converted-to.pdf> <./img/EP/agnost
 ic_error_alg_brain-eps-converted-to.pdf> <./img/EP/agnostic_error_alg_matsc_dat
 aset1-eps-converted-to.pdf> <./img/EP/agnostic_error_alg_matsc_dataset2-eps-con
 verted-to.pdf>]
 Overfull \vbox (45.16946pt too high) has occurred while \output is active []
 
 
-[63 <./img/EP/agnostic_error_hyper_breast-eps-converted-to.pdf> <./img/EP/agnos
+[62 <./img/EP/agnostic_error_hyper_breast-eps-converted-to.pdf> <./img/EP/agnos
 tic_error_hyper_matsc_dataset1-eps-converted-to.pdf> <./img/EP/agnostic_error_h
 yper_matsc_dataset2-eps-converted-to.pdf> <./img/EP/times_algorithms.jpg>])
-[64]
+[63]
 \openout2 = `conclusions.aux'.
 
  (./conclusions.tex
 CHAPTER 6.
-[65
+[64
 
 
 
-] [66]) [67]
+] [65]) [66]
 \openout2 = `bibliography.aux'.
 
  (./bibliography.tex (./thesis.bbl
@@ -1803,28 +1959,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--67
 cat02306a & AN = rlc . 3566213 & site =
  []
 
-[68
+[67
 
 
 
 
-] [69] [70] [71] [72] [73])) [74]
+] [68] [69] [70] [71] [72])) [73]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
  (./thesis.aux (./title.aux)
 (./acknowledge.aux) (./abstract.aux) (./introduction.aux) (./COMMAT.aux)
-(./ISBI.aux) (./SPIE.aux) (./EP.aux) (./conclusions.aux) (./bibliography.aux))
+(./ISBI.aux) (./SPIE1.aux) (./EP.aux) (./conclusions.aux) (./bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
-
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 777D266280B2013DC58977A29305A0B4;5802
-(rerunfilecheck)             After:  DDD71DAF67CBE80350B078E5EEDDA3E8;5802.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: CE1FEE10540735B7E8E4D7EB3331D8A1;5641.
 
 LaTeX Warning: There were undefined references.
 
@@ -1834,43 +1983,34 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 24976 strings out of 492995
- 471826 string characters out of 6132704
- 594031 words of memory out of 5000000
- 27644 multiletter control sequences out of 15000+600000
+ 24988 strings out of 492995
+ 472824 string characters out of 6132704
+ 592582 words of memory out of 5000000
+ 27660 multiletter control sequences out of 15000+600000
  18240 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,15n,79p,2391b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.caption.33} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.34} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (86 pages, 5081078 bytes).
+ 55i,15n,79p,2391b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on thesis.pdf (84 pages, 10556439 bytes).
 PDF statistics:
- 1879 PDF objects out of 2073 (max. 8388607)
- 1328 compressed objects within 14 object streams
- 312 named destinations out of 1000 (max. 500000)
- 771 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1843 PDF objects out of 2073 (max. 8388607)
+ 1289 compressed objects within 13 object streams
+ 304 named destinations out of 1000 (max. 500000)
+ 770 words of extra memory for PDF output out of 10000 (max. 10000000)
 
