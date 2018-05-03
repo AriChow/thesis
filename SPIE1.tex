@@ -56,14 +56,11 @@ In addition to the features, labels are assigned to each image by domain experts
 \subsection{Data preprocessing}
 The three markers (CK15, pck26, E\_cad, and combined) corresponding to each tissue sample are combined together to provide us with 723 x 3 = 2169 samples. We perform 5-fold cross validation on this data to compute the quality of image score and report the accuracy and F1-score on the validation data.
 The data is highly imbalanced. The ratio of bad to good images is roughly 1 : 18. Therefore, it is important to try to redress this imbalance. We use the synthetic minority oversampling technique (SMOTE) \cite{chawla2002smote} on this data to perform oversampling. 
-Principal components analysis (PCA) \cite{world1987principal} is performed to reduce the number of features from 13 such that it captures 95 \% of the information. This reduces the number of dimensions to 5.
+Principal components analysis (PCA) \cite{wold1987principal} is performed to reduce the number of features from 13 such that it captures 95 \% of the information. This reduces the number of dimensions to 5.
 
 
 \section{Methods and experiments}
 In this section, we describe the methods that we used in our analysis of the images and also show the results that we achieved from the application of these methods on our data.
-
-\subsection{Random undersampling}
-The data in the two classes is imbalanced because the number of images in the \textit{good} class (images with high amount of signal) far outnumbers the number of instances in the \textit{bad} or noisy class. The ratio of imbalance is approximately 1:30. We perform random undersampling to redress the imbalance and ensure that the sizes of the two classes (good and bad) are the same.
 
 \subsection{Classification and analysis}
 We used the logistic regression classification algorithm for performing classification. The F1-score for classification is 0.9044 ($\pm$  0.03 standard deviation). We use the F1-score instead of accuracy as the classification metric because of the imbalance in the dataset.
@@ -85,46 +82,87 @@ A high value of the probability indicates that the image has high quality and mu
         \centering
         \includegraphics[width=\textwidth]{img/SPIE/E_cad_AFRemoved_260143_9945.eps}
         \caption{A \textit{good} image from E\_cad marker with a \textit{QoI} of 0.9945}
-        \label{fig:ecad_example}
+        \label{fig:good}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{img/SPIE/CK15_AFRemoved_269_084_0077.eps}
         \caption{A \textit{bad} image from CK15 marker with a \textit{QoI} of 0.0077}
-        \label{fig:pck26_example}
+        \label{fig:bad}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{img/SPIE/pck26_AFRemoved_260_084_5262.eps}
         \caption{A \textit{ugly} image from pck26 marker with a \textit{QoI} of 0.5262}
-        \label{fig:CK15_example}
+        \label{fig:ugly}
     \end{subfigure}
     \caption{Examples of \textit{good}, \textit{bad} and \textit{ugly} images based on the \textit{QoI} score.}
-    \label{fig:example_images}
+    \label{fig:gbu}
 \end{figure}
 
+Fig. \ref{fig:gbu} shows examples of the images from the test data with their corresponding \textit{QoI} scores. Fig \ref{fig:good} shows an image with a high \textit{QoI} score. This image is clearly a \textit{good image} as the tissue is easily observable and is not occluded. This image must be used for further analysis. Fig. \ref{fig:bad} is an example of an image with a low \textit{QoI}. This is image has literally no tissue and has regions of occlusions. This image should definitely be discarded. The third image in Fig. \ref{fig:ugly} has some signal in it in terms of tissue but is also plagued with some noise. This is an example of what we call an \textit{ugly} image and this sample may or may not be used in further analyses.
 
-\subsection{Defining the \textit{ugly} class}
-In addition to the good and bad class, we observe that there exist some images, which have both quantities of signal and noise in relatively equal proportion. Classifying this kind of image as good or bad becomes very subjective. Therefore, it seems intuitive to define a third class, referred to as the ugly class. We define and extract this class based on the QoI scores in the following manner.
-We plot histograms of these discrete distributions as shown in Fig. \ref{fig:ugly_distributions}. We can clearly see from the distributions that the scores form three distinct clusters. Therefore, we performed K-means clustering on the normalized score values with K=3. The cluster of images corresponding to the scores in the middle range is termed the ugly class. Images in the ugly class require further (possibly manual) processing. Thus, we are most interested in the images that are near the middle range, the images that we can recover. 
-We threshold out the ugly images with the help of the middle cluster in K-means and using a threshold for scores. The thresholds are taken to be between 0.3 to 0.6. We have found that 7.22 \%, 9.77 \% and 29.30 \% of images in E\_cad, pck26 and CK15 respectively, lie in this middle cluster. The results are intuitive because the amount of noise increases progressively from E\_cad to CK15 to pck26. A number of things may be done with the images that belong to the ugly class. They may be forwarded to medical practitioners for inspection. Further noise elimination may also be performed, or as we have done, the ?combined? image could be used as a proxy for the images belonging to this ugly class. This is because the ?combined? image best captures the important information in the images stained with the three different markers.
+\subsection{Results and discussion}
+We plot the distribution of \textit{QoI} scores in Fig. \ref{fig:distribution}. Figs. \ref{fig:all_probs}, \ref{fig:ecad_probs}, \ref{fig:ck15_probs}, \ref{fig:pck26_probs} correspond to the distribution of the images from all markers, E\_cad, CK15 and pck26 respectively. 
 
- \begin{figure}[H]
+\begin{figure}[ht!]
 \centering
-\includegraphics[width=1.0\textwidth]{img/ugly_samples}
-\caption{Three sample images from E\_cad stained tissues}
-\label{fig:ugly_samples}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.37]{img/SPIE/all_probs_smote_pca.eps}
+  \caption{Distribution of scores on all the images}
+  \label{fig:all_probs}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.37]{img/SPIE/E_cad_probs_smote_pca.eps}
+  \caption{Distribution of scores from E\_cad marker.}
+  \label{fig:ecad_probs}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.37]{img/SPIE/CK15_probs_smote_pca.eps}
+  \caption{Distribution of scores from CK15 marker.}
+  \label{fig:ck15_probs}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.37]{img/SPIE/pck26_probs_smote_pca.eps}
+  \caption{Distribution of scores from pck26 marker}
+  \label{fig:pck26_probs}
+\end{subfigure}
+\caption{Distribution of \textit{QoI} scores on the images. According to the pathologist, the perceived quality of the images from the E\_cad and pck26 marker is good and the images from the CK15 marker has low signal and high noise in general.  This is reflected in the distribution of these markers}
+\label{fig:distribution}
 \end{figure}
 
- \begin{figure}[H]
+The pathologist who labelled the images as \textit{good} or \textit{bad} based on the perceived quality of the images said that the images from the CK15 marker has more noise than images from E\_cad and \textit{pck26}. This is exactly what we quantify using the \textit{QoI} score. The ratios of \textit{bad} to \textit{good} images for E\_cad, CK15 and pck26 are approximately 19:1, 19:1 and 17:1 respectively for the three markers. The difference in quality of the images are not captured by the labels themselves. The distributions of the scores of the three markers clearly quantify this difference. We can see from Figs. \ref{fig:ecad_probs} and \ref{fig:pck26_probs} that the \textit{QoI} scores are scewed towards higher values close to one. On the other hand Fig. \ref{fig:ck15_probs} shows that there are a large number of images that maybe denoted as \textit{ugly}. The average values of the probabilities over all the images in a marker can be used to quantify the quality of the marker itself. In fact, the average values of the probabilities over all images in E\_cad, pck26 and CK15 are 0.85, 0.54 and 0.82 respectively.  Therefore, the quality of the markers E\_cad and pck26 is better than that of CK15. We divide the range of the scores into 3 equally spaced regions to demonstrate the difference between the three markers in more detail. The three regions are \textit{good} with a score range of 0.67 to 1, \textit{bad} with a range of 0 to 0.33 and \textit{ugly} with a range of 0.33 to 0.67. These values are chosen to demonstrate the differences between the markers. We discuss methods to select these thresholds later.
+
+\begin{table}[ht!]
 \centering
-\includegraphics[width=1.0\textwidth]{img/ugly_distributions}
-\caption{Discrete distributions of QoI scores for (a) E\_cad (b) pck26 (c) CK15}
-\label{fig:ugly_distributions}
-\end{figure}
+\caption{Percentage of the number of images that fall in the \textit{good}(0.67- 1), \textit{bad} (0 - 0.33) and \textit{ugly} (0.33 - 0.67)regions of the QoI score with respect to the 3 markers. }
+\begin{tabular}{ |c|c|c|c|} 
+ \hline
+\textbf{Marker} & \textbf{good} (\%)& \textbf{bad} (\%) & \textbf{ugly} (\%)\\ 
+ \hline
+E\_cad & 43.14 & 16.33 & 10.54\\
+ \hline
+pck26 & 40.15 & 19.52 & 18.61\\
+ \hline
+CK15 & 16.71 & 64.14 & 70.85\\
+ \hline
+ \end{tabular}
+\label{table:scores}
+\end{table}
+
+
+Let's focus on the region between the scores of 0.33 and 0.67, which we may denote as the \textit{ugly} region of the \textit{QoI} score in Table \ref{table:scores}. The percentage of images from E\_cad, pck26 and CK15 that fall in this region are 16.33 \%, 19.52 \% and 64.14 \% respectively. These values also show that there are more contentious images  with respect to the \textit{QoI} score in CK15 than in E\_cad and pck26.
+We also show  the distribution of the scores over all the images in the three markers in Fig. \ref{fig:all_probs}. The plot shows that most of the images have high quality. This is because images from E\_cad and pck26 which have high amounts of signal (according to the pathologist) account for two-thirds of the total data.
+It is clear from the results that the \textit{QoI} score maybe used to quantify the amount of usable signal in the image.  The \textit{QoI} of an image sample provides an indication as to whether a particular sample may or may not be used in the analysis. 
+
+A threshold maybe set on the QoI by the analyst and only those images above the threshold can be used for further analysis. Alternatively, a data-driven approach maybe used to leverage the \textit{QoI} score for performing further analysis. For example, the next step of the process maybe to classify the images into different grades of cancer.
+In this step the \textit{QoI} score can be obtained for the dataset in question. The classification maybe started with a sample of images that have \textit{QoI} above a certain threshold. Then images are added to the training in batches based on the \textit{QoI} scores in a sequential manner. This procedure is repeated until the accuracy on the held out test set plateaus or falls off. 
 
 \section{Conclusions}
-We introduce in this paper a novel way to combine SVM and Naïve Bayes classifiers to form an image quality score.  The score is based on the confidence of a data point with respect to the classifier margin; and the distribution of the data captured by the Naïve Bayes classifier. Images that have high or low information content are easy to label as good or bad respectively. A labeling of the ugly class becomes dependent on the observer. Therefore computing a score is a more natural way of extracting this third class of images. The score helps us retrieve images that may have been discarded by a simple binary classification; or may have gone unnoticed by a human eye. Also, we use image analysis techniques to form a combined image that tries to capture the signal from all three markers.
-
+We introduce in this paper a machine learning based score to quantify the perceived quality of an image.  The score is defined as the confidence of a data point with respect to a classification algorithm, namely logistic regression . Images that have high or low information content are easy to label as good or bad respectively. A labeling of the ugly class becomes dependent on the observer. Therefore computing a score is a more natural way of extracting this third class of images. The score helps us retrieve images that may have been discarded by a simple binary classification; or may have gone unnoticed by a human eye.

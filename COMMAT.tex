@@ -11,7 +11,7 @@ A. Chowdhury, E. Kautz, B. Yener, and D. Lewis. "Image driven machine learning m
 \section{Introduction}
 \label{intro}
 
-Materials characterization is a critical aspect of the material design and discovery process.  Recently, there has been much research in the field of materials informatics, a growing research area in which information technology and data science methods are used to interpret and analyze material data in order to accelerate the material discovery, design, and development process \cite{xu2015machine, Rodgers2006, Broderick2008, ferris2007materials, Kalidindi2011}.  Currently, material design relies on chance discoveries and follows a classical synthesis-characterization-theory-computation approach \cite{SergeiV.Kalinin2015}.  Further, there is a heavy reliance on individual researcher background and experience which introduces significant bias and potentially error into the process of microstructure recognition, interpretation, and characterization. 
+Materials characterization is a critical aspect of the material design and discovery process.  Recently, there has been much research in the field of materials informatics, a growing research area in which information technology and data science methods are used to interpret and analyze material data in order to accelerate the material discovery, design, and development process \cite{XuH2015, Rodgers2006, Broderick2008, ferris2007materials, Kalidindi2011}.  Currently, material design relies on chance discoveries and follows a classical synthesis-characterization-theory-computation approach \cite{SergeiV.Kalinin2015}.  Further, there is a heavy reliance on individual researcher background and experience which introduces significant bias and potentially error into the process of microstructure recognition, interpretation, and characterization. 
 %
 For example, quantification of microstructures traditionally is done using stereological measurements.  Bias is introduced into stereological measurements through the requirement that an expert must first recognize and identify key microstructural features (inclusions, grains, or phases).  This bias can be caused by a variety of factors, such as an individual's background, education, and experiences \cite{SergeiV.Kalinin2015}.  
 
@@ -75,7 +75,9 @@ After feature extraction and selection, various classification models were train
  \end{centering}
 \end{figure}
 %
-We performed analysis on the two datasets (described in Section \ref{data_sets}) in the form of two classification tasks: Task 1 and Task 2. The relationship between these tasks is depicted in Figure \ref{fig:tasks_flowchart}. 
+We performed analysis on the two datasets (described in Section \ref{data_sets}) in the form of two classification tasks: Task 1 and Task 2. 
+
+%The relationship between these tasks is depicted in Figure \ref{fig:tasks_flowchart}. 
 
 %%Flowchart made using tikz
 %\begin{figure}[t!]
@@ -375,6 +377,9 @@ Furthermore, caffe-fc6 provided a more accurate image representation than caffe-
 \multirow{2}{*}{\textbf{GINI}}	&	texture-statistics 	&	texture-statistics 	&	\textbf{caffe-fc6}	&	texture-statistics 	&	caffe-conv5 	\\	
 	&	89.01 $\pm$ 4.05	&	89.01 $\pm$ 4.05	&	89.39 $\pm$ 4.64	&	87.5 $\pm$ 5.46	&	89.58 $\pm$ 6.32	\\	\hline
 
+
+
+
 \end{tabular}}
 \end{table}
 %----------------------------------------------------------------------------------
@@ -445,6 +450,64 @@ This result also demonstrates that the data is linearly separable and use of a G
 	&	 77.82 $\pm$ 2.85	&	 89.39 $\pm$ 4.64	&	 89.58 $\pm$ 6.32	&	 89.01 $\pm$ 4.05	&	 89.01 $\pm$ 4.05	\\	\hline
 
 \end{tabular}}
+\end{table}
+
+The performance of the pipeline is also measured using the plot in Fig. \ref{fig:error_bars1}. Here, we sort the configurations in descending order based on the mean of their classification accuracies and plot the top 20 configurations with their corresponding error bars (one standard deviation).  We observe from this plot that there is a minor difference in the results with respect to top 20 configurations. However, we also observe that certain algorithms come up multiple times in the top 20 configurations. So, even though there isn't a clear \textit{best} configuration that is significantly better than all configurations, we can clearly see that there are certain algorithms which are better than others in terms of their ranking in the sorted order of configurations. We quantify this further by representing in Table \ref{table:average_rank1} the average rank of the algorithms with respect to their ranks in the sorted configurations. 
+\begin{figure}[ht!]
+  \begin{centering}
+ \includegraphics[scale=0.4]{img/best_matsc_error_bars.eps}
+ \caption{Top 20 configurations of algorithms in Task 1 with error bars representing one standard deviation. There is no significant difference in the accuracies in the different configuations. Most of the feature extraction algorithms in the top 20 configurations are pre-trained CNNs (\textit{caffe-fc6} or \textit{caffe-conv5})}
+ \label{fig:error_bars1}
+ \end{centering}
+\end{figure}
+
+We can see from results in Table \ref{table:average_rank1} that caffe-fc6, $\chi^2$ and SVM are the best algorithms in the corresponding steps of feature extraction, dimensionality reduction and classification. However, caffe-fc6 has a larger margin with respect to the second best algorithm than $\chi^2$ and SVM in their respective steps. This indicates that caffe-fc6 is a good representation of the images for classification in Task 1.
+
+\begin{table}[ht!]
+\centering
+\caption{Average rank of the algorithms in Task 1 with respect to feature extraction, dimensionality reduction and classification. The average rank of an algorithm quantifies it's position in the sorted list of configurations.}
+\begin{tabular}{ |c|c| } 
+ \hline
+ \textbf{Feature extraction} & \textbf{Average rank} \\ 
+ \hline
+ caffe-fc6 & 47.82\\
+ \hline
+texture-statistics & 61.46\\
+ \hline
+combined& 64.46 \\
+ \hline
+caffe-conv5 & 72.39\\
+ \hline
+VBOW & 106.36\\
+ \hline
+ \hline
+ \textbf{Dimensionality reduction} & \textbf{Average rank} \\ 
+ \hline
+ $\chi^2$ & 54.45\\
+ \hline
+fisher & 58.05\\
+ \hline
+PCA & 60.95 \\
+ \hline
+ANOVA & 61.80\\
+ \hline
+GINI & 66.10\\
+ \hline
+ Full & 66.55\\
+ \hline
+ \hline
+ \textbf{Classification} & \textbf{Average rank} \\ 
+ \hline
+SVM & 54.57\\
+ \hline
+Voting & 60.8\\
+ \hline
+RF & 81.40 \\
+ \hline
+NN & 85.23\\
+ \hline
+ \end{tabular}
+\label{table:average_rank1}
 \end{table}
 
 %--------------------------------------------------------------
@@ -568,6 +631,64 @@ Results presented here demonstrate that certain combinations of methods (feature
 The sixth fully connected layer in the Caffe network proved to represent micrograph data well for both tasks.  The feature selection method for Task 1 depended on which classification model was used.  For Task 2, the full feature vector yielded the maximum classification accuracies, thus feature selection did not appear to improve classification results for most classifiers tested.  For classification models tested, linear SVM yielded the best results (highest accuracy) for both Tasks 1 and 2.  
 
 %-------------------------------------------------------
+
+Similar to Fig. \ref{fig:error_bars1} for Task 1, we plot the top 20 configurations with respect to the mean of the classification accuracies for Task 2 in Fig. \ref{fig:error_bars2}. Again, we observe the trend that there is no one clear \textit{best} configuration. We again show the average rankings of the algorithms in their respective steps of feature extraction, dimensionality reduction and classification in Table \ref{table:average_rank2}. 
+\begin{figure}
+  \begin{centering}
+ \includegraphics[scale=0.4]{img/best_trans_long_error_bars.eps}
+ \caption{Top 20 configurations of algorithms in Task 2 with error bars representing one standard deviation. There is no significant difference in the accuracies in the different configuations. Most of the feature extraction algorithms in the top 20 configurations are pre-trained CNNs (\textit{caffe-fc6} or \textit{caffe-conv5})}
+ \label{fig:error_bars2}
+ \end{centering}
+\end{figure}
+
+From the results in Table \ref{table:average_rank2}, we observe that caffe-fc6, PCA and SVM are the highest ranked algorithms. We also note that in this case, the difference in rank between SVM and the next best classification algorithm (NN) is much greater than the corresponding differences in feature extraction and dimensionality reduction. This indicates that the SVM classification algorithm provides superior performance with respect to this task.
+\begin{table}[ht!]
+\centering
+\caption{Average rank of the algorithms in Task 2 with respect to feature extraction, dimensionality reduction and classification. The average rank of an algorithm quantifies it's position in the sorted list of configurations.}
+\begin{tabular}{ |c|c| } 
+ \hline
+ \textbf{Feature extraction} & \textbf{Average rank} \\ 
+ \hline
+ caffe-fc6 & 47.64\\
+ \hline
+texture-statistics & 58.64\\
+ \hline
+VBOW & 70.5 \\
+ \hline
+combined & 81.82\\
+ \hline
+caffe-conv5 & 93.89\\
+ \hline
+ \hline
+ \textbf{Dimensionality reduction} & \textbf{Average rank} \\ 
+ \hline
+ PCA & 54.45\\
+ \hline
+$\chi^2$ & 58.05\\
+\hline
+ANOVA & 61.80\\
+ \hline
+GINI & 66.10\\
+ \hline
+ fisher & 66.55\\ 
+ \hline
+Full & 69.6 \\
+ \hline
+ \hline
+ \textbf{Classification} & \textbf{Average rank} \\ 
+ \hline
+SVM & 31.22\\
+ \hline
+NN & 71.6\\
+ \hline
+Voting & 75.20 \\
+ \hline
+RF & 103.97\\
+ \hline
+ \end{tabular}
+\label{table:average_rank2}
+\end{table}
+
 
 \section{Limitations}
 \label{limitations}

@@ -281,11 +281,6 @@ M.~J. Gerdes, C.~J. Sevinsky, A.~Sood, S.~Adak, M.~O. Bello, A.~Bordwell
   paraffin-embedded cancer tissue,'' \emph{Proceedings of the National Academy
   of Sciences}, vol. 110, no.~29, pp. 11\,982--11\,987, 2013.
 
-\bibitem{huang1979fast}
-T.~Huang, G.~Yang, and G.~Tang, ``A fast two-dimensional median filtering
-  algorithm,'' \emph{IEEE Transactions on Acoustics, Speech, and Signal
-  Processing}, vol.~27, no.~1, pp. 13--18, 1979.
-
 \bibitem{haralick1979statistical}
 R.~M. Haralick, ``Statistical and structural approaches to texture,''
   \emph{Proceedings of the IEEE}, vol.~67, no.~5, pp. 786--804, 1979.
@@ -295,10 +290,10 @@ R.~M. Haralick, K.~Shanmugam \emph{et~al.}, ``Textural features for image
   classification,'' \emph{IEEE Transactions on systems, man, and cybernetics},
   no.~6, pp. 610--621, 1973.
 
-\bibitem{platt1999probabilistic}
-J.~Platt \emph{et~al.}, ``Probabilistic outputs for support vector machines and
-  comparisons to regularized likelihood methods,'' \emph{Advances in large
-  margin classifiers}, vol.~10, no.~3, pp. 61--74, 1999.
+\bibitem{chawla2002smote}
+N.~V. Chawla, K.~W. Bowyer, L.~O. Hall, and W.~P. Kegelmeyer, ``Smote:
+  synthetic minority over-sampling technique,'' \emph{Journal of artificial
+  intelligence research}, vol.~16, pp. 321--357, 2002.
 
 \bibitem{harrison1995validity}
 L.~D. Harrison, ``The validity of self-reported data on drug use,''

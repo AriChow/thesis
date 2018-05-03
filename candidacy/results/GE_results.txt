@@ -11,16 +11,28 @@ Accuracy: 0.834425716123 Std: 0.0514859142981
 F1-score: 0.904435508426 Std: 0.0333379988492
 
 E_cad:
-Percentage in good: 29.5874822191 %
-Percentage in ugly: 7.97720797721 %
-Percentage in bad: 17.4887892377 %
+Percentage in good: 43.1385869565
+Percentage in ugly: 10.5381165919
+Percentage in bad: 16.3346613546
 
 pck26:
-Percentage in good: 33.4281650071 %
-Percentage in ugly: 15.3846153846 %
-Percentage in bad: 19.730941704 %
+Percentage in good: 40.1494565217
+Percentage in ugly: 18.6098654709
+Percentage in bad: 19.5219123506
 
 CK15:
-Percentage in good: 36.9843527738 %
-Percentage in ugly: 76.6381766382 %
-Percentage in bad: 62.7802690583 %
+Percentage in good: 16.7119565217
+Percentage in ugly: 70.8520179372
+Percentage in bad: 64.1434262948
+
+Ratios:
+Good to bad E_cad :19.0833333333
+Good to bad CK15 :19.0833333333
+Good to bad pck26 :17.5384615385
+
+QoI of markers
+E_cad: 0.84673754772460408
+CK15: 0.53727819209036365
+pck26:0.81831923505611392
+
+
