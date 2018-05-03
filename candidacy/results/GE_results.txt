@@ -1,0 +1,26 @@
+Results for no transformation
+Accuracy: 0.827054582563 Std: 0.0453316565042
+F1-score: 0.900057008077 Std: 0.0290480911209
+
+Results for SMOTE
+Accuracy: 0.830749757144 Std: 0.0424810780357
+F1-score: 0.902555325362 Std: 0.0265747699193
+
+Results for SMOTE and PCA:
+Accuracy: 0.834425716123 Std: 0.0514859142981
+F1-score: 0.904435508426 Std: 0.0333379988492
+
+E_cad:
+Percentage in good: 29.5874822191 %
+Percentage in ugly: 7.97720797721 %
+Percentage in bad: 17.4887892377 %
+
+pck26:
+Percentage in good: 33.4281650071 %
+Percentage in ugly: 15.3846153846 %
+Percentage in bad: 19.730941704 %
+
+CK15:
+Percentage in good: 36.9843527738 %
+Percentage in ugly: 76.6381766382 %
+Percentage in bad: 62.7802690583 %

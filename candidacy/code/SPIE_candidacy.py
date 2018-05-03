@@ -6,6 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import StratifiedKFold, GridSearchCV
 import cv2
 from mahotas.features import haralick
+from sklearn.metrics import accuracy_score, f1_score
 import pickle
 from sklearn.preprocessing import StandardScaler
 
@@ -93,48 +94,48 @@ labels = np.loadtxt(data_home + 'E_cad_CK15_pck26_labels.txt')
 # skf = StratifiedKFold(n_splits=5)
 # params = {'C': np.logspace(-4, 4, 5)}
 # probs = np.zeros(len(names))
+# acc = []
+# f1 = []
 # for train_ids, test_ids in skf.split(X, y):
-#     X_train = X[train_ids]
-#     y_train = y[train_ids]
-#     X_test = X[test_ids]
-#     y_test = y[test_ids]
-#     slr = StandardScaler()
-#     slr.fit(X_train)
-#     X_train = slr.transform(X_train)
-#     X_test = slr.transform(X_test)
-#     # sm = SMOTE(random_state=42)
-#     # X_res, y_res = sm.fit_sample(X_train, y_train)
-#     # pca = principal_components(X_res)
-#     # X_res = pca.transform(X_res)
-#     logreg = LogisticRegression(class_weight='balanced')
-#     clf = GridSearchCV(logreg, params)
-#     clf.fit(X_train, y_train)
-#     # X_test = pca.transform(X_test)
-#     prob = clf.predict_proba(X_test)
-#     for i in range(prob.shape[0]):
-#         probs[test_ids[i]] = prob[i, 1]
+# 	X_train = X[train_ids]
+# 	y_train = y[train_ids]
+# 	X_test = X[test_ids]
+# 	y_test = y[test_ids]
+# 	slr = StandardScaler()
+# 	slr.fit(X_train)
+# 	X_train = slr.transform(X_train)
+# 	X_test = slr.transform(X_test)
+# 	sm = SMOTE(random_state=42)
+# 	X_res, y_res = sm.fit_sample(X_train, y_train)
+# 	pca = principal_components(X_res)
+# 	X_res = pca.transform(X_res)
+# 	logreg = LogisticRegression(class_weight='balanced')
+# 	clf = GridSearchCV(logreg, params)
+# 	clf.fit(X_res, y_res)
+# 	X_test = pca.transform(X_test)
+# 	prob = clf.predict_proba(X_test)
+# 	pred = clf.predict(X_test)
+# 	acc.append(accuracy_score(y_test, pred))
+# 	f1.append(f1_score(y_test, pred))
+# 	for i in range(prob.shape[0]):
+# 		probs[test_ids[i]] = prob[i, 1]
+#
+# f = open('../results/GE_results.txt', 'a')
+# f.write('Results for SMOTE and PCA: \n')
+# f.write('Accuracy: ' + str(np.mean(acc)) + ' Std: ' + str(np.std(acc)) + '\n')
+# f.write('F1-score: ' + str(np.mean(f1)) + ' Std: ' + str(np.std(f1)) + '\n')
+# f.close()
 #
 # pickle.dump([names, probs], open('../results/GE_probs.pkl', 'wb'))
 
-names, probs = pickle.load(open('../results/GE_probs.pkl', 'rb'))
+names, probs = pickle.load(open('../results/GE_probs_smote_pca.pkl', 'rb'))
+f = open('../results/prob_names.txt', 'w')
+for i in range(len(names)):
+	f.write(names[i] + ' ' + str(probs[i]) + '\n')
+f.close()
 
 
-
-import matplotlib.pyplot as plt
-
-a = 0.01 * np.arange(101)
-b = np.arange(0, 100) * 0.01
-
-plt.figure()
-hist, _ = np.histogram(probs, a)
-plt.bar(b, hist, align='edge', width=0.01)
-# plt.xticks(np.linspace(0, 1, 100))
-plt.xlabel('QoI')
-plt.ylabel('Frequency')
-plt.title('Distribution of QoI scores for all images')
-plt.savefig('../results/all_probs.eps')
-plt.close()
-
+a = [0, 0.3, 0.6, 0.9]
 names_ecad = []
 probs_ecad = []
 names_ck15 = []
@@ -152,31 +153,69 @@ for i in range(len(probs)):
         names_pck26.append(names)
         probs_pck26.append(probs[i])
 
-plt.figure()
-hist, _ = np.histogram(probs_ecad, a)
-plt.bar(b, hist, align='edge', width=0.01)
-plt.xlabel('QoI')
-plt.ylabel('Frequency')
-plt.title('Distribution of QoI scores for E_cad')
-plt.savefig('../results/E_cad_probs.eps')
-plt.close()
+# hist, _ = np.histogram(probs, a)
+# hist_ecad, _ = np.histogram(probs_ecad, a)
+# hist_ck15, _ = np.histogram(probs_ck15, a)
+# hist_pck26, _ = np.histogram(probs_pck26, a)
 
-plt.figure()
-hist, _ = np.histogram(probs_ck15, a)
-plt.bar(b, hist, align='edge', width=0.01)
-plt.xlabel('QoI')
-plt.ylabel('Frequency')
-plt.title('Distribution of QoI scores for CK15')
-plt.savefig('../results/CK15_probs.eps')
-plt.close()
+# f = open('../results/GE_results.txt', 'a')
+# f.write('\nE_cad:\n')
+# f.write('Percentage in good: ' + str(hist_ecad[2] * 100 / hist[2]) + ' %\n')
+# f.write('Percentage in ugly: ' + str(hist_ecad[1] * 100 / hist[1]) + ' %\n')
+# f.write('Percentage in bad: ' + str(hist_ecad[0] * 100 / hist[0]) + ' %\n')
+#
+# f.write('\npck26:\n')
+# f.write('Percentage in good: ' + str(hist_pck26[2] * 100 / hist[2]) + ' %\n')
+# f.write('Percentage in ugly: ' + str(hist_pck26[1] * 100 / hist[1]) + ' %\n')
+# f.write('Percentage in bad: ' + str(hist_pck26[0] * 100 / hist[0]) + ' %\n')
+#
+# f.write('\nCK15:\n')
+# f.write('Percentage in good: ' + str(hist_ck15[2] * 100 / hist[2]) + ' %\n')
+# f.write('Percentage in ugly: ' + str(hist_ck15[1] * 100 / hist[1]) + ' %\n')
+# f.write('Percentage in bad: ' + str(hist_ck15[0] * 100 / hist[0]) + ' %\n')
+# f.close()
 
-plt.figure()
-hist, _ = np.histogram(probs_pck26, a)
-plt.bar(b, hist, align='edge', width=0.01)
-plt.xlabel('QoI')
-plt.ylabel('Frequency')
-plt.title('Distribution of QoI scores for E_cad')
-plt.savefig('../results/pck26_probs.eps')
-plt.close()
 
-print()
+# import matplotlib.pyplot as plt
+#
+# a = 0.01 * np.arange(101)
+# b = np.arange(0, 100) * 0.01
+#
+# plt.figure()
+# hist, _ = np.histogram(probs, a)
+# plt.bar(b, hist, align='edge', width=0.01)
+# # plt.xticks(np.linspace(0, 1, 100))
+# plt.xlabel('QoI')
+# plt.ylabel('Frequency')
+# plt.title('Distribution of QoI scores for all images')
+# plt.savefig('../results/all_probs.eps')
+# plt.close()
+#
+# plt.figure()
+# hist, _ = np.histogram(probs_ecad, a)
+# plt.bar(b, hist, align='edge', width=0.01)
+# plt.xlabel('QoI')
+# plt.ylabel('Frequency')
+# plt.title('Distribution of QoI scores for E_cad')
+# plt.savefig('../results/E_cad_probs.eps')
+# plt.close()
+#
+# plt.figure()
+# hist, _ = np.histogram(probs_ck15, a)
+# plt.bar(b, hist, align='edge', width=0.01)
+# plt.xlabel('QoI')
+# plt.ylabel('Frequency')
+# plt.title('Distribution of QoI scores for CK15')
+# plt.savefig('../results/CK15_probs.eps')
+# plt.close()
+#
+# plt.figure()
+# hist, _ = np.histogram(probs_pck26, a)
+# plt.bar(b, hist, align='edge', width=0.01)
+# plt.xlabel('QoI')
+# plt.ylabel('Frequency')
+# plt.title('Distribution of QoI scores for E_cad')
+# plt.savefig('../results/pck26_probs.eps')
+# plt.close()
+#
+# print()
