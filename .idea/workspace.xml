@@ -3,25 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="72fbd62b-d4ef-43c3-8fad-c31cb530ab59" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMMAT.aux" beforeDir="false" afterPath="$PROJECT_DIR$/COMMAT.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMMAT.tex" beforeDir="false" afterPath="$PROJECT_DIR$/COMMAT.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EP.aux" beforeDir="false" afterPath="$PROJECT_DIR$/EP.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ISBI.aux" beforeDir="false" afterPath="$PROJECT_DIR$/ISBI.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPIE.aux" beforeDir="false" afterPath="$PROJECT_DIR$/SPIE.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract.aux" beforeDir="false" afterPath="$PROJECT_DIR$/abstract.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acknowledge.aux" beforeDir="false" afterPath="$PROJECT_DIR$/acknowledge.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliography.aux" beforeDir="false" afterPath="$PROJECT_DIR$/bibliography.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py" beforeDir="false" afterPath="$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conclusions.aux" beforeDir="false" afterPath="$PROJECT_DIR$/conclusions.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPIE1.aux" beforeDir="false" afterPath="$PROJECT_DIR$/SPIE1.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPIE1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/SPIE1.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thesis.lof" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.lof" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.lot" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.lot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.out" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thesis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/title.aux" beforeDir="false" afterPath="$PROJECT_DIR$/title.aux" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,11 +28,8 @@
       <file leaf-file-name="SPIE_candidacy.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="945">
+              <caret line="166" column="21" selection-start-line="166" selection-start-column="21" selection-end-line="166" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -52,7 +37,7 @@
       <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
         <entry file="file:///anaconda3/lib/python3.6/site-packages/sklearn/preprocessing/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
+            <state relative-caret-position="7590">
               <caret line="529" column="33" selection-start-line="529" selection-start-column="8" selection-end-line="529" selection-end-column="33" />
             </state>
           </provider>
@@ -61,7 +46,7 @@
       <file leaf-file-name="SPIE_candidacy_CCI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy_CCI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="1215">
               <caret line="89" column="55" selection-start-line="89" selection-start-column="55" selection-end-line="89" selection-end-column="55" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -282,6 +267,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="639" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32841328" />
@@ -289,7 +275,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32920355" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32841328" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32841328" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32841328" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.24555735" />
       <window_info anchor="right" id="R Packages" order="3" />
@@ -320,17 +306,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py</url>
-          <line>173</line>
+          <line>220</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py</url>
-          <line>35</line>
+          <line>36</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py</url>
-          <line>108</line>
+          <line>136</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
@@ -340,11 +326,46 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state relative-caret-position="1560">
+          <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/sklearn/preprocessing/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7935">
+          <caret line="529" column="33" selection-start-line="529" selection-start-column="8" selection-end-line="529" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy_CCI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="89" column="55" selection-start-line="89" selection-start-column="55" selection-end-line="89" selection-end-column="55" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candidacy/code/SPIE.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candidacy/code/data_analytic_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -352,9 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -362,9 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -412,9 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -448,7 +460,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy_CCI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="1215">
           <caret line="89" column="55" selection-start-line="89" selection-start-column="55" selection-end-line="89" selection-end-column="55" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -465,18 +477,15 @@
     </entry>
     <entry file="file:///anaconda3/lib/python3.6/site-packages/sklearn/preprocessing/data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
+        <state relative-caret-position="7590">
           <caret line="529" column="33" selection-start-line="529" selection-start-column="8" selection-end-line="529" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/candidacy/code/SPIE_candidacy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="945">
+          <caret line="166" column="21" selection-start-line="166" selection-start-column="21" selection-end-line="166" selection-end-column="21" />
         </state>
       </provider>
     </entry>
