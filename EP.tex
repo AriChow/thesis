@@ -11,14 +11,14 @@
 \label{sec1}
 Machine learning and data science has entered many domains of human effort in modern times. The number of self-reported data scientists has doubled in recent years \cite{harrison1995validity}. They have entered various domains including academia, industry and business among others. There has therefore been a demand for machine learning tools that are flexible, powerful and most importantly interpretable. The effective application of machine learning tools unfortunately requires an expert understanding of the frameworks and algorithms that are present in a machine learning pipeline. It also requires knowledge of the problem domain and understanding of the assumptions used in the analysis. In order for these tools to be used adequately by non-experts; additional tools must be developed for understanding and interpreting the results of the application of a data analytic pipeline on a domain specific problem.  
 
-\begin{figure}[ht!]
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{img/EP/generalized_pipeline}
-    \caption{Representation of a machine learning pipeline}
+    \caption{Representation of a machine learning pipeline. This is represented as a generalized directed acyclic graph. $S_i$ represents the $i$-th computational step in the pipeline and $A_{ij}$ represents the $j$-th algorithm in the $i$-th step. $X$ is the input dataset and $Y$ is the evaluation metric.}
     \label{fig:pipeline}
 \end{figure}
 
-Pipelines in machine learning and data science are commonly organized in the form of interdependent components. Such components that make up a data analytic pipeline include data preprocessing, feature extraction, feature transformation like dimensionality reduction, model building and model evaluation among others. Such pipelines provide a natural way to organize such tasks, and they play a key part in the design and implementation of large scale data science projects. Machine learning toolboxes like scikit-learn \cite{pedregosa2011scikit}, RapidMiner \cite{mierswa2006yale} and Apache Spark \cite{spark2016apache} independently provide frameworks for implementing pipelines. Fig. \ref{fig:pipeline} shows a generic representation of data analytic pipelines. Each computational step of the pipeline $S_{i}$ consists of several algorithms ($A_{ij}$) to choose from. Each algorithm in the pipeline consists of its own hyperparameters $\theta_{ijk}$ that must be optimized for using the algorithm. Therefore, there are an exponential number of combinations of algorithms and hyperparameters in a given analytic pipeline skeleton. This then is an extremely computationally intensive task of optimizing the pipeline. Tuning this pipeline can be viewed as the optimization of a blackbox objective function that is noisy and expensive to evaluate. The input to the blackbox are the input dataset $X$, the pipeline $P$(consisting of the steps $S_{i}$, the algorithms $A_{ij}$ and corresponding hyper-parameters $\theta_{ijk}$) and the output performance $Y$ such as validation error, accuracy, F1-score and cross-entropy loss among others, which are examples of the objective function.The goal of a data scientist is to find the best set of algorithms and hyper-parameters in this pipeline that optimizes the objective function. This corresponds to finding an optimal path through the pipeline in \ref{fig:pipeline}.  Simple methods such as grid and random search \cite{bergstra2012random} have been used to tackle this problem. More complicated approaches such as Bayesian optimization \cite{snoek2012practical, zhang2016flash} have been used successfully for approaching more difficult problems. Pipeline optimization as a whole has also been approached using genetic algorithms \cite{olson2016evaluation, olson2016tpot, olson2016automating}.
+Pipelines in machine learning and data science are commonly organized in the form of interdependent components. Such components that make up a data analytic pipeline include data preprocessing, feature extraction, feature transformation, model building and model evaluation among others. Such pipelines provide a natural way to organize such tasks, and they play a key part in the design and implementation of large scale data science projects. Machine learning toolboxes like scikit-learn \cite{pedregosa2011scikit}, RapidMiner \cite{mierswa2006yale} and Apache Spark \cite{spark2016apache} independently provide frameworks for implementing pipelines. Fig. \ref{fig:pipeline} shows a generic representation of data analytic pipelines. Each computational step of the pipeline $S_{i}$ consists of several algorithms ($A_{ij}$) to choose from. Each algorithm in the pipeline consists of its own hyperparameters $\theta_{ijk}$ that must be optimized for using the algorithm. Therefore, there are an exponential number of combinations of algorithms and hyperparameters in a given analytic pipeline skeleton. This then is an extremely computationally intensive task of optimizing the pipeline. Tuning this pipeline can be viewed as the optimization of a blackbox objective function that is noisy and expensive to evaluate. The input to the blackbox are the input dataset $X$, the pipeline $P$(consisting of the steps $S_{i}$, the algorithms $A_{ij}$ and corresponding hyper-parameters $\theta_{ijk}$) and the output performance $Y$ such as validation error, accuracy, F1-score and cross-entropy loss among others, which are examples of the objective function.The goal of a data scientist is to find the best set of algorithms and hyper-parameters in this pipeline that optimizes the objective function. This corresponds to finding an optimal path through the pipeline in \ref{fig:pipeline}.  Simple methods such as grid and random search \cite{bergstra2012random} have been used to tackle this problem. More complicated approaches such as Bayesian optimization \cite{snoek2012practical, zhang2016flash} have been used successfully for approaching more difficult problems. Pipeline optimization as a whole has also been approached using genetic algorithms \cite{olson2016evaluation, olson2016tpot, olson2016automating}.
 We use grid search, random search and bayesian optimization methods for optimization of the pipeline and each individual path in it.  
 
 Interpretation of machine learning pipelines is extremely important for their adoption in various domains. Domain experts do not prefer the use of black-box pipelines. They would prefer to understand how predictive decisions are made by the pipeline. Recently there has been an advent of models and techniques for improving the interpretability of machine learning. \cite{ribeiro2016model} introduces a model-agnostic method for interpreting machine learning blackboxes. \cite{doshi2017towards} attempts at a definition of interpretability in this context and how it should be measured. \cite{koh2017understanding} uses influence functions to understand blackbox predictions. In this work, we attempt to provide an interpretation of machine learning pipelines as a whole as opposed to the approaches which are geared toward interpretation of individual machine learning algorithms in general. This includes understanding the predictions with respect t other components like feature extraction and feature transformation and also to smaller components like individual hyper-parameters. To our knowledge, this type of approach to interpretation has not been done before.
@@ -64,17 +64,18 @@ f^D(A) = \frac{1}{k}\sum_{i=1}^{k} \mathcal{L}(\emph{A}, D_{train}^{(i)}, D_{val
 where, $A \in \mathcal{A}$ and other notations are the same as those introduced in the previous section.
 
 \subsection{Optimization methods}
+\label{optimization}
 The critical step in HPO or CASH is to choose the set of trials in the search space, which is $\Theta$ for HPO and $\mathcal{A}$ for CASH. In this section, methods that are used in this paper for optimization of Eq. \ref{hpo} and Eq. \ref{cash} are described. Grid search, random search and Bayesian optimization are used in this work.
 \subsubsection{Grid search}
-\label{subsubsec1}
+\label{grid}
 Grid search is the simplest of all methods for coming up with trials in the search space. The set of trials in grid search is formed by assembling every possible set of values in $\Theta$ and $\mathcal{A}$ and computing the validation loss for each. The configuration $\theta \in \Theta$ or $A \in \mathcal{A}$ that minimizes the validation loss $\mathcal{L}$ is chosen as the optimum configuration. Unfortunately grid search is computationally very expensive. For HPO, the number of trials corresponds to $\prod_{i=1}^n |\Theta_i|$, and for CASH this is $\prod_{i=1}^n |A_i(\Theta_i)|$. This product makes grid search suffer from the \textit{curse of dimensionality}. This is because the number of trials grows exponentially with the number of hyperparameters. However, grid search has certain advantages. Firstly, parallelization and implementation is trivial. In addition, grid search is robust in the sense that results maybe replicated easily. 
 
 \subsubsection{Random search}
-\label{subsubsec2}
+\label{random}
 Random search is the optimization method where trial configurations are randomly sampled from the search space of HPO ($\Theta$) or CASH ($\mathcal{A}$). \cite{bergstra2012random} shows empirically and theoretically that randomly selecting trials is sufficiently accurate and more efficient than performing optimization using grid search. We also show similar results in this work.
 
 \subsubsection{Bayesian optimization}
-\label{subsubsec1}
+\label{bayesian}
 Sequential model based Bayesian optimization (SMBO) \cite{hutter2011sequential} is the method of choice when it comes to optimization of complicated black-box functions. In a nutshell, it consists of two components. The first is a probabilistic model and the second is an acquisition function. The probabilistic model can be modelled using Gaussian processes (Spearmint) \cite{snoek2012practical}, random forests (SMAC) \cite{hutter2011sequential} and using density estimation with Tree-structured Parzen estimators (TPE) \cite{bergstra2011algorithms}. The acquisition function determines the future candidates or trials for evaluation. The acquisiton function is relatively cheap to evaluate compared to the actual objective function $f^D$. One of the most prominent acquisition functions is \textit{expected improvement} (EI) \cite{expected_improvement}. We use the sequential model-based algorithm configuration (SMAC) that uses random forests as the Bayesian optimization framework. This is because it can be used for optimizing conditional hyperparameter configurations, and based on empirical results in \cite{eggensperger2013towards}.
 
 \section{Proposed methods}
@@ -194,7 +195,7 @@ where, $i = {1, ..., n}, j = {1, ..., |\theta_{ij}|}$, k = number of hyper-param
 \section{Experiments and results}
 \label{sec4}
 In this section, we describe the experiments performed on the data analytic pipeline to quantify the error contributions and propagation from different components of the pipeline. Image classification is the data analytic problem chosen for demonstrating the error quantification experiments. A representation of an image classification pipeline is shown in Fig. \ref{fig:flowchart} in the form of a flowchart.  
-\begin{figure}[ht!]
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{img/EP/flowchart}
     \caption{Representation of an image classification pipeline. The pipeline consists of the steps represented by green ellipses and the outputs of each step represented by blue rectangles. In this work, we focus on the steps and outputs after pre-processing.}
@@ -205,13 +206,13 @@ In this work, we focus on real world scientific datasets from the domains of med
 \begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.3]{img/EP/pipeline}
-    \caption{Representation of the image classification pipeline as a directed acyclic graph. This is an instantiation of the generalized data analytic pipeline in Fig. \ref{fig:pipeline}}
+    \caption{Representation of the image classification pipeline as a directed acyclic graph used in this work. This is an instantiation of the generalized data analytic pipeline in Fig. \ref{fig:pipeline}}
     \label{fig:images_pipeline}
 \end{figure}
 
  The above figure shows the pipeline used in this work. There are 3 computational steps in this pipeline, namely feature extraction ($S_1$), feature transformation ($S_2$) and learning algorithms ($S_3$). The steps, algorithms and corresponding hyperparameters $A_{ij}(\theta_{ij})$ is described in Table \ref{table:algorithms_table}.
 
-\begin{table}[ht!]
+\begin{table}[H]
 \centering
 \caption{Algorithms and hyper-parameters used in the image classification pipeline. The specific algorithms and corresponding \textit{hyperparameters} are defined in the last column}
 \begin{tabular}{@{} |m{9.7em}|m{1.5cm}|m{8cm}| @{}} 
@@ -225,7 +226,7 @@ In this work, we focus on real world scientific datasets from the domains of med
  \multirow{3}{*}{Feature transformation} & $A_{21}(\theta_{21})$ & PCA ($whitening$) \cite{wold1987principal} \\
  & $A_{22}(\theta_{22})$ & ISOMAP (\textit{number of neighbors, number of components}) \cite{tenenbaum2000global} \\
  \hline
- \multirow{3}{*}{Learning algorithms} & $A_{31}(\theta_{31})$ & Random forests (\textit{number of trees, maximum number of features}) \cite{breiman2001random} \\
+ \multirow{3}{*}{Learning algorithms} & $A_{31}(\theta_{31})$ & Random forests (\textit{number of trees, maximum features}) \cite{breiman2001random} \\
  & $A_{32}(\theta_{32})$ & SVM ($C, \gamma$) \cite{cortes1995support}\\
  \hline
  \end{tabular}
@@ -236,15 +237,15 @@ The algorithms defined above in the table are selected for making up the compone
 \subsection{Optimization frameworks}
 \label{frameworks}
 Experiments are performed using two optimization frameworks. These frameworks have been described in detail in Section \ref{subsec_AS_HPO}. 
-The first global optimization framework is the CASH framework described in Section \ref{subsubsec_CASH}. Here, the pipeline is optimized as a whole including the algorithms, which are themselves considered as hyper-parameters in this framework. The following figure is a representation of this. This is used for quantification of the contribution and propagation of error with respect to \textit{computational steps} in the pipeline.
-\begin{figure}[ht!]
+The first global optimization framework is the CASH framework described in Section \ref{subsubsec_CASH}. Here, the pipeline is optimized as a whole including the algorithms, which are themselves considered as hyper-parameters in this framework. The following figure is a representation of this. This is used for quantification of the contribution of error with respect to \textit{computational steps} in the pipeline.
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{img/EP/CASH}
     \caption{Combined algorithm selection and hyper-parameter optimization in a data analytic pipeline. The algorithms and corresponding hyper-parameters are optimized simultaneously.}
     \label{fig:CASH}
 \end{figure}
 The second framework is the hyperparameter optimization (HPO) framework where each path in the pipeline is optimized individually. This is described in detail in section \ref{subsubsec_HPO}. This framework is used for quantifying the contribution and propagation of error with respect to \textit{algorithms} in the each path of the pipeline.
-\begin{figure}[ht!]
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{img/EP/HPO}
     \caption{Hyper-parameter optimization in a data analytic pipeline. Each path in the pipeline is individually optimized.}
@@ -255,7 +256,7 @@ Specifically, we choose the path \textit{haralick texture features} - \textit{PC
 \subsection{Datasets}
 Four datasets from the domains of medicine and material science are used in this work. They are image datasets of breast cancer\cite{bilgin2007cell}, brain cancer \cite{gunduz2004cell}, and two datasets of microstructures in material science \cite{chowdhury2016image}. They are described in the following table.
 
-\begin{table}[ht!]
+\begin{table}[h]
 \centering
 \caption{Notations for error definitions used in the error propagation model}
 \begin{tabular}{ |c|c| } 
@@ -275,12 +276,45 @@ Four datasets from the domains of medicine and material science are used in this
 \end{table}
 The above table represents datasets from the scientific domain. These datasets have been chosen because they represent examples of real world datasets. They are noisy in the sense that they have artefacts in the images, are heavily imbalanced and are small in terms of number of samples. They are different from the very large datasets like ImageNet \cite{deng2009imagenet}, where deep learning techniques like convolutional neural networks have been shown to be superior. Even though deep neural networks represent an end-to-end workflow where the input image is fed into the network and the output classification is obtained at the other end, they may also be represented as pipelines, if the hyper-parameters of the network are considered. \cite{shin2016deep} has shown that machine learning problems involving datasets from medical imaging may be solved using pre-trained and fine-tuned neural networks rather than training them from scratch. We have therefore used pre-trained models such as VGGnet \cite{simonyan2014very} and InceptionNet \cite{szegedy2016rethinking} as pre-trained feature extraction models that fit naturally in the pipeline framework described here for the purpose of illustrating the error quantification methodology.
 
+
+
+
 \subsection{Error quantification experiments}
 \label{eq_expts}
-Experiments based on the quantification of error contributions framework described in section \ref{EQ} are presented here. The plots are of the error contribution values calculated using Eqs. \ref{eq_step}, \ref{eq_alg} \ref{fig:eq_hyper} on the 4 datasets described in Table 3. The error contribution values are obtained from the trials in the optimization methods described in Section \ref{sec2}. Grid search is only run once while the other algorithms are averaged over 5 runs with the mean and standard deviation shown in the following plots. These results are computed on the validation error (cross-entropy loss) obtained at the end of the pipeline. Random search and Bayesian optimization (using the SMAC algorithm) are implemented on both the frameworks described in Section \ref{frameworks} for computational steps and algorithms respectively. The grid search results maybe used as the gold standard to compare the performance of other optimization algorithms. 
+Experiments based on the quantification of error contributions framework described in section \ref{EQ} are presented here. The plots are of the error contribution values calculated using Eqs. \ref{eq_step}, \ref{eq_alg} and \ref{fig:eq_hyper} on the 4 datasets described in Table \ref{table:datasets}. 
+\subsubsection{Experimental setting}
+Optimization using the 3 algorithms in section \ref{optimization} is performed using the pipeline in Fig. \ref{fig:images_pipeline} on the 4 datasets in Table \ref{table:datasets}. The domain and possible values of the hyper-parameters are described in the following table. 
+The convergence criteria (a hyper-hyper-parameter) is set at 50 iterations of unchanging  function value for each of the optimization methods. The choice of the convergence criteria and hyper-parameters are independent of the error quantification methods. Results maybe obtained by using any choice of values for these components. The continuous hyper-parameters \textit{maximum features}, \textit{C} and $\gamma$ have been described specifically for comparison of the optimization methods with grid search. In general, discretization of the hyper-parameters is not necessary for performing optimization.
+\begin{table}[ht!]
+\centering
+\caption{Hyper-parameter domains corresponding the algorithms in Table \ref{table:algorithms_table} used by the optimization methods}
+\begin{tabular}{ |c|c| } 
+ \hline
+ Hyper-parameter & Values \\ 
+ \hline
+ \textit{distance} & [1, 2, 3, 4]\\
+ \hline
+ \textit{whitening} & [True, False]\\
+ \hline
+  \textit{number of neighbors} & [3, 4, 5, 6, 7] \\
+ \hline
+ \textit{number of components} & [2, 3, 4]\\
+ \hline
+ \textit{number of estimators} & [8,  81, 154, 227, 300]\\
+ \hline
+ \textit{maximum features} & [0.3, 0.5, 0.7]\\
+ \hline
+ \textit{C} & [0.1, 25.075, 50.05, 75.025, 100.0] \\
+ \hline
+ $\gamma$ & [0.3, 0.5, 0.7] \\
+ \hline
+ \end{tabular}
+\label{table:hyper}
+\end{table}
+The error contribution values are obtained from the trials in the optimization methods described in Section \ref{sec2}. Grid search is only run once while the other algorithms are averaged over 5 runs with the mean and standard deviation shown in the following plots. These results are computed on the validation error (cross-entropy loss) obtained at the end of the pipeline. Random search and Bayesian optimization (using the SMAC algorithm) are implemented on both the frameworks described in Section \ref{frameworks}. The grid search results maybe used as the gold standard to compare the performance of other optimization algorithms. 
 
 \subsubsection{Error contribution from computational steps}
-The mean and standard deviation values of $EC_{S_i}$ calculated using Eq. \ref{eq_step} is represented in Fig. \ref{fig:eq_steps} for the 4 datasets in Table \ref{table:datasets}. The error is calculated using the formulation of $EC_{S_i}$ in section \ref{subsubsec_eq_steps}. We can observe that most of the contribution comes from feature extraction algorithms. This means that it is most important to optimize the feature extraction step among the other steps as it is of most importance based on the plots. This confirms our intuitive belief that feature extraction algorithms are the most important components of a machine learning pipeline. 
+The mean and standard deviation values of $EC_{S_i}$ calculated using Eq. \ref{eq_step} is represented in Fig. \ref{fig:eq_steps} for the 4 datasets in Table \ref{table:datasets}. The error is calculated using the formulation of $EC_{S_i}$ in section \ref{subsubsec_eq_steps}. We observe that most of the contribution comes from feature extraction algorithms. This means that it is most important to optimize the feature extraction step among the other steps as it is of most importance based on the plots. This confirms our intuitive belief that feature extraction algorithms are the most important components of a machine learning pipeline. 
 \begin{figure}[ht!]
 \centering
 \begin{subfigure}{.5\textwidth}
@@ -307,17 +341,17 @@ The mean and standard deviation values of $EC_{S_i}$ calculated using Eq. \ref{e
   \caption{\textit{matsc2}}
   \label{fig:eq_steps_matsc2}
 \end{subfigure}
-\caption{Plots of error contributions from computational steps in the pipeline. Random search (blue) follows the behavior of grid search (red), whereas, bayesian optimization does not. Hence, random search maybe used to quantify the error contributions instead of grid search.}
+\caption{Plots of error contributions from computational steps in the pipeline. Random search (blue) follows the behavior of grid search (red) more accurately than Bayesian optimization (yellow). Hence, random search maybe used to quantify the error contributions instead of grid search.}
 \label{fig:eq_steps}
 \end{figure}
 
- The standard deviation of grid search is 0 because it was only run once for each dataset due to the time required for computation and also because of the robustness of the grid search method (the results don't change because we try out every single configuration). We observe from the results, that random search follows the behavior of grid search. It mirrors the behavior of grid search, but the results are not robust because of the high standard deviation. This is expected because the search trials may not include all the configurations of algorithms in the pipeline as opposed to grid search where all the configurations of algorithms and hyperparameters are evaluated. The results of SMAC (bayesian optimization) in the CASH framework do not follow the behavior of grid search. This is because the trials for SMAC are even more sparse with respect to the algorithms it selects for optimization of  the error in Eq. \ref{eq_step}. SMAC only samples a few configurations based on the updated probabilistic model as it narrows in on the optimum error. Therefore, it sometimes gives erroneous results as can be seen for $matsc1$ and $matsc2$ in Figs. \ref{fig:eq_steps_matsc1} and \ref{fig:eq_steps_matsc2} respectively.
+ The standard deviation of grid search is 0 because it was only run once for each dataset due to the time required for computation and also because of the robustness of the grid search method (the results don't change because we try out every single configuration). We observe from the results, that random search follows the behavior of grid search. It mirrors the behavior of grid search, but the results are not robust because of the high standard deviation. This is expected because the search trials may not include all the configurations in the pipeline as opposed to grid search where all the configurations of algorithms and hyperparameters are evaluated. The results of SMAC (bayesian optimization) in the CASH framework do not follow the behavior of grid search as closely as random search. This is because the trials for SMAC are even more sparse with respect to the algorithms it selects for optimization of  the error in Eq. \ref{eq_step}. SMAC only samples a few configurations based on the updated probabilistic model as it narrows in on the optimum configuration. Therefore, it sometimes gives erroneous results as can be seen by the contribution of feature transformation in Fig. \ref{fig:eq_steps}.
 
 
 \subsubsection{Error contribution from algorithms}
 
 % In the following figure, the error contributions from algorithms are quantified using theformulation in Section 3.1.2.  This is represented asmethod1 in the experiments.  As men-tioned before, we see that only 3 algorithms corresponding to the each step in the pipelinethat lie on the best path are dominant in terms of error contribution.
-In the following figure, the error contributions from algorithms are quantified using the formulation in Section \ref{subsubsec_eq_alg}. We select \textit{haralick texture features}, $PCA$ and \textit{random forests} as the path to demonstrate the contribution of error from algorithms, because each of these algorithms are associated with one or more hyper-parameters. We observe a trend here, in that, the error contributed from \textit{haralick texture features} and \textit{random forests} is more than $PCA$. This means that it is more important to tune \textit{haralick texture features}, and \textit{random forests} than it is to tune  $PCA$. Again, we see the trend that random search performs better in terms of following the behavior of grid search than Bayesian optimization.
+In the following figure, the error contributions from algorithms are quantified using the formulation in Section \ref{subsubsec_eq_alg}. We select \textit{haralick texture features}, $PCA$ and \textit{random forests} as the path to demonstrate the contribution of error from algorithms, because each of these algorithms are associated with one or more hyper-parameters. We observe a trend here, in that, the contribution from \textit{haralick texture features} and \textit{random forests} is more than $PCA$. This means that it is more important to tune \textit{haralick texture features}, and \textit{random forests} than it is to tune  $PCA$. This maybe attributed to the fact that the search space of hyperparameters (in Table \ref{table:hyper}) for \textit{haralick texture features} and \textit{random forests} is larger than that of \textit{PCA}. Again, we see the trend that random search performs better and is more robust in terms of following the behavior of grid search than Bayesian optimization.
 
 % This issue is redressed by the second  formulation for error contribution from algorithms in 3.1.2 which is shown in Fig. 9.
 \begin{figure}[ht!]
@@ -348,13 +382,13 @@ In the following figure, the error contributions from algorithms are quantified 
 \end{subfigure}
 
 \caption{Plots of error contributions from algorithms in the pipeline. Random search again mirrors the trend of grid search more than bayesian optimization. Therefore random search maybe used instead of grid search for computing the contribution of error from algorithms in a path. The plots also show that it is more important to tune \textit{haralick texture features}, and \textit{random forests} than it is to tune  $PCA$. }
-\label{fig:fig}
+\label{fig:eq_alg}
 \end{figure}
 
 \subsubsection{Error contribution from hyper-parameters}
 
 % In the following figure, the error contributions from algorithms are quantified using theformulation in Section 3.1.2.  This is represented asmethod1 in the experiments.  As men-tioned before, we see that only 3 algorithms corresponding to the each step in the pipelinethat lie on the best path are dominant in terms of error contribution.
-Fig. \ref{fig:eq_hyper} shows the error contributions from hyper-parameters quantified using the formulation in Section \ref{subsubsec_eq_hyper}. We again select \textit{haralick texture features}, $PCA$ and \textit{random forests} as the path to demonstrate the contribution of error from algorithms. Again, we see the trend that random search performs better in terms of following the behavior of grid search than Bayesian optimization. In addition, we observe that it is in general more important to tune the hyper-parameters \textit{Haralick distance}, and \textit{Number of estimators} than it is to tune  the other hyper-parameters.
+Fig. \ref{fig:eq_hyper} shows the error contributions from hyper-parameters quantified using the formulation in Section \ref{subsubsec_eq_hyper}. We again select \textit{haralick texture features}, $PCA$ and \textit{random forests} as the path to demonstrate the contribution of error from algorithms. The hyper-parameters (from Table \ref{table:hyper}) in this path are \textit{Haralick distance}, \textit{whitening}, \textit{Number of etimators} and \textit{Maximum features}. Again, we see the trend that random search performs better in terms of following the behavior of grid search than Bayesian optimization. In addition, we observe that it is in general more important to tune the hyper-parameters \textit{Haralick distance}, and \textit{Number of estimators} than it is to tune  the other hyper-parameters. This is again could be due to the number of configurations of the respective hyper-parameters in Table \ref{table:hyper}, where a hyper-parameter with a larger search space has more contribution to the error and is therefore more important to tune.
 
 % This issue is redressed by the second  formulation for error contribution from algorithms in 3.1.2 which is shown in Fig. 9.
 \begin{figure}[ht!]
@@ -429,13 +463,13 @@ Fig. \ref{fig:eq_hyper} shows the error contributions from hyper-parameters quan
 % We again observe the same trend while comparing the different optimization approaches. HPO does a better job at capturing the error contribution for reasons stated above. Random search in the CASH framework follows the behavior of grid search but has higher variance. SMAC does a poor job at computing the error contributions from the pipeline altogether. 
 
 \subsubsection{Comparison of computation time}
-Fig. \ref{fig:time} shows the average computation times of each of the algorithms used in the error quantification experiments. We can observe that random search and bayesian optimization are both efficient in terms of computational time as opposed to grid search. As expected, the CASH based optimization runs faster than the corresponding HPO counterparts.
-Therefore, both CASH and HPO optimization frameworks using algorithms like Random search and Bayesian optimization maybe used for computation of the error contributions instead of grid search. However, as we have seen repeatedly from the plots in Figs. \ref{fig:eq_steps}, \ref{fig:eq_alg} and \ref{fig:eq_hyper}; random search captures the behavior of grid search more accurately. Hence, random search maybe used to quantify the contributions from steps, algorithms and hyper-parameters accurately and efficiently.
+Fig. \ref{fig:time} shows the average computation times of each of the algorithms used in the error quantification experiments. We can observe that random search and bayesian optimization are both efficient in terms of computational time as opposed to grid search.
+Therefore, both CASH and HPO optimization frameworks using algorithms like Random search and Bayesian optimization maybe used for computation of the error contributions instead of grid search. However, as we have seen repeatedly from the plots in Figs. \ref{fig:eq_steps}, \ref{fig:eq_alg} and \ref{fig:eq_hyper}; random search captures the behavior of grid search more accurately and is more robust than grid-search. Hence, random search maybe used to quantify the contributions from steps, algorithms and hyper-parameters accurately and efficiently.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.4]{img/EP/times_algorithms}
-    \caption{Pipeline including naive algorithms for error propagation. Random search and bayesian optimization are both much more efficient that grid search in terms of computation time.}
+    \includegraphics[scale=0.4]{img/EP/times_algorithms.eps}
+    \caption{Comparison of computational time for running each of the 3 optimization methods in the two optimization frameworks (HPO and CASH) in section \ref{subsec_AS_HPO} averaged over the 4 datasets in Table \ref{table:datasets}. Random search and bayesian optimization are both much more efficient that grid search in terms of computation time and maybe used to quantify the error contribution more efficiently than grid search.}
     \label{fig:time}
 \end{figure}
 
@@ -627,7 +661,8 @@ Therefore, both CASH and HPO optimization frameworks using algorithms like Rando
 
 
 \section{Conclusion}
-This work proposes a methodology for making black box machine learning based image classification pipelines interpretable. The suggested approach involves understanding the sources of error in data analytic pipelines. Specifically, we propose a methodology to quantify the error contributions from different parts of an image classification pipeline, namely computational steps, algorithms and hyper-parameters. This methodology is described as the \textit{agnostic} method described in Section \ref{EQ}. The results in Section \ref{eq_expts} show that the black-box optimization methods like random search and Bayesian optimization is able to quantify the error contributions as well as grid search although the CASH framework of Bayesian optimization is not as accurate due to reasons specified above. The error quantification methodology maybe used by machine learning practitioners to understand and interpret results of a specific machine learning problem on a dataset. Understanding the source of error in terms of steps, algorithms and hyper-parameters will help data scientists quickly iterate and find the best set of algorithms along with their hyper-parameter configurations for solving a particular task by focussing on the important components of the pipeline found from the results of error contribution. In addition domain experts like biologists and scientists from different disciplies can use this method to understand and interpret where the error is coming from in the pipeline they use to solve their specific image classification problem.
+This work proposes a methodology for making black box machine learning based image classification pipelines interpretable. The suggested approach involves understanding the sources of error contribution in data analytic pipelines. Specifically, we propose a methodology to quantify the error contributions from different parts of an image classification pipeline, namely computational steps, algorithms and hyper-parameters. This methodology is described as the \textit{agnostic} method in Section \ref{EQ}. The results in Section \ref{eq_expts} show that the black-box optimization methods like random search and Bayesian optimization is able to quantify the error contributions as well as grid search. The framework of Bayesian optimization is not as accurate and robust as random search due to reasons specified in section \ref{sec4}. In general we expect optimization algorithms that have more trials in a larger region of the search space of the configurations to quantify the contributions from components in the pipeline accurately. We intend to explore the results from more hyper-parameter optimization algorithms in the future. 
+The error quantification methodology maybe used by machine learning practitioners to understand and interpret results of a specific machine learning problem on a dataset. Understanding the source of error in terms of steps, algorithms and hyper-parameters will help data scientists quickly iterate over pipelines, algorithms and hyperparameters and find the best set of configurations for solving a particular task by focussing on the important components of the pipeline found from the results of error contribution. In addition domain experts like biologists and scientists from different disciplies can use this method to understand and interpret where the error is coming from in the pipeline they use to solve their specific image classification problem.
 % We also propose a model for error propagation to analyse the error from the pipeline even further. This methodology is denoted as the \textit{naive} framework, where we use \textit{naive} algorithms in each step of the pipeline. \textit{Naive} algorithms represent algorithms where the assumption is that all of the error is a result of the direct error from the algorithm itself and not due to accumulation and propagation of error. This is described in detail in section 3.4. The results from section 4.4 show that most of the error propagates from the feature extraction algorithms followed by feature transformation algorithms. This support our intuition that error accumulates and flows along the pipeline, with the most amount of error coming from steps at the beginning of the machine learning pipeline and it gradually reduces to zero at the end of the pipeline (learning algorithms), where all of the error is directly due to algorithms themselves.
 In terms of future work, this formulation could be expanded to cover more data analytic problems that involve complicated algorithms. For example, this framework maybe used to interpret problems in other applications like speech recognition, text classification and even unsupervised machine learning problems. Essentially, the error quantification framework maybe used by any practitioner that works with pipelines for solving a machine learning problem. The pipeline may even be extended to include processes like data cleaning. This framework may also be included to understand and interpret deep neural networks, which are end-to-end in nature. This maybe used for comparing the performance of candidate networks for solving the problem.
 

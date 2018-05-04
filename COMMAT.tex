@@ -20,7 +20,7 @@ Although there have been recent advances in the field of quantitative microstruc
 
 Dendritic morphologies were chosen for this small case-study since dendrites are a well-characterized microstructural feature that exists in a variety of material systems (from single to multi-component).  Size, shape, and spacing of dendrites vary depending on solidification behavior and chemistry, thus micrographs of this single feature can vary widely.  The sample preparation and imaging methods used also contribute to the variety of micrographs produced from dendritic microstructures. Despite this variability in image data, it is still possible for human experts to look at a micrograph that contains dendrites and identify that it contains this microstructural feature, even though different orientations of dendrites (transverse or longitudinal) look distinctly different.  
 
-Computer vision and machine learning methods were applied to the task of identifying a particular microstructural feature of interest (dendrites) from micrographs that do not contain this particular feature (just as a human expert would identify that a micrograph contains dendrites).  This recognition task is referred to in this work as Task 1.  Task 1 is a high-level microstructure recognition task in the sense that dendrites are a type of microstructural feature that are not specific to a material system.  A second classification task (referred to here as Task 2) was also completed, and involved distinguishing between longitudinal and transverse cross-sectional views of dendritic microstructures. This task may be viewed as a logical next step following the identification of dendrites in Task 1. If the micrograph from Task 1 was identified as a dendrite, then a second binary classification task was performed, with the goal of distinguishing between two different cross-sectional views.
+Computer vision and machine learning methods were applied to the task of identifying a particular microstructural feature of interest (dendrites) from micrographs that do not contain this particular feature (just as a human expert would identify that a micrograph contains dendrites).  This recognition task is referred to in this work as Task 1.  Task 1 is a high-level microstructure recognition task in the sense that dendrites are a type of microstructural feature that are not specific to a material system.  A second classification task (referred to here as Task 2) was also completed, and involved distinguishing between longitudinal and transverse cross-sectional views of dendritic microstructures. This task may be viewed as a logical next step following the identification of dendrites in Task 1.
 
 The contribution in this work is to investigate multiple computer vision and machine learning methods for microstructure recognition. We hypothesize that the approach and methods presented here can be generalized, and thus applied to a variety of microstructure recognition tasks that act as a necessary first step in characterization of a material system.
 %-----------------------------------------
@@ -298,7 +298,7 @@ Additionally, the Visual Bag of Words feature extraction method with a Support V
 \section{Selection of Model Parameters}
 Each algorithm involved in our experimentation has their own set of parameters. Some of the parameters are set \textit{a priori} and some are tuned using 5-fold cross-validation. Since we used cross validation to set the parameters for each combination of feature extraction, feature selection and classifier, there is no specific setting for each individual parameter for the algorithm. This approach of using 5-fold cross-validation to set parameters generates results that are more robust and thus more accurate with respect to each particular combination of feature extraction, feature selection, and classifier. We do a grid search over the parameter space using 5-fold cross-validation to estimate the best setting of the different parameters. Such parameters include number of neighbors in the nearest neighbor classifier, the SVM margin parameter ($C$), the RBF kernel parameter  ($\gamma$), the number of trees or estimators in the random forests classifier. The parameters found by cross-validation are presented in detail in the supplementary article to this paper.
 
-We also set a number of parameters before the experiments are run to limit the number of parameters to tune using cross-validation. Such set parameters include the those listed in Table \ref{tab:parameters}. 
+We also set a number of parameters before the experiments are run to limit the number of parameters to tune using cross-validation. 
 
 %The Hessian threshold for the SURF detector was set to 500. The dictionary size for Visual Bag of Words was set to 100. The radius of the local binary patterns was set to 5 and the number of points to 10. The radius for Zernike moments was set to 5. 
 
@@ -527,7 +527,7 @@ The success of SVM as a classifier is subsequently discussed in additional detai
 
 %---------------------------------------------------------------
 %updated 06/10/16 - mrMR removed
-\begin{table}[H]
+\begin{table}[ht!]
 \centering
 \renewcommand{\arraystretch}{1}
 \captionsetup{justification=centering}
@@ -561,7 +561,7 @@ When SVM-L was used for classification, feature selection methods improved resul
 %
 The same classification accuracies were obtained for each feature selection method, for a given feature extraction and classifier combination. In addition, the features extracted from the fifth layer (convolutional) in the pre-trained neural network perform poorly with respect to the other extraction methodologies. This can be attributed to the fact that caffe-conv5 produces the feature representation with the highest dimensionality which is an order of magnitude greater than the second largest feature vector (caffe-fc6). Therefore, features extracted using caffe-conv5 are not robust (i.e. they have low accuracy with high standard deviation).  Being lower in the network hierarchy of the CNN also means that the features may not be tuned properly to the task, and therefore features provide a less accurate image representation than features computed via caffe-fc6.  
 %----------------------------------------------------------------------------------
-\begin{table}[H]
+\begin{table}[ht!]
 \centering
 \renewcommand{\arraystretch}{1}
 \captionsetup{justification=centering}
@@ -597,7 +597,7 @@ Lastly, classification models were evaluated for each combination of feature ext
 %----------------------------------------------------------------
 %-------------------------------------------------------------------------
 %updated 06/10/16 -mrMR removed
-\begin{table}[H]
+\begin{table}[ht!]
 \centering
 \renewcommand{\arraystretch}{1}
 \captionsetup{justification=centering}
@@ -642,6 +642,7 @@ Similar to Fig. \ref{fig:error_bars1} for Task 1, we plot the top 20 configurati
 \end{figure}
 
 From the results in Table \ref{table:average_rank2}, we observe that caffe-fc6, PCA and SVM are the highest ranked algorithms. We also note that in this case, the difference in rank between SVM and the next best classification algorithm (NN) is much greater than the corresponding differences in feature extraction and dimensionality reduction. This indicates that the SVM classification algorithm provides superior performance with respect to this task.
+
 \begin{table}[ht!]
 \centering
 \caption{Average rank of the algorithms in Task 2 with respect to feature extraction, dimensionality reduction and classification. The average rank of an algorithm quantifies it's position in the sorted list of configurations.}

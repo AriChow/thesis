@@ -62,12 +62,13 @@
 \BOOKMARK [2][-]{subsection.5.4.1}{Optimization frameworks}{section.5.4}% 62
 \BOOKMARK [2][-]{subsection.5.4.2}{Datasets}{section.5.4}% 63
 \BOOKMARK [2][-]{subsection.5.4.3}{Error quantification experiments}{section.5.4}% 64
-\BOOKMARK [3][-]{subsubsection.5.4.3.1}{Error contribution from computational steps}{subsection.5.4.3}% 65
-\BOOKMARK [3][-]{subsubsection.5.4.3.2}{Error contribution from algorithms}{subsection.5.4.3}% 66
-\BOOKMARK [3][-]{subsubsection.5.4.3.3}{Error contribution from hyper-parameters}{subsection.5.4.3}% 67
-\BOOKMARK [3][-]{subsubsection.5.4.3.4}{Comparison of computation time}{subsection.5.4.3}% 68
-\BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 69
-\BOOKMARK [0][-]{chapter.6}{CONCLUSIONS AND FUTURE WORK}{}% 70
-\BOOKMARK [1][-]{section.6.1}{Conclusions}{chapter.6}% 71
-\BOOKMARK [1][-]{section.6.2}{Future work}{chapter.6}% 72
-\BOOKMARK [0][-]{section*.33}{REFERENCES}{}% 73
+\BOOKMARK [3][-]{subsubsection.5.4.3.1}{Experimental setting}{subsection.5.4.3}% 65
+\BOOKMARK [3][-]{subsubsection.5.4.3.2}{Error contribution from computational steps}{subsection.5.4.3}% 66
+\BOOKMARK [3][-]{subsubsection.5.4.3.3}{Error contribution from algorithms}{subsection.5.4.3}% 67
+\BOOKMARK [3][-]{subsubsection.5.4.3.4}{Error contribution from hyper-parameters}{subsection.5.4.3}% 68
+\BOOKMARK [3][-]{subsubsection.5.4.3.5}{Comparison of computation time}{subsection.5.4.3}% 69
+\BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 70
+\BOOKMARK [0][-]{chapter.6}{CONCLUSIONS AND FUTURE WORK}{}% 71
+\BOOKMARK [1][-]{section.6.1}{Conclusions}{chapter.6}% 72
+\BOOKMARK [1][-]{section.6.2}{Future work}{chapter.6}% 73
+\BOOKMARK [0][-]{section*.34}{REFERENCES}{}% 74

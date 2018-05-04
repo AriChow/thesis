@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72fbd62b-d4ef-43c3-8fad-c31cb530ab59" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPIE1.aux" beforeDir="false" afterPath="$PROJECT_DIR$/SPIE1.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPIE1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/SPIE1.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.lof" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.lof" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thesis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/thesis.toc" afterDir="false" />
-    </list>
+    <list default="true" id="72fbd62b-d4ef-43c3-8fad-c31cb530ab59" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +104,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="639" />
@@ -266,7 +257,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="639" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="639" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
