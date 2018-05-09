@@ -11,7 +11,7 @@
 \label{sec1}
 Machine learning and data science has entered many domains of human effort in modern times. The number of self-reported data scientists has doubled in recent years \cite{harrison1995validity}. They have entered various domains including academia, industry and business among others. There has therefore been a demand for machine learning tools that are flexible, powerful and most importantly interpretable. The effective application of machine learning tools unfortunately requires an expert understanding of the frameworks and algorithms that are present in a machine learning pipeline. It also requires knowledge of the problem domain and understanding of the assumptions used in the analysis. In order for these tools to be used adequately by non-experts; additional tools must be developed for understanding and interpreting the results of the application of a data analytic pipeline on a domain specific problem.  
 
-\begin{figure}[H]
+\begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.5]{img/EP/generalized_pipeline}
     \caption{Representation of a machine learning pipeline. This is represented as a generalized directed acyclic graph. $S_i$ represents the $i$-th computational step in the pipeline and $A_{ij}$ represents the $j$-th algorithm in the $i$-th step. $X$ is the input dataset and $Y$ is the evaluation metric.}
@@ -195,7 +195,7 @@ where, $i = {1, ..., n}, j = {1, ..., |\theta_{ij}|}$, k = number of hyper-param
 \section{Experiments and results}
 \label{sec4}
 In this section, we describe the experiments performed on the data analytic pipeline to quantify the error contributions and propagation from different components of the pipeline. Image classification is the data analytic problem chosen for demonstrating the error quantification experiments. A representation of an image classification pipeline is shown in Fig. \ref{fig:flowchart} in the form of a flowchart.  
-\begin{figure}[H]
+\begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.4]{img/EP/flowchart}
     \caption{Representation of an image classification pipeline. The pipeline consists of the steps represented by green ellipses and the outputs of each step represented by blue rectangles. In this work, we focus on the steps and outputs after pre-processing.}
