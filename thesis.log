@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  10 MAY 2018 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  13 MAY 2018 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1891,18 +1891,12 @@ Package epstopdf Info: Source file: <img/EP/agnostic_error_hyper_breast.eps>
 (epstopdf)                    size: 32025 bytes
 (epstopdf)             Output file: <img/EP/agnostic_error_hyper_breast-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2018-05-01 14:54:44
-(epstopdf)                    size: 16083 bytes
+(epstopdf)                    date: 2018-05-10 13:54:57
+(epstopdf)                    size: 15174 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/EP/agnostic_error_hype
 r_breast-eps-converted-to.pdf img/EP/agnostic_error_hyper_breast.eps>
 (epstopdf)             \includegraphics on input line 398.
-runsystem(repstopdf --outfile=img/EP/agnostic_error_hyper_breast-eps-converted-
-to.pdf img/EP/agnostic_error_hyper_breast.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <img/EP/agnostic_error_hyper_breast-eps-con
-verted-to.pdf>
-(epstopdf)                    date: 2018-05-10 13:54:57
-(epstopdf)                    size: 15174 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <img/EP/agnostic_error_hyper_breast-eps-converted-to.pdf, id=1652, 462.72874pt 
 x 346.29375pt>
@@ -1936,20 +1930,13 @@ Package epstopdf Info: Source file: <img/EP/agnostic_error_hyper_matsc_dataset1
 (epstopdf)                    size: 32936 bytes
 (epstopdf)             Output file: <img/EP/agnostic_error_hyper_matsc_dataset1
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-01 14:54:44
-(epstopdf)                    size: 16664 bytes
+(epstopdf)                    date: 2018-05-10 13:54:58
+(epstopdf)                    size: 17455 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/EP/agnostic_error_hype
 r_matsc_dataset1-eps-converted-to.pdf img/EP/agnostic_error_hyper_matsc_dataset
 1.eps>
 (epstopdf)             \includegraphics on input line 410.
-runsystem(repstopdf --outfile=img/EP/agnostic_error_hyper_matsc_dataset1-eps-co
-nverted-to.pdf img/EP/agnostic_error_hyper_matsc_dataset1.eps)...executed safel
-y (allowed).
-
-Package epstopdf Info: Result file: <img/EP/agnostic_error_hyper_matsc_dataset1
--eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-10 13:54:58
-(epstopdf)                    size: 17455 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <img/EP/agnostic_error_hyper_matsc_dataset1-eps-converted-to.pdf, id=1653, 462.
 72874pt x 346.29375pt>
@@ -1966,20 +1953,13 @@ Package epstopdf Info: Source file: <img/EP/agnostic_error_hyper_matsc_dataset2
 (epstopdf)                    size: 34838 bytes
 (epstopdf)             Output file: <img/EP/agnostic_error_hyper_matsc_dataset2
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-01 14:54:45
-(epstopdf)                    size: 17461 bytes
+(epstopdf)                    date: 2018-05-10 13:54:58
+(epstopdf)                    size: 18039 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/EP/agnostic_error_hype
 r_matsc_dataset2-eps-converted-to.pdf img/EP/agnostic_error_hyper_matsc_dataset
 2.eps>
 (epstopdf)             \includegraphics on input line 416.
-runsystem(repstopdf --outfile=img/EP/agnostic_error_hyper_matsc_dataset2-eps-co
-nverted-to.pdf img/EP/agnostic_error_hyper_matsc_dataset2.eps)...executed safel
-y (allowed).
-
-Package epstopdf Info: Result file: <img/EP/agnostic_error_hyper_matsc_dataset2
--eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-10 13:54:58
-(epstopdf)                    size: 18039 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <img/EP/agnostic_error_hyper_matsc_dataset2-eps-converted-to.pdf, id=1654, 462.
 72874pt x 346.29375pt>
@@ -2092,7 +2072,7 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 /2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (92 pages, 10137761 bytes).
+Output written on thesis.pdf (92 pages, 10137854 bytes).
 PDF statistics:
  2215 PDF objects out of 2487 (max. 8388607)
  1475 compressed objects within 15 object streams
