@@ -24,50 +24,50 @@
 \contentsline {section}{\numberline {2.9}Limitations}{28}{section.2.9}
 \contentsline {section}{\numberline {2.10}Conclusions}{30}{section.2.10}
 \contentsline {section}{\numberline {2.11}Future Work}{31}{section.2.11}
-\contentsline {chapter}{\numberline {3.}BLOOD VESSEL CHARACTERIZATION USING VIRTUAL 3D MODELS AND CONVOLUTIONAL NEURAL NETWORKS IN FLUORESCENCE MICROSCOPY}{32}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{32}{section.3.1}
-\contentsline {section}{\numberline {3.2}Data}{33}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Natural data}{34}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Virtual data}{35}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Methods}{37}{section.3.3}
-\contentsline {section}{\numberline {3.4}Experiments and results}{38}{section.3.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{41}{section.3.5}
-\contentsline {chapter}{\numberline {4.}A MACHINE LEARNING BASED APPROACH TO QUANTIFYING NOISE IN MEDICAL IMAGES}{42}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{42}{section.4.1}
-\contentsline {section}{\numberline {4.2}Data}{42}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Feature extraction}{43}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Data preprocessing}{44}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Methods and experiments}{45}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Classification and analysis}{45}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Quality of image score}{46}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Results and discussion}{47}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Conclusions}{49}{section.4.4}
-\contentsline {chapter}{\numberline {5.}ALGORITHM SELECTION AND HYPERPARAMETER OPTIMIZATION BASED QUANTIFICATION OF ERROR CONTRIBUTION IN IMAGE CLASSIFICATION PIPELINES}{50}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{50}{section.5.1}
-\contentsline {section}{\numberline {5.2}Foundations}{53}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Algorithm selection and hyper-parameter optimization}{53}{subsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.1.1}Hyper-parameter optimization (HPO)}{53}{subsubsection.5.2.1.1}
-\contentsline {subsubsection}{\numberline {5.2.1.2}Combined algorithm selection and hyper-parameter optimization (CASH)}{54}{subsubsection.5.2.1.2}
-\contentsline {subsection}{\numberline {5.2.2}Optimization methods}{54}{subsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.1}Grid search}{54}{subsubsection.5.2.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2.2}Random search}{55}{subsubsection.5.2.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.3}Bayesian optimization}{55}{subsubsection.5.2.2.3}
-\contentsline {section}{\numberline {5.3}Proposed methods}{55}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Error contribution with the agnostic methodology}{56}{subsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.1.1}Quantification of error from computational steps}{56}{subsubsection.5.3.1.1}
-\contentsline {subsubsection}{\numberline {5.3.1.2}Quantification of error from algorithms}{57}{subsubsection.5.3.1.2}
-\contentsline {subsubsection}{\numberline {5.3.1.3}Quantification of error from hyper-parameters}{57}{subsubsection.5.3.1.3}
-\contentsline {section}{\numberline {5.4}Experiments and results}{58}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Optimization frameworks}{61}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Datasets}{62}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Error quantification experiments}{63}{subsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.3.1}Experimental setting}{63}{subsubsection.5.4.3.1}
+\contentsline {chapter}{\numberline {3.}BLOOD VESSEL CHARACTERIZATION USING VIRTUAL 3D MODELS AND CONVOLUTIONAL NEURAL NETWORKS IN FLUORESCENCE MICROSCOPY}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{33}{section.3.1}
+\contentsline {section}{\numberline {3.2}Data}{34}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Natural data}{35}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Virtual data}{36}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Methods}{38}{section.3.3}
+\contentsline {section}{\numberline {3.4}Experiments and results}{39}{section.3.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{42}{section.3.5}
+\contentsline {chapter}{\numberline {4.}A MACHINE LEARNING BASED APPROACH TO QUANTIFYING NOISE IN MEDICAL IMAGES}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{43}{section.4.1}
+\contentsline {section}{\numberline {4.2}Data}{44}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Feature extraction}{45}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Data preprocessing}{45}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Methods and experiments}{46}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Classification and analysis}{46}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Quality of image score}{47}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Results and discussion}{48}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Conclusions}{50}{section.4.4}
+\contentsline {chapter}{\numberline {5.}ALGORITHM SELECTION AND HYPERPARAMETER OPTIMIZATION BASED QUANTIFICATION OF ERROR CONTRIBUTION IN IMAGE CLASSIFICATION PIPELINES}{51}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{51}{section.5.1}
+\contentsline {section}{\numberline {5.2}Foundations}{54}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Algorithm selection and hyper-parameter optimization}{54}{subsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.1.1}Hyper-parameter optimization (HPO)}{54}{subsubsection.5.2.1.1}
+\contentsline {subsubsection}{\numberline {5.2.1.2}Combined algorithm selection and hyper-parameter optimization (CASH)}{55}{subsubsection.5.2.1.2}
+\contentsline {subsection}{\numberline {5.2.2}Optimization methods}{56}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}Grid search}{56}{subsubsection.5.2.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2.2}Random search}{57}{subsubsection.5.2.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.3}Bayesian optimization}{57}{subsubsection.5.2.2.3}
+\contentsline {section}{\numberline {5.3}Proposed methods}{57}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Error contribution with the agnostic methodology}{58}{subsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.1.1}Quantification of error from computational steps}{58}{subsubsection.5.3.1.1}
+\contentsline {subsubsection}{\numberline {5.3.1.2}Quantification of error from algorithms}{59}{subsubsection.5.3.1.2}
+\contentsline {subsubsection}{\numberline {5.3.1.3}Quantification of error from hyperparameters}{59}{subsubsection.5.3.1.3}
+\contentsline {section}{\numberline {5.4}Experiments and results}{60}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Optimization frameworks}{62}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Datasets}{63}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Error quantification experiments}{64}{subsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.3.1}Experimental setting}{64}{subsubsection.5.4.3.1}
 \contentsline {subsubsection}{\numberline {5.4.3.2}Error contribution from computational steps}{64}{subsubsection.5.4.3.2}
-\contentsline {subsubsection}{\numberline {5.4.3.3}Error contribution from algorithms}{65}{subsubsection.5.4.3.3}
-\contentsline {subsubsection}{\numberline {5.4.3.4}Error contribution from hyper-parameters}{66}{subsubsection.5.4.3.4}
-\contentsline {subsubsection}{\numberline {5.4.3.5}Comparison of computation time}{67}{subsubsection.5.4.3.5}
-\contentsline {section}{\numberline {5.5}Conclusion}{68}{section.5.5}
-\contentsline {chapter}{\numberline {6.}CONCLUSIONS AND FUTURE WORK}{70}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusions}{70}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future work}{71}{section.6.2}
-\contentsline {chapter}{REFERENCES}{73}{section*.34}
+\contentsline {subsubsection}{\numberline {5.4.3.3}Error contribution from algorithms}{67}{subsubsection.5.4.3.3}
+\contentsline {subsubsection}{\numberline {5.4.3.4}Error contribution from hyperparameters}{67}{subsubsection.5.4.3.4}
+\contentsline {subsubsection}{\numberline {5.4.3.5}Comparison of computation time}{68}{subsubsection.5.4.3.5}
+\contentsline {section}{\numberline {5.5}Conclusion}{69}{section.5.5}
+\contentsline {chapter}{\numberline {6.}CONCLUSIONS AND FUTURE WORK}{72}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusions}{72}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future work}{73}{section.6.2}
+\contentsline {chapter}{REFERENCES}{75}{section*.34}

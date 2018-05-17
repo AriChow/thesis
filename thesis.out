@@ -57,7 +57,7 @@
 \BOOKMARK [2][-]{subsection.5.3.1}{Error contribution with the agnostic methodology}{section.5.3}% 57
 \BOOKMARK [3][-]{subsubsection.5.3.1.1}{Quantification of error from computational steps}{subsection.5.3.1}% 58
 \BOOKMARK [3][-]{subsubsection.5.3.1.2}{Quantification of error from algorithms}{subsection.5.3.1}% 59
-\BOOKMARK [3][-]{subsubsection.5.3.1.3}{Quantification of error from hyper-parameters}{subsection.5.3.1}% 60
+\BOOKMARK [3][-]{subsubsection.5.3.1.3}{Quantification of error from hyperparameters}{subsection.5.3.1}% 60
 \BOOKMARK [1][-]{section.5.4}{Experiments and results}{chapter.5}% 61
 \BOOKMARK [2][-]{subsection.5.4.1}{Optimization frameworks}{section.5.4}% 62
 \BOOKMARK [2][-]{subsection.5.4.2}{Datasets}{section.5.4}% 63
@@ -65,7 +65,7 @@
 \BOOKMARK [3][-]{subsubsection.5.4.3.1}{Experimental setting}{subsection.5.4.3}% 65
 \BOOKMARK [3][-]{subsubsection.5.4.3.2}{Error contribution from computational steps}{subsection.5.4.3}% 66
 \BOOKMARK [3][-]{subsubsection.5.4.3.3}{Error contribution from algorithms}{subsection.5.4.3}% 67
-\BOOKMARK [3][-]{subsubsection.5.4.3.4}{Error contribution from hyper-parameters}{subsection.5.4.3}% 68
+\BOOKMARK [3][-]{subsubsection.5.4.3.4}{Error contribution from hyperparameters}{subsection.5.4.3}% 68
 \BOOKMARK [3][-]{subsubsection.5.4.3.5}{Comparison of computation time}{subsection.5.4.3}% 69
 \BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 70
 \BOOKMARK [0][-]{chapter.6}{CONCLUSIONS AND FUTURE WORK}{}% 71
