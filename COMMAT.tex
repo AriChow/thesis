@@ -455,7 +455,7 @@ This result also demonstrates that the data is linearly separable and use of a G
 The performance of the pipeline is also measured using the plot in Fig. \ref{fig:error_bars1}. Here, we sort the configurations in descending order based on the mean of their classification accuracies and plot the top 20 configurations with their corresponding error bars (one standard deviation).  We observe from this plot that there is a minor difference in the results with respect to top 20 configurations. However, we also observe that certain algorithms come up multiple times in the top 20 configurations. So, even though there isn't a clear \textit{best} configuration that is significantly better than all configurations, we can clearly see that there are certain algorithms which are better than others in terms of their ranking in the sorted order of configurations. We quantify this further by representing in Table \ref{table:average_rank1} the average rank of the algorithms with respect to their ranks in the sorted configurations. 
 \begin{figure}[ht!]
   \begin{centering}
- \includegraphics[scale=0.4]{img/best_matsc_error_bars.eps}
+ \includegraphics[scale=0.4]{img/best_matsc_error_bars_20.eps}
  \caption{Top 20 configurations of algorithms in Task 1 with error bars representing one standard deviation. There is no significant difference in the accuracies in the different configuations. Most of the feature extraction algorithms in the top 20 configurations are pre-trained CNNs (\textit{caffe-fc6} or \textit{caffe-conv5})}
  \label{fig:error_bars1}
  \end{centering}
@@ -635,7 +635,7 @@ The sixth fully connected layer in the Caffe network proved to represent microgr
 Similar to Fig. \ref{fig:error_bars1} for Task 1, we plot the top 20 configurations with respect to the mean of the classification accuracies for Task 2 in Fig. \ref{fig:error_bars2}. Again, we observe the trend that there is no one clear \textit{best} configuration. We again show the average rankings of the algorithms in their respective steps of feature extraction, dimensionality reduction and classification in Table \ref{table:average_rank2}. 
 \begin{figure}
   \begin{centering}
- \includegraphics[scale=0.4]{img/best_trans_long_error_bars.eps}
+ \includegraphics[scale=0.4]{img/best_trans_long_error_bars_20.eps}
  \caption{Top 20 configurations of algorithms in Task 2 with error bars representing one standard deviation. There is no significant difference in the accuracies in the different configuations. Most of the feature extraction algorithms in the top 20 configurations are pre-trained CNNs (\textit{caffe-fc6} or \textit{caffe-conv5})}
  \label{fig:error_bars2}
  \end{centering}
