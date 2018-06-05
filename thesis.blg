@@ -6,8 +6,8 @@ A level-1 auxiliary file: title.aux
 A level-1 auxiliary file: acknowledge.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: introduction.aux
-A level-1 auxiliary file: COMMAT.aux
 A level-1 auxiliary file: ISBI.aux
+A level-1 auxiliary file: COMMAT.aux
 A level-1 auxiliary file: SPIE1.aux
 A level-1 auxiliary file: EP.aux
 A level-1 auxiliary file: conclusions.aux
@@ -38,48 +38,47 @@ Warning--there's a url but no urldate in Impoco2015
 Warning--there's a url but no urldate in Bostanabad2016
 Warning--there's a url but no urldate in Taffese2015
 Warning--there's a url but no urldate in Guo2016
-Warning--empty journal in doshi2017towards
 
 Done.
-You've used 79 entries,
+You've used 76 entries,
             4355 wiz_defined-function locations,
-            1352 strings with 23021 characters,
-and the built_in function-call counts, 64898 in all, are:
-= -- 5480
-> -- 1536
-< -- 649
-+ -- 863
-- -- 249
-* -- 3181
-:= -- 9722
-add.period$ -- 146
-call.type$ -- 79
-change.case$ -- 79
-chr.to.int$ -- 1515
-cite$ -- 97
-duplicate$ -- 4546
-empty$ -- 4740
-format.name$ -- 309
-if$ -- 14989
+            1340 strings with 22346 characters,
+and the built_in function-call counts, 62829 in all, are:
+= -- 5329
+> -- 1459
+< -- 636
++ -- 821
+- -- 233
+* -- 3085
+:= -- 9423
+add.period$ -- 140
+call.type$ -- 76
+change.case$ -- 76
+chr.to.int$ -- 1479
+cite$ -- 93
+duplicate$ -- 4390
+empty$ -- 4579
+format.name$ -- 290
+if$ -- 14516
 int.to.chr$ -- 0
-int.to.str$ -- 79
-missing$ -- 703
-newline$ -- 260
-num.names$ -- 82
-pop$ -- 1329
+int.to.str$ -- 76
+missing$ -- 675
+newline$ -- 251
+num.names$ -- 79
+pop$ -- 1266
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 5283
+skip$ -- 5113
 stack$ -- 0
-substring$ -- 3644
-swap$ -- 3880
-text.length$ -- 144
+substring$ -- 3557
+swap$ -- 3768
+text.length$ -- 143
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 79
-warning$ -- 18
-while$ -- 321
-width$ -- 81
-write$ -- 807
-(There were 18 warnings)
+type$ -- 76
+warning$ -- 17
+while$ -- 314
+width$ -- 78
+write$ -- 783
+(There were 17 warnings)

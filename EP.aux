@@ -1,43 +1,38 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
 \citation{harrison1995validity}
-\citation{pedregosa2011scikit}
-\citation{mierswa2006yale}
-\citation{spark2016apache}
 \citation{bergstra2012random}
 \citation{snoek2012practical,zhang2016flash}
-\citation{olson2016evaluation,olson2016tpot,olson2016automating}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5.}ALGORITHM SELECTION AND HYPERPARAMETER OPTIMIZATION BASED QUANTIFICATION OF ERROR CONTRIBUTION IN IMAGE CLASSIFICATION PIPELINES}{51}{chapter.5}}
-\newlabel{chap:EP}{{5}{51}{ALGORITHM SELECTION AND HYPERPARAMETER OPTIMIZATION BASED QUANTIFICATION OF ERROR CONTRIBUTION IN IMAGE CLASSIFICATION PIPELINES}{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{51}{section.5.1}}
-\newlabel{sec1}{{5.1}{51}{Introduction}{section.5.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Representation of a machine learning pipeline. This is represented as a generalized directed acyclic graph. $S_i$ represents the $i$-th computational step in the pipeline and $A_{ij}$ represents the $j$-th algorithm in the $i$-th step. $X$ is the input dataset and $Y$ is the evaluation metric.\relax }}{52}{figure.caption.25}}
-\newlabel{fig:pipeline}{{5.1}{52}{Representation of a machine learning pipeline. This is represented as a generalized directed acyclic graph. $S_i$ represents the $i$-th computational step in the pipeline and $A_{ij}$ represents the $j$-th algorithm in the $i$-th step. $X$ is the input dataset and $Y$ is the evaluation metric.\relax }{figure.caption.25}{}}
+\citation{olson2016evaluation,olson2016tpot}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5.}ALGORITHM SELECTION AND HYPERPARAMETER OPTIMIZATION BASED QUANTIFICATION OF ERROR CONTRIBUTION IN IMAGE CLASSIFICATION PIPELINES}{54}{chapter.5}}
+\newlabel{chap:EP}{{5}{54}{ALGORITHM SELECTION AND HYPERPARAMETER OPTIMIZATION BASED QUANTIFICATION OF ERROR CONTRIBUTION IN IMAGE CLASSIFICATION PIPELINES}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{54}{section.5.1}}
+\newlabel{sec1}{{5.1}{54}{Introduction}{section.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Quantification of error contributions from different components of the pipeline. Similar to \ref  {chap:COMMAT}, the feature extraction, feature transformation and learning algorithms are highlighted in red. In this chapter we use the feedback from the validation error to quantify the contribution of each of the components of the pipeline.\relax }}{55}{figure.caption.28}}
+\newlabel{fig:chapter5}{{5.1}{55}{Quantification of error contributions from different components of the pipeline. Similar to \ref {chap:COMMAT}, the feature extraction, feature transformation and learning algorithms are highlighted in red. In this chapter we use the feedback from the validation error to quantify the contribution of each of the components of the pipeline.\relax }{figure.caption.28}{}}
 \citation{ribeiro2016model}
-\citation{doshi2017towards}
 \citation{koh2017understanding}
 \citation{koh2017understanding}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Representation of a data analytic pipeline. This is represented as a generalized directed acyclic graph. $S_i$ represents the $i$-th computational step in the pipeline and $A_{ij}$ represents the $j$-th algorithm in the $i$-th step. $X$ is the input dataset and $Y$ is the evaluation metric.\relax }}{56}{figure.caption.29}}
+\newlabel{fig:pipeline}{{5.2}{56}{Representation of a data analytic pipeline. This is represented as a generalized directed acyclic graph. $S_i$ represents the $i$-th computational step in the pipeline and $A_{ij}$ represents the $j$-th algorithm in the $i$-th step. $X$ is the input dataset and $Y$ is the evaluation metric.\relax }{figure.caption.29}{}}
 \citation{bergstra2012random}
 \citation{snoek2012practical}
 \citation{thornton2013auto}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Foundations}{54}{section.5.2}}
-\newlabel{sec2}{{5.2}{54}{Foundations}{section.5.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Algorithm selection and hyper-parameter optimization}{54}{subsection.5.2.1}}
-\newlabel{subsec_AS_HPO}{{5.2.1}{54}{Algorithm selection and hyper-parameter optimization}{subsection.5.2.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1.1}Hyper-parameter optimization (HPO)}{54}{subsubsection.5.2.1.1}}
-\newlabel{subsubsec_HPO}{{5.2.1.1}{54}{Hyper-parameter optimization (HPO)}{subsubsection.5.2.1.1}{}}
-\newlabel{eq:hpo}{{5.1}{55}{Hyper-parameter optimization (HPO)}{equation.5.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Hyper-parameter optimization in a data analytic pipeline. Each path in the pipeline is individually optimized.\relax }}{55}{figure.caption.26}}
-\newlabel{fig:HPO}{{5.2}{55}{Hyper-parameter optimization in a data analytic pipeline. Each path in the pipeline is individually optimized.\relax }{figure.caption.26}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1.2}Combined algorithm selection and hyper-parameter optimization (CASH)}{55}{subsubsection.5.2.1.2}}
-\newlabel{subsubsec_CASH}{{5.2.1.2}{55}{Combined algorithm selection and hyper-parameter optimization (CASH)}{subsubsection.5.2.1.2}{}}
-\newlabel{eq:cash}{{5.2}{56}{Combined algorithm selection and hyper-parameter optimization (CASH)}{equation.5.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Combined algorithm selection and hyper-parameter optimization in a data analytic pipeline. The algorithms and corresponding hyperparameters are optimized simultaneously.\relax }}{56}{figure.caption.27}}
-\newlabel{fig:CASH}{{5.3}{56}{Combined algorithm selection and hyper-parameter optimization in a data analytic pipeline. The algorithms and corresponding hyperparameters are optimized simultaneously.\relax }{figure.caption.27}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Optimization methods}{56}{subsection.5.2.2}}
-\newlabel{optimization}{{5.2.2}{56}{Optimization methods}{subsection.5.2.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.1}Grid search}{56}{subsubsection.5.2.2.1}}
-\newlabel{grid}{{5.2.2.1}{56}{Grid search}{subsubsection.5.2.2.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Foundations}{58}{section.5.2}}
+\newlabel{sec2}{{5.2}{58}{Foundations}{section.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Algorithm selection and hyper-parameter optimization}{58}{subsection.5.2.1}}
+\newlabel{subsec_AS_HPO}{{5.2.1}{58}{Algorithm selection and hyper-parameter optimization}{subsection.5.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1.1}Hyper-parameter optimization (HPO)}{58}{subsubsection.5.2.1.1}}
+\newlabel{subsubsec_HPO}{{5.2.1.1}{58}{Hyper-parameter optimization (HPO)}{subsubsection.5.2.1.1}{}}
+\newlabel{eq:hpo}{{5.1}{58}{Hyper-parameter optimization (HPO)}{equation.5.2.1}{}}
+\newlabel{fig:HPO}{{5.3a}{59}{Hyper-parameter optimization in a data analytic pipeline. Each path in the pipeline is individually optimized.\relax }{figure.caption.30}{}}
+\newlabel{sub@fig:HPO}{{a}{59}{Hyper-parameter optimization in a data analytic pipeline. Each path in the pipeline is individually optimized.\relax }{figure.caption.30}{}}
+\newlabel{fig:CASH}{{5.3b}{59}{Combined algorithm selection and hyperparameter optimization (CASH) framework. The entire pipeline is optimized simultaneously.\relax }{figure.caption.30}{}}
+\newlabel{sub@fig:CASH}{{b}{59}{Combined algorithm selection and hyperparameter optimization (CASH) framework. The entire pipeline is optimized simultaneously.\relax }{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Optimization frameworks\relax }}{59}{figure.caption.30}}
+\newlabel{fig:frameworks}{{5.3}{59}{Optimization frameworks\relax }{figure.caption.30}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1.2}Combined algorithm selection and hyper-parameter optimization (CASH)}{59}{subsubsection.5.2.1.2}}
+\newlabel{subsubsec_CASH}{{5.2.1.2}{59}{Combined algorithm selection and hyper-parameter optimization (CASH)}{subsubsection.5.2.1.2}{}}
 \citation{bergstra2012random}
 \citation{hutter2011sequential}
 \citation{snoek2012practical}
@@ -45,27 +40,25 @@
 \citation{bergstra2011algorithms}
 \citation{expected_improvement}
 \citation{eggensperger2013towards}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.2}Random search}{57}{subsubsection.5.2.2.2}}
-\newlabel{random}{{5.2.2.2}{57}{Random search}{subsubsection.5.2.2.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.3}Bayesian optimization}{57}{subsubsection.5.2.2.3}}
-\newlabel{bayesian}{{5.2.2.3}{57}{Bayesian optimization}{subsubsection.5.2.2.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Proposed methods}{57}{section.5.3}}
-\newlabel{sec3}{{5.3}{57}{Proposed methods}{section.5.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Error contribution with the agnostic methodology}{58}{subsection.5.3.1}}
-\newlabel{EQ}{{5.3.1}{58}{Error contribution with the agnostic methodology}{subsection.5.3.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1.1}Quantification of error from computational steps}{58}{subsubsection.5.3.1.1}}
-\newlabel{subsubsec_eq_steps}{{5.3.1.1}{58}{Quantification of error from computational steps}{subsubsection.5.3.1.1}{}}
-\newlabel{eq_step}{{5.3}{59}{Quantification of error from computational steps}{equation.5.3.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1.2}Quantification of error from algorithms}{59}{subsubsection.5.3.1.2}}
-\newlabel{subsubsec_eq_alg}{{5.3.1.2}{59}{Quantification of error from algorithms}{subsubsection.5.3.1.2}{}}
-\newlabel{eq_alg}{{5.4}{59}{Quantification of error from algorithms}{equation.5.3.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1.3}Quantification of error from hyperparameters}{59}{subsubsection.5.3.1.3}}
-\newlabel{subsubsec_eq_hyper}{{5.3.1.3}{59}{Quantification of error from hyperparameters}{subsubsection.5.3.1.3}{}}
-\citation{breiman2001random}
-\citation{cortes1995support}
-\newlabel{eq_hyper}{{5.5}{60}{Quantification of error from hyperparameters}{equation.5.3.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Experiments and results}{60}{section.5.4}}
-\newlabel{sec4}{{5.4}{60}{Experiments and results}{section.5.4}{}}
+\newlabel{eq:cash}{{5.2}{60}{Combined algorithm selection and hyper-parameter optimization (CASH)}{equation.5.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Optimization methods}{60}{subsection.5.2.2}}
+\newlabel{optimization}{{5.2.2}{60}{Optimization methods}{subsection.5.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.1}Grid search}{60}{subsubsection.5.2.2.1}}
+\newlabel{grid}{{5.2.2.1}{60}{Grid search}{subsubsection.5.2.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.2}Random search}{60}{subsubsection.5.2.2.2}}
+\newlabel{random}{{5.2.2.2}{60}{Random search}{subsubsection.5.2.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.3}Bayesian optimization}{61}{subsubsection.5.2.2.3}}
+\newlabel{bayesian}{{5.2.2.3}{61}{Bayesian optimization}{subsubsection.5.2.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Proposed methods}{61}{section.5.3}}
+\newlabel{sec3}{{5.3}{61}{Proposed methods}{section.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Error contribution with the agnostic methodology}{61}{subsection.5.3.1}}
+\newlabel{EQ}{{5.3.1}{61}{Error contribution with the agnostic methodology}{subsection.5.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1.1}Quantification of error from computational steps}{61}{subsubsection.5.3.1.1}}
+\newlabel{subsubsec_eq_steps}{{5.3.1.1}{61}{Quantification of error from computational steps}{subsubsection.5.3.1.1}{}}
+\newlabel{eq_step}{{5.3}{62}{Quantification of error from computational steps}{equation.5.3.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1.2}Quantification of error from algorithms}{62}{subsubsection.5.3.1.2}}
+\newlabel{subsubsec_eq_alg}{{5.3.1.2}{62}{Quantification of error from algorithms}{subsubsection.5.3.1.2}{}}
+\newlabel{eq_alg}{{5.4}{62}{Quantification of error from algorithms}{equation.5.3.4}{}}
 \citation{deng2009imagenet}
 \citation{simonyan2014very}
 \citation{deng2009imagenet}
@@ -74,14 +67,15 @@
 \citation{tenenbaum2000global}
 \citation{breiman2001random}
 \citation{cortes1995support}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Representation of an image classification pipeline. The pipeline consists of the steps represented by green ellipses and the outputs of each step represented by blue rectangles. In this work, we focus on the steps and outputs after pre-processing.\relax }}{61}{figure.caption.28}}
-\newlabel{fig:flowchart}{{5.4}{61}{Representation of an image classification pipeline. The pipeline consists of the steps represented by green ellipses and the outputs of each step represented by blue rectangles. In this work, we focus on the steps and outputs after pre-processing.\relax }{figure.caption.28}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Representation of the image classification pipeline as a directed acyclic graph used in this work. This is an instantiation of the generalized data analytic pipeline in Fig. \ref  {fig:pipeline}\relax }}{62}{figure.caption.29}}
-\newlabel{fig:images_pipeline}{{5.5}{62}{Representation of the image classification pipeline as a directed acyclic graph used in this work. This is an instantiation of the generalized data analytic pipeline in Fig. \ref {fig:pipeline}\relax }{figure.caption.29}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Algorithms and hyperparameters used in the image classification pipeline. The specific algorithms and corresponding \textit  {hyperparameters} are defined in the last column\relax }}{62}{table.5.1}}
-\newlabel{table:algorithms_table}{{5.1}{62}{Algorithms and hyperparameters used in the image classification pipeline. The specific algorithms and corresponding \textit {hyperparameters} are defined in the last column\relax }{table.5.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Optimization frameworks}{62}{subsection.5.4.1}}
-\newlabel{frameworks}{{5.4.1}{62}{Optimization frameworks}{subsection.5.4.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1.3}Quantification of error from hyperparameters}{63}{subsubsection.5.3.1.3}}
+\newlabel{subsubsec_eq_hyper}{{5.3.1.3}{63}{Quantification of error from hyperparameters}{subsubsection.5.3.1.3}{}}
+\newlabel{eq_hyper}{{5.5}{63}{Quantification of error from hyperparameters}{equation.5.3.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Experiments and results}{63}{section.5.4}}
+\newlabel{sec4}{{5.4}{63}{Experiments and results}{section.5.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Representation of the image classification pipeline as a directed acyclic graph used in this work. This is an instantiation of the generalized data analytic pipeline in Fig. \ref  {fig:pipeline}\relax }}{64}{figure.caption.31}}
+\newlabel{fig:images_pipeline}{{5.4}{64}{Representation of the image classification pipeline as a directed acyclic graph used in this work. This is an instantiation of the generalized data analytic pipeline in Fig. \ref {fig:pipeline}\relax }{figure.caption.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Representation of the image classification pipeline as a directed acyclic graph used in this work. This is an instantiation of the generalized data analytic pipeline in Fig. \ref  {fig:pipeline}\relax }}{64}{figure.caption.32}}
+\newlabel{fig:images_pipeline}{{5.5}{64}{Representation of the image classification pipeline as a directed acyclic graph used in this work. This is an instantiation of the generalized data analytic pipeline in Fig. \ref {fig:pipeline}\relax }{figure.caption.32}{}}
 \citation{bilgin2007cell}
 \citation{gunduz2004cell}
 \citation{chowdhury2016image}
@@ -93,54 +87,64 @@
 \citation{shin2016deep}
 \citation{simonyan2014very}
 \citation{szegedy2016rethinking}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Datasets}{63}{subsection.5.4.2}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Descriptions of the datasets used in this work\relax }}{63}{table.5.2}}
-\newlabel{table:datasets}{{5.2}{63}{Descriptions of the datasets used in this work\relax }{table.5.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.3}Error quantification experiments}{64}{subsection.5.4.3}}
-\newlabel{eq_expts}{{5.4.3}{64}{Error quantification experiments}{subsection.5.4.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3.1}Experimental setting}{64}{subsubsection.5.4.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3.2}Error contribution from computational steps}{64}{subsubsection.5.4.3.2}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Hyper-parameter domains corresponding the algorithms in Table \ref  {table:algorithms_table} used by the optimization methods\relax }}{65}{table.5.3}}
-\newlabel{table:hyper}{{5.3}{65}{Hyper-parameter domains corresponding the algorithms in Table \ref {table:algorithms_table} used by the optimization methods\relax }{table.5.3}{}}
-\newlabel{fig:eq_steps_breast}{{5.6a}{66}{\textit {breast}\relax }{figure.caption.30}{}}
-\newlabel{sub@fig:eq_steps_breast}{{a}{66}{\textit {breast}\relax }{figure.caption.30}{}}
-\newlabel{fig:eq_step_brain}{{5.6b}{66}{\textit {brain}\relax }{figure.caption.30}{}}
-\newlabel{sub@fig:eq_step_brain}{{b}{66}{\textit {brain}\relax }{figure.caption.30}{}}
-\newlabel{fig:eq_steps_matsc1}{{5.6c}{66}{\textit {matsc1}\relax }{figure.caption.30}{}}
-\newlabel{sub@fig:eq_steps_matsc1}{{c}{66}{\textit {matsc1}\relax }{figure.caption.30}{}}
-\newlabel{fig:eq_steps_matsc2}{{5.6d}{66}{\textit {matsc2}\relax }{figure.caption.30}{}}
-\newlabel{sub@fig:eq_steps_matsc2}{{d}{66}{\textit {matsc2}\relax }{figure.caption.30}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Plots of error contributions from computational steps in the pipeline. The x-axis represents the steps in the pipeline - feature extraction, feature transformation and learning algorithms. The y-axis shows the values of the contributions from the corresponding steps in the pipeline. The maximum contribution in terms of error is from the feature extraction step in the pipeline. Random search (blue) follows the behavior of grid search (red) more accurately than Bayesian optimization (yellow). Hence, random search maybe used to quantify the error contributions instead of grid search.\relax }}{66}{figure.caption.30}}
-\newlabel{fig:eq_steps}{{5.6}{66}{Plots of error contributions from computational steps in the pipeline. The x-axis represents the steps in the pipeline - feature extraction, feature transformation and learning algorithms. The y-axis shows the values of the contributions from the corresponding steps in the pipeline. The maximum contribution in terms of error is from the feature extraction step in the pipeline. Random search (blue) follows the behavior of grid search (red) more accurately than Bayesian optimization (yellow). Hence, random search maybe used to quantify the error contributions instead of grid search.\relax }{figure.caption.30}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3.3}Error contribution from algorithms}{67}{subsubsection.5.4.3.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3.4}Error contribution from hyperparameters}{67}{subsubsection.5.4.3.4}}
-\newlabel{fig:eq_alg_breast}{{5.7a}{68}{\textit {breast}\relax }{figure.caption.31}{}}
-\newlabel{sub@fig:eq_alg_breast}{{a}{68}{\textit {breast}\relax }{figure.caption.31}{}}
-\newlabel{fig:eq_alg_brain}{{5.7b}{68}{\textit {brain}\relax }{figure.caption.31}{}}
-\newlabel{sub@fig:eq_alg_brain}{{b}{68}{\textit {brain}\relax }{figure.caption.31}{}}
-\newlabel{fig:eq_alg_matsc1}{{5.7c}{68}{\textit {matsc1}\relax }{figure.caption.31}{}}
-\newlabel{sub@fig:eq_alg_matsc1}{{c}{68}{\textit {matsc1}\relax }{figure.caption.31}{}}
-\newlabel{fig:eq_alg_matsc2}{{5.7d}{68}{\textit {matsc2}\relax }{figure.caption.31}{}}
-\newlabel{sub@fig:eq_alg_matsc2}{{d}{68}{\textit {matsc2}\relax }{figure.caption.31}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Plots of error contributions from algorithms in the pipeline. The x-axis represents the algorithms in the path - \textit  {haralick texture features}, $PCA$ and \textit  {random forests}. The y-axis shows the values of the contributions from the corresponding algorithms in the path. Random search again mirrors the trend of grid search more than bayesian optimization. Therefore random search maybe used instead of grid search for computing the contribution of error from algorithms in a path. The plots also show that it is more important to tune \textit  {haralick texture features}, and \textit  {random forests} than it is to tune $PCA$. \relax }}{68}{figure.caption.31}}
-\newlabel{fig:eq_alg}{{5.7}{68}{Plots of error contributions from algorithms in the pipeline. The x-axis represents the algorithms in the path - \textit {haralick texture features}, $PCA$ and \textit {random forests}. The y-axis shows the values of the contributions from the corresponding algorithms in the path. Random search again mirrors the trend of grid search more than bayesian optimization. Therefore random search maybe used instead of grid search for computing the contribution of error from algorithms in a path. The plots also show that it is more important to tune \textit {haralick texture features}, and \textit {random forests} than it is to tune $PCA$. \relax }{figure.caption.31}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3.5}Comparison of computation time}{68}{subsubsection.5.4.3.5}}
-\newlabel{fig:eq_hyper_breast}{{5.8a}{69}{\textit {breast}\relax }{figure.caption.32}{}}
-\newlabel{sub@fig:eq_hyper_breast}{{a}{69}{\textit {breast}\relax }{figure.caption.32}{}}
-\newlabel{fig:eq_hyper_brain}{{5.8b}{69}{\textit {brain}\relax }{figure.caption.32}{}}
-\newlabel{sub@fig:eq_hyper_brain}{{b}{69}{\textit {brain}\relax }{figure.caption.32}{}}
-\newlabel{fig:eq_hyper_matsc1}{{5.8c}{69}{\textit {matsc1}\relax }{figure.caption.32}{}}
-\newlabel{sub@fig:eq_hyper_matsc1}{{c}{69}{\textit {matsc1}\relax }{figure.caption.32}{}}
-\newlabel{fig:eq_hyper_matsc2}{{5.8d}{69}{\textit {matsc2}\relax }{figure.caption.32}{}}
-\newlabel{sub@fig:eq_hyper_matsc2}{{d}{69}{\textit {matsc2}\relax }{figure.caption.32}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Plots of error contributions from hyperparameters in the pipeline. The x-axis represents the algorithms in the path - \textit  {Haralick distance}, \textit  {whitening}, \textit  {Number of estimators} and \textit  {Maximum features}. The y-axis shows the values of the contributions from the corresponding hyperparameters in the path. Random search again mirrors the trend of grid search more than bayesian optimization. Therefore random search maybe used instead of grid search for computing the contribution of error from hyperparameters in a path. The plots also show that it is more important to tune the hyperparameters \textit  {Haralick distance}, and \textit  {Number of estimators} than it is to tune the other hyperparameters.\relax }}{69}{figure.caption.32}}
-\newlabel{fig:eq_hyper}{{5.8}{69}{Plots of error contributions from hyperparameters in the pipeline. The x-axis represents the algorithms in the path - \textit {Haralick distance}, \textit {whitening}, \textit {Number of estimators} and \textit {Maximum features}. The y-axis shows the values of the contributions from the corresponding hyperparameters in the path. Random search again mirrors the trend of grid search more than bayesian optimization. Therefore random search maybe used instead of grid search for computing the contribution of error from hyperparameters in a path. The plots also show that it is more important to tune the hyperparameters \textit {Haralick distance}, and \textit {Number of estimators} than it is to tune the other hyperparameters.\relax }{figure.caption.32}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}Conclusion}{69}{section.5.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Comparison of computational time for running each of the 3 optimization methods in the two optimization frameworks (HPO and CASH) in section \ref  {subsec_AS_HPO} averaged over the 4 datasets in Table \ref  {table:datasets}. Random search and bayesian optimization are both much more efficient that grid search in terms of computation time and maybe used to quantify the error contribution more efficiently than grid search.\relax }}{70}{figure.caption.33}}
-\newlabel{fig:time}{{5.9}{70}{Comparison of computational time for running each of the 3 optimization methods in the two optimization frameworks (HPO and CASH) in section \ref {subsec_AS_HPO} averaged over the 4 datasets in Table \ref {table:datasets}. Random search and bayesian optimization are both much more efficient that grid search in terms of computation time and maybe used to quantify the error contribution more efficiently than grid search.\relax }{figure.caption.33}{}}
-\newlabel{sec5}{{5.5}{71}{Conclusion}{section.5.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Algorithms and hyperparameters used in the image classification pipeline. The specific algorithms and corresponding \textit  {hyperparameters} are defined in the last column\relax }}{65}{table.5.1}}
+\newlabel{table:algorithms_table}{{5.1}{65}{Algorithms and hyperparameters used in the image classification pipeline. The specific algorithms and corresponding \textit {hyperparameters} are defined in the last column\relax }{table.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Optimization frameworks}{65}{subsection.5.4.1}}
+\newlabel{frameworks}{{5.4.1}{65}{Optimization frameworks}{subsection.5.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Datasets}{65}{subsection.5.4.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Descriptions of the datasets used in this work\relax }}{66}{table.5.2}}
+\newlabel{table:datasets}{{5.2}{66}{Descriptions of the datasets used in this work\relax }{table.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.3}Error quantification experiments}{66}{subsection.5.4.3}}
+\newlabel{eq_expts}{{5.4.3}{66}{Error quantification experiments}{subsection.5.4.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3.1}Experimental setting}{66}{subsubsection.5.4.3.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Hyper-parameter domains corresponding the algorithms in Table \ref  {table:algorithms_table} used by the optimization methods\relax }}{67}{table.5.3}}
+\newlabel{table:hyper}{{5.3}{67}{Hyper-parameter domains corresponding the algorithms in Table \ref {table:algorithms_table} used by the optimization methods\relax }{table.5.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3.2}Error contribution from computational steps}{68}{subsubsection.5.4.3.2}}
+\newlabel{fig:eq_steps_breast}{{5.6a}{68}{\textit {breast}\relax }{figure.caption.33}{}}
+\newlabel{sub@fig:eq_steps_breast}{{a}{68}{\textit {breast}\relax }{figure.caption.33}{}}
+\newlabel{fig:eq_step_brain}{{5.6b}{68}{\textit {brain}\relax }{figure.caption.33}{}}
+\newlabel{sub@fig:eq_step_brain}{{b}{68}{\textit {brain}\relax }{figure.caption.33}{}}
+\newlabel{fig:eq_steps_matsc1}{{5.6c}{68}{\textit {matsc1}\relax }{figure.caption.33}{}}
+\newlabel{sub@fig:eq_steps_matsc1}{{c}{68}{\textit {matsc1}\relax }{figure.caption.33}{}}
+\newlabel{fig:eq_steps_matsc2}{{5.6d}{68}{\textit {matsc2}\relax }{figure.caption.33}{}}
+\newlabel{sub@fig:eq_steps_matsc2}{{d}{68}{\textit {matsc2}\relax }{figure.caption.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Plots of error contributions from computational steps in the pipeline. The x-axis represents the steps in the pipeline - feature extraction, feature transformation and learning algorithms. The y-axis shows the values of the contributions from the corresponding steps in the pipeline. The maximum contribution in terms of error is from the feature extraction step in the pipeline. Random search (blue) follows the behavior of grid search (red) more accurately than Bayesian optimization (yellow). Hence, random search maybe used to quantify the error contributions instead of grid search.\relax }}{68}{figure.caption.33}}
+\newlabel{fig:eq_steps}{{5.6}{68}{Plots of error contributions from computational steps in the pipeline. The x-axis represents the steps in the pipeline - feature extraction, feature transformation and learning algorithms. The y-axis shows the values of the contributions from the corresponding steps in the pipeline. The maximum contribution in terms of error is from the feature extraction step in the pipeline. Random search (blue) follows the behavior of grid search (red) more accurately than Bayesian optimization (yellow). Hence, random search maybe used to quantify the error contributions instead of grid search.\relax }{figure.caption.33}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3.3}Error contribution from algorithms}{69}{subsubsection.5.4.3.3}}
+\newlabel{fig:eq_alg_breast}{{5.7a}{70}{\textit {breast}\relax }{figure.caption.34}{}}
+\newlabel{sub@fig:eq_alg_breast}{{a}{70}{\textit {breast}\relax }{figure.caption.34}{}}
+\newlabel{fig:eq_alg_brain}{{5.7b}{70}{\textit {brain}\relax }{figure.caption.34}{}}
+\newlabel{sub@fig:eq_alg_brain}{{b}{70}{\textit {brain}\relax }{figure.caption.34}{}}
+\newlabel{fig:eq_alg_matsc1}{{5.7c}{70}{\textit {matsc1}\relax }{figure.caption.34}{}}
+\newlabel{sub@fig:eq_alg_matsc1}{{c}{70}{\textit {matsc1}\relax }{figure.caption.34}{}}
+\newlabel{fig:eq_alg_matsc2}{{5.7d}{70}{\textit {matsc2}\relax }{figure.caption.34}{}}
+\newlabel{sub@fig:eq_alg_matsc2}{{d}{70}{\textit {matsc2}\relax }{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Plots of error contributions from algorithms in the pipeline. The x-axis represents the algorithms in the path - \textit  {haralick texture features}, $PCA$ and \textit  {random forests}. The y-axis shows the values of the contributions from the corresponding algorithms in the path. Random search again mirrors the trend of grid search more than bayesian optimization. Therefore random search maybe used instead of grid search for computing the contribution of error from algorithms in a path. The plots also show that it is more important to tune \textit  {haralick texture features}, and \textit  {random forests} than it is to tune $PCA$. \relax }}{70}{figure.caption.34}}
+\newlabel{fig:eq_alg}{{5.7}{70}{Plots of error contributions from algorithms in the pipeline. The x-axis represents the algorithms in the path - \textit {haralick texture features}, $PCA$ and \textit {random forests}. The y-axis shows the values of the contributions from the corresponding algorithms in the path. Random search again mirrors the trend of grid search more than bayesian optimization. Therefore random search maybe used instead of grid search for computing the contribution of error from algorithms in a path. The plots also show that it is more important to tune \textit {haralick texture features}, and \textit {random forests} than it is to tune $PCA$. \relax }{figure.caption.34}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3.4}Error contribution from hyperparameters}{70}{subsubsection.5.4.3.4}}
+\newlabel{fig:eq_hyper_breast}{{5.8a}{71}{\textit {breast}\relax }{figure.caption.35}{}}
+\newlabel{sub@fig:eq_hyper_breast}{{a}{71}{\textit {breast}\relax }{figure.caption.35}{}}
+\newlabel{fig:eq_hyper_brain}{{5.8b}{71}{\textit {brain}\relax }{figure.caption.35}{}}
+\newlabel{sub@fig:eq_hyper_brain}{{b}{71}{\textit {brain}\relax }{figure.caption.35}{}}
+\newlabel{fig:eq_hyper_matsc1}{{5.8c}{71}{\textit {matsc1}\relax }{figure.caption.35}{}}
+\newlabel{sub@fig:eq_hyper_matsc1}{{c}{71}{\textit {matsc1}\relax }{figure.caption.35}{}}
+\newlabel{fig:eq_hyper_matsc2}{{5.8d}{71}{\textit {matsc2}\relax }{figure.caption.35}{}}
+\newlabel{sub@fig:eq_hyper_matsc2}{{d}{71}{\textit {matsc2}\relax }{figure.caption.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Plots of error contributions from hyperparameters in the pipeline. The x-axis represents the algorithms in the path - \textit  {Haralick distance}, \textit  {whitening}, \textit  {Number of estimators} and \textit  {Maximum features}. The y-axis shows the values of the contributions from the corresponding hyperparameters in the path. Random search again mirrors the trend of grid search more than bayesian optimization. Therefore random search maybe used instead of grid search for computing the contribution of error from hyperparameters in a path. The plots also show that it is more important to tune the hyperparameters \textit  {Haralick distance}, and \textit  {Number of estimators} than it is to tune the other hyperparameters.\relax }}{71}{figure.caption.35}}
+\newlabel{fig:eq_hyper}{{5.8}{71}{Plots of error contributions from hyperparameters in the pipeline. The x-axis represents the algorithms in the path - \textit {Haralick distance}, \textit {whitening}, \textit {Number of estimators} and \textit {Maximum features}. The y-axis shows the values of the contributions from the corresponding hyperparameters in the path. Random search again mirrors the trend of grid search more than bayesian optimization. Therefore random search maybe used instead of grid search for computing the contribution of error from hyperparameters in a path. The plots also show that it is more important to tune the hyperparameters \textit {Haralick distance}, and \textit {Number of estimators} than it is to tune the other hyperparameters.\relax }{figure.caption.35}{}}
+\citation{su2017cognitive}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3.5}Comparison of computation time}{72}{subsubsection.5.4.3.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Comparison of computational time for running each of the 3 optimization methods in the two optimization frameworks (HPO and CASH) in section \ref  {subsec_AS_HPO} averaged over the 4 datasets in Table \ref  {table:datasets}. Random search and bayesian optimization are both much more efficient that grid search in terms of computation time and maybe used to quantify the error contribution more efficiently than grid search.\relax }}{72}{figure.caption.36}}
+\newlabel{fig:time}{{5.9}{72}{Comparison of computational time for running each of the 3 optimization methods in the two optimization frameworks (HPO and CASH) in section \ref {subsec_AS_HPO} averaged over the 4 datasets in Table \ref {table:datasets}. Random search and bayesian optimization are both much more efficient that grid search in terms of computation time and maybe used to quantify the error contribution more efficiently than grid search.\relax }{figure.caption.36}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Application}{72}{section.5.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Front-end of the application that shows the interactive screens of the CIR. The first screen from the left shows the actions taken by the experts in the room, and the list of algorithms in the pipeline, The second screen shows a module where the experts may interact with the CIR. The third screen shows the dialogue among the experts and the results of the analysis. The right most screen shows how the error contribution results maybe used by domain experts and data scientists in the room to solve the problem of breast cancer diagnosis.\relax }}{73}{figure.caption.37}}
+\newlabel{fig:CISL}{{5.10}{73}{Front-end of the application that shows the interactive screens of the CIR. The first screen from the left shows the actions taken by the experts in the room, and the list of algorithms in the pipeline, The second screen shows a module where the experts may interact with the CIR. The third screen shows the dialogue among the experts and the results of the analysis. The right most screen shows how the error contribution results maybe used by domain experts and data scientists in the room to solve the problem of breast cancer diagnosis.\relax }{figure.caption.37}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Example of an application of the error contribution framework. This figure shows a demonstration of the CIR using a panoramic display for the use case of breast cancer diagnosis. The front-end of the display is depicted in Fig. \ref  {fig:CISL}.\relax }}{73}{figure.caption.38}}
+\newlabel{fig:CIR}{{5.11}{73}{Example of an application of the error contribution framework. This figure shows a demonstration of the CIR using a panoramic display for the use case of breast cancer diagnosis. The front-end of the display is depicted in Fig. \ref {fig:CISL}.\relax }{figure.caption.38}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Conclusion}{74}{section.5.6}}
+\newlabel{sec5}{{5.6}{74}{Conclusion}{section.5.6}{}}
 \@setckpt{EP}{
-\setcounter{page}{72}
+\setcounter{page}{75}
 \setcounter{equation}{5}
 \setcounter{enumi}{4}
 \setcounter{enumii}{0}
@@ -150,12 +154,12 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{5}
-\setcounter{section}{5}
+\setcounter{section}{6}
 \setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{9}
+\setcounter{figure}{11}
 \setcounter{table}{3}
 \setcounter{firstchapter}{1}
 \setcounter{ContinuedFloat}{0}
@@ -165,7 +169,7 @@
 \setcounter{parentequation}{0}
 \setcounter{Item}{4}
 \setcounter{Hfootnote}{1}
-\setcounter{bookmark@seq@number}{70}
+\setcounter{bookmark@seq@number}{71}
 \setcounter{ALG@line}{0}
 \setcounter{ALG@rem}{0}
 \setcounter{ALG@nested}{0}

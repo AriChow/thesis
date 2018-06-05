@@ -8,7 +8,16 @@ A. Chowdhury, D.~V. Dylov., Q. Li, M. MacDonald, D.~E. Meyer, M. Marino and A. S
 %%% INTRODUCTION
 \section{Introduction}
 
-In this chapter of the thesis, we address the problem of minimization of error in image classification by taking the approach of redressing imbalance in datasets using data augmentation techniques. Specifically, we make parametric 3D models of blood vessel vasculature for balancing the dataset for performing classification between morphologies of blood vessels.
+In this chapter of the thesis, we address the problem of minimization of error in image classification by taking the approach of redressing imbalance in datasets using data augmentation techniques. The image pre-processing layer of the image classification pipeline is modified to reduce classification error as shown in Fig. \ref{fig:chapter2}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1.0\textwidth]{img/chapter2}
+\caption{Reducing classification error by modifying algorithms from the image pre-processing layer of the image classification pipeline. The step highlighted in red is modified for reducing the out of sample error.}
+\label{fig:chapter2}
+\end{figure}
+
+Specifically, we make parametric 3D models of blood vessel vasculature for balancing the dataset for performing classification between morphologies of blood vessels.
 Characterizing the morphology of vasculature in digital pathology is an important step in defining the microenvironment within brain tissue samples. In particular, understanding the geometry of vessel configuration and its changes during a disease may provide deeper insight into the progression of neuropathological degenerative diseases such as Alzheimer\'s disease. Images acquired using 20x object from immunofluorescent (IF) stained 6 um tissue sections with collagen IV antibody are used in this work.  We attempt to characterize three different types of blood vessel morphologies which are found in relative abundance in our image data set. They are singular blood vessels with no visible lumen, singular blood vessels with a distinct lumen and blood vessels appearing as a pair; which we have named \textit{RoundLumen-}, \textit{RoundLumen+}, and \textit{Twins} correspondingly.
 In this work, we show that it is possible to characterize blood vessels using convolutional neural networks (CNN) as opposed to traditional image processing techniques which involve segmentation and hand-crafted feature extraction. Instead, here we use pre-trained CNN to extract features from the images. This technique of deep transfer learning is compared to the visual bag of words (VBW) method for feature extraction \cite{yang2007evaluating}. We conclude from the results that the features from pre-trained CNN are able to distinguish the morphologies of blood vessels better than the standard VBW method. 
 Additionally, our work also shows that the construction of 3 dimensional (3D) virtual models of vasculature using parametric methods is a promising tool for dealing with infrequent scenarios in vascular analysis of brain tissue section. Acquisition of natural training samples is a time consuming and labor intensive process. Deep learning requires abundant training data for tuning the large number of parameters of the various inherent models. If a certain class is imbalanced then the classification models could become prone to biased outcomes. The construction of 3D parametric models, presented here tackles these issues and creates a balanced high-fidelity classification model. 

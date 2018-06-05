@@ -11,7 +11,16 @@ A. Chowdhury, E. Kautz, B. Yener, and D. Lewis. "Image driven machine learning m
 \section{Introduction}
 \label{intro}
 
-This is the first chapter in the error optimization part of the thesis. In this chapter, we attempt to minimize the error of classification in the problem of microstructure characterization. Materials characterization is a critical aspect of the material design and discovery process.  Recently, there has been much research in the field of materials informatics, a growing research area in which information technology and data science methods are used to interpret and analyze material data in order to accelerate the material discovery, design, and development process \cite{XuH2015, Rodgers2006, Broderick2008, ferris2007materials, Kalidindi2011}.  Currently, material design relies on chance discoveries and follows a classical synthesis-characterization-theory-computation approach \cite{SergeiV.Kalinin2015}.  Further, there is a heavy reliance on individual researcher background and experience which introduces significant bias and potentially error into the process of microstructure recognition, interpretation, and characterization. 
+This is the first chapter in the error optimization part of the thesis. In this chapter, we attempt to minimize the error of classification in the problem of microstructure characterization. In this chapter, we are optimizing the components of an image classification pipeline as a whole as shown in Fig. \ref{fig:chapter3}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1.0\textwidth]{img/chapter3}
+\caption{Reducing classification error by optimizing the components of the image classification pipeline together instead of in isolation. The steps in the image classification pipeline highlighted in red are optimized simultaneously to minimize the classification error.}
+\label{fig:chapter3}
+\end{figure}
+
+ Materials characterization is a critical aspect of the material design and discovery process.  Recently, there has been much research in the field of materials informatics, a growing research area in which information technology and data science methods are used to interpret and analyze material data in order to accelerate the material discovery, design, and development process \cite{XuH2015, Rodgers2006, Broderick2008, ferris2007materials, Kalidindi2011}.  Currently, material design relies on chance discoveries and follows a classical synthesis-characterization-theory-computation approach \cite{SergeiV.Kalinin2015}.  Further, there is a heavy reliance on individual researcher background and experience which introduces significant bias and potentially error into the process of microstructure recognition, interpretation, and characterization. 
 %
 For example, quantification of microstructures traditionally is done using stereological measurements.  Bias is introduced into stereological measurements through the requirement that an expert must first recognize and identify key microstructural features (inclusions, grains, or phases).  This bias can be caused by a variety of factors, such as an individual's background, education, and experiences \cite{SergeiV.Kalinin2015}.  
 

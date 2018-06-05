@@ -27,6 +27,22 @@ J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei, ``Imagenet: A
   Pattern Recognition, 2009. CVPR 2009. IEEE Conference on}, 2009, pp.
   248--255.
 
+\bibitem{yang2007evaluating}
+J.~Yang, Y.-G. Jiang, A.~G. Hauptmann, and C.-W. Ngo, ``Evaluating
+  bag-of-visual-words representations in scene classification,'' in
+  \emph{Proceedings of the international workshop on Workshop on multimedia
+  information retrieval}, 2007, pp. 197--206.
+
+\bibitem{heimann2009statistical}
+T.~Heimann and H.-P. Meinzer, ``Statistical shape models for 3d medical image
+  segmentation: a review,'' \emph{Medical image analysis}, vol.~13, no.~4, pp.
+  543--563, 2009.
+
+\bibitem{krizhevsky2012imagenet}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
+  deep convolutional neural networks,'' in \emph{Advances in neural information
+  processing systems}, 2012, pp. 1097--1105.
+
 \bibitem{XuH2015}
 H.~Xu, R.~Liu, A.~Choudhary, and W.~Chen, ``A machine learning-based design
   representation method for designing heterogeneous microstructures,''
@@ -259,22 +275,6 @@ Y.~Guo, Y.~Liu, A.~Oerlemans, S.~Lao, S.~Wu, and M.~S. Lew, ``Deep learning for
   48, 2016, [Online]. Available:
   \url{http://www.sciencedirect.com/science/article/pii/S0925231215017634}
 
-\bibitem{yang2007evaluating}
-J.~Yang, Y.-G. Jiang, A.~G. Hauptmann, and C.-W. Ngo, ``Evaluating
-  bag-of-visual-words representations in scene classification,'' in
-  \emph{Proceedings of the international workshop on Workshop on multimedia
-  information retrieval}, 2007, pp. 197--206.
-
-\bibitem{heimann2009statistical}
-T.~Heimann and H.-P. Meinzer, ``Statistical shape models for 3d medical image
-  segmentation: a review,'' \emph{Medical image analysis}, vol.~13, no.~4, pp.
-  543--563, 2009.
-
-\bibitem{krizhevsky2012imagenet}
-A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
-  deep convolutional neural networks,'' in \emph{Advances in neural information
-  processing systems}, 2012, pp. 1097--1105.
-
 \bibitem{gerdes2013highly}
 M.~J. Gerdes, C.~J. Sevinsky, A.~Sood, S.~Adak, M.~O. Bello, A.~Bordwell
   \emph{et~al.}, ``Highly multiplexed single-cell analysis of formalin-fixed,
@@ -304,21 +304,6 @@ S.~Wold, K.~Esbensen, and P.~Geladi, ``Principal component analysis,''
 L.~D. Harrison, ``The validity of self-reported data on drug use,''
   \emph{Journal of Drug Issues}, vol.~25, no.~1, pp. 91--111, 1995.
 
-\bibitem{pedregosa2011scikit}
-F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel
-  \emph{et~al.}, ``Scikit-learn: Machine learning in python,'' \emph{Journal of
-  machine learning research}, vol.~12, no. Oct, pp. 2825--2830, 2011.
-
-\bibitem{mierswa2006yale}
-I.~Mierswa, M.~Wurst, R.~Klinkenberg, M.~Scholz, and T.~Euler, ``Yale: Rapid
-  prototyping for complex data mining tasks,'' in \emph{Proceedings of the 12th
-  ACM SIGKDD international conference on Knowledge discovery and data mining},
-  2006, pp. 935--940.
-
-\bibitem{spark2016apache}
-A.~Spark, ``Apache spark: Lightning-fast cluster computing,'' \emph{URL
-  http://spark. apache. org}, 2016.
-
 \bibitem{bergstra2012random}
 J.~Bergstra and Y.~Bengio, ``Random search for hyper-parameter optimization,''
   \emph{Journal of Machine Learning Research}, vol.~13, no. Feb, pp. 281--305,
@@ -346,23 +331,19 @@ R.~S. Olson and J.~H. Moore, ``Tpot: A tree-based pipeline optimization tool
   for automating machine learning,'' in \emph{Workshop on Automatic Machine
   Learning}, 2016, pp. 66--74.
 
-\bibitem{olson2016automating}
-R.~S. Olson, R.~J. Urbanowicz, P.~C. Andrews, N.~A. Lavender, J.~H. Moore
-  \emph{et~al.}, ``Automating biomedical data science through tree-based
-  pipeline optimization,'' in \emph{European Conference on the Applications of
-  Evolutionary Computation}, 2016, pp. 123--137.
-
 \bibitem{ribeiro2016model}
 M.~T. Ribeiro, S.~Singh, and C.~Guestrin, ``Model-agnostic interpretability of
   machine learning,'' \emph{arXiv preprint arXiv:1606.05386}, 2016.
 
-\bibitem{doshi2017towards}
-F.~Doshi-Velez and B.~Kim, ``Towards a rigorous science of interpretable
-  machine learning,'' 2017.
-
 \bibitem{koh2017understanding}
 P.~W. Koh and P.~Liang, ``Understanding black-box predictions via influence
   functions,'' \emph{arXiv preprint arXiv:1703.04730}, 2017.
+
+\bibitem{thornton2013auto}
+C.~Thornton, F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Auto-weka: Combined
+  selection and hyperparameter optimization of classification algorithms,'' in
+  \emph{Proceedings of the 19th ACM SIGKDD international conference on
+  Knowledge discovery and data mining}, 2013, pp. 847--855.
 
 \bibitem{hutter2011sequential}
 F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Sequential model-based
@@ -384,14 +365,6 @@ K.~Eggensperger, M.~Feurer, F.~Hutter, J.~Bergstra, J.~Snoek, H.~Hoos
   optimization of hyperparameters,'' in \emph{NIPS workshop on Bayesian
   Optimization in Theory and Practice}, 2013, vol.~10.
 
-\bibitem{breiman2001random}
-L.~Breiman, ``Random forests,'' \emph{Machine learning}, vol.~45, no.~1, pp.
-  5--32, 2001.
-
-\bibitem{cortes1995support}
-C.~Cortes and V.~Vapnik, ``Support-vector networks,'' \emph{Machine learning},
-  vol.~20, no.~3, pp. 273--297, 1995.
-
 \bibitem{simonyan2014very}
 K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
   large-scale image recognition,'' \emph{arXiv preprint arXiv:1409.1556}, 2014.
@@ -406,6 +379,14 @@ C.~Szegedy, V.~Vanhoucke, S.~Ioffe, J.~Shlens, and Z.~Wojna, ``Rethinking the
 J.~B. Tenenbaum, V.~De~Silva, and J.~C. Langford, ``A global geometric
   framework for nonlinear dimensionality reduction,'' \emph{science}, vol. 290,
   no. 5500, pp. 2319--2323, 2000.
+
+\bibitem{breiman2001random}
+L.~Breiman, ``Random forests,'' \emph{Machine learning}, vol.~45, no.~1, pp.
+  5--32, 2001.
+
+\bibitem{cortes1995support}
+C.~Cortes and V.~Vapnik, ``Support-vector networks,'' \emph{Machine learning},
+  vol.~20, no.~3, pp. 273--297, 1995.
 
 \bibitem{bilgin2007cell}
 C.~Bilgin, C.~Demir, C.~Nagi, and B.~Yener, ``Cell-graph mining for breast
@@ -427,5 +408,9 @@ H.-C. Shin, H.~R. Roth, M.~Gao, L.~Lu, Z.~Xu, I.~Nogues \emph{et~al.}, ``Deep
   convolutional neural networks for computer-aided detection: Cnn
   architectures, dataset characteristics and transfer learning,'' \emph{IEEE
   transactions on medical imaging}, vol.~35, no.~5, pp. 1285--1298, 2016.
+
+\bibitem{su2017cognitive}
+H.~Su, ``The cognitive and immersive situations room,'' \emph{XRDS: Crossroads,
+  The ACM Magazine for Students}, vol.~23, no.~3, pp. 20--23, 2017.
 
 \end{thebibliography}

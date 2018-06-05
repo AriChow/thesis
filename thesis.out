@@ -7,32 +7,32 @@
 \BOOKMARK [1][-]{section.1.1}{Overview}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.2}{Contributions}{chapter.1}% 8
 \BOOKMARK [1][-]{section.1.3}{Outline}{chapter.1}% 9
-\BOOKMARK [0][-]{chapter.2}{IMAGE DRIVEN MACHINE LEARNING METHODS FOR MICROSTRUCTURE RECOGNITION}{}% 10
+\BOOKMARK [0][-]{chapter.2}{BLOOD VESSEL CHARACTERIZATION USING VIRTUAL 3D MODELS AND CONVOLUTIONAL NEURAL NETWORKS IN FLUORESCENCE MICROSCOPY}{}% 10
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.2}{Alloy Fabrication and Sample Preparation}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.3}{Image Data Sets}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.4}{Approach}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.5}{Computer Vision and Machine Learning Methods}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.5.1}{Feature extraction}{section.2.5}% 16
-\BOOKMARK [2][-]{subsection.2.5.2}{Dimensionality reduction}{section.2.5}% 17
-\BOOKMARK [2][-]{subsection.2.5.3}{Classification}{section.2.5}% 18
-\BOOKMARK [2][-]{subsection.2.5.4}{Related Work in Materials Science}{section.2.5}% 19
-\BOOKMARK [1][-]{section.2.6}{Selection of Model Parameters}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.7}{Software and Hardware Specifications}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.8}{Results and Discussion}{chapter.2}% 22
-\BOOKMARK [2][-]{subsection.2.8.1}{Task 1 - Dendritic versus non-dendritic microstructures}{section.2.8}% 23
-\BOOKMARK [2][-]{subsection.2.8.2}{Task 2 - Longitudinal versus transverse cross-sectional views of dendrites}{section.2.8}% 24
-\BOOKMARK [1][-]{section.2.9}{Limitations}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.10}{Conclusions}{chapter.2}% 26
-\BOOKMARK [1][-]{section.2.11}{Future Work}{chapter.2}% 27
-\BOOKMARK [0][-]{chapter.3}{BLOOD VESSEL CHARACTERIZATION USING VIRTUAL 3D MODELS AND CONVOLUTIONAL NEURAL NETWORKS IN FLUORESCENCE MICROSCOPY}{}% 28
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.2}{Data}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.2.1}{Natural data}{section.3.2}% 31
-\BOOKMARK [2][-]{subsection.3.2.2}{Virtual data}{section.3.2}% 32
-\BOOKMARK [1][-]{section.3.3}{Methods}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.4}{Experiments and results}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.5}{Conclusions}{chapter.3}% 35
+\BOOKMARK [1][-]{section.2.2}{Data}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{Natural data}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.2}{Virtual data}{section.2.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Methods}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.4}{Experiments and results}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.5}{Conclusions}{chapter.2}% 17
+\BOOKMARK [0][-]{chapter.3}{IMAGE DRIVEN MACHINE LEARNING METHODS FOR MICROSTRUCTURE RECOGNITION}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Alloy Fabrication and Sample Preparation}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.3}{Image Data Sets}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.4}{Approach}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.5}{Computer Vision and Machine Learning Methods}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.5.1}{Feature extraction}{section.3.5}% 24
+\BOOKMARK [2][-]{subsection.3.5.2}{Dimensionality reduction}{section.3.5}% 25
+\BOOKMARK [2][-]{subsection.3.5.3}{Classification}{section.3.5}% 26
+\BOOKMARK [2][-]{subsection.3.5.4}{Related Work in Materials Science}{section.3.5}% 27
+\BOOKMARK [1][-]{section.3.6}{Selection of Model Parameters}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.7}{Software and Hardware Specifications}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.8}{Results and Discussion}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.8.1}{Task 1 - Dendritic versus non-dendritic microstructures}{section.3.8}% 31
+\BOOKMARK [2][-]{subsection.3.8.2}{Task 2 - Longitudinal versus transverse cross-sectional views of dendrites}{section.3.8}% 32
+\BOOKMARK [1][-]{section.3.9}{Limitations}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.10}{Conclusions}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.11}{Future Work}{chapter.3}% 35
 \BOOKMARK [0][-]{chapter.4}{A MACHINE LEARNING BASED APPROACH TO QUANTIFYING NOISE IN MEDICAL IMAGES}{}% 36
 \BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 37
 \BOOKMARK [1][-]{section.4.2}{Data}{chapter.4}% 38
@@ -67,8 +67,9 @@
 \BOOKMARK [3][-]{subsubsection.5.4.3.3}{Error contribution from algorithms}{subsection.5.4.3}% 67
 \BOOKMARK [3][-]{subsubsection.5.4.3.4}{Error contribution from hyperparameters}{subsection.5.4.3}% 68
 \BOOKMARK [3][-]{subsubsection.5.4.3.5}{Comparison of computation time}{subsection.5.4.3}% 69
-\BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 70
-\BOOKMARK [0][-]{chapter.6}{CONCLUSIONS AND FUTURE WORK}{}% 71
-\BOOKMARK [1][-]{section.6.1}{Conclusions}{chapter.6}% 72
-\BOOKMARK [1][-]{section.6.2}{Future work}{chapter.6}% 73
-\BOOKMARK [0][-]{section*.34}{REFERENCES}{}% 74
+\BOOKMARK [1][-]{section.5.5}{Application}{chapter.5}% 70
+\BOOKMARK [1][-]{section.5.6}{Conclusion}{chapter.5}% 71
+\BOOKMARK [0][-]{chapter.6}{CONCLUSIONS AND FUTURE WORK}{}% 72
+\BOOKMARK [1][-]{section.6.1}{Conclusions}{chapter.6}% 73
+\BOOKMARK [1][-]{section.6.2}{Future work}{chapter.6}% 74
+\BOOKMARK [0][-]{section*.39}{REFERENCES}{}% 75

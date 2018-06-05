@@ -11,7 +11,16 @@ vol. 9791, pp. 979110U, 2016.}
 %%% INTRODUCTION
 \section{Introduction}
 
-This chapter is the first of the two works that focus on quantification of the components of the image classification pipeline. Here, we show how we can use a a machine learning based score to quantify the noise in the image sample itself. 
+This chapter is the first of the two works that focus on quantification of the contributions of components of the image classification pipeline. As shown in Fig. \ref{fig:chapter4}, we quantify the quality of the images or the image dataset. Here, we show how we can use a a machine learning based score to quantify the noise in the image sample itself. 
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1.0\textwidth]{img/chapter4}
+\caption{Quantification of the quality of the image or image datasets. In this chapter, we quantify the quality or the contribution of the image or images in the dataset used for image classification. This layer is highlighted as red in the figure.}
+\label{fig:chapter4}
+\end{figure}
+
+
 As advances in medical imaging technology are resulting in significant growth of biomedical image data, new techniques are needed to automate the process of identifying images of low quality. Automation is needed because it is very time consuming for a domain expert such as a medical practitioner or a biologist to manually separate good images from bad ones. While there are plenty of de-noising algorithms in the literature, their focus is on designing filters which are necessary but not sufficient for determining how useful an image is to a domain expert.
 Thus a computational tool is needed to assign a score to each image based on its perceived quality. In this paper, we introduce a machine learning-based score and call it the \textit{Quality of Image (QoI)} score. The \textit{QoI} score is defined based on the probabilities of classification using the logistic regression classifier.
 We test our technique on clinical image data obtained from cancerous tissue samples. We used 723 tissue samples that are stained by three different markers (abbreviated as CK15, pck26, E\_cad) leading to a total of 2,169 images. Our automated labeling is in agreement with the domain experts with an F1-score of 0.9044 on average. The results show a distribution of the \textit{QoI} score for each of the three markers that correspond to the actual quality of the images from the marker according to the pathologist who labelled the images based on their perceived quality.  We also quantify the quality of the markers and their differences based on the \textit{QoI} scores of each sample stained using that marker. 
