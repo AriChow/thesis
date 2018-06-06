@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 JUN 2018 21:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 JUN 2018 15:43
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
@@ -64,6 +65,14 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/notoccite/notoccite.sty
 Package: notoccite 2000/07/20
@@ -699,6 +708,7 @@ File: amsgen.sty 1999/11/30 v2.0 generic functions
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+LaTeX Info: Redefining \boldsymbol on input line 28.
 \pmbraise@=\dimen199
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
@@ -747,8 +757,8 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
@@ -766,12 +776,12 @@ Package: amsthm 2015/03/04 v2.20.2
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup6
+\symrsfs=\mathgroup9
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/was/upgreek.sty
 Package: upgreek 2003/02/12 v2.0 (WaS)
 Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
-\symugrf@m=\mathgroup7
+\symugrf@m=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 (Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
 )
@@ -1003,28 +1013,28 @@ LaTeX Warning: Label `fig:images_pipeline' multiply defined.
 ) (./conclusions.aux) (./bibliography.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 134.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 134.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 135.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 135.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1102,7 +1112,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box74
-Package hyperref Info: Link coloring OFF on input line 134.
+Package hyperref Info: Link coloring OFF on input line 135.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1112,9 +1122,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count185
 )
-LaTeX Info: Redefining \ref on input line 134.
-LaTeX Info: Redefining \pageref on input line 134.
-LaTeX Info: Redefining \nameref on input line 134.
+LaTeX Info: Redefining \ref on input line 135.
+LaTeX Info: Redefining \pageref on input line 135.
+LaTeX Info: Redefining \nameref on input line 135.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
@@ -1160,12 +1170,6 @@ RUC-TURE
 
 
 ]
-Overfull \hbox (11.35585pt too wide) in paragraph at lines 45--45
- [][] [][]\OT1/cmr/m/n/12 ALGORITHM SE-LEC-TION AND HY-PER-PA-RAM-E-TER OP-TI-M
-IZA-TION BASED 
- []
-
-
 Overfull \hbox (1.41518pt too wide) in paragraph at lines 50--50
  [][] [][]\OT1/cmr/m/n/12 Combined al-go-rithm se-lec-tion and hyper-parameter 
 op-ti-miza- 
@@ -1644,18 +1648,12 @@ Package epstopdf Info: Source file: <img/SPIE/pck26_probs_smote_pca.eps>
 (epstopdf)                    size: 36447 bytes
 (epstopdf)             Output file: <img/SPIE/pck26_probs_smote_pca-eps-convert
 ed-to.pdf>
-(epstopdf)                    date: 2018-05-03 13:46:15
-(epstopdf)                    size: 14438 bytes
+(epstopdf)                    date: 2018-06-05 21:56:47
+(epstopdf)                    size: 13813 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/SPIE/pck26_probs_smote
 _pca-eps-converted-to.pdf img/SPIE/pck26_probs_smote_pca.eps>
 (epstopdf)             \includegraphics on input line 163.
-runsystem(repstopdf --outfile=img/SPIE/pck26_probs_smote_pca-eps-converted-to.p
-df img/SPIE/pck26_probs_smote_pca.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <img/SPIE/pck26_probs_smote_pca-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2018-06-05 21:56:47
-(epstopdf)                    size: 13813 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <img/SPIE/pck26_probs_smote_pca-eps-converted-to.pdf, id=1201, 462.72874pt x 34
 6.29375pt>
@@ -1693,32 +1691,31 @@ File: img/EP/generalized_pipeline.png Graphic file (type png)
 <use img/EP/generalized_pipeline.png>
 Package pdftex.def Info: img/EP/generalized_pipeline.png used on input line 26.
 
-(pdftex.def)             Requested size: 422.77664pt x 270.2105pt.
+(pdftex.def)             Requested size: 328.82707pt x 210.16943pt.
  [54
 
 
 
 ] [55 <./img/chapter5.png>] [56 <./img/EP/generalized_pipeline.png>] [57]
-<img/EP/HPO.png, id=1421, 901.3675pt x 433.62pt>
+<img/EP/HPO.png, id=1423, 901.3675pt x 433.62pt>
 File: img/EP/HPO.png Graphic file (type png)
  <use img/EP/HPO.png>
 Package pdftex.def Info: img/EP/HPO.png used on input line 77.
-(pdftex.def)             Requested size: 328.82707pt x 158.18727pt.
+(pdftex.def)             Requested size: 375.80544pt x 180.78923pt.
 
-<img/EP/CASH.png, id=1422, 901.3675pt x 460.72125pt>
+<img/EP/CASH.png, id=1424, 901.3675pt x 460.72125pt>
 File: img/EP/CASH.png Graphic file (type png)
  <use img/EP/CASH.png>
 Package pdftex.def Info: img/EP/CASH.png used on input line 86.
-(pdftex.def)             Requested size: 328.82707pt x 168.07397pt.
+(pdftex.def)             Requested size: 375.80544pt x 192.08856pt.
 
-[58]
 Overfull \hbox (10.3964pt too wide) in paragraph at lines 103--103
 []\OT1/cmr/bx/n/12 Combined al-go-rithm se-lec-tion and hyper-parameter op-ti-m
 iza-tion (CASH) 
  []
 
-[59 <./img/EP/HPO.png> <./img/EP/CASH.png>] [60] [61] [62]
-<img/EP/pipeline.png, id=1473, 1126.2075pt x 740.7675pt>
+[58] [59 <./img/EP/HPO.png> <./img/EP/CASH.png>] [60] [61] [62]
+<img/EP/pipeline.png, id=1475, 1126.2075pt x 740.7675pt>
 File: img/EP/pipeline.png Graphic file (type png)
 
 <use img/EP/pipeline.png>
@@ -1801,7 +1798,7 @@ s_breast-eps-converted-to.pdf img/EP/agnostic_error_steps_breast.eps>
 (epstopdf)             \includegraphics on input line 306.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_steps_breast-eps-converted-to.pdf, id=1552, 462.72874pt 
+<img/EP/agnostic_error_steps_breast-eps-converted-to.pdf, id=1554, 462.72874pt 
 x 346.29375pt>
 File: img/EP/agnostic_error_steps_breast-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1821,7 +1818,7 @@ s_brain-eps-converted-to.pdf img/EP/agnostic_error_steps_brain.eps>
 (epstopdf)             \includegraphics on input line 312.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_steps_brain-eps-converted-to.pdf, id=1553, 462.72874pt x
+<img/EP/agnostic_error_steps_brain-eps-converted-to.pdf, id=1555, 462.72874pt x
  346.29375pt>
 File: img/EP/agnostic_error_steps_brain-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1843,7 +1840,7 @@ s_matsc_dataset1-eps-converted-to.pdf img/EP/agnostic_error_steps_matsc_dataset
 (epstopdf)             \includegraphics on input line 318.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_steps_matsc_dataset1-eps-converted-to.pdf, id=1554, 462.
+<img/EP/agnostic_error_steps_matsc_dataset1-eps-converted-to.pdf, id=1556, 462.
 72874pt x 346.29375pt>
 File: img/EP/agnostic_error_steps_matsc_dataset1-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1866,7 +1863,7 @@ s_matsc_dataset2-eps-converted-to.pdf img/EP/agnostic_error_steps_matsc_dataset
 (epstopdf)             \includegraphics on input line 324.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_steps_matsc_dataset2-eps-converted-to.pdf, id=1555, 462.
+<img/EP/agnostic_error_steps_matsc_dataset2-eps-converted-to.pdf, id=1557, 462.
 72874pt x 346.29375pt>
 File: img/EP/agnostic_error_steps_matsc_dataset2-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1892,7 +1889,7 @@ breast-eps-converted-to.pdf img/EP/agnostic_error_alg_breast.eps>
 (epstopdf)             \includegraphics on input line 345.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_alg_breast-eps-converted-to.pdf, id=1722, 462.72874pt x 
+<img/EP/agnostic_error_alg_breast-eps-converted-to.pdf, id=1724, 462.72874pt x 
 346.29375pt>
 File: img/EP/agnostic_error_alg_breast-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -1912,7 +1909,7 @@ brain-eps-converted-to.pdf img/EP/agnostic_error_alg_brain.eps>
 (epstopdf)             \includegraphics on input line 351.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_alg_brain-eps-converted-to.pdf, id=1723, 462.72874pt x 3
+<img/EP/agnostic_error_alg_brain-eps-converted-to.pdf, id=1725, 462.72874pt x 3
 46.29375pt>
 File: img/EP/agnostic_error_alg_brain-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1934,7 +1931,7 @@ s>
 (epstopdf)             \includegraphics on input line 357.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_alg_matsc_dataset1-eps-converted-to.pdf, id=1724, 462.72
+<img/EP/agnostic_error_alg_matsc_dataset1-eps-converted-to.pdf, id=1726, 462.72
 874pt x 346.29375pt>
 File: img/EP/agnostic_error_alg_matsc_dataset1-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1957,7 +1954,7 @@ s>
 (epstopdf)             \includegraphics on input line 363.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_alg_matsc_dataset2-eps-converted-to.pdf, id=1725, 462.72
+<img/EP/agnostic_error_alg_matsc_dataset2-eps-converted-to.pdf, id=1727, 462.72
 874pt x 346.29375pt>
 File: img/EP/agnostic_error_alg_matsc_dataset2-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1983,7 +1980,7 @@ r_breast-eps-converted-to.pdf img/EP/agnostic_error_hyper_breast.eps>
 (epstopdf)             \includegraphics on input line 381.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_hyper_breast-eps-converted-to.pdf, id=1897, 462.72874pt 
+<img/EP/agnostic_error_hyper_breast-eps-converted-to.pdf, id=1899, 462.72874pt 
 x 346.29375pt>
 File: img/EP/agnostic_error_hyper_breast-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -2003,7 +2000,7 @@ r_brain-eps-converted-to.pdf img/EP/agnostic_error_hyper_brain.eps>
 (epstopdf)             \includegraphics on input line 387.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_hyper_brain-eps-converted-to.pdf, id=1898, 462.72874pt x
+<img/EP/agnostic_error_hyper_brain-eps-converted-to.pdf, id=1900, 462.72874pt x
  346.29375pt>
 File: img/EP/agnostic_error_hyper_brain-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2025,7 +2022,7 @@ r_matsc_dataset1-eps-converted-to.pdf img/EP/agnostic_error_hyper_matsc_dataset
 (epstopdf)             \includegraphics on input line 393.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_hyper_matsc_dataset1-eps-converted-to.pdf, id=1899, 462.
+<img/EP/agnostic_error_hyper_matsc_dataset1-eps-converted-to.pdf, id=1901, 462.
 72874pt x 346.29375pt>
 File: img/EP/agnostic_error_hyper_matsc_dataset1-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -2048,7 +2045,7 @@ r_matsc_dataset2-eps-converted-to.pdf img/EP/agnostic_error_hyper_matsc_dataset
 (epstopdf)             \includegraphics on input line 399.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_hyper_matsc_dataset2-eps-converted-to.pdf, id=1900, 462.
+<img/EP/agnostic_error_hyper_matsc_dataset2-eps-converted-to.pdf, id=1902, 462.
 72874pt x 346.29375pt>
 File: img/EP/agnostic_error_hyper_matsc_dataset2-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -2073,7 +2070,7 @@ s-converted-to.pdf img/EP/times_algorithms.eps>
 (epstopdf)             \includegraphics on input line 416.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/times_algorithms-eps-converted-to.pdf, id=2092, 722.7pt x 361.35pt>
+<img/EP/times_algorithms-eps-converted-to.pdf, id=2094, 722.7pt x 361.35pt>
 File: img/EP/times_algorithms-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/EP/times_algorithms-eps-converted-to.pdf>
@@ -2081,28 +2078,28 @@ Package pdftex.def Info: img/EP/times_algorithms-eps-converted-to.pdf used on i
 nput line 416.
 (pdftex.def)             Requested size: 289.07487pt x 144.53743pt.
 
-<img/EP/CISL.png, id=2098, 1231.4808pt x 240.4182pt>
+<img/EP/CISL.png, id=2100, 1231.4808pt x 240.4182pt>
 File: img/EP/CISL.png Graphic file (type png)
  <use img/EP/CISL.png>
 Package pdftex.def Info: img/EP/CISL.png used on input line 426.
 (pdftex.def)             Requested size: 469.75502pt x 91.70836pt.
 
-<img/EP/CIR.jpg, id=2099, 2007.5pt x 1505.625pt>
+<img/EP/CIR.jpg, id=2101, 2007.5pt x 1505.625pt>
 File: img/EP/CIR.jpg Graphic file (type jpg)
  <use img/EP/CIR.jpg>
 Package pdftex.def Info: img/EP/CIR.jpg used on input line 433.
-(pdftex.def)             Requested size: 328.82707pt x 246.60246pt.
+(pdftex.def)             Requested size: 375.80544pt x 281.84451pt.
  [72 <./img/EP/times_algorithms-eps-converted-to.pdf>] [73 <./img/EP/CISL.png> 
-<./img/EP/CIR.jpg>]) [74]
+<./img/EP/CIR.jpg>] [74]) [75]
 \openout2 = `conclusions.aux'.
 
  (./conclusions.tex
 CHAPTER 6.
-[75
+[76
 
 
 
-] [76]) [77]
+] [77]) [78]
 \openout2 = `bibliography.aux'.
 
  (./bibliography.tex (./thesis.bbl
@@ -2117,7 +2114,7 @@ Underfull \hbox (badness 2205) in paragraph at lines 52--55
 als . cambridge . org / article[]
  []
 
-[78
+[79
 
 
 
@@ -2128,30 +2125,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--94
 cat02306a & AN = rlc . 3566213 & site =
  []
 
-[79] [80] [81] [82])) [83]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
+[80] [81] [82] [83])) [84]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
  (./thesis.aux (./title.aux) (./acknowledge.aux)
 (./abstract.aux) (./introduction.aux) (./ISBI.aux) (./COMMAT.aux) (./SPIE1.aux)
 (./EP.aux) (./conclusions.aux) (./bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0B3C814652579F9324A2870DCEDE0444;5706.
+(rerunfilecheck)             Checksum: FD61E9E37E4DE71DEA0BDE564C6FA59E;5705.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 25164 strings out of 492995
- 476744 string characters out of 6132704
- 614020 words of memory out of 5000000
- 27796 multiletter control sequences out of 15000+600000
- 18240 words of font info for 69 fonts, out of 8000000 for 9000
+ 25258 strings out of 492995
+ 477754 string characters out of 6132704
+ 615305 words of memory out of 5000000
+ 27874 multiletter control sequences out of 15000+600000
+ 22745 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,15n,79p,2026b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,79p,2026b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -2161,18 +2158,20 @@ usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (98 pages, 13295740 bytes).
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on thesis.pdf (99 pages, 13310448 bytes).
 PDF statistics:
- 2362 PDF objects out of 2487 (max. 8388607)
- 1562 compressed objects within 16 object streams
- 327 named destinations out of 1000 (max. 500000)
+ 2374 PDF objects out of 2487 (max. 8388607)
+ 1571 compressed objects within 16 object streams
+ 328 named destinations out of 1000 (max. 500000)
  848 words of extra memory for PDF output out of 10000 (max. 10000000)
 

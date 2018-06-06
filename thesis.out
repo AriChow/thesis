@@ -43,7 +43,7 @@
 \BOOKMARK [2][-]{subsection.4.3.2}{Quality of image score}{section.4.3}% 43
 \BOOKMARK [2][-]{subsection.4.3.3}{Results and discussion}{section.4.3}% 44
 \BOOKMARK [1][-]{section.4.4}{Conclusions}{chapter.4}% 45
-\BOOKMARK [0][-]{chapter.5}{ALGORITHM SELECTION AND HYPERPARAMETER OPTIMIZATION BASED QUANTIFICATION OF ERROR CONTRIBUTION IN IMAGE CLASSIFICATION PIPELINES}{}% 46
+\BOOKMARK [0][-]{chapter.5}{QUANTIFYING ERROR CONTRIBUTIONS OF COMPUTATIONAL STEPS, ALGORITHMS AND HYPERPARAMETER CHOICES IN IMAGE CLASSIFICATION PIPELINES}{}% 46
 \BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 47
 \BOOKMARK [1][-]{section.5.2}{Foundations}{chapter.5}% 48
 \BOOKMARK [2][-]{subsection.5.2.1}{Algorithm selection and hyper-parameter optimization}{section.5.2}% 49

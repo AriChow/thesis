@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {4.3.2}Quality of image score}{49}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Results and discussion}{50}{subsection.4.3.3}
 \contentsline {section}{\numberline {4.4}Conclusions}{53}{section.4.4}
-\contentsline {chapter}{\numberline {5.}ALGORITHM SELECTION AND HYPERPARAMETER OPTIMIZATION BASED QUANTIFICATION OF ERROR CONTRIBUTION IN IMAGE CLASSIFICATION PIPELINES}{54}{chapter.5}
+\contentsline {chapter}{\numberline {5.}QUANTIFYING ERROR CONTRIBUTIONS OF COMPUTATIONAL STEPS, ALGORITHMS AND HYPERPARAMETER CHOICES IN IMAGE CLASSIFICATION PIPELINES}{54}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{54}{section.5.1}
 \contentsline {section}{\numberline {5.2}Foundations}{58}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Algorithm selection and hyper-parameter optimization}{58}{subsection.5.2.1}
@@ -68,7 +68,7 @@
 \contentsline {subsubsection}{\numberline {5.4.3.5}Comparison of computation time}{72}{subsubsection.5.4.3.5}
 \contentsline {section}{\numberline {5.5}Application}{72}{section.5.5}
 \contentsline {section}{\numberline {5.6}Conclusion}{74}{section.5.6}
-\contentsline {chapter}{\numberline {6.}CONCLUSIONS AND FUTURE WORK}{75}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusions}{75}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future work}{76}{section.6.2}
-\contentsline {chapter}{REFERENCES}{78}{section*.39}
+\contentsline {chapter}{\numberline {6.}CONCLUSIONS AND FUTURE WORK}{76}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusions}{76}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future work}{77}{section.6.2}
+\contentsline {chapter}{REFERENCES}{79}{section*.39}
