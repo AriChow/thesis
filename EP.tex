@@ -15,7 +15,7 @@ In this chapter, we present a methodology to quantify the contributions of diffe
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=1.0\textwidth]{img/chapter5}
-\caption{Quantification of error contributions from different components of the pipeline. Similar to \ref{chap:COMMAT}, the feature extraction, feature transformation and learning algorithms are highlighted in red. In this chapter we use the feedback from the validation error to quantify the contribution of each of the components of the pipeline.}
+\caption{Quantification of error contributions from different components of the pipeline. Similar to  chapter \ref{chap:COMMAT}, the feature extraction, feature transformation and learning algorithms are highlighted in red. In this chapter we use the feedback from the validation error to quantify the contribution of each of the components of the pipeline.}
 \label{fig:chapter5}
 \end{figure}
 
@@ -121,7 +121,7 @@ Similar to the objective function defined over the hyperparameters in Eq. \ref{e
 
 \subsection{Optimization methods}
 \label{optimization}
-The critical step in HPO or CASH is to choose the set of trials in the search space, which is $\Theta$ for HPO and $\mathcal{A}$ for CASH. In this section, methods that are used in this paper for optimization of Eq. \ref{eq:hpo} and Eq. \ref{eq:cash} are described. Grid search, random search and bayesian optimization are used in this work.
+The critical step in HPO or CASH is to choose the set of trials in the search space, which is $\Theta$ for HPO and $\mathcal{A}$ for CASH. In this section, methods that are used in this chapter for optimization of Eq. \ref{eq:hpo} and Eq. \ref{eq:cash} are described. Grid search, random search and bayesian optimization are used in this work.
 \subsubsection{Grid search}
 \label{grid}
 Grid search is the simplest of all methods for coming up with trials in the search space. The set of trials in grid search is formed by assembling every possible set of values in $\Theta$ (HPO) and $\mathcal{A}$ (CASH) and computing the validation loss for each. The configuration $\theta \in \Theta$ or $A \in \mathcal{A}$ that minimizes the validation loss $\mathcal{L}$ is chosen as the optimum configuration. Unfortunately grid search is computationally very expensive. For HPO, the number of trials corresponds to $\prod_{i=1}^n |\Theta_i|$, and for CASH this is $\prod_{i=1}^n |A_i(\Theta_i)|$. This product makes grid search suffer from the \textit{curse of dimensionality}. This is because the number of trials grows exponentially with the number of hyperparameters. However, grid search has certain advantages. Firstly, parallelization and implementation is trivial. In addition, grid search is robust in the sense that results maybe replicated easily. 

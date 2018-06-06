@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 JUN 2018 19:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 JUN 2018 21:56
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
@@ -1641,8 +1640,8 @@ Package pdftex.def Info: img/SPIE/CK15_probs_smote_pca-eps-converted-to.pdf use
 d on input line 157.
 (pdftex.def)             Requested size: 171.20695pt x 128.12668pt.
 Package epstopdf Info: Source file: <img/SPIE/pck26_probs_smote_pca.eps>
-(epstopdf)                    date: 2018-05-02 17:32:55
-(epstopdf)                    size: 37244 bytes
+(epstopdf)                    date: 2018-06-05 21:52:28
+(epstopdf)                    size: 36447 bytes
 (epstopdf)             Output file: <img/SPIE/pck26_probs_smote_pca-eps-convert
 ed-to.pdf>
 (epstopdf)                    date: 2018-05-03 13:46:15
@@ -1650,7 +1649,13 @@ ed-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=img/SPIE/pck26_probs_smote
 _pca-eps-converted-to.pdf img/SPIE/pck26_probs_smote_pca.eps>
 (epstopdf)             \includegraphics on input line 163.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=img/SPIE/pck26_probs_smote_pca-eps-converted-to.p
+df img/SPIE/pck26_probs_smote_pca.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <img/SPIE/pck26_probs_smote_pca-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2018-06-05 21:56:47
+(epstopdf)                    size: 13813 bytes.
 
 <img/SPIE/pck26_probs_smote_pca-eps-converted-to.pdf, id=1201, 462.72874pt x 34
 6.29375pt>
@@ -1676,13 +1681,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.1})
                    \relax 
 l.6 ...E International Conference on Data Mining}}
                                                   
-<img/chapter5.png, id=1373, 519.9425pt x 447.6725pt>
+<img/chapter5.png, id=1371, 519.9425pt x 447.6725pt>
 File: img/chapter5.png Graphic file (type png)
  <use img/chapter5.png>
 Package pdftex.def Info: img/chapter5.png used on input line 17.
 (pdftex.def)             Requested size: 469.75502pt x 404.45897pt.
 
-<img/EP/generalized_pipeline.png, id=1377, 753.81625pt x 481.8pt>
+<img/EP/generalized_pipeline.png, id=1375, 753.81625pt x 481.8pt>
 File: img/EP/generalized_pipeline.png Graphic file (type png)
 
 <use img/EP/generalized_pipeline.png>
@@ -1694,13 +1699,13 @@ Package pdftex.def Info: img/EP/generalized_pipeline.png used on input line 26.
 
 
 ] [55 <./img/chapter5.png>] [56 <./img/EP/generalized_pipeline.png>] [57]
-<img/EP/HPO.png, id=1423, 901.3675pt x 433.62pt>
+<img/EP/HPO.png, id=1421, 901.3675pt x 433.62pt>
 File: img/EP/HPO.png Graphic file (type png)
  <use img/EP/HPO.png>
 Package pdftex.def Info: img/EP/HPO.png used on input line 77.
 (pdftex.def)             Requested size: 328.82707pt x 158.18727pt.
 
-<img/EP/CASH.png, id=1424, 901.3675pt x 460.72125pt>
+<img/EP/CASH.png, id=1422, 901.3675pt x 460.72125pt>
 File: img/EP/CASH.png Graphic file (type png)
  <use img/EP/CASH.png>
 Package pdftex.def Info: img/EP/CASH.png used on input line 86.
@@ -1713,7 +1718,7 @@ iza-tion (CASH)
  []
 
 [59 <./img/EP/HPO.png> <./img/EP/CASH.png>] [60] [61] [62]
-<img/EP/pipeline.png, id=1475, 1126.2075pt x 740.7675pt>
+<img/EP/pipeline.png, id=1473, 1126.2075pt x 740.7675pt>
 File: img/EP/pipeline.png Graphic file (type png)
 
 <use img/EP/pipeline.png>
@@ -1796,7 +1801,7 @@ s_breast-eps-converted-to.pdf img/EP/agnostic_error_steps_breast.eps>
 (epstopdf)             \includegraphics on input line 306.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_steps_breast-eps-converted-to.pdf, id=1554, 462.72874pt 
+<img/EP/agnostic_error_steps_breast-eps-converted-to.pdf, id=1552, 462.72874pt 
 x 346.29375pt>
 File: img/EP/agnostic_error_steps_breast-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1816,7 +1821,7 @@ s_brain-eps-converted-to.pdf img/EP/agnostic_error_steps_brain.eps>
 (epstopdf)             \includegraphics on input line 312.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_steps_brain-eps-converted-to.pdf, id=1555, 462.72874pt x
+<img/EP/agnostic_error_steps_brain-eps-converted-to.pdf, id=1553, 462.72874pt x
  346.29375pt>
 File: img/EP/agnostic_error_steps_brain-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1838,7 +1843,7 @@ s_matsc_dataset1-eps-converted-to.pdf img/EP/agnostic_error_steps_matsc_dataset
 (epstopdf)             \includegraphics on input line 318.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_steps_matsc_dataset1-eps-converted-to.pdf, id=1556, 462.
+<img/EP/agnostic_error_steps_matsc_dataset1-eps-converted-to.pdf, id=1554, 462.
 72874pt x 346.29375pt>
 File: img/EP/agnostic_error_steps_matsc_dataset1-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1861,7 +1866,7 @@ s_matsc_dataset2-eps-converted-to.pdf img/EP/agnostic_error_steps_matsc_dataset
 (epstopdf)             \includegraphics on input line 324.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_steps_matsc_dataset2-eps-converted-to.pdf, id=1557, 462.
+<img/EP/agnostic_error_steps_matsc_dataset2-eps-converted-to.pdf, id=1555, 462.
 72874pt x 346.29375pt>
 File: img/EP/agnostic_error_steps_matsc_dataset2-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1887,7 +1892,7 @@ breast-eps-converted-to.pdf img/EP/agnostic_error_alg_breast.eps>
 (epstopdf)             \includegraphics on input line 345.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_alg_breast-eps-converted-to.pdf, id=1724, 462.72874pt x 
+<img/EP/agnostic_error_alg_breast-eps-converted-to.pdf, id=1722, 462.72874pt x 
 346.29375pt>
 File: img/EP/agnostic_error_alg_breast-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -1907,7 +1912,7 @@ brain-eps-converted-to.pdf img/EP/agnostic_error_alg_brain.eps>
 (epstopdf)             \includegraphics on input line 351.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_alg_brain-eps-converted-to.pdf, id=1725, 462.72874pt x 3
+<img/EP/agnostic_error_alg_brain-eps-converted-to.pdf, id=1723, 462.72874pt x 3
 46.29375pt>
 File: img/EP/agnostic_error_alg_brain-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1929,7 +1934,7 @@ s>
 (epstopdf)             \includegraphics on input line 357.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_alg_matsc_dataset1-eps-converted-to.pdf, id=1726, 462.72
+<img/EP/agnostic_error_alg_matsc_dataset1-eps-converted-to.pdf, id=1724, 462.72
 874pt x 346.29375pt>
 File: img/EP/agnostic_error_alg_matsc_dataset1-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1952,7 +1957,7 @@ s>
 (epstopdf)             \includegraphics on input line 363.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_alg_matsc_dataset2-eps-converted-to.pdf, id=1727, 462.72
+<img/EP/agnostic_error_alg_matsc_dataset2-eps-converted-to.pdf, id=1725, 462.72
 874pt x 346.29375pt>
 File: img/EP/agnostic_error_alg_matsc_dataset2-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1978,7 +1983,7 @@ r_breast-eps-converted-to.pdf img/EP/agnostic_error_hyper_breast.eps>
 (epstopdf)             \includegraphics on input line 381.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_hyper_breast-eps-converted-to.pdf, id=1899, 462.72874pt 
+<img/EP/agnostic_error_hyper_breast-eps-converted-to.pdf, id=1897, 462.72874pt 
 x 346.29375pt>
 File: img/EP/agnostic_error_hyper_breast-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1998,7 +2003,7 @@ r_brain-eps-converted-to.pdf img/EP/agnostic_error_hyper_brain.eps>
 (epstopdf)             \includegraphics on input line 387.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_hyper_brain-eps-converted-to.pdf, id=1900, 462.72874pt x
+<img/EP/agnostic_error_hyper_brain-eps-converted-to.pdf, id=1898, 462.72874pt x
  346.29375pt>
 File: img/EP/agnostic_error_hyper_brain-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2020,7 +2025,7 @@ r_matsc_dataset1-eps-converted-to.pdf img/EP/agnostic_error_hyper_matsc_dataset
 (epstopdf)             \includegraphics on input line 393.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_hyper_matsc_dataset1-eps-converted-to.pdf, id=1901, 462.
+<img/EP/agnostic_error_hyper_matsc_dataset1-eps-converted-to.pdf, id=1899, 462.
 72874pt x 346.29375pt>
 File: img/EP/agnostic_error_hyper_matsc_dataset1-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -2043,7 +2048,7 @@ r_matsc_dataset2-eps-converted-to.pdf img/EP/agnostic_error_hyper_matsc_dataset
 (epstopdf)             \includegraphics on input line 399.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/agnostic_error_hyper_matsc_dataset2-eps-converted-to.pdf, id=1902, 462.
+<img/EP/agnostic_error_hyper_matsc_dataset2-eps-converted-to.pdf, id=1900, 462.
 72874pt x 346.29375pt>
 File: img/EP/agnostic_error_hyper_matsc_dataset2-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -2068,7 +2073,7 @@ s-converted-to.pdf img/EP/times_algorithms.eps>
 (epstopdf)             \includegraphics on input line 416.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/EP/times_algorithms-eps-converted-to.pdf, id=2094, 722.7pt x 361.35pt>
+<img/EP/times_algorithms-eps-converted-to.pdf, id=2092, 722.7pt x 361.35pt>
 File: img/EP/times_algorithms-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/EP/times_algorithms-eps-converted-to.pdf>
@@ -2076,13 +2081,13 @@ Package pdftex.def Info: img/EP/times_algorithms-eps-converted-to.pdf used on i
 nput line 416.
 (pdftex.def)             Requested size: 289.07487pt x 144.53743pt.
 
-<img/EP/CISL.png, id=2100, 1231.4808pt x 240.4182pt>
+<img/EP/CISL.png, id=2098, 1231.4808pt x 240.4182pt>
 File: img/EP/CISL.png Graphic file (type png)
  <use img/EP/CISL.png>
 Package pdftex.def Info: img/EP/CISL.png used on input line 426.
 (pdftex.def)             Requested size: 469.75502pt x 91.70836pt.
 
-<img/EP/CIR.jpg, id=2101, 2007.5pt x 1505.625pt>
+<img/EP/CIR.jpg, id=2099, 2007.5pt x 1505.625pt>
 File: img/EP/CIR.jpg Graphic file (type jpg)
  <use img/EP/CIR.jpg>
 Package pdftex.def Info: img/EP/CIR.jpg used on input line 433.
@@ -2164,9 +2169,9 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 /2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (98 pages, 13296258 bytes).
+Output written on thesis.pdf (98 pages, 13295740 bytes).
 PDF statistics:
- 2364 PDF objects out of 2487 (max. 8388607)
+ 2362 PDF objects out of 2487 (max. 8388607)
  1562 compressed objects within 16 object streams
  327 named destinations out of 1000 (max. 500000)
  848 words of extra memory for PDF output out of 10000 (max. 10000000)
