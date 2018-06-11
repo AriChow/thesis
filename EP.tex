@@ -3,14 +3,14 @@
 
 \let\thefootnote\relax\footnotetext{
 This chapter has been submitted for publication:
-A. Chowdhury, M. Magdon-Ismail, H. Su, and B. Yener. ``Algorithm selection and hyperparameter optimization based quantification of error contribution in image classification pipelines." \emph{IEEE International Conference on Data Mining}}
+A. Chowdhury, M. Magdon-Ismail, H. Su, and B. Yener. ``Quantifying Error Contributions of Computational Steps, Algorithms and Hyperparameter Choices in Image Classification Pipelines" \emph{IEEE International Conference on Data Mining}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Introduction and Motivation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction} 
 \label{sec1}
-In this chapter, we present a methodology to quantify the contributions of different components of an image classification pipeline in terms of the classification error as shown in \ref{fig:chapter5}. This is different to the last chapter where we introduced a methodology to quantify the error from the image samples acquired using acquisition techniques like microscopes. 
+In this chapter, we present a methodology to quantify the contributions of different components of an image classification pipeline in terms of the classification error as shown in \ref{fig:chapter5}. This is different to the last chapter where we introduced a methodology to quantify the qualityof image samples acquired using acquisition techniques like microscopes. 
 
 \begin{figure}[ht!]
 \centering
@@ -199,12 +199,12 @@ In this section, we describe the experiments performed on the data analytic pipe
 % \end{figure}
 % In this work, we focus on real world scientific datasets from the domains of medical pathology and material science.  Therefore, the flowchart starts with a sample that is imaged with acquisition technology like a camera or a microscope. The image is then processed using image pre-processing algorithms like normalization and standardization. This may also include image segmentation algorithms. This is followed by feature extraction algorithms that extract useful information from the images. Sometimes, the features extracted are transformed to a different vector space using feature transformation (feature selection or dimensionality reduction) algorithms. The dataset is then divided into training and test datasets in a 80-20 split. Finally, classification algorithms like random forests \cite{breiman2001random} and support vector machines (SVM) \cite{cortes1995support} are used for learning in order to build a predictive model for the image classification problem. The performance of the pipeline is evaluated using classification metrics like F1-score, accuracy, precision and recall. We use the cross entropy loss on the validation data as the estimate of the out-of-sample error. This error is then used as a feedback to quantify the contribution of the errors from different components of the pipeline. The specific pipeline used in this work is shown in the following figure.
 
-\begin{figure}[ht!]
-    \centering
-    \includegraphics[scale=0.3]{img/EP/pipeline}
-    \caption{Representation of the image classification pipeline as a directed acyclic graph used in this work. This is an instantiation of the generalized data analytic pipeline in Fig. \ref{fig:pipeline}}
-    \label{fig:images_pipeline}
-\end{figure}
+%\begin{figure}[ht!]
+%    \centering
+%    \includegraphics[scale=0.3]{img/EP/pipeline}
+%    \caption{Representation of the image classification pipeline as a directed acyclic graph used in this work. This is an instantiation of the generalized data analytic pipeline in Fig. \ref{fig:pipeline}}
+%    \label{fig:images_pipeline}
+%\end{figure}
 
   The above figure shows the pipeline used in this work. There are 3 computational steps in this pipeline, namely feature extraction ($S_1$), feature transformation ($S_2$) and learning algorithms ($S_3$). The steps, algorithms and corresponding hyperparameters $A_{ij}(\theta_{ij})$ is described in Table \ref{table:algorithms_table}.
 

@@ -11,7 +11,7 @@ A. Chowdhury, E. Kautz, B. Yener, and D. Lewis. "Image driven machine learning m
 \section{Introduction}
 \label{intro}
 
-This is the first chapter in the error optimization part of the thesis. In this chapter, we attempt to minimize the error of classification in the problem of microstructure characterization. In this chapter, we are optimizing the components of an image classification pipeline as a whole as shown in Fig. \ref{fig:chapter3}.
+This is the second chapter in the error optimization part of the thesis. In this chapter, we attempt to minimize the error of classification in the problem of microstructure characterization. In this chapter, we are optimizing the classification error by modifying multiple components of an image classification pipeline as a whole as shown in Fig. \ref{fig:chapter3}.
 
 \begin{figure}[ht!]
 \centering
@@ -734,21 +734,22 @@ While computer vision and machine learning methods have previously been applied 
 %
 Recognition of microstructural features traditionally requires expert knowledge of the particular material system under consideration.  The image-driven machine learning approach to micrograph classification presented here challenges this paradigm. 
 
-This chapter of the thesis shows how we can use exhaustive grid search based methods to find the best configuration of algorithms and hyperparameters for characterizing microstructures. This method in addition to more methods of hyperparameter optimization like random search, Bayesian optimization and other global optimization methods maybe used to minimize the error from classification tasks in material science and other domains. In the next chapter of the thesis, we observe how we can reduce the classification error by reducing imbalance in the dataset.
+This chapter of the thesis shows how we can use exhaustive grid search based methods to find the best configuration of algorithms and hyperparameters for characterizing microstructures. This method in addition to more methods of hyperparameter optimization like random search, Bayesian optimization and other global optimization methods maybe used to minimize the error from classification tasks in material science and other domains. The next chapter explores the second part of the thesis, which is to quantify the contributions of different components of an image classification pipeline.
 
-%----------------------------------------------------------------------------------
-\section{Future Work}
-\label{future_work}
 
-Neural networks are a promising feature extraction method for micrograph representation that could be further developed for application in more sophisticated characterization techniques, thereby eliminating the requirement of expert knowledge for recognition, interpretation, and characterization of microstructrural image data.  
+%%----------------------------------------------------------------------------------
+%\section{Future Work}
+%\label{future_work}
 %
-Future work related to the exploratory study presented here, could involve application of pre-trained CNN's to more diverse micrograph data sets, or higher-level characterization tasks, such as average grain size measurement or calculating area fraction of a second phase.  
-Furthermore, we would also like to incorporate deep learning algorithms on larger and more diverse micrograph classification tasks.
-%----------------------------------------------------------------------------------
-\section*{Acknowledgments}
-\label{acknowledgments}
-This work was is supported by the NSF under Grant \#1056704 through the Metals and Metallic Nanostructures Program of the Division of Materials Research, and Grant \#1302231 through the Information Integration and Informatics Program of the Division of Information and Intelligent Systems.   
-%
-The authors wish to acknowledge Mr. Jesse Werden and Dr. Jie Mao for some of the image data used in this work. 
-%
-Additionally, the authors thank the reviewers for providing thoughtful and thorough comments that contributed to the quality and clarity of the manuscript. 
+%Neural networks are a promising feature extraction method for micrograph representation that could be further developed for application in more sophisticated characterization techniques, thereby eliminating the requirement of expert knowledge for recognition, interpretation, and characterization of microstructrural image data.  
+%%
+%Future work related to the exploratory study presented here, could involve application of pre-trained CNN's to more diverse micrograph data sets, or higher-level characterization tasks, such as average grain size measurement or calculating area fraction of a second phase.  
+%Furthermore, we would also like to incorporate deep learning algorithms on larger and more diverse micrograph classification tasks.
+%%----------------------------------------------------------------------------------
+%\section*{Acknowledgments}
+%\label{acknowledgments}
+%This work was is supported by the NSF under Grant \#1056704 through the Metals and Metallic Nanostructures Program of the Division of Materials Research, and Grant \#1302231 through the Information Integration and Informatics Program of the Division of Information and Intelligent Systems.   
+%%
+%The authors wish to acknowledge Mr. Jesse Werden and Dr. Jie Mao for some of the image data used in this work. 
+%%
+%Additionally, the authors thank the reviewers for providing thoughtful and thorough comments that contributed to the quality and clarity of the manuscript. 
