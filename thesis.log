@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  11 JUN 2018 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 JUN 2018 12:53
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
@@ -1217,12 +1216,12 @@ Overfull \hbox (14.95807pt too wide) in paragraph at lines 2--2
 
 (./introduction.tex
 CHAPTER 1.
-<img/EP/flowchart.png, id=655, 873.2625pt x 750.805pt>
+<img/EP/flowchart.png, id=655, 522.95375pt x 448.67625pt>
 File: img/EP/flowchart.png Graphic file (type png)
 
 <use img/EP/flowchart.png>
 Package pdftex.def Info: img/EP/flowchart.png used on input line 12.
-(pdftex.def)             Requested size: 436.63017pt x 375.40158pt.
+(pdftex.def)             Requested size: 366.06512pt x 314.07123pt.
  [1
 
 
@@ -1236,11 +1235,11 @@ CHAPTER 2.
 
 Package hyperref Warning: Ignoring empty anchor on input line 6.
 
-<img/chapter2.png, id=685, 524.96124pt x 448.67625pt>
+<img/chapter2.png, id=685, 520.94624pt x 447.6725pt>
 File: img/chapter2.png Graphic file (type png)
  <use img/chapter2.png>
 Package pdftex.def Info: img/chapter2.png used on input line 15.
-(pdftex.def)             Requested size: 469.75502pt x 401.50456pt.
+(pdftex.def)             Requested size: 469.75502pt x 403.68707pt.
 
 [5
 
@@ -1309,11 +1308,11 @@ CHAPTER 3.
 
 Package hyperref Warning: Ignoring empty anchor on input line 6.
 
-<img/chapter3.png, id=819, 522.95375pt x 450.68375pt>
+<img/chapter3.png, id=819, 522.95375pt x 447.6725pt>
 File: img/chapter3.png Graphic file (type png)
  <use img/chapter3.png>
 Package pdftex.def Info: img/chapter3.png used on input line 18.
-(pdftex.def)             Requested size: 469.75502pt x 404.84828pt.
+(pdftex.def)             Requested size: 469.75502pt x 402.1433pt.
 
 [16
 
@@ -1437,11 +1436,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.1})
                    \relax 
 l.9 vol. 9791, pp. 979110U, 2016.}
                                   
-<img/chapter4.png, id=1116, 518.93875pt x 444.66125pt>
+<img/chapter4.png, id=1116, 521.95pt x 451.6875pt>
 File: img/chapter4.png Graphic file (type png)
  <use img/chapter4.png>
 Package pdftex.def Info: img/chapter4.png used on input line 18.
-(pdftex.def)             Requested size: 469.75502pt x 402.53902pt.
+(pdftex.def)             Requested size: 469.75502pt x 406.52188pt.
 
 Overfull \hbox (1.66182pt too wide) in paragraph at lines 24--28
 []\OT1/cmr/m/n/12 As ad-vances in med-i-cal imag-ing tech-nol-ogy are re-sult-i
@@ -1579,6 +1578,10 @@ type pdf)
 Package pdftex.def Info: img/SPIE/pck26_AFRemoved_260_084_5262-eps-converted-to
 .pdf used on input line 128.
 (pdftex.def)             Requested size: 140.92793pt x 140.90106pt.
+
+[49 <./img/SPIE/E_cad_AFRemoved_260143_9945-eps-converted-to.pdf> <./img/SPIE/C
+K15_AFRemoved_269_084_0077-eps-converted-to.pdf> <./img/SPIE/pck26_AFRemoved_26
+0_084_5262-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/SPIE/all_probs_smote_pca.eps>
 (epstopdf)                    date: 2018-05-02 17:32:55
 (epstopdf)                    size: 37789 bytes
@@ -1591,7 +1594,7 @@ ca-eps-converted-to.pdf img/SPIE/all_probs_smote_pca.eps>
 (epstopdf)             \includegraphics on input line 145.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/SPIE/all_probs_smote_pca-eps-converted-to.pdf, id=1179, 462.72874pt x 346.
+<img/SPIE/all_probs_smote_pca-eps-converted-to.pdf, id=1192, 462.72874pt x 346.
 29375pt>
 File: img/SPIE/all_probs_smote_pca-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1611,7 +1614,7 @@ _pca-eps-converted-to.pdf img/SPIE/E_cad_probs_smote_pca.eps>
 (epstopdf)             \includegraphics on input line 151.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/SPIE/E_cad_probs_smote_pca-eps-converted-to.pdf, id=1180, 462.72874pt x 34
+<img/SPIE/E_cad_probs_smote_pca-eps-converted-to.pdf, id=1193, 462.72874pt x 34
 6.29375pt>
 File: img/SPIE/E_cad_probs_smote_pca-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1631,7 +1634,7 @@ pca-eps-converted-to.pdf img/SPIE/CK15_probs_smote_pca.eps>
 (epstopdf)             \includegraphics on input line 157.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/SPIE/CK15_probs_smote_pca-eps-converted-to.pdf, id=1181, 462.72874pt x 346
+<img/SPIE/CK15_probs_smote_pca-eps-converted-to.pdf, id=1194, 462.72874pt x 346
 .29375pt>
 File: img/SPIE/CK15_probs_smote_pca-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1651,7 +1654,7 @@ _pca-eps-converted-to.pdf img/SPIE/pck26_probs_smote_pca.eps>
 (epstopdf)             \includegraphics on input line 163.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/SPIE/pck26_probs_smote_pca-eps-converted-to.pdf, id=1182, 462.72874pt x 34
+<img/SPIE/pck26_probs_smote_pca-eps-converted-to.pdf, id=1195, 462.72874pt x 34
 6.29375pt>
 File: img/SPIE/pck26_probs_smote_pca-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1659,12 +1662,9 @@ f)
 Package pdftex.def Info: img/SPIE/pck26_probs_smote_pca-eps-converted-to.pdf us
 ed on input line 163.
 (pdftex.def)             Requested size: 171.20695pt x 128.12668pt.
- [49 <./img/SPIE/E_cad_AFRemoved_260143_9945-eps-converted-to.pdf> <./img/SPIE/
-CK15_AFRemoved_269_084_0077-eps-converted-to.pdf> <./img/SPIE/pck26_AFRemoved_2
-60_084_5262-eps-converted-to.pdf>] [50 <./img/SPIE/all_probs_smote_pca-eps-conv
-erted-to.pdf> <./img/SPIE/E_cad_probs_smote_pca-eps-converted-to.pdf> <./img/SP
-IE/CK15_probs_smote_pca-eps-converted-to.pdf> <./img/SPIE/pck26_probs_smote_pca
--eps-converted-to.pdf>] [51]) [52]
+ [50 <./img/SPIE/all_probs_smote_pca-eps-converted-to.pdf> <./img/SPIE/E_cad_pr
+obs_smote_pca-eps-converted-to.pdf> <./img/SPIE/CK15_probs_smote_pca-eps-conver
+ted-to.pdf> <./img/SPIE/pck26_probs_smote_pca-eps-converted-to.pdf>] [51]) [52]
 \openout2 = `EP.aux'.
 
  (./EP.tex
@@ -1675,11 +1675,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.1})
                    \relax 
 l.6 ...E International Conference on Data Mining}}
                                                   
-<img/chapter5.png, id=1351, 519.9425pt x 447.6725pt>
+<img/chapter5.png, id=1351, 524.96124pt x 447.6725pt>
 File: img/chapter5.png Graphic file (type png)
  <use img/chapter5.png>
 Package pdftex.def Info: img/chapter5.png used on input line 17.
-(pdftex.def)             Requested size: 469.75502pt x 404.45897pt.
+(pdftex.def)             Requested size: 469.75502pt x 400.60634pt.
 
 <img/EP/generalized_pipeline.png, id=1355, 753.81625pt x 481.8pt>
 File: img/EP/generalized_pipeline.png Graphic file (type png)
@@ -2134,7 +2134,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
 Here is how much of TeX's memory you used:
  25249 strings out of 492995
  477649 string characters out of 6132704
- 617370 words of memory out of 5000000
+ 617368 words of memory out of 5000000
  27871 multiletter control sequences out of 15000+600000
  22745 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2158,7 +2158,7 @@ texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (96 pages, 13307442 bytes).
+Output written on thesis.pdf (96 pages, 13260137 bytes).
 PDF statistics:
  2346 PDF objects out of 2487 (max. 8388607)
  1547 compressed objects within 16 object streams

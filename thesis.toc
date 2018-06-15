@@ -38,8 +38,8 @@
 \contentsline {subsection}{\numberline {4.2.2}Data preprocessing}{47}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Methods and experiments}{48}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Classification and analysis}{48}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Quality of image score}{48}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Results and discussion}{49}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.2}Quality of image score}{49}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Results and discussion}{50}{subsection.4.3.3}
 \contentsline {section}{\numberline {4.4}Conclusions}{52}{section.4.4}
 \contentsline {chapter}{\numberline {5.}QUANTIFYING ERROR CONTRIBUTIONS OF COMPUTATIONAL STEPS, ALGORITHMS AND HYPERPARAMETER CHOICES IN IMAGE CLASSIFICATION PIPELINES}{53}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{53}{section.5.1}
