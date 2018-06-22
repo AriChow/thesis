@@ -475,7 +475,7 @@
          for the Degree of\\ [10pt]
          \emph{\uppercase\expandafter{\@degree}} \\ [40pt]
          Examining committee:\\
-         Dr. Bulent Yener, Chair\\
+         Dr. B{\"u}lent Yener, Chair\\
          Dr. Malik Magdon-Ismail\\
          Dr. Charles V. Stewart\\
          Dr. Alberto Santamaria-Pang\\
