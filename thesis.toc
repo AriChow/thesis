@@ -1,7 +1,7 @@
 \contentsline {chapter}{LIST OF TABLES}{vi}{chapter*.3}
 \contentsline {chapter}{LIST OF FIGURES}{viii}{chapter*.5}
-\contentsline {chapter}{ACKNOWLEDGMENT}{xi}{section*.6}
-\contentsline {chapter}{ABSTRACT}{xii}{section*.8}
+\contentsline {chapter}{ACKNOWLEDGMENT}{xii}{section*.6}
+\contentsline {chapter}{ABSTRACT}{xiii}{section*.8}
 \contentsline {chapter}{\numberline {1.}INTRODUCTION AND BACKGROUND}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Overview}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Contributions}{3}{section.1.2}
@@ -9,65 +9,65 @@
 \contentsline {chapter}{\numberline {2.}BLOOD VESSEL CHARACTERIZATION USING VIRTUAL 3D MODELS AND CONVOLUTIONAL NEURAL NETWORKS IN FLUORESCENCE MICROSCOPY}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Data}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Natural data}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Virtual data}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Natural data}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Virtual data}{9}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Methods}{11}{section.2.3}
 \contentsline {section}{\numberline {2.4}Experiments and results}{12}{section.2.4}
-\contentsline {section}{\numberline {2.5}Conclusions}{14}{section.2.5}
-\contentsline {chapter}{\numberline {3.}IMAGE DRIVEN MACHINE LEARNING METHODS FOR MICROSTRUCTURE RECOGNITION}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Alloy Fabrication and Sample Preparation}{18}{section.3.2}
-\contentsline {section}{\numberline {3.3}Image Data Sets}{19}{section.3.3}
-\contentsline {section}{\numberline {3.4}Approach}{21}{section.3.4}
-\contentsline {section}{\numberline {3.5}Computer Vision and Machine Learning Methods}{22}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Feature extraction}{22}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Dimensionality reduction}{27}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Classification}{28}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Related Work in Materials Science}{30}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}Selection of Model Parameters}{31}{section.3.6}
-\contentsline {section}{\numberline {3.7}Software and Hardware Specifications}{31}{section.3.7}
-\contentsline {section}{\numberline {3.8}Results and Discussion}{32}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Task 1 - Dendritic versus non-dendritic microstructures}{32}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Task 2 - Longitudinal versus transverse cross-sectional views of dendrites}{36}{subsection.3.8.2}
-\contentsline {section}{\numberline {3.9}Limitations}{40}{section.3.9}
-\contentsline {section}{\numberline {3.10}Conclusions}{42}{section.3.10}
-\contentsline {chapter}{\numberline {4.}A MACHINE LEARNING BASED APPROACH TO QUANTIFYING NOISE IN MEDICAL IMAGES}{44}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{44}{section.4.1}
-\contentsline {section}{\numberline {4.2}Data}{45}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Feature extraction}{46}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Data preprocessing}{47}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Methods and experiments}{48}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Classification and analysis}{48}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Quality of image score}{49}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Results and discussion}{50}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Conclusions}{52}{section.4.4}
-\contentsline {chapter}{\numberline {5.}QUANTIFYING ERROR CONTRIBUTIONS OF COMPUTATIONAL STEPS, ALGORITHMS AND HYPERPARAMETER CHOICES IN IMAGE CLASSIFICATION PIPELINES}{53}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{53}{section.5.1}
-\contentsline {section}{\numberline {5.2}Foundations}{57}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Algorithm selection and hyper-parameter optimization}{57}{subsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.1.1}Hyper-parameter optimization (HPO)}{57}{subsubsection.5.2.1.1}
-\contentsline {subsubsection}{\numberline {5.2.1.2}Combined algorithm selection and hyper-parameter optimization (CASH)}{58}{subsubsection.5.2.1.2}
-\contentsline {subsection}{\numberline {5.2.2}Optimization methods}{59}{subsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.1}Grid search}{59}{subsubsection.5.2.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2.2}Random search}{59}{subsubsection.5.2.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.3}Bayesian optimization}{60}{subsubsection.5.2.2.3}
-\contentsline {section}{\numberline {5.3}Proposed methods}{60}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Error contribution with the agnostic methodology}{60}{subsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.1.1}Quantification of error from computational steps}{60}{subsubsection.5.3.1.1}
-\contentsline {subsubsection}{\numberline {5.3.1.2}Quantification of error from algorithms}{61}{subsubsection.5.3.1.2}
-\contentsline {subsubsection}{\numberline {5.3.1.3}Quantification of error from hyperparameters}{62}{subsubsection.5.3.1.3}
-\contentsline {section}{\numberline {5.4}Experiments and results}{62}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Optimization frameworks}{64}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Datasets}{64}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Error quantification experiments}{65}{subsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.3.1}Experimental setting}{65}{subsubsection.5.4.3.1}
-\contentsline {subsubsection}{\numberline {5.4.3.2}Error contribution from computational steps}{66}{subsubsection.5.4.3.2}
-\contentsline {subsubsection}{\numberline {5.4.3.3}Error contribution from algorithms}{68}{subsubsection.5.4.3.3}
-\contentsline {subsubsection}{\numberline {5.4.3.4}Error contribution from hyperparameters}{68}{subsubsection.5.4.3.4}
-\contentsline {subsubsection}{\numberline {5.4.3.5}Comparison of computation time}{70}{subsubsection.5.4.3.5}
-\contentsline {section}{\numberline {5.5}Application}{71}{section.5.5}
-\contentsline {section}{\numberline {5.6}Conclusion}{72}{section.5.6}
-\contentsline {chapter}{\numberline {6.}CONCLUSIONS AND FUTURE WORK}{74}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusions}{74}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future work}{75}{section.6.2}
-\contentsline {chapter}{REFERENCES}{77}{section*.37}
+\contentsline {section}{\numberline {2.5}Conclusions}{16}{section.2.5}
+\contentsline {chapter}{\numberline {3.}IMAGE DRIVEN MACHINE LEARNING METHODS FOR MICROSTRUCTURE RECOGNITION}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Alloy Fabrication and Sample Preparation}{19}{section.3.2}
+\contentsline {section}{\numberline {3.3}Image Data Sets}{20}{section.3.3}
+\contentsline {section}{\numberline {3.4}Approach}{22}{section.3.4}
+\contentsline {section}{\numberline {3.5}Computer Vision and Machine Learning Methods}{23}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Feature extraction}{23}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Dimensionality reduction}{28}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Classification}{29}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Related Work in Materials Science}{31}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}Selection of Model Parameters}{32}{section.3.6}
+\contentsline {section}{\numberline {3.7}Software and Hardware Specifications}{32}{section.3.7}
+\contentsline {section}{\numberline {3.8}Results and Discussion}{33}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Task 1 - Dendritic versus non-dendritic microstructures}{33}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Task 2 - Longitudinal versus transverse cross-sectional views of dendrites}{37}{subsection.3.8.2}
+\contentsline {section}{\numberline {3.9}Limitations}{41}{section.3.9}
+\contentsline {section}{\numberline {3.10}Conclusions}{43}{section.3.10}
+\contentsline {chapter}{\numberline {4.}A MACHINE LEARNING BASED APPROACH TO QUANTIFYING NOISE IN MEDICAL IMAGES}{45}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{45}{section.4.1}
+\contentsline {section}{\numberline {4.2}Data}{46}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Feature extraction}{47}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Data preprocessing}{48}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Methods and experiments}{49}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Classification and analysis}{49}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Quality of image score}{50}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Results and discussion}{51}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Conclusions}{53}{section.4.4}
+\contentsline {chapter}{\numberline {5.}QUANTIFYING ERROR CONTRIBUTIONS OF COMPUTATIONAL STEPS, ALGORITHMS AND HYPERPARAMETER CHOICES IN IMAGE CLASSIFICATION PIPELINES}{54}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{54}{section.5.1}
+\contentsline {section}{\numberline {5.2}Foundations}{58}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Algorithm selection and hyper-parameter optimization}{58}{subsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.1.1}Hyper-parameter optimization (HPO)}{58}{subsubsection.5.2.1.1}
+\contentsline {subsubsection}{\numberline {5.2.1.2}Combined algorithm selection and hyper-parameter optimization (CASH)}{59}{subsubsection.5.2.1.2}
+\contentsline {subsection}{\numberline {5.2.2}Optimization methods}{60}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}Grid search}{60}{subsubsection.5.2.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2.2}Random search}{60}{subsubsection.5.2.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.3}Bayesian optimization}{61}{subsubsection.5.2.2.3}
+\contentsline {section}{\numberline {5.3}Proposed methods}{61}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Error contribution with the agnostic methodology}{61}{subsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.1.1}Quantification of error from computational steps}{61}{subsubsection.5.3.1.1}
+\contentsline {subsubsection}{\numberline {5.3.1.2}Quantification of error from algorithms}{62}{subsubsection.5.3.1.2}
+\contentsline {subsubsection}{\numberline {5.3.1.3}Quantification of error from hyperparameters}{63}{subsubsection.5.3.1.3}
+\contentsline {section}{\numberline {5.4}Experiments and results}{63}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Optimization frameworks}{65}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Datasets}{65}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Error quantification experiments}{66}{subsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.3.1}Experimental setting}{66}{subsubsection.5.4.3.1}
+\contentsline {subsubsection}{\numberline {5.4.3.2}Error contribution from computational steps}{67}{subsubsection.5.4.3.2}
+\contentsline {subsubsection}{\numberline {5.4.3.3}Error contribution from algorithms}{69}{subsubsection.5.4.3.3}
+\contentsline {subsubsection}{\numberline {5.4.3.4}Error contribution from hyperparameters}{69}{subsubsection.5.4.3.4}
+\contentsline {subsubsection}{\numberline {5.4.3.5}Comparison of computation time}{71}{subsubsection.5.4.3.5}
+\contentsline {section}{\numberline {5.5}Application}{72}{section.5.5}
+\contentsline {section}{\numberline {5.6}Conclusion}{73}{section.5.6}
+\contentsline {chapter}{\numberline {6.}CONCLUSIONS AND FUTURE WORK}{75}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusions}{75}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future work}{76}{section.6.2}
+\contentsline {chapter}{REFERENCES}{78}{section*.38}

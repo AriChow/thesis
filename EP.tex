@@ -3,14 +3,14 @@
 
 \let\thefootnote\relax\footnotetext{
 This chapter has been submitted for publication:
-A. Chowdhury, M. Magdon-Ismail, H. Su, and B. Yener. ``Quantifying Error Contributions of Computational Steps, Algorithms and Hyperparameter Choices in Image Classification Pipelines" \emph{IEEE International Conference on Data Mining}}
+A. Chowdhury, M. Magdon-Ismail, H. Su, and B. Yener. ``Quantifying Error Contributions of Computational Steps, Algorithms and Hyperparameter Choices in Image Classification Pipelines" \emph{IEEE International Conference on Data Mining.}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Introduction and Motivation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction} 
 \label{sec1}
-In this chapter, we present a methodology to quantify the contributions of different components of an image classification pipeline in terms of the classification error as shown in \ref{fig:chapter5}. This is different to the last chapter where we introduced a methodology to quantify the qualityof image samples acquired using acquisition techniques like microscopes. 
+In this Chapter, we present a methodology to quantify the contributions of different components of an image classification pipeline in terms of the classification error as shown in \ref{fig:chapter5}. This is different to the last chapter where we introduced a methodology to quantify the qualityof image samples acquired using acquisition techniques like microscopes. 
 
 \begin{figure}[ht!]
 \centering
@@ -64,7 +64,7 @@ Let the \textit{n} hyperparameters in a path be denoted as $\theta_1, \theta_2, 
 When trained with $\emph{$\theta$} \in \textbf{$\Theta$}$ on data $D_{train}$, the validation error is denoted as \par
 \noindent $\mathcal{L}(\theta, D_{train}, D_{valid})$. Using $k$-fold cross-validation, the hyperparameter optimization problem for a dataset $D$ is to minimize:
 \begin{equation}
-f^D(\theta) = \frac{1}{k}\sum_{i=1}^{k} \mathcal{L}(\emph{$\theta$}, D_{train}^{(i)}, D_{valid}^{(i)})
+f^D(\theta) = \frac{1}{k}\sum_{i=1}^{k} \mathcal{L}(\emph{$\theta$}, D_{train}^{(i)}, D_{valid}^{(i)}).
 \label{eq:hpo}
 \end{equation}
 Hyperparameters $\theta$ may be numerical, categorical or conditional with a finite domain. The minimization of this objective function provides the optimal configuration of hyperparameters on a particular path in the pipeline in Fig. \ref{fig:pipeline}. The optimization of the objective function defined by Eq. \ref{eq:hpo} is very expensive. Depending on the type of hyper-parameter variables, the derivatives and convexity properties maybe unknown, and derivative free global optimization methods like bayesian optimization and techniques like random search maybe used to tackle this problem. This framework is represented in Fig. \ref{fig:HPO}.
@@ -102,10 +102,10 @@ Hyperparameters $\theta$ may be numerical, categorical or conditional with a fin
 
 \subsubsection{Combined algorithm selection and hyper-parameter optimization (CASH)}
 \label{subsubsec_CASH}
-We can define the CASH formulation using Fig. 1. Let there be $n$ computational steps in the pipeline. Each step $i$ in the pipeline consists of algorithms $A_i(\Theta_i)$, where $A_i(\Theta_i) = \{A_{i1}(\theta_{i1}), ..., A_{im_{i}}(\theta_{im_{i}})\}$, $m_{i}$ is the number of algorithms in step $i$, $A_{ij}$ represents the $j$-th algorithm in step $i$, and \textbf{$\theta_{ij}$} represents the set of hyperparameters corresponding to  $A_{ij}$. The entire space of algorithms and hyperparameters is therefore given by \par
+We can define the CASH formulation using Fig. 1. Let there be $n$ computational steps in the pipeline. Each step $i$ in the pipeline consists of algorithms $A_i(\Theta_i)$, where $A_i(\Theta_i) = \{A_{i1}(\theta_{i1}), ..., A_{im_{i}}(\theta_{im_{i}})\}$, $m_{i}$ is the number of algorithms in step $i$, $A_{ij}$ represents the $j$-th algorithm in step $i$, and \textbf{$\theta_{ij}$} represents the set of hyperparameters corresponding to  $A_{ij}$. The entire space of algorithms and hyperparameters is therefore given by: \par
 \noindent $\mathcal{A} = A_1(\Theta_1) \times A_2(\Theta_2) \times ... \times A_n(\Theta_n)$. The objective function to be minimized for CASH is given by
 \begin{equation}
-f^D(A) = \frac{1}{k}\sum_{i=1}^{k} \mathcal{L}(\emph{A}, D_{train}^{(i)}, D_{valid}^{(i)}) 
+f^D(A) = \frac{1}{k}\sum_{i=1}^{k} \mathcal{L}(\emph{A}, D_{train}^{(i)}, D_{valid}^{(i)}).
 \label{eq:cash}
 \end{equation}
 where, $A \in \mathcal{A}$ and other notations are the same as those introduced in the previous section.
@@ -128,7 +128,7 @@ Grid search is the simplest of all methods for coming up with trials in the sear
 
 \subsubsection{Random search}
 \label{random}
-Random search is the optimization method where trial configurations are randomly sampled from the search space of $\Theta$ (HPO) or $\mathcal{A}$ (CASH). \cite{bergstra2012random} shows empirically and theoretically that randomly selecting trials is sufficiently accurate and more efficient than performing optimization using grid search. We also show similar results in this work.
+Random search is the optimization method where trial configurations are randomly sampled from the search space of $\Theta$ (HPO) or $\mathcal{A}$ (CASH). Bergstra et al. in \cite{bergstra2012random} shows empirically and theoretically that randomly selecting trials is sufficiently accurate and more efficient than performing optimization using grid search. We also show similar results in this work.
 
 \subsubsection{Bayesian optimization}
 \label{bayesian}
@@ -153,7 +153,7 @@ More formally, the agnostic methodology is implemented for computational steps i
 \label{eq_step}
 EC_{S_i}^* = \frac{1}{|S_i|}\sum_{z=1}^{|S_i|} E_{A_{ij}}^* - E^*,
 \end{equation}
-where, $i = {1, ..., n}, j = {1, ..., |S_i|}$
+where, $i = {1, ..., n}, j = {1, ..., |S_i|}$.
 Taking the difference with respect to the global minimum in Eq. \ref{eq_step} provides an estimate of the error contribution from step $i$ of the pipeline. A large value of $EC_{S_i}^*$ would mean that step $S_i$ is important for the pipeline.
 
 \subsubsection{Quantification of error from algorithms}
@@ -164,7 +164,6 @@ The \textit{agnostic} methodology for algorithms is implemented as follows. Simi
 \label{eq_alg}
 EC_{A_{ij}}^* = \frac{1}{|\theta_{ij}|}\sum_{z=1}^{|\theta_{ij}|} {E_{A_{ij}}^z}^* - {E_{A_{ij}^p}^*},
 \end{equation}
-
 where, $i = {1, ..., n}, j = {1, ..., |\theta_{ij}|}$, $|\theta_{ij}|$ represents the number of hyperparametric configurations of $A_{ij}$,  ${E_{A_{ij}}^z}^*$ is the minimum error obtained with the $z$-th configuration of $\theta_{ij}$ and $E_{A_{ij}^p}^*$ is the minimum error found over the path $p$ that consists of algorithm $A_{ij}$.
 
 

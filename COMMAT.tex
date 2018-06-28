@@ -11,7 +11,7 @@ A. Chowdhury, E. Kautz, B. Yener, and D. Lewis. "Image driven machine learning m
 \section{Introduction}
 \label{intro}
 
-This is the second chapter in the error reduction part of the thesis. In this chapter, we attempt to minimize the classification error in the problem of microstructure characterization. In this chapter, we are optimizing the classification error by modifying multiple components of an image classification pipeline as a whole as shown in Fig. \ref{fig:chapter3}.
+This is the second chapter in the error reduction part of the Thesis. In this chapter, we attempt to minimize the classification error in the problem of microstructure characterization. In this chapter, we are optimizing the classification error by modifying multiple components of an image classification pipeline as a whole as shown in Fig. \ref{fig:chapter3}.
 
 \begin{figure}[ht!]
 \centering
@@ -20,7 +20,7 @@ This is the second chapter in the error reduction part of the thesis. In this ch
 \label{fig:chapter3}
 \end{figure}
 
- Materials characterization is a critical aspect of the material design and discovery process.  Recently, there has been much research in the field of materials informatics, a growing research area in which information technology and data science methods are used to interpret and analyze material data in order to accelerate the material discovery, design, and development process \cite{XuH2015, Rodgers2006, Broderick2008, ferris2007materials, Kalidindi2011}.  Currently, material design relies on chance discoveries and follows a classical synthesis-characterization-theory-computation approach \cite{SergeiV.Kalinin2015}.  Further, there is a heavy reliance on individual researcher background and experience which introduces significant bias and potentially error into the process of microstructure recognition, interpretation, and characterization. 
+ Materials characterization is a critical aspect of the material design and discovery process.  Recently, there has been much research in the field of materials informatics, a growing research area in which information technology and data science methods are used to interpret and analyze material data in order to accelerate the material discovery, design, and development process \cite{XuH2015, Rodgers2006, Broderick2008, ferris2007materials, Kalidindi2011}.  Currently, material design relies on chance discoveries and follows a classical synThesis-characterization-theory-computation approach \cite{SergeiV.Kalinin2015}.  Further, there is a heavy reliance on individual researcher background and experience which introduces significant bias and potentially error into the process of microstructure recognition, interpretation, and characterization. 
 %
 For example, quantification of microstructures traditionally is done using stereological measurements.  Bias is introduced into stereological measurements through the requirement that an expert must first recognize and identify key microstructural features (inclusions, grains, or phases).  This bias can be caused by a variety of factors, such as an individual's background, education, and experiences \cite{SergeiV.Kalinin2015}.  
 
@@ -29,7 +29,7 @@ Although there have been recent advances in the field of quantitative microstruc
 
 Dendritic morphologies were chosen for this small case-study since dendrites are a well-characterized microstructural feature that exists in a variety of material systems (from single to multi-component).  Size, shape, and spacing of dendrites vary depending on solidification behavior and chemistry, thus micrographs of this single feature can vary widely.  The sample preparation and imaging methods used also contribute to the variety of micrographs produced from dendritic microstructures. Despite this variability in image data, it is still possible for human experts to look at a micrograph that contains dendrites and identify that it contains this microstructural feature, even though different orientations of dendrites (transverse or longitudinal) look distinctly different.  
 
-Computer vision and machine learning methods were applied to the task of identifying a particular microstructural feature of interest (dendrites) from micrographs that do not contain this particular feature (just as a human expert would identify that a micrograph contains dendrites).  This recognition task is referred to in this work as Task 1.  Task 1 is a high-level microstructure recognition task in the sense that dendrites are a type of microstructural feature that are not specific to a material system.  A second classification task (referred to here as Task 2) was also completed, and involved distinguishing between longitudinal and transverse cross-sectional views of dendritic microstructures. This task may be viewed as a logical next step following the identification of dendrites in Task 1.
+Computer vision and machine learning methods were applied to the task of identifying a particular microstructural feature of interest (dendrites) from micrographs that do not contain this particular feature (just as a human expert would identify that a micrograph contains dendrites).  This recognition task is referred to in this work as Task 1.  Task 1 is high-level microstructure recognition in the sense that dendrites are a type of microstructural feature that are not specific to a material system.  A second classification task (referred to here as Task 2) was also completed, and involved distinguishing between longitudinal and transverse cross-sectional views of dendritic microstructures. This task may be viewed as a logical next step following the identification of dendrites in Task 1.
 
 The contribution in this work is to investigate multiple computer vision and machine learning methods for microstructure recognition. We hypothesize that the approach and methods presented here can be generalized, and thus applied to a variety of microstructure recognition tasks that act as a necessary first step in characterization of a material system.
 %-----------------------------------------
@@ -163,7 +163,7 @@ G_{ij}=
     p(1,1) & p(1,2) & \cdots       & p(1,N_{g}) \\
     p(2,1) & p(2,2) &  \cdots      & p(2,N_{g}) \\
      \vdots &  \vdots &  \ddots    &  \vdots          \\
-    p(N_{g},1)  & p(N_{g},2) & \cdots & p(N_{g},N_{g}) 
+    p(N_{g},1)  & p(N_{g},2) & \cdots & p(N_{g},N_{g}).
   \end{bmatrix}
 %\]
 \end{equation}
@@ -174,12 +174,12 @@ The histogram of oriented gradients (HoG) \cite{Dalal2005} method describes an i
 
 \begin{equation}
 %\[ M(x,y) = \sqrt{g_{x}^2+g_{y}^2} \]
-M(x,y) = \sqrt{g_{x}^2+g_{y}^2}
+M(x,y) = \sqrt{g_{x}^2+g_{y}^2}.
 \end{equation}
 %\\
 \begin{equation}
 %\[ \alpha(x,y) = \tan^{-1}({\frac{g_{x}}{g_{y}}})\]
-\alpha(x,y) = \tan^{-1}({\frac{g_{y}}{g_{x}}})
+\alpha(x,y) = \tan^{-1}({\frac{g_{y}}{g_{x}}}).
 \end{equation}
 \\
 where $g_{x}$ and $g_{y}$ are the x and y components of the gradient respectively.  The normalized histograms of each cell are concatenated to form a descriptor vector for each image.  The greater the number of bins, the more detailed the histogram, and thus feature vector.
@@ -193,29 +193,29 @@ Hu moments are based on geometric moments, defined by $m_{p,q}(x,y)$:
 
 \begin{equation}
 %\[ 
-m_{p,q}(x,y) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} x^{p} y^{q}f(x,y) dxdy
-%\]
+m_{p,q}(x,y) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} x^{p} y^{q}f(x,y) dxdy.
+%\].
 \end{equation}
 \\
 Since images are a collection of pixels, the moment of an image must be expressed in terms of summations instead of integrals, as follows: 
 \begin{equation}
 %\[ 
-m_{p,q}(x,y) = \sum_{-\infty}^{\infty} \sum_{-\infty}^{\infty} x^{p} y^{q}f(x,y) dxdy
-%\]
+m_{p,q}(x,y) = \sum_{-\infty}^{\infty} \sum_{-\infty}^{\infty} x^{p} y^{q}f(x,y) dxdy.
+%\].
 \end{equation}
 \\
 
 From the above equation, the area of an image would simply be defined by the 0th moment.  The centroid of an image can also be defined using this concept of geometric moments, as follows: 
 \begin{equation}
 %\[ 
-(\bar{x},\bar{y}) = (\frac{m_{10}}{m_{00}} , \frac{m_{01}}{m_{00}})  
-%\]
+(\bar{x},\bar{y}) = (\frac{m_{10}}{m_{00}} , \frac{m_{01}}{m_{00}}).  
+%\].
 \end{equation}
 \\
 When moments are taken with respect to an image centroid, the moments are translation invariant, therefore a geometric moment can be defined relative to the centroid by $\mu_{p,q}(x,y)$:  
 \begin{equation}
 %\[ 
-\mu_{p,q}(x,y) = \sum_{-\infty}^{\infty} \sum_{-\infty}^{\infty} (x-\bar{x})^{p}(y-\bar{y})^{q}f(x,y)dxdy 
+\mu_{p,q}(x,y) = \sum_{-\infty}^{\infty} \sum_{-\infty}^{\infty} (x-\bar{x})^{p}(y-\bar{y})^{q}f(x,y)dxdy. 
 %\]
 \end{equation}
 Hu derived seven moment invariants from the geometric moment equation, $\mu_{p,q}(x,y)$, that are invariant to scale, translation, and in-plane rotation and can be computed from a binary image. 
@@ -231,7 +231,7 @@ Threshold adjacency statistics \cite{Lievers2004} are calculated from thresholde
 
 All texture and shape statistics used in feature extraction (Haralick texture features, HoG, LBP, Hu and Zernike moments, and threshold adjacency statistics) were used to create a 1,775 dimensional feature vector for each image that represents texture and shape of objects within the image. 
 
-In addition to texture and shape statistics, Visual Bag of Words (VBOW) \cite{Yang2007,Bay2006} was also used for feature extraction. 
+In addition to texture and shape statistics, Visual Bag of Words (VBOW), that was introduced in Chapter\ref{chap:ISBI} \cite{Yang2007,Bay2006} was also used for feature extraction. 
 The VBOW technqiue is inspired from the  `bag of words' method used in document classification, where documents are considered as unordered sets of words. The corresponding words in the domain of image processing are local image features. These word descriptors are constructed around key points located by the Speeded Up Robust Features (SURF) \cite{Bay2006} key points detection algorithm.  These key points are extracted at regular locations at different scales making them very robust. The key point descriptors are categorized using a vector quantization technique such as $k$-means. The output of this discretization is a dictionary. Each image can therefore be encoded in the form of a histogram. This is done by extracting feature descriptors from the image, followed by finding the corresponding words to which the key points correspond to in the dictionary. The VBOW representation produced a 100-dimensional feature vector which was the pre-selected vocabulary size of the model.
 
 A pre-trained convolutional neural network (CNN) model (trained on the Imagenet database) was also used in feature extraction. The ImageNet database contains 1.2 million images with 1000 categories. Here, the fifth and sixth layers of the pre-trained neural network were extracted and then used as feature descriptors for micrographs.
@@ -272,19 +272,19 @@ Similar to RF, the voting classifier \cite{voting} is also an ensemble-based cla
 Naive Bayes is a classifier model that depends on the inherent distribution of the training data set, and is thus categorized as a generative classifier.  The Naive Bayes classifier uses Bayes' probability model and a decision rule to predict class of a data instance, where in this work each data instance is an image.    
 
 %probability
-Naive Bayes is a statistical classifier that uses the concept of posterior probability for classification of new data instances.  Each new data instance is assigned the class label that has the highest posterior probability. For a given set of variables $X={x_{1}, x_{2}...x_{d}}$, the posterior probability for event $C_{j}$ is calculated from the set of possible outcomes, $C={c_{1}, c_{2}, ... c_{d}}$, where the set of possible outcomes is all class labels. Bayes' rule defines posterior probability of a class label (the probability $X$ belongs to $C_{j}$) as:
+Naive Bayes is a statistical classifier that uses the concept of posterior probability for classification of new data instances.  Each new data instance is assigned the class label that has the highest posterior probability. For a given set of variables $X={x_{1}, x_{2}, ..., x_{d}}$, the posterior probability for event $C_{j}$ is calculated from the set of possible outcomes, $C={c_{1}, c_{2}, ..., c_{d}}$, where the set of possible outcomes is all class labels. Bayes' rule defines posterior probability of a class label (the probability $X$ belongs to $C_{j}$) as:
 %Bayes Rule 
 \begin{equation}
-p(C_{j}|x_{1}, x_{2}, ... x_{d}) \propto p(x_{1}, x_{2}, ...x_{d} | C_{j})p(C_{j})
+p(C_{j}|x_{1}, x_{2}, ... x_{d}) \propto p(x_{1}, x_{2}, ...x_{d} | C_{j})p(C_{j}).
 \end{equation}
 
-where $p(C_{j}|x_{1}, x_{2}, ... x_{d})$ is the posterior probability of class label $C_{j}$. Posterior probability can be re-written, given that conditional probabilities of independent variables are assumed to be statistically independent: 
+where $p(C_{j}|x_{1}, x_{2}, ... , x_{d})$ is the posterior probability of class label $C_{j}$. Posterior probability can be re-written, given that conditional probabilities of independent variables are assumed to be statistically independent: 
 
 \begin{equation}
-p(C_{j}|X) \propto \prod_{k=1}^{d} p(C_{j}) p(x_{k}|C_{j})
+p(C_{j}|X) \propto \prod_{k=1}^{d} p(C_{j}) p(x_{k}|C_{j}).
 \end{equation}
 
-Using the Naive Bayes classifier, the new data instance $X$ is classified by the class label $C_{j}$ that has the highest posterior probability. In addition to the probability model defined above, the maximum \textit{a posteriori} decision rule is applied for classification, meaning the hypothesis that is most probable is selected as the class label.
+Using the Naive Bayes classifier, the new data instance $X$ is classified by the class label $C_{j}$ that has the highest posterior probability. In addition to the probability model defined above, the maximum \textit{a posteriori} decision rule is applied for classification, meaning the hypoThesis that is most probable is selected as the class label.
 %-----------------------------------------
 
 Classification was completed using each of the methods detailed above, for the full data set in addition to the reduced data sets obtained by the different feature selection techniques detailed in Section \ref{dimensionality_reduction}.  Model parameters were determined using five-fold cross-validation.  
@@ -342,7 +342,7 @@ The hardware used for experimentation was a 3.3 GHz 4 core Intel i5 CPU.
 \section{Results and Discussion}
 \label{results}
 
-This section reports the results from applying multiple feature extraction, feature selection, and classification methods to the task of micrograph recognition.    
+This Section reports the results from applying multiple feature extraction, feature selection, and classification methods to the task of micrograph recognition.    
 %
 Performance comparisons between feature extraction, selection, and classification methods are presented in Sections \ref{Task1} and \ref{Task2}.  The success of different methods are compared based on the mean classification accuracies and standard deviations.
 %
@@ -734,7 +734,7 @@ While computer vision and machine learning methods have previously been applied 
 %
 Recognition of microstructural features traditionally requires expert knowledge of the particular material system under consideration.  The image-driven machine learning approach to micrograph classification presented here challenges this paradigm. 
 
-This chapter of the thesis shows how we can use exhaustive grid search based methods to find the best configuration of algorithms and hyperparameters for characterizing microstructures. This method in addition to more methods of hyperparameter optimization like random search, Bayesian optimization and other global optimization methods maybe used to minimize the error from classification tasks in material science and other domains. The next chapter explores the second part of the thesis, which is to quantify the contributions of different components of an image classification pipeline.
+This chapter of the Thesis shows how we can use exhaustive grid search based methods to find the best configuration of algorithms and hyperparameters for characterizing microstructures. This method in addition to more methods of hyperparameter optimization like random search, Bayesian optimization and other global optimization methods maybe used to minimize the error from classification tasks in material science and other domains. The next chapter explores the second part of the Thesis, which is to quantify the contributions of different components of an image classification pipeline.
 
 
 %%----------------------------------------------------------------------------------

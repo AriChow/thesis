@@ -38,6 +38,12 @@ T.~Heimann and H.-P. Meinzer, ``Statistical shape models for 3d medical image
   segmentation: a review,'' \emph{Medical image analysis}, vol.~13, no.~4, pp.
   543--563, 2009.
 
+\bibitem{gerdes2013highly}
+M.~J. Gerdes, C.~J. Sevinsky, A.~Sood, S.~Adak, M.~O. Bello, A.~Bordwell
+  \emph{et~al.}, ``Highly multiplexed single-cell analysis of formalin-fixed,
+  paraffin-embedded cancer tissue,'' \emph{Proceedings of the National Academy
+  of Sciences}, vol. 110, no.~29, pp. 11\,982--11\,987, 2013.
+
 \bibitem{krizhevsky2012imagenet}
 A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
   deep convolutional neural networks,'' in \emph{Advances in neural information
@@ -274,12 +280,6 @@ Y.~Guo, Y.~Liu, A.~Oerlemans, S.~Lao, S.~Wu, and M.~S. Lew, ``Deep learning for
   visual understanding: A review,'' \emph{Neurocomputing}, vol. 187, pp. 27 --
   48, 2016, [Online]. Available:
   \url{http://www.sciencedirect.com/science/article/pii/S0925231215017634}
-
-\bibitem{gerdes2013highly}
-M.~J. Gerdes, C.~J. Sevinsky, A.~Sood, S.~Adak, M.~O. Bello, A.~Bordwell
-  \emph{et~al.}, ``Highly multiplexed single-cell analysis of formalin-fixed,
-  paraffin-embedded cancer tissue,'' \emph{Proceedings of the National Academy
-  of Sciences}, vol. 110, no.~29, pp. 11\,982--11\,987, 2013.
 
 \bibitem{haralick1979statistical}
 R.~M. Haralick, ``Statistical and structural approaches to texture,''
