@@ -43,7 +43,7 @@ Formalin-Fixed Paraffin-Embedded (FFPE) postmortem brain tissue samples from ten
 
 The number of instances of the three different types of morphologies are depicted in Table \ref{table:classes}.
 \begin{table}[ht!]
-\caption{Distribution of vascular morphologies}
+\caption{Distribution of vascular morphologies.}
 \centering
 \begin{tabular}{ | c | c |} 
 \hline
@@ -73,14 +73,14 @@ where, $I_{max}$  is the maximum intensity, which is the calibration coefficient
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=1.0\textwidth]{img/3D_model}
-\caption{Development of the 3D virtual model}
+\caption{Development of the 3D virtual model.}
 \label{fig:3D_model}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=1.0\textwidth]{img/slicer}
-\caption{3D virtual models and their corresponding projections along different planes of view (a) Linear model of \textit{RoundLumen-} (b) Linear model of \textit{RoundLumen+} (c) Non-linear model of \textit{RoundLumen+} (d) Non-linear model of \textit{Twins}}
+\caption{3D virtual models and their corresponding projections along different planes of view (a) Linear model of \textit{RoundLumen-} (b) Linear model of \textit{RoundLumen+} (c) Non-linear model of \textit{RoundLumen+} (d) Non-linear model of \textit{Twins}.}
 \label{fig:slicer}
 \end{figure}
 
@@ -103,7 +103,7 @@ We perform an experiment to show that pre-trained CNNs are efficient in represen
 
 \begin{table}[ht!]
 \centering
-\caption{Comparison of feature extraction methodologies}
+\caption{Comparison of feature extraction methodologies.}
 \begin{tabular}{ | c | c | c | c | c |} 
 \hline
 Feature extractor  & Accuracy	& f1-score	 & Precision & Recall \\ 
@@ -125,7 +125,7 @@ A filtering technique is introduced to appropriately extract slices from the 3D 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=1.0\textwidth]{img/slices}
-\caption{ Examples of vessel classes \textit{RoundLumen-} (a/d), \textit{RoundLumen+} (b/e) and \textit{Twins} (c/f) for natural (a/b/c) and virtual data (d/e/f)}
+\caption{ Examples of vessel classes \textit{RoundLumen-} (a/d), \textit{RoundLumen+} (b/e) and \textit{Twins} (c/f) for natural (a/b/c) and virtual data (d/e/f).}
 \label{fig:slices}
 \end{figure}
 
@@ -133,7 +133,7 @@ A hierarchical classification is performed to first classify the single blood ve
 
 \begin{table}[ht!]
 \centering
-\caption{Results of binary classification between \textit{RoundLumen} and \textit{Twin}}
+\caption{Results of binary classification between \textit{RoundLumen} and \textit{Twin}.}
 \begin{tabular}{ | c | c | c | c | c |} 
 \hline
 Data & Accuracy & f1-score & Precision & Recall \\ 
@@ -154,13 +154,13 @@ Data & Accuracy & f1-score & Precision & Recall \\
     \begin{subfigure}[t]{0.5\textwidth}
      \centering
        \includegraphics[width=1.0\linewidth]{img/single_twins_ROC.pdf}
-  \caption{ROC curve}
+  \caption{ROC curve.}
         \label{fig:ROC1}   
     \end{subfigure}%
     \begin{subfigure}[t]{0.5\textwidth}
         \centering
           \includegraphics[width=1.0\linewidth]{img/single_twins_PRC.pdf}
-  \caption{PR curve }
+  \caption{PR curve.}
         \label{fig:PRC1}
     \end{subfigure}%
     \caption{Plots of the receiver operating characteristics (ROC) curve and the precision recall (PR) curve of the classification between \textit{RoundLumen} and \textit{Twins} along with the area under the curves (AUC) for the three experiments denoted as legends in the plots. From the nature of the curves, and the values of the AUC, we conclude that combining the using \textit{mixed} data performs better than using the \textit{Natural} data or the \textit{Artificial data} in isolation.}
@@ -170,7 +170,7 @@ Data & Accuracy & f1-score & Precision & Recall \\
 
 \begin{table}[ht!]
 \centering
-\caption{Results of binary classification between \textit{RoundLumen-} and \textit{RoundLumen+}}
+\caption{Results of binary classification between \textit{RoundLumen-} and \textit{RoundLumen+}.}
 \begin{tabular}{ | c | c | c | c | c |} 
 \hline
 Data & Accuracy & f1-score & Precision & Recall \\ 
@@ -191,13 +191,13 @@ Data & Accuracy & f1-score & Precision & Recall \\
     \begin{subfigure}[t]{0.5\textwidth}
      \centering
        \includegraphics[width=1.0\linewidth]{img/roundlumens_ROC.pdf}
-  \caption{ROC curve}
+  \caption{ROC curve.}
         \label{fig:ROC2}   
     \end{subfigure}%
     \begin{subfigure}[t]{0.5\textwidth}
        \centering
           \includegraphics[width=1.0\linewidth]{img/roundlumens_PRC.pdf}
-  \caption{PR curve }
+  \caption{PR curve.}
         \label{fig:PRC2}
     \end{subfigure}%
     \caption{Plots of the receiver operating characteristics (ROC) curve and the precision recall (PR) curve of the classification between \textit{RoundLumen+} and \textit{RoundLumen-} along with the area under the curves (AUC) for the three experiments denoted as legends in the plots. From the nature of the curves, and the values of the AUC, we conclude that combining the using \textit{mixed} data performs better than using the \textit{Natural} data or the \textit{Artificial data} in isolation.}

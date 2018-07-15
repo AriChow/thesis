@@ -18,67 +18,59 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references.bib
+I was expecting a `,' or a `}'---line 1992 of file references.bib
+ :   
+ :   urldate              = {June 1, 2016}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--there's a url but no urldate in Rodgers2006
-Warning--there's a url but no urldate in Broderick2008
-Warning--there's a url but no urldate in Kalidindi2011
-Warning--there's a url but no urldate in DeCost2015
 Warning--missing publisher in Mao2014
-Warning--there's a url but no urldate in Mao2014
 Warning--empty booktitle in Keogh2010
-Warning--there's a url but no urldate in Keogh2010
-Warning--there's a url but no urldate in Lievers2004
-Warning--there's a url but no urldate in Krizhevsky2012
 Warning--missing department in gini
 Warning--there's a url but no urldate in MacSleyne2008
-Warning--there's a url but no urldate in Sluytman2012
-Warning--there's a url but no urldate in Impoco2015
-Warning--there's a url but no urldate in Bostanabad2016
-Warning--there's a url but no urldate in Taffese2015
-Warning--there's a url but no urldate in Guo2016
 
 Done.
 You've used 76 entries,
             4355 wiz_defined-function locations,
-            1340 strings with 22346 characters,
-and the built_in function-call counts, 62829 in all, are:
-= -- 5329
-> -- 1459
+            1347 strings with 21178 characters,
+and the built_in function-call counts, 61662 in all, are:
+= -- 5295
+> -- 1321
 < -- 636
-+ -- 821
-- -- 233
-* -- 3085
-:= -- 9423
++ -- 753
+- -- 199
+* -- 3041
+:= -- 9318
 add.period$ -- 140
 call.type$ -- 76
 change.case$ -- 76
 chr.to.int$ -- 1479
-cite$ -- 93
-duplicate$ -- 4390
-empty$ -- 4579
-format.name$ -- 290
-if$ -- 14516
+cite$ -- 80
+duplicate$ -- 4324
+empty$ -- 4511
+format.name$ -- 256
+if$ -- 14242
 int.to.chr$ -- 0
 int.to.str$ -- 76
-missing$ -- 675
+missing$ -- 641
 newline$ -- 251
 num.names$ -- 79
-pop$ -- 1266
+pop$ -- 1221
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 5113
+skip$ -- 4984
 stack$ -- 0
 substring$ -- 3557
-swap$ -- 3768
+swap$ -- 3700
 text.length$ -- 143
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 76
-warning$ -- 17
+warning$ -- 4
 while$ -- 314
 width$ -- 78
 write$ -- 783
-(There were 17 warnings)
+(There was 1 error message)

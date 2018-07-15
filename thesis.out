@@ -17,17 +17,17 @@
 \BOOKMARK [1][-]{section.2.5}{Conclusions}{chapter.2}% 17
 \BOOKMARK [0][-]{chapter.3}{IMAGE DRIVEN MACHINE LEARNING METHODS FOR MICROSTRUCTURE RECOGNITION}{}% 18
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.2}{Alloy Fabrication and Sample Preparation}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.3}{Image Data Sets}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.2}{Alloy fabrication and sample preparation}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.3}{Image datasets}{chapter.3}% 21
 \BOOKMARK [1][-]{section.3.4}{Approach}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.5}{Computer Vision and Machine Learning Methods}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.5}{Computer vision and machine learning methods}{chapter.3}% 23
 \BOOKMARK [2][-]{subsection.3.5.1}{Feature extraction}{section.3.5}% 24
 \BOOKMARK [2][-]{subsection.3.5.2}{Dimensionality reduction}{section.3.5}% 25
 \BOOKMARK [2][-]{subsection.3.5.3}{Classification}{section.3.5}% 26
-\BOOKMARK [2][-]{subsection.3.5.4}{Related Work in Materials Science}{section.3.5}% 27
-\BOOKMARK [1][-]{section.3.6}{Selection of Model Parameters}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.7}{Software and Hardware Specifications}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.8}{Results and Discussion}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.5.4}{Related work in materials science}{section.3.5}% 27
+\BOOKMARK [1][-]{section.3.6}{Selection of model parameters}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.7}{Software and hardware specifications}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.8}{Results and discussion}{chapter.3}% 30
 \BOOKMARK [2][-]{subsection.3.8.1}{Task 1 - Dendritic versus non-dendritic microstructures}{section.3.8}% 31
 \BOOKMARK [2][-]{subsection.3.8.2}{Task 2 - Longitudinal versus transverse cross-sectional views of dendrites}{section.3.8}% 32
 \BOOKMARK [1][-]{section.3.9}{Limitations}{chapter.3}% 33

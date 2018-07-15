@@ -34,7 +34,7 @@ Computer vision and machine learning methods were applied to the task of identif
 The contribution in this work is to investigate multiple computer vision and machine learning methods for microstructure recognition. We hypothesize that the approach and methods presented here can be generalized, and thus applied to a variety of microstructure recognition tasks that act as a necessary first step in characterization of a material system.
 %-----------------------------------------
 
-\section{Alloy Fabrication and Sample Preparation}
+\section{Alloy fabrication and sample preparation}
 \label{sample_prep}
 
 The alloy fabrication, processing, and metallographic sample preparation procedure followed to obtain images used in this work was based on the process detailed in References \cite{Schaefer2005} and \cite{Mao2014} and is summarized here. 
@@ -46,7 +46,7 @@ DS was performed using a Bridgman-type apparatus in order to refine alloy micros
 Following DS, alloys were removed from the quartz ampule, and small sections from the middle third of the rod were mounted in epoxy for metallographic sample preparation.  Sections were mounted such that transverse and longitudinal orientations of $\beta$-Sn dendrites could be viewed.  Samples were ground using silicon carbide (SiC) papers to 600 grit, then polished using 9, 3, and 1 $\mu$m diamond slurries.  Colloidal silica was used as the final polishing step and as a chemical etchant so that the dendritic microstructure would be readily visible using light optical microscopy.
 
 %----------------------------------------------------------------------------------
-\section{Image Data Sets}
+\section{Image datasets}
 \label{data_sets}
 
 Image data used in this study includes micrographs taken over a span of approximately three years by students in the Lewis Research Group in the Materials Science and Engineering Department at Rensselaer Polytechnic Institute (RPI).  All images taken by Lewis Research Group members are of solder alloys with dendritic microstructures.  These alloys were manufactured, processed, and imaged at RPI, and a representative process of sample preparation was presented in Section \ref{sample_prep}.  In order to supplement micrographs obtained at RPI, micrographs from the publicly available Dissemination of Information Technology for the Promotion of Materials Science (DoITPoMS) library \cite{Barber2003} were used. Example images used in classification are provided in Figure \ref{fig:example_images}.   
@@ -142,7 +142,7 @@ We performed analysis on the two datasets (described in Section \ref{data_sets})
 %\label{fig:tasks_flowchart}
 %\end{figure}
 %----------------------------------------------------------------------------------
-\section{Computer Vision and Machine Learning Methods}
+\section{Computer vision and machine learning methods}
 \label{methods}
 
 As previously introduced in Section \ref{approach}, multiple feature extraction and selection methods were tested with various classifiers in order to evaluate the best methods to apply to microstructure recognition tasks.  The methods applied in this work are discussed in additional detail in Sections \ref{feature_extraction} - \ref{classification}.  Additionally, Section \ref{related_work} provides a brief overview of computer vision and machine learning methods applied to other research in the field of materials science. 
@@ -293,7 +293,7 @@ In order to determine model accuracy and stability, average classification accur
 %---------------------------------------------------------------------------------
 %Methods that have been applied in the field of materials science and engineering....
 
-\subsection{Related Work in Materials Science}
+\subsection{Related work in materials science}
 \label{related_work}
 
 The methods discussed here are well established in the computer vision and machine learning disciplines, however only a select few have been previously applied to materials science and engineering challenges.  Shape descriptor methods, such as Hu moment invariants, have previously been used to quantitatively describe microstructures for subsequent classification \cite{Pattan2010, Prakash2011, Kumara,MacSleyne2008,Sluytman2012}.  
@@ -304,7 +304,7 @@ Specific applications of Hu moments in the field of materials science include au
 Additionally, the Visual Bag of Words feature extraction method with a Support Vector Machine classifier were used for multi-class classification of microstructures by DeCost and Holm \cite{DeCost2015}, as previously mentioned in Section \ref{intro}. 
 
 %----------------------------------------------------------------------------------------------------------------------------
-\section{Selection of Model Parameters}
+\section{Selection of model parameters}
 Each algorithm involved in our experimentation has their own set of parameters. Some of the parameters are set \textit{a priori} and some are tuned using 5-fold cross-validation. Since we used cross validation to set the parameters for each combination of feature extraction, feature selection and classifier, there is no specific setting for each individual parameter for the algorithm. This approach of using 5-fold cross-validation to set parameters generates results that are more robust and thus more accurate with respect to each particular combination of feature extraction, feature selection, and classifier. We do a grid search over the parameter space using 5-fold cross-validation to estimate the best setting of the different parameters. Such parameters include number of neighbors in the nearest neighbor classifier, the SVM margin parameter ($C$), the RBF kernel parameter  ($\gamma$), the number of trees or estimators in the random forests classifier. The parameters found by cross-validation are presented in detail in the supplementary article to this chapter.
 
 We also set a number of parameters before the experiments are run to limit the number of parameters to tune using cross-validation. 
@@ -334,12 +334,12 @@ We also set a number of parameters before the experiments are run to limit the n
 
 Default values were used for other parameters. We set the parameters in the feature extraction algorithms because this would represent a consistent test bed for the thorough computational experimentation over the feature selection and classification algorithms.
 
-\section{Software and Hardware Specifications}
+\section{Software and hardware specifications}
 All of our experimentation was carried out with Python version 2.7 with the help  of various open-source libraries. The opencv, scipy, skimage, numpy, mahotas and caffe packages (compatible with the Python version used in this work) were used for feature extraction. The skfeature library was used for experimentation with the various feature selection algorithms. The sklearn package was used for the various learning algorithms.
 
 The hardware used for experimentation was a 3.3 GHz 4 core Intel i5 CPU.
 %----------------------------------------------------------------------------------
-\section{Results and Discussion}
+\section{Results and discussion}
 \label{results}
 
 This Section reports the results from applying multiple feature extraction, feature selection, and classification methods to the task of micrograph recognition.    
@@ -465,7 +465,7 @@ The performance of the pipeline is also measured using the plot in Fig. \ref{fig
 \begin{figure}[ht!]
   \begin{centering}
  \includegraphics[scale=0.4]{img/best_matsc_error_bars_20.eps}
- \caption{Top 20 configurations of algorithms in Task 1 with error bars representing one standard deviation. There is no significant difference in the accuracies in the different configuations. Most of the feature extraction algorithms in the top 20 configurations are pre-trained CNNs (\textit{caffe-fc6} or \textit{caffe-conv5})}
+ \caption{Top 20 configurations of algorithms in Task 1 with error bars representing one standard deviation. There is no significant difference in the accuracies in the different configuations. Most of the feature extraction algorithms in the top 20 configurations are pre-trained CNNs (\textit{caffe-fc6} or \textit{caffe-conv5}).}
  \label{fig:error_bars1}
  \end{centering}
 \end{figure}
@@ -645,7 +645,7 @@ Similar to Fig. \ref{fig:error_bars1} for Task 1, we plot the top 20 configurati
 \begin{figure}
   \begin{centering}
  \includegraphics[scale=0.4]{img/best_trans_long_error_bars_20.eps}
- \caption{Top 20 configurations of algorithms in Task 2 with error bars representing one standard deviation. There is no significant difference in the accuracies in the different configuations. Most of the feature extraction algorithms in the top 20 configurations are pre-trained CNNs (\textit{caffe-fc6} or \textit{caffe-conv5})}
+ \caption{Top 20 configurations of algorithms in Task 2 with error bars representing one standard deviation. There is no significant difference in the accuracies in the different configuations. Most of the feature extraction algorithms in the top 20 configurations are pre-trained CNNs (\textit{caffe-fc6} or \textit{caffe-conv5}).}
  \label{fig:error_bars2}
  \end{centering}
 \end{figure}

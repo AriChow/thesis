@@ -88,7 +88,7 @@ Hyperparameters $\theta$ may be numerical, categorical or conditional with a fin
       \label{fig:CASH}
    \end{subfigure}
 \end{adjustbox}
-\caption{Optimization frameworks}\label{fig:frameworks}
+\caption{Optimization frameworks.}\label{fig:frameworks}
 \end{figure}
 
 
@@ -186,7 +186,7 @@ In this section, we describe the experiments performed on the data analytic pipe
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.8\textwidth]{img/EP/pipeline}
-    \caption{Representation of the image classification pipeline as a directed acyclic graph used in this work. This is an instantiation of the generalized data analytic pipeline in Fig. \ref{fig:pipeline}}
+    \caption{Representation of the image classification pipeline as a directed acyclic graph used in this work. This is an instantiation of the generalized data analytic pipeline in Fig. \ref{fig:pipeline}.}
     \label{fig:images_pipeline}
 \end{figure}
 % A representation of an image classification pipeline is shown in Fig. \ref{fig:flowchart} in the form of a flowchart.  
@@ -209,7 +209,7 @@ In this section, we describe the experiments performed on the data analytic pipe
 
 \begin{table}[ht!]
 \centering
-\caption{Algorithms and hyperparameters used in the image classification pipeline. The specific algorithms and corresponding \textit{hyperparameters} are defined in the last column}
+\caption{Algorithms and hyperparameters used in the image classification pipeline. The specific algorithms and corresponding \textit{hyperparameters} are defined in the last column.}
 \begin{tabular}{@{} |m{9.7em}|m{1.5cm}|m{8cm}| @{}} 
  \hline
  Step & $A_{ij}(\theta_{ij})$ & Definition \\ 
@@ -243,7 +243,7 @@ Four datasets from the domains of medicine and material science are used in this
 
 \begin{table}[ht!]
 \centering
-\caption{Descriptions of the datasets used in this work}
+\caption{Descriptions of the datasets used in this work.}
 \begin{tabular}{ |c|c| } 
  \hline
  Dataset (notation) & Distribution of classes \\ 
@@ -269,7 +269,7 @@ Optimization using the 3 algorithms in section \ref{optimization} is performed u
 The convergence criteria (a hyper-hyper-parameter) is set at 50 iterations of unchanging  function value for each of the optimization methods. The choice of the convergence criteria and hyperparameters are independent of the error quantification methods. Results maybe obtained by using any choice of values for these components. The continuous hyperparameters \textit{maximum features}, \textit{C} and $\gamma$ have been discretized specifically for comparison of the optimization methods with grid search. In general, discretization of the hyperparameters is not necessary for performing optimization.
 \begin{table}[ht!]
 \centering
-\caption{Hyper-parameter domains corresponding the algorithms in Table \ref{table:algorithms_table} used by the optimization methods}
+\caption{Hyper-parameter domains corresponding the algorithms in Table \ref{table:algorithms_table} used by the optimization methods.}
 \begin{tabularx}{\linewidth}{ |X|X|X|X| } 
  \hline
  Algorithm & Hyper-parameter & Description & Values \\ 
@@ -303,25 +303,25 @@ The mean and standard deviation values of $EC_{S_i}$ calculated using Eq. \ref{e
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[scale=0.37]{img/EP/agnostic_error_steps_breast.eps}
-  \caption{\textit{breast}}
+  \caption{\textit{breast}.}
   \label{fig:eq_steps_breast}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[scale=0.37]{img/EP/agnostic_error_steps_brain.eps}
-  \caption{\textit{brain}}
+  \caption{\textit{brain}.}
   \label{fig:eq_step_brain}
 \end{subfigure}
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[scale=0.37]{img/EP/agnostic_error_steps_matsc_dataset1.eps}
-  \caption{\textit{matsc1}}
+  \caption{\textit{matsc1}.}
   \label{fig:eq_steps_matsc1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[scale=0.37]{img/EP/agnostic_error_steps_matsc_dataset2.eps}
-  \caption{\textit{matsc2}}
+  \caption{\textit{matsc2}.}
   \label{fig:eq_steps_matsc2}
 \end{subfigure}
 \caption{Plots of error contributions from computational steps in the pipeline. The x-axis represents the steps in the pipeline - feature extraction, feature transformation and learning algorithms. The y-axis shows the values of the contributions from the corresponding steps in the pipeline. The maximum contribution in terms of error is from the feature extraction step in the pipeline. Random search (blue) follows the behavior of grid search (red) more accurately than Bayesian optimization (yellow). Hence, random search maybe used to quantify the error contributions instead of grid search.}
@@ -342,25 +342,25 @@ In Fig. \ref{fig:eq_alg}, the error contributions from algorithms are quantified
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[scale=0.37]{img/EP/agnostic_error_alg_breast.eps}
-  \caption{\textit{breast}}
+  \caption{\textit{breast}.}
   \label{fig:eq_alg_breast}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[scale=0.37]{img/EP/agnostic_error_alg_brain.eps}
-  \caption{\textit{brain}}
+  \caption{\textit{brain}.}
   \label{fig:eq_alg_brain}
 \end{subfigure}
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[scale=0.37]{img/EP/agnostic_error_alg_matsc_dataset1.eps}
-  \caption{\textit{matsc1}}
+  \caption{\textit{matsc1}.}
   \label{fig:eq_alg_matsc1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[scale=0.37]{img/EP/agnostic_error_alg_matsc_dataset2.eps}
-  \caption{\textit{matsc2}}
+  \caption{\textit{matsc2}.}
   \label{fig:eq_alg_matsc2}
 \end{subfigure}
 
@@ -378,25 +378,25 @@ Fig. \ref{fig:eq_hyper} shows the error contributions from hyperparameters quant
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[scale=0.37]{img/EP/agnostic_error_hyper_breast.eps}
-  \caption{\textit{breast}}
+  \caption{\textit{breast}.}
   \label{fig:eq_hyper_breast}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[scale=0.37]{img/EP/agnostic_error_hyper_brain.eps}
-  \caption{\textit{brain}}
+  \caption{\textit{brain}.}
   \label{fig:eq_hyper_brain}
 \end{subfigure}
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[scale=0.37]{img/EP/agnostic_error_hyper_matsc_dataset1.eps}
-  \caption{\textit{matsc1}}
+  \caption{\textit{matsc1}.}
   \label{fig:eq_hyper_matsc1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[scale=0.37]{img/EP/agnostic_error_hyper_matsc_dataset2.eps}
-  \caption{\textit{matsc2}}
+  \caption{\textit{matsc2}.}
   \label{fig:eq_hyper_matsc2}
 \end{subfigure}
 

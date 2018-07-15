@@ -22,51 +22,49 @@
 \BIBdecl
 
 \bibitem{deng2009imagenet}
-J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei, ``Imagenet: A
-  large-scale hierarchical image database,'' in \emph{Computer Vision and
-  Pattern Recognition, 2009. CVPR 2009. IEEE Conference on}, 2009, pp.
-  248--255.
+J.~Deng \emph{et~al.}, ``Imagenet: a large-scale hierarchical image database,''
+  in \emph{Comput. Vision and Pattern Recognition, 2009. CVPR 2009. IEEE Conf.
+  on}, 2009, pp. 248--255.
 
 \bibitem{yang2007evaluating}
 J.~Yang, Y.-G. Jiang, A.~G. Hauptmann, and C.-W. Ngo, ``Evaluating
-  bag-of-visual-words representations in scene classification,'' in
-  \emph{Proceedings of the international workshop on Workshop on multimedia
-  information retrieval}, 2007, pp. 197--206.
+  bag-of-visual-words representations in scene classification,'' in \emph{Proc.
+  of the Int. Workshop on Multimedia Inform. Retrieval}, 2007, pp. 197--206.
 
 \bibitem{heimann2009statistical}
-T.~Heimann and H.-P. Meinzer, ``Statistical shape models for 3d medical image
-  segmentation: a review,'' \emph{Medical image analysis}, vol.~13, no.~4, pp.
+T.~Heimann and H.-P. Meinzer, ``Statistical shape models for 3{D} medical image
+  segmentation: a review,'' \emph{Medical Image Anal.}, vol.~13, no.~4, pp.
   543--563, 2009.
 
 \bibitem{gerdes2013highly}
-M.~J. Gerdes, C.~J. Sevinsky, A.~Sood, S.~Adak, M.~O. Bello, A.~Bordwell
-  \emph{et~al.}, ``Highly multiplexed single-cell analysis of formalin-fixed,
-  paraffin-embedded cancer tissue,'' \emph{Proceedings of the National Academy
-  of Sciences}, vol. 110, no.~29, pp. 11\,982--11\,987, 2013.
+M.~J. Gerdes \emph{et~al.}, ``Highly multiplexed single-cell analysis of
+  formalin-fixed, paraffin-embedded cancer tissue,'' \emph{Proc. of the Nat.
+  Academy of Sciences}, vol. 110, no.~29, pp. 11\,982--11\,987, 2013.
 
 \bibitem{krizhevsky2012imagenet}
 A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
-  deep convolutional neural networks,'' in \emph{Advances in neural information
-  processing systems}, 2012, pp. 1097--1105.
+  deep convolutional neural networks,'' in \emph{Advances in Neural Inform.
+  Process. Syst.}, 2012, pp. 1097--1105.
 
 \bibitem{XuH2015}
 H.~Xu, R.~Liu, A.~Choudhary, and W.~Chen, ``A machine learning-based design
-  representation method for designing heterogeneous microstructures,''
-  \emph{Journal of Mechanical Design}, vol. 137, no.~5, p. 051403, 2015.
+  representation method for designing heterogeneous microstructures,'' \emph{J.
+  of Mech. Des.}, vol. 137, no.~5, p. 051403, 2015.
 
 \bibitem{Rodgers2006}
 J.~R. Rodgers and D.~Cebon, ``Materials informatics,'' \emph{MRS Bulletin},
   vol.~31, pp. 975--980, 12 2006, [Online]. Available:
-  \url{http://journals.cambridge.org/article_S0883769400011702}
+  \url{http://journals.cambridge.org/article_S0883769400011702}, Accessed on:
+  Feb. 18, 2016.
 
 \bibitem{Broderick2008}
-S.~Broderick, C.~Suh, J.~Nowers, B.~Vogel, S.~Mallapragada, B.~Narasimhan
-  \emph{et~al.}, ``Informatics for combinatorial materials science,''
-  \emph{JOM}, vol.~60, no.~3, pp. 56--59, 2008, [Online]. Available:
-  \url{http://dx.doi.org/10.1007/s11837-008-0035-x}
+S.~Broderick \emph{et~al.}, ``Informatics for combinatorial materials
+  science,'' \emph{JOM}, vol.~60, no.~3, pp. 56--59, 2008, [Online]. Available:
+  \url{http://dx.doi.org/10.1007/s11837-008-0035-x}, Accessed on: Feb. 18,
+  2016.
 
 \bibitem{ferris2007materials}
-K.~F. Ferris, L.~M. Peurrung, and J.~M. Marder, ``Materials informatics: Fast
+K.~F. Ferris, L.~M. Peurrung, and J.~M. Marder, ``Materials informatics: fast
   track to new materials,'' \emph{Advanced Materials \& Processes, 165 (1):
   50-51}, vol. 165, no. PNNL-SA-52427, 2007.
 
@@ -74,7 +72,8 @@ K.~F. Ferris, L.~M. Peurrung, and J.~M. Marder, ``Materials informatics: Fast
 S.~R. Kalidindi, S.~R. Niezgoda, and A.~A. Salem, ``Microstructure informatics
   using higher-order statistics and efficient data-mining protocols,''
   \emph{JOM}, vol.~63, no.~4, pp. 34--41, 2011, [Online]. Available:
-  \url{http://dx.doi.org/10.1007/s11837-011-0057-7}
+  \url{http://dx.doi.org/10.1007/s11837-011-0057-7}, Accessed on: Feb. 19,
+  2016.
 
 \bibitem{SergeiV.Kalinin2015}
 B.~G.~S. Sergei V.~Kalinin and R.~K. Archibald, ``Big-deep-smart data in
@@ -84,50 +83,53 @@ B.~G.~S. Sergei V.~Kalinin and R.~K. Archibald, ``Big-deep-smart data in
 \bibitem{DeCost2015}
 B.~L. DeCost and E.~A. Holm, ``A computer vision approach for automated
   analysis and classification of microstructural image data,''
-  \emph{Computational Materials Science}, vol. 110, pp. 126 -- 133, 2015,
+  \emph{Computational Materials Sci.}, vol. 110, pp. 126 -- 133, 2015,
   [Online]. Available:
-  \url{http://www.sciencedirect.com/science/article/pii/S0927025615005066}
+  \url{http://www.sciencedirect.com/science/article/pii/S0927025615005066},
+  Accessed on: Dec. 9, 2015.
 
 \bibitem{Schaefer2005}
-R.~J. Schaefer and D.~J. Lewis, ``Directional solidification in a agcusn
-  eutectic alloy,'' \emph{Metallurgical and Materials Transactions A: Physical
+R.~J. Schaefer and D.~J. Lewis, ``Directional solidification in a {AgCuSn}
+  eutectic alloy,'' \emph{Metallurgical and Materials Trans. A: Physical
   Metallurgy and Materials Science}, vol. 36A, pp. 2775--2783, October 2005.
 
 \bibitem{Mao2014}
 J.~Mao and D.~J. Lewis, \emph{Nucleation promotion of Sn-Ag-Cu lead-free solder
-  alloys via micro alloying.}, 2014, [Online]. Available:
-  \url{http://libproxy.rpi.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=cat02306a&AN=rlc.3566213&site=eds-live&scope=site}
+  alloys via micro alloying}, 2014, [Online]. Available:
+  \url{http://libproxy.rpi.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=cat02306a&AN=rlc.3566213&site=eds-live&scope=site},
+  Accessed on: Feb. 19, 2016.
 
 \bibitem{Barber2003}
-T.~C. Z.H.~Barber, J.A.~Leake, ``The doitpoms project - a web-based initiative
-  for teaching and learning materials science,'' \emph{J. Mater. Educ.},
-  vol.~29, no. 1-2, pp. 7--16, 2003.
+T.~C. Z.H.~Barber, J.A.~Leake, ``The {D}o{ITP}o{MS} project - a web-based
+  initiative for teaching and learning materials science,'' \emph{J. Mater.
+  Educ.}, vol.~29, no. 1-2, pp. 7--16, 2003.
 
 \bibitem{Keogh2010}
 E.~Keogh and A.~Mueen, ``Encyclopedia of machine learning.''\hskip 1em plus
   0.5em minus 0.4em\relax Boston, MA: Springer US, 2010, ch. Curse of
   Dimensionality, pp. 257--258, [Online]. Available:
-  \url{http://dx.doi.org/10.1007/978-0-387-30164-8_192}
+  \url{http://dx.doi.org/10.1007/978-0-387-30164-8_192}, Accessed on: April 22,
+  2016.
 
 \bibitem{Haralick1973}
 R.~M. Haralick, K.~Shanmugam, and I.~H. Dinstein, ``Textural features for image
-  classification,'' \emph{Systems, Man and Cybernetics, IEEE Transactions on},
-  no.~6, pp. 610--621, 1973.
+  classification,'' \emph{Syst., Man and Cybern., IEEE Trans. on}, no.~6, pp.
+  610--621, 1973.
 
 \bibitem{Dalal2005}
 N.~Dalal and B.~Triggs, ``Histograms of oriented gradients for human
-  detection,'' in \emph{Computer Vision and Pattern Recognition, 2005. CVPR
-  2005. IEEE Computer Society Conference on}, 2005, vol.~1, pp. 886--893.
+  detection,'' in \emph{Comput. Vision and Pattern Recognition, 2005. CVPR
+  2005. IEEE Comput. Soc. Conf. on}, 2005, vol.~1, pp. 886--893.
 
 \bibitem{Ojala2002}
 T.~Ojala, M.~Pietik{\"a}inen, and T.~M{\"a}enp{\"a}{\"a}, ``Multiresolution
   gray-scale and rotation invariant texture classification with local binary
-  patterns,'' \emph{IEEE Transactions on Pattern Analysis and Machine
-  Intelligence}, vol.~24, no.~7, pp. 971--987, 2002.
+  patterns,'' \emph{IEEE Trans. on Pattern Anal. and Mach. Intell.}, vol.~24,
+  no.~7, pp. 971--987, 2002.
 
 \bibitem{Hu1962}
-M.-K. Hu, ``Visual pattern recognition by moment invariants,'' \emph{IRE
-  Transactions on Information Theory}, vol.~8, no.~2, pp. 179--187, 1962.
+M.-K. Hu, ``Visual pattern recognition by moment invariants,'' \emph{IRE Trans.
+  on Inform. Theory}, vol.~8, no.~2, pp. 179--187, 1962.
 
 \bibitem{Otsu1975}
 N.~Otsu, ``A threshold selection method from gray-level histograms,''
@@ -135,66 +137,66 @@ N.~Otsu, ``A threshold selection method from gray-level histograms,''
 
 \bibitem{Khotanzad1990}
 A.~Khotanzad and Y.~H. Hong, ``Invariant image recognition by zernike
-  moments,'' \emph{IEEE Transactions on Pattern Analysis and Machine
-  Intelligence}, vol.~12, no.~5, pp. 489--497, 1990.
+  moments,'' \emph{IEEE Trans. on Pattern Anal. and Mach. Intell.}, vol.~12,
+  no.~5, pp. 489--497, 1990.
 
 \bibitem{Lievers2004}
 W.~Lievers and A.~Pilkey, ``An evaluation of global thresholding techniques for
   the automatic image segmentation of automotive aluminum sheet alloys,''
-  \emph{Materials Science and Engineering: A}, vol. 381, no. 1?2, pp. 134 --
-  142, 2004, [Online]. Available:
-  \url{http://www.sciencedirect.com/science/article/pii/S0921509304003703}
+  \emph{Materials Science and Eng.: A}, vol. 381, no. 1?2, pp. 134 -- 142,
+  2004, [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0921509304003703},
+  Accessed on: Feb. 1, 2016.
 
 \bibitem{Yang2007}
 J.~Yang, Y.-G. Jiang, A.~G. Hauptmann, and C.-W. Ngo, ``Evaluating
-  bag-of-visual-words representations in scene classification,'' in
-  \emph{Proceedings of the international workshop on multimedia information
-  retrieval}, 2007, pp. 197--206.
+  bag-of-visual-words representations in scene classification,'' in \emph{Proc.
+  of the Int. Workshop on Multimedia Inform. Retrieval}, 2007, pp. 197--206.
 
 \bibitem{Bay2006}
-H.~Bay, T.~Tuytelaars, and L.~Van~Gool, ``Surf: Speeded up robust features,''
-  in \emph{Computer vision--ECCV 2006}.\hskip 1em plus 0.5em minus 0.4em\relax
+H.~Bay, T.~Tuytelaars, and L.~Van~Gool, ``{SURF}: Speeded up robust features,''
+  in \emph{Comput. Vision--ECCV 2006}.\hskip 1em plus 0.5em minus 0.4em\relax
   Springer, 2006, pp. 404--417.
 
 \bibitem{Jia2014}
-Y.~Jia, E.~Shelhamer, J.~Donahue, S.~Karayev, J.~Long, R.~Girshick
-  \emph{et~al.}, ``Caffe: Convolutional architecture for fast feature
-  embedding,'' \emph{arXiv preprint arXiv:1408.5093}, 2014.
+Y.~Jia \emph{et~al.}, ``Caffe: convolutional architecture for fast feature
+  embedding,'' \emph{ArXiv Preprint ArXiv:1408.5093}, 2014.
 
 \bibitem{Krizhevsky2012}
 A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
-  deep convolutional neural networks,'' in \emph{Advances in Neural Information
-  Processing Systems 25}, F.~Pereira, C.~J.~C. Burges, L.~Bottou, and K.~Q.
+  deep convolutional neural networks,'' in \emph{Advances in Neural Inform.
+  Process. Syst. 25}, F.~Pereira, C.~J.~C. Burges, L.~Bottou, and K.~Q.
   Weinberger, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Curran Associates,
   Inc., 2012, pp. 1097--1105, [Online]. Available:
-  \url{http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf}
+  \url{http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf},
+  Accessed on: April 6, 2016.
 
 \bibitem{Klinger2012}
-K.~Klinger, Ed., \emph{Machine Learning: Concepts, Methodologies, Tools and
-  Applications}.\hskip 1em plus 0.5em minus 0.4em\relax IGI Global, 2012,
+K.~Klinger, Ed., \emph{Machine learning: concepts, methodologies, tools and
+  applications}.\hskip 1em plus 0.5em minus 0.4em\relax IGI Global, 2012,
   vol.~1.
 
 \bibitem{curse}
 P.~Indyk and R.~Motwani, ``Approximate nearest neighbors: towards removing the
-  curse of dimensionality,'' in \emph{Proceedings of the thirtieth annual ACM
-  symposium on Theory of computing}, 1998, pp. 604--613.
+  curse of dimensionality,'' in \emph{Proc. of the Thirtieth Annu. ACM Symp. on
+  Theory of Computing}, 1998, pp. 604--613.
 
 \bibitem{pca}
-G.~H. Dunteman, \emph{Principal Components Analysis}.\hskip 1em plus 0.5em
+G.~H. Dunteman, \emph{Principal components analysis}.\hskip 1em plus 0.5em
   minus 0.4em\relax Sage Publications, Inc., 1989, vol.~69.
 
 \bibitem{anova}
-R.~G. Lomax and D.~L. Hahs-Vaughn, \emph{Statistical concepts: A second
+R.~G. Lomax and D.~L. Hahs-Vaughn, \emph{Statistical concepts: a second
   course}.\hskip 1em plus 0.5em minus 0.4em\relax Routledge, 2013.
 
 \bibitem{chi}
-H.~Liu and R.~Setiono, ``Chi2: Feature selection and discretization of numeric
-  attributes,'' in \emph{In Proceedings of the Seventh International Conference
-  on Tools with Artificial Intelligence}, 1995, pp. 388--391.
+H.~Liu and R.~Setiono, ``Chi2: feature selection and discretization of numeric
+  attributes,'' in \emph{In Proc. of the Seventh Int. Conf. on Tools with
+  Artificial Intell.}, 1995, pp. 388--391.
 
 \bibitem{fisher}
 R.~Kohavi and G.~H. John, ``Wrappers for feature subset selection,''
-  \emph{Artificial intelligence}, vol.~97, no.~1, pp. 273--324, 1997.
+  \emph{Artificial Intell.}, vol.~97, no.~1, pp. 273--324, 1997.
 
 \bibitem{gini}
 M.~A. Hall, ``Correlation-based feature selection for machine learning,'' Ph.D.
@@ -202,42 +204,41 @@ M.~A. Hall, ``Correlation-based feature selection for machine learning,'' Ph.D.
 
 \bibitem{svm}
 M.~A. Hearst, S.~T. Dumais, E.~Osman, J.~Platt, and B.~Scholkopf, ``Support
-  vector machines,'' \emph{Intelligent Systems and their Applications, IEEE},
-  vol.~13, no.~4, pp. 18--28, 1998.
+  vector machines,'' \emph{Intelligent Syst. and their Appl., IEEE}, vol.~13,
+  no.~4, pp. 18--28, 1998.
 
 \bibitem{rf}
-L.~Breiman, ``Random forests,'' \emph{Machine learning}, vol.~45, no.~1, pp.
+L.~Breiman, ``Random forests,'' \emph{Mach. Learning}, vol.~45, no.~1, pp.
   5--32, 2001.
 
 \bibitem{nn}
 T.~Denoeux, ``A k-nearest neighbor classification rule based on dempster-shafer
-  theory,'' \emph{IEEE Transactions on Systems, Man and Cybernetics}, vol.~25,
-  no.~5, pp. 804--813, 1995.
+  theory,'' \emph{IEEE Trans. on Syst., Man and Cybern.}, vol.~25, no.~5, pp.
+  804--813, 1995.
 
 \bibitem{voting}
-R.~E. Schapire, Y.~Freund, P.~Bartlett, and W.~S. Lee, ``Boosting the margin: A
+R.~E. Schapire, Y.~Freund, P.~Bartlett, and W.~S. Lee, ``Boosting the margin: a
   new explanation for the effectiveness of voting methods,'' \emph{Annals of
-  statistics}, pp. 1651--1686, 1998.
+  Statist.}, pp. 1651--1686, 1998.
 
 \bibitem{nb}
 I.~Rish, ``An empirical study of the naive bayes classifier,'' in \emph{IJCAI
-  2001 workshop on empirical methods in artificial intelligence}, 2001, vol.~3,
+  2001 Workshop on Empirical Methods in Artificial Intell.}, 2001, vol.~3,
   no.~22, pp. 41--46.
 
 \bibitem{Kotsiantis2007}
 S.~B. Kotsiantis, I.~Zaharakis, and P.~Pintelas, ``Supervised machine learning:
-  A review of classification techniques,'' 2007.
+  a review of classification techniques,'' 2007.
 
 \bibitem{Pattan2010}
 P.~C. Pattan, V.~Mytri, and P.~Hiremath, ``Classification of cast iron based on
   graphite grain morphology using neural network approach,'' in \emph{Second
-  International Conference on Digital Image Processing}, 2010, vol. 7546, p.
-  75462S.
+  Int. Conf. on Digital Image Process.}, 2010, vol. 7546, p. 75462S.
 
 \bibitem{Prakash2011}
 P.~Prakash, V.~Mytri, and P.~Hiremath, ``Comparative analysis of spectral and
   spatial features for classification of graphite grains in cast iron,''
-  \emph{Sci. Technol}, vol.~29, pp. 31--40, 2011.
+  \emph{Sci. Technol.}, vol.~29, pp. 31--40, 2011.
 
 \bibitem{Kumara}
 A.~Kumara, V.~Sundararaghavan, M.~DeGraefb, and L.~Nguyenb, ``A markov random
@@ -245,154 +246,154 @@ A.~Kumara, V.~Sundararaghavan, M.~DeGraefb, and L.~Nguyenb, ``A markov random
   Sci. Eng.}, vol.~24, no. 035015, pp. 1--13, 2016.
 
 \bibitem{MacSleyne2008}
-J.~MacSleyne, J.~Simmons, and M.~D. Graef, ``On the use of 2-d moment
+J.~MacSleyne, J.~Simmons, and M.~D. Graef, ``On the use of 2-{D} moment
   invariants for the automated classification of particle shapes,'' \emph{Acta
   Materialia}, vol.~56, no.~3, pp. 427 -- 437, 2008, [Online]. Available:
   \url{http://www.sciencedirect.com/science/article/pii/S1359645407006702}
 
 \bibitem{Sluytman2012}
-J.~V. Sluytman and T.~Pollock, ``Optimal precipitate shapes in nickel-base ????
+J.~V. Sluytman and T.~Pollock, ``Optimal precipitate shapes in nickel-base
   alloys,'' \emph{Acta Materialia}, vol.~60, no.~4, pp. 1771 -- 1783, 2012,
   [Online]. Available:
-  \url{http://www.sciencedirect.com/science/article/pii/S1359645411008706}
+  \url{http://www.sciencedirect.com/science/article/pii/S1359645411008706},
+  Accessed on: June 1, 2016.
 
 \bibitem{Impoco2015}
 G.~Impoco and L.~Tuminello, ``Incremental learning to segment micrographs,''
-  \emph{Computer Vision and Image Understanding}, vol. 140, pp. 144 -- 152,
+  \emph{Comput. Vision and Image Understanding}, vol. 140, pp. 144 -- 152,
   2015, [Online]. Available:
-  \url{http://www.sciencedirect.com/science/article/pii/S1077314215000533}
+  \url{http://www.sciencedirect.com/science/article/pii/S1077314215000533},
+  Accessed on: Dec. 9, 2015.
 
 \bibitem{Bostanabad2016}
 R.~Bostanabad, A.~T. Bui, W.~Xie, D.~W. Apley, and W.~Chen, ``Stochastic
   microstructure characterization and reconstruction via supervised learning,''
   \emph{Acta Materialia}, vol. 103, pp. 89 -- 102, 2016, [Online]. Available:
-  \url{http://www.sciencedirect.com/science/article/pii/S1359645415007259}
+  \url{http://www.sciencedirect.com/science/article/pii/S1359645415007259},
+  Accessed on: Dec. 9, 2015.
 
 \bibitem{Taffese2015}
-W.~Z. Taffese, E.~Sistonen, and J.~Puttonen, ``Caprm: Carbonation prediction
-  model for reinforced concrete using machine learning methods,''
+W.~Z. Taffese, E.~Sistonen, and J.~Puttonen, ``Ca{P}r{M}: carbonation
+  prediction model for reinforced concrete using machine learning methods,''
   \emph{Construction and Building Materials}, vol. 100, pp. 70 -- 82, 2015,
   [Online]. Available:
-  \url{http://www.sciencedirect.com/science/article/pii/S0950061815304165}
+  \url{http://www.sciencedirect.com/science/article/pii/S0950061815304165},
+  Accessed on: Dec. 9, 2015.
 
 \bibitem{Guo2016}
-Y.~Guo, Y.~Liu, A.~Oerlemans, S.~Lao, S.~Wu, and M.~S. Lew, ``Deep learning for
-  visual understanding: A review,'' \emph{Neurocomputing}, vol. 187, pp. 27 --
-  48, 2016, [Online]. Available:
-  \url{http://www.sciencedirect.com/science/article/pii/S0925231215017634}
+Y.~Guo \emph{et~al.}, ``Deep learning for visual understanding: a review,''
+  \emph{Neurocomputing}, vol. 187, pp. 27 -- 48, 2016, [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0925231215017634},
+  Accessed on: April 14, 2016.
 
 \bibitem{haralick1979statistical}
 R.~M. Haralick, ``Statistical and structural approaches to texture,''
-  \emph{Proceedings of the IEEE}, vol.~67, no.~5, pp. 786--804, 1979.
+  \emph{Proc. of the IEEE}, vol.~67, no.~5, pp. 786--804, 1979.
 
 \bibitem{haralick1973textural}
-R.~M. Haralick, K.~Shanmugam \emph{et~al.}, ``Textural features for image
-  classification,'' \emph{IEEE Transactions on systems, man, and cybernetics},
-  no.~6, pp. 610--621, 1973.
+R.~M. Haralick \emph{et~al.}, ``Textural features for image classification,''
+  \emph{IEEE Trans. on Syst., man, and Cybern.}, no.~6, pp. 610--621, 1973.
 
 \bibitem{chawla2002smote}
-N.~V. Chawla, K.~W. Bowyer, L.~O. Hall, and W.~P. Kegelmeyer, ``Smote:
-  synthetic minority over-sampling technique,'' \emph{Journal of artificial
-  intelligence research}, vol.~16, pp. 321--357, 2002.
+N.~V. Chawla, K.~W. Bowyer, L.~O. Hall, and W.~P. Kegelmeyer, ``{SMOTE}:
+  synthetic minority over-sampling technique,'' \emph{J. of Artificial Intell.
+  Res.}, vol.~16, pp. 321--357, 2002.
 
 \bibitem{wold1987principal}
 S.~Wold, K.~Esbensen, and P.~Geladi, ``Principal component analysis,''
-  \emph{Chemometrics and intelligent laboratory systems}, vol.~2, no. 1-3, pp.
+  \emph{Chemometrics and Intelligent Laboratory Syst.}, vol.~2, no. 1-3, pp.
   37--52, 1987.
 
 \bibitem{harrison1995validity}
-L.~D. Harrison, ``The validity of self-reported data on drug use,''
-  \emph{Journal of Drug Issues}, vol.~25, no.~1, pp. 91--111, 1995.
+L.~D. Harrison, ``The validity of self-reported data on drug use,'' \emph{J. of
+  Drug Issues}, vol.~25, no.~1, pp. 91--111, 1995.
 
 \bibitem{bergstra2012random}
 J.~Bergstra and Y.~Bengio, ``Random search for hyper-parameter optimization,''
-  \emph{Journal of Machine Learning Research}, vol.~13, no. Feb, pp. 281--305,
-  2012.
+  \emph{J. of Mach. Learning Res.}, vol.~13, no. Feb, pp. 281--305, 2012.
 
 \bibitem{snoek2012practical}
 J.~Snoek, H.~Larochelle, and R.~P. Adams, ``Practical bayesian optimization of
-  machine learning algorithms,'' in \emph{Advances in neural information
-  processing systems}, 2012, pp. 2951--2959.
+  machine learning algorithms,'' in \emph{Advances in Neural Inform. Process.
+  Syst.}, 2012, pp. 2951--2959.
 
 \bibitem{zhang2016flash}
-Y.~Zhang, M.~T. Bahadori, H.~Su, and J.~Sun, ``Flash: fast bayesian
-  optimization for data analytic pipelines,'' in \emph{Proceedings of the 22nd
-  ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
-  2016, pp. 2065--2074.
+Y.~Zhang, M.~T. Bahadori, H.~Su, and J.~Sun, ``{FLASH}: fast bayesian
+  optimization for data analytic pipelines,'' in \emph{Proc. of the 22nd ACM
+  SIGKDD Int. Conf. on Knowledge Discovery and Data Mining}, 2016, pp.
+  2065--2074.
 
 \bibitem{olson2016evaluation}
 R.~S. Olson, N.~Bartley, R.~J. Urbanowicz, and J.~H. Moore, ``Evaluation of a
   tree-based pipeline optimization tool for automating data science,'' in
-  \emph{Proceedings of the Genetic and Evolutionary Computation Conference
-  2016}, 2016, pp. 485--492.
+  \emph{Proc. of the Genetic and Evol. Computation Conf. 2016}, 2016, pp.
+  485--492.
 
 \bibitem{olson2016tpot}
-R.~S. Olson and J.~H. Moore, ``Tpot: A tree-based pipeline optimization tool
-  for automating machine learning,'' in \emph{Workshop on Automatic Machine
+R.~S. Olson and J.~H. Moore, ``{TPOT}: a tree-based pipeline optimization tool
+  for automating machine learning,'' in \emph{Workshop on Assoc. Mach.
   Learning}, 2016, pp. 66--74.
 
 \bibitem{ribeiro2016model}
 M.~T. Ribeiro, S.~Singh, and C.~Guestrin, ``Model-agnostic interpretability of
-  machine learning,'' \emph{arXiv preprint arXiv:1606.05386}, 2016.
+  machine learning,'' \emph{ArXiv Preprint ArXiv:1606.05386}, 2016.
 
 \bibitem{koh2017understanding}
 P.~W. Koh and P.~Liang, ``Understanding black-box predictions via influence
   functions,'' \emph{arXiv preprint arXiv:1703.04730}, 2017.
 
 \bibitem{thornton2013auto}
-C.~Thornton, F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Auto-weka: Combined
-  selection and hyperparameter optimization of classification algorithms,'' in
-  \emph{Proceedings of the 19th ACM SIGKDD international conference on
-  Knowledge discovery and data mining}, 2013, pp. 847--855.
+C.~Thornton, F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Auto-{WEKA}:
+  combined selection and hyperparameter optimization of classification
+  algorithms,'' in \emph{Proc. of the 19th ACM SIGKDD Int. Conf. on Knowledge
+  discovery and data mining}, 2013, pp. 847--855.
 
 \bibitem{hutter2011sequential}
 F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Sequential model-based
-  optimization for general algorithm configuration,'' in \emph{International
-  Conference on Learning and Intelligent Optimization}, 2011, pp. 507--523.
+  optimization for general algorithm configuration,'' in \emph{Int. Conf. on
+  Learning and Intelligent Optimization}, 2011, pp. 507--523.
 
 \bibitem{bergstra2011algorithms}
 J.~S. Bergstra, R.~Bardenet, Y.~Bengio, and B.~K{\'e}gl, ``Algorithms for
-  hyper-parameter optimization,'' in \emph{Advances in neural information
-  processing systems}, 2011, pp. 2546--2554.
+  hyper-parameter optimization,'' in \emph{Advances in Neural Inform. Process.
+  Syst.}, 2011, pp. 2546--2554.
 
 \bibitem{expected_improvement}
 J.~Mo{\v{c}}kus, ``On bayesian methods for seeking the extremum,'' in
-  \emph{Optimization Techniques IFIP Technical Conference}, 1975, pp. 400--404.
+  \emph{Optimization Techn. IFIP Tech. Conf.}, 1975, pp. 400--404.
 
 \bibitem{eggensperger2013towards}
-K.~Eggensperger, M.~Feurer, F.~Hutter, J.~Bergstra, J.~Snoek, H.~Hoos
-  \emph{et~al.}, ``Towards an empirical foundation for assessing bayesian
-  optimization of hyperparameters,'' in \emph{NIPS workshop on Bayesian
-  Optimization in Theory and Practice}, 2013, vol.~10.
+K.~Eggensperger \emph{et~al.}, ``Towards an empirical foundation for assessing
+  bayesian optimization of hyperparameters,'' in \emph{NIPS Workshop on
+  Bayesian Optimization in Theory and Practice}, 2013, vol.~10.
 
 \bibitem{simonyan2014very}
 K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
-  large-scale image recognition,'' \emph{arXiv preprint arXiv:1409.1556}, 2014.
+  large-scale image recognition,'' \emph{ArXiv Preprint ArXiv:1409.1556}, 2014.
 
 \bibitem{szegedy2016rethinking}
 C.~Szegedy, V.~Vanhoucke, S.~Ioffe, J.~Shlens, and Z.~Wojna, ``Rethinking the
-  inception architecture for computer vision,'' in \emph{Proceedings of the
-  IEEE Conference on Computer Vision and Pattern Recognition}, 2016, pp.
-  2818--2826.
+  inception architecture for computer vision,'' in \emph{Proc. of the IEEE
+  Conf. on Comput. Vision and Pattern Recognition}, 2016, pp. 2818--2826.
 
 \bibitem{tenenbaum2000global}
 J.~B. Tenenbaum, V.~De~Silva, and J.~C. Langford, ``A global geometric
-  framework for nonlinear dimensionality reduction,'' \emph{science}, vol. 290,
+  framework for nonlinear dimensionality reduction,'' \emph{Sci.}, vol. 290,
   no. 5500, pp. 2319--2323, 2000.
 
 \bibitem{breiman2001random}
-L.~Breiman, ``Random forests,'' \emph{Machine learning}, vol.~45, no.~1, pp.
+L.~Breiman, ``Random forests,'' \emph{Mach. Learning}, vol.~45, no.~1, pp.
   5--32, 2001.
 
 \bibitem{cortes1995support}
-C.~Cortes and V.~Vapnik, ``Support-vector networks,'' \emph{Machine learning},
+C.~Cortes and V.~Vapnik, ``Support-vector networks,'' \emph{Mach. Learning},
   vol.~20, no.~3, pp. 273--297, 1995.
 
 \bibitem{bilgin2007cell}
 C.~Bilgin, C.~Demir, C.~Nagi, and B.~Yener, ``Cell-graph mining for breast
-  tissue modeling and classification,'' in \emph{Engineering in Medicine and
-  Biology Society, 2007. EMBS 2007. 29th Annual International Conference of the
-  IEEE}, 2007, pp. 5311--5314.
+  tissue modeling and classification,'' in \emph{Eng. in Medicine and Biology
+  Soc., 2007. EMBS 2007. 29th Annu. Int. Conf. of the IEEE}, 2007, pp.
+  5311--5314.
 
 \bibitem{gunduz2004cell}
 C.~Gunduz, B.~Yener, and S.~H. Gultekin, ``The cell graphs of cancer,''
@@ -401,16 +402,16 @@ C.~Gunduz, B.~Yener, and S.~H. Gultekin, ``The cell graphs of cancer,''
 \bibitem{chowdhury2016image}
 A.~Chowdhury, E.~Kautz, B.~Yener, and D.~Lewis, ``Image driven machine learning
   methods for microstructure recognition,'' \emph{Computational Materials
-  Science}, vol. 123, pp. 176--187, 2016.
+  Sci.}, vol. 123, pp. 176--187, 2016.
 
 \bibitem{shin2016deep}
-H.-C. Shin, H.~R. Roth, M.~Gao, L.~Lu, Z.~Xu, I.~Nogues \emph{et~al.}, ``Deep
-  convolutional neural networks for computer-aided detection: Cnn
-  architectures, dataset characteristics and transfer learning,'' \emph{IEEE
-  transactions on medical imaging}, vol.~35, no.~5, pp. 1285--1298, 2016.
+H.-C. Shin \emph{et~al.}, ``Deep convolutional neural networks for
+  computer-aided detection: Cnn architectures, dataset characteristics and
+  transfer learning,'' \emph{IEEE Trans. on Medical Imaging}, vol.~35, no.~5,
+  pp. 1285--1298, 2016.
 
 \bibitem{su2017cognitive}
 H.~Su, ``The cognitive and immersive situations room,'' \emph{XRDS: Crossroads,
-  The ACM Magazine for Students}, vol.~23, no.~3, pp. 20--23, 2017.
+  The ACM Mag. for Students}, vol.~23, no.~3, pp. 20--23, 2017.
 
 \end{thebibliography}

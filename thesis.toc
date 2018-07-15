@@ -16,17 +16,17 @@
 \contentsline {section}{\numberline {2.5}Conclusions}{16}{section.2.5}
 \contentsline {chapter}{\numberline {3.}IMAGE DRIVEN MACHINE LEARNING METHODS FOR MICROSTRUCTURE RECOGNITION}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{17}{section.3.1}
-\contentsline {section}{\numberline {3.2}Alloy Fabrication and Sample Preparation}{19}{section.3.2}
-\contentsline {section}{\numberline {3.3}Image Data Sets}{20}{section.3.3}
+\contentsline {section}{\numberline {3.2}Alloy fabrication and sample preparation}{19}{section.3.2}
+\contentsline {section}{\numberline {3.3}Image datasets}{20}{section.3.3}
 \contentsline {section}{\numberline {3.4}Approach}{22}{section.3.4}
-\contentsline {section}{\numberline {3.5}Computer Vision and Machine Learning Methods}{23}{section.3.5}
+\contentsline {section}{\numberline {3.5}Computer vision and machine learning methods}{23}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Feature extraction}{23}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Dimensionality reduction}{28}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}Classification}{29}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Related Work in Materials Science}{31}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}Selection of Model Parameters}{32}{section.3.6}
-\contentsline {section}{\numberline {3.7}Software and Hardware Specifications}{32}{section.3.7}
-\contentsline {section}{\numberline {3.8}Results and Discussion}{33}{section.3.8}
+\contentsline {subsection}{\numberline {3.5.4}Related work in materials science}{31}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}Selection of model parameters}{32}{section.3.6}
+\contentsline {section}{\numberline {3.7}Software and hardware specifications}{32}{section.3.7}
+\contentsline {section}{\numberline {3.8}Results and discussion}{33}{section.3.8}
 \contentsline {subsection}{\numberline {3.8.1}Task 1 - Dendritic versus non-dendritic microstructures}{33}{subsection.3.8.1}
 \contentsline {subsection}{\numberline {3.8.2}Task 2 - Longitudinal versus transverse cross-sectional views of dendrites}{37}{subsection.3.8.2}
 \contentsline {section}{\numberline {3.9}Limitations}{41}{section.3.9}
