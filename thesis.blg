@@ -18,59 +18,49 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references.bib
-I was expecting a `,' or a `}'---line 1992 of file references.bib
- :   
- :   urldate              = {June 1, 2016}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--missing publisher in Mao2014
-Warning--empty booktitle in Keogh2010
-Warning--missing department in gini
-Warning--there's a url but no urldate in MacSleyne2008
 
 Done.
-You've used 76 entries,
+You've used 75 entries,
             4355 wiz_defined-function locations,
-            1347 strings with 21178 characters,
-and the built_in function-call counts, 61662 in all, are:
-= -- 5295
-> -- 1321
-< -- 636
-+ -- 753
-- -- 199
-* -- 3041
-:= -- 9318
+            1341 strings with 20695 characters,
+and the built_in function-call counts, 60977 in all, are:
+= -- 5287
+> -- 1282
+< -- 635
++ -- 733
+- -- 191
+* -- 2995
+:= -- 9267
 add.period$ -- 140
-call.type$ -- 76
-change.case$ -- 76
-chr.to.int$ -- 1479
-cite$ -- 80
-duplicate$ -- 4324
-empty$ -- 4511
-format.name$ -- 256
-if$ -- 14242
+call.type$ -- 75
+change.case$ -- 74
+chr.to.int$ -- 1467
+cite$ -- 75
+duplicate$ -- 4289
+empty$ -- 4421
+format.name$ -- 246
+if$ -- 14083
 int.to.chr$ -- 0
-int.to.str$ -- 76
-missing$ -- 641
-newline$ -- 251
-num.names$ -- 79
-pop$ -- 1221
+int.to.str$ -- 75
+missing$ -- 626
+newline$ -- 248
+num.names$ -- 76
+pop$ -- 1165
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 4984
+skip$ -- 4916
 stack$ -- 0
-substring$ -- 3557
-swap$ -- 3700
-text.length$ -- 143
+substring$ -- 3530
+swap$ -- 3679
+text.length$ -- 146
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 76
-warning$ -- 4
+type$ -- 75
+warning$ -- 0
 while$ -- 314
-width$ -- 78
-write$ -- 783
-(There was 1 error message)
+width$ -- 77
+write$ -- 782
